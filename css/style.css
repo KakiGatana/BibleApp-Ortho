@@ -432,3 +432,9 @@ html[data-lang="fr"] .pairs.novn .pair, html[data-lang="cs"] .pairs.novn .pair {
   .pairs.novn .pair { grid-template-columns: 1fr; }
   .pairs.novn .pair .cs { grid-column: 1; }
 }
+
+/* bandeau de mise à jour */
+.update-bar { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(124px + env(safe-area-inset-bottom)); z-index: 130; width: min(94vw, 520px); display: flex; align-items: center; gap: .6rem; padding: .7rem .8rem .7rem 1rem; border-radius: 16px; background: var(--ink); color: var(--bg); box-shadow: 0 12px 30px -10px rgba(0, 0, 0, .6); font-weight: 600; }
+.update-bar span { flex: 1; line-height: 1.3; }
+.update-bar .icon-btn { color: var(--bg); min-width: 2rem; height: 2rem; }
+@media (min-width: 1000px) { .update-bar { bottom: 1.5rem; } }

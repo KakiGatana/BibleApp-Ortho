@@ -1,5 +1,5 @@
 /* Service worker : fonctionnement hors ligne (réseau d'abord, cache en secours) + notifications */
-const VERSION = 'blagovest-v6';
+const VERSION = 'blagovest-v7';
 const DATA_CACHE = 'blagovest-data'; // écrit par js/notifications.js, à ne jamais purger
 const CORE = [
   './', 'index.html', 'manifest.webmanifest', 'css/style.css',
@@ -30,7 +30,7 @@ self.addEventListener('fetch', (e) => {
   }
   if (url.origin !== location.origin) return;
   e.respondWith(
-    fetch(req).then((r) => { const copy = r.clone(); caches.open(VERSION).then((c) => c.put(req, copy)); return r; })
+    fetch(req, { cache: 'no-cache' }).then((r) => { const copy = r.clone(); caches.open(VERSION).then((c) => c.put(req, copy)); return r; })
       .catch(() => caches.match(req).then((m) => m || caches.match('index.html')))
   );
 });

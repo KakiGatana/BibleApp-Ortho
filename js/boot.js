@@ -9,7 +9,23 @@
   if (window.matchMedia) matchMedia('(prefers-color-scheme: dark)').addEventListener('change', K.applySettings);
   K.render();
   if ('serviceWorker' in navigator && /^https?:/.test(location.protocol)) {
-    navigator.serviceWorker.register('sw.js').then(() => { if (O.push) O.push.sync(); }).catch(() => {});
+    // une nouvelle version prend la main : on propose de recharger (pas à la toute première installation)
+    const hadController = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.addEventListener('controllerchange', () => { if (hadController) showUpdate(); });
+    navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then((reg) => {
+      if (O.push) O.push.sync();
+      // à chaque retour dans l'appli, on cherche une mise à jour
+      document.addEventListener('visibilitychange', () => { if (!document.hidden) reg.update().catch(() => {}); });
+    }).catch(() => {});
+  }
+  function showUpdate() {
+    if (document.getElementById('updBar')) return;
+    const bar = document.createElement('div');
+    bar.id = 'updBar'; bar.className = 'update-bar'; bar.setAttribute('role', 'status');
+    bar.innerHTML = '<span>Une nouvelle version de Blagovest est disponible.</span><button class="btn small" id="updGo">Actualiser</button><button class="icon-btn" id="updX" aria-label="Plus tard">✕</button>';
+    document.body.appendChild(bar);
+    document.getElementById('updGo').addEventListener('click', () => location.reload());
+    document.getElementById('updX').addEventListener('click', () => bar.remove());
   }
   if (window.speechSynthesis) speechSynthesis.getVoices();
 })();
