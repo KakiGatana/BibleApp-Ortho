@@ -134,9 +134,9 @@
     ['favorites', 'Favoris', 'heart', '#/favorites'],
     ['settings', 'Réglages', 'gear', '#/settings']
   ];
-  const TABS = ['today', 'calendar', 'ask', 'bible'];
-  const TAB_LABEL = { today: 'Accueil', calendar: 'Calendrier', ask: 'Assistant IA', bible: 'Écritures' };
-  const TAB_ICON = { today: 'home', calendar: 'cal', ask: 'chat', bible: 'book' };
+  const TABS = ['today', 'calendar', 'ask', 'theology'];
+  const TAB_LABEL = { today: 'Accueil', calendar: 'Calendrier', ask: 'Assistant IA', theology: 'Théologie' };
+  const TAB_ICON = { today: 'home', calendar: 'cal', ask: 'chat', theology: 'theo' };
   function buildNav() {
     $('#sideNav').innerHTML = NAV.map(([id, l, i, h]) => `<a href="${h}" data-nav="${id}">${ic(i)}<span>${l}</span></a>`).join('');
     const tab = (id) => {
@@ -151,7 +151,7 @@
     document.body.classList.toggle('not-home', !!id && id !== 'today');
   }
   const MORE = [
-    ['Lire et prier', [['prayers', 'Prières', 'pray', 'Règle du matin et du soir, prières mot à mot'], ['slavonic', 'Slavon', 'slav', 'Alphabet, leçons, cartes, quiz'], ['theology', 'Théologie', 'theo', 'Les grands thèmes de la foi, les conciles']]],
+    ['Lire et prier', [['bible', 'Écritures', 'book', 'Psaumes, Évangiles, canon, plan de lecture'], ['prayers', 'Prières', 'pray', 'Règle du matin et du soir, prières mot à mot'], ['slavonic', 'Slavon', 'slav', 'Alphabet, leçons, cartes, quiz']]],
     ['Le temps de l’Église', [['feasts', 'Fêtes', 'feast', 'Sens des fêtes et tropaires'], ['saints', 'Saints', 'saint', 'Les saints de chaque jour']]],
     ['Mon espace', [['search', 'Recherche', 'search', 'Chercher dans toute l’application'], ['favorites', 'Favoris et notes', 'heart', 'Ce que j’ai gardé'], ['settings', 'Réglages', 'gear', 'Notifications, thème, taille du texte']]]
   ];

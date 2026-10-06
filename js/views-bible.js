@@ -121,7 +121,7 @@
     const frL = p.fr.split('\n'), csL = p.cs.split('\n');
     const body = m === 'inter' && p.inter
       ? `<div class="inter">${p.inter.map(([cs, tr, fr]) => `<button class="tok" data-act="speak" data-text="${esc(cs)}"><span class="cs">${esc(cs)}</span>${S.settings.translit ? `<em class="tr">${esc(tr)}</em>` : ''}<span class="fr">${esc(fr)}</span></button>`).join('')}</div>`
-      : U.pairs(frL, csL, 1).replace(/<span class="vn" aria-hidden="true">\d+<\/span>/g, '');
+      : U.pairs(frL, csL, 1).replace('<div class="pairs">', '<div class="pairs novn">');
     const html = `<section class="page prayer">
       ${U.back('#/prayers', 'Prières')}
       ${U.pageHead(esc(p.cat), esc(p.title), `<span class="cs big">${esc(p.titleCs)}</span>`)}

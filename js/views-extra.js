@@ -104,7 +104,7 @@
       ${list.map((p, i) => `<article class="card rule-item ${done.has(p.id) ? 'done' : ''}" data-id="${p.id}">
         <div class="row between"><div><span class="muted small">${i + 1}.</span> <b>${esc(p.title)}</b> <span class="cs small">${esc(p.titleCs)}</span></div>
         <button class="btn small ${done.has(p.id) ? '' : 'ghost'}" data-act="rule-toggle" data-kind="${kind}" data-id="${p.id}" aria-pressed="${done.has(p.id)}">${done.has(p.id) ? 'Faite ✓' : 'Faite ?'}</button></div>
-        ${U.pairs(p.fr.split('\n'), p.cs.split('\n'), 1).replace(/<span class="vn" aria-hidden="true">\d+<\/span>/g, '')}
+        ${U.pairs(p.fr.split('\n'), p.cs.split('\n'), 1).replace('<div class="pairs">', '<div class="pairs novn">')}
         <p class="muted xs"><a href="#/prayer/${p.id}">Lecture mot à mot et explications</a></p>
       </article>`).join('')}
       <p class="muted xs center">Règle indicative et abrégée : adapte-la avec ton père spirituel. Pendant le Carême, ajoute la prière de saint Éphrem.</p>

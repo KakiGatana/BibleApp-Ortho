@@ -423,3 +423,12 @@ input[type="range"] { accent-color: var(--gold2); width: min(220px, 100%); }
 .toast { bottom: calc(118px + env(safe-area-inset-bottom)); }
 .ask-form { bottom: calc(100px + env(safe-area-inset-bottom)); }
 @media (min-width: 1000px) { .toast { bottom: 2rem; } .ask-form { bottom: 0; } }
+
+/* prières : pas de colonne de numéros */
+.pairs.novn .pair { grid-template-columns: 1fr 1fr; }
+.pairs.novn .vn { display: none; }
+html[data-lang="fr"] .pairs.novn .pair, html[data-lang="cs"] .pairs.novn .pair { grid-template-columns: 1fr; }
+@media (max-width: 719px) {
+  .pairs.novn .pair { grid-template-columns: 1fr; }
+  .pairs.novn .pair .cs { grid-column: 1; }
+}
