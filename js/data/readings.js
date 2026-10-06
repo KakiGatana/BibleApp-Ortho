@@ -366,5 +366,139 @@
         'Car j’ai l’assurance que ni la mort ni la vie, ni les anges ni les dominations, ni le présent ni l’avenir, ni les puissances, ni la hauteur, ni la profondeur, ni aucune autre créature, ne pourra nous séparer de l’amour de Dieu manifesté en Jésus-Christ notre Seigneur.'
       ]
     }
+    ,
+    {
+      id: 'ps129', ref: 'Ps 129 (130)', title: 'Du fond de l’abîme', group: 'Psaumes', tags: ['repentir', 'pardon', 'défunts', 'carême', 'de profundis'],
+      intro: 'Le cri du pécheur qui espère dans le pardon. Un des psaumes les plus priés dans le repentir et pour les défunts : on attend Dieu comme la sentinelle attend l’aurore.',
+      fr: [
+        'Des profondeurs j’ai crié vers toi, Seigneur ; Seigneur, écoute ma voix.',
+        'Que tes oreilles soient attentives à la voix de ma supplication.',
+        'Si tu retiens les iniquités, Seigneur, Seigneur, qui subsistera ?',
+        'Mais près de toi est le pardon :',
+        'à cause de ton nom, je t’ai attendu, Seigneur ; mon âme a attendu ta parole,',
+        'mon âme a espéré dans le Seigneur,',
+        'depuis la garde du matin jusqu’à la nuit ; depuis la garde du matin, qu’Israël espère dans le Seigneur.',
+        'Car près du Seigneur est la miséricorde, et auprès de lui une abondante rédemption,',
+        'et lui-même rachètera Israël de toutes ses iniquités.'
+      ],
+      cs: [
+        'Из глубины воззвахъ къ Тебѣ, Господи, Господи, услыши глас мой.',
+        'Да будутъ уши Твои внемлющи гласу моленія моего.',
+        'Аще беззаконія назриши, Господи, Господи, кто постоитъ?',
+        'Яко у Тебе очищеніе есть:',
+        'имене ради Твоего потерпѣхъ Тя, Господи, потерпѣ душа моя въ слово Твое:',
+        'уповаше душа моя на Господа,',
+        'отъ стражи утреннія до нощи, отъ стражи утреннія да уповаетъ Израиль на Господа:',
+        'яко отъ Господа милость, и многое у Него избавленіе,',
+        'и Той избавитъ Израиля отъ всѣхъ беззаконій его.'
+      ]
+    },
+    {
+      id: 'ps102', ref: 'Ps 102 (103)', title: 'Bénis le Seigneur, ô mon âme', group: 'Psaumes', tags: ['louange', 'miséricorde', 'liturgie', 'antienne'],
+      intro: 'Le psaume de la reconnaissance, chanté comme première antienne de la Divine Liturgie dans l’usage byzantin. Il énumère les bienfaits de Dieu : pardon, guérison, rédemption, compassion de père.',
+      fr: [
+        'Bénis le Seigneur, ô mon âme, et que tout ce qui est en moi bénisse son saint nom.',
+        'Bénis le Seigneur, ô mon âme, et n’oublie aucun de ses bienfaits.',
+        'Il pardonne toutes tes iniquités, il guérit toutes tes maladies,',
+        'il délivre ta vie de la corruption, il te couronne de miséricorde et de tendresse,',
+        'il comble de biens ton désir : ta jeunesse se renouvelle comme celle de l’aigle.',
+        'Le Seigneur fait œuvre de miséricorde, il rend justice à tous ceux qu’on opprime.',
+        'Il a fait connaître ses voies à Moïse, ses volontés aux fils d’Israël.',
+        'Le Seigneur est compatissant et miséricordieux, lent à la colère et riche en bonté.',
+        'Il ne se mettra pas en colère jusqu’à la fin, il ne gardera pas rancune pour toujours.',
+        'Il ne nous a pas traités selon nos iniquités, il ne nous a pas rendu selon nos péchés.',
+        'Car autant le ciel est élevé au-dessus de la terre, autant le Seigneur a affermi sa miséricorde sur ceux qui le craignent.',
+        'Autant l’orient est loin de l’occident, autant il a éloigné de nous nos iniquités.',
+        'Comme un père a compassion de ses fils, le Seigneur a compassion de ceux qui le craignent,',
+        'car il connaît la glaise dont nous sommes faits : il s’est souvenu que nous sommes poussière.',
+        'L’homme, ses jours sont comme l’herbe, il fleurit comme la fleur des champs :',
+        'un souffle passe sur lui, et il n’est plus, et son lieu ne le reconnaît plus.',
+        'Mais la miséricorde du Seigneur est de toujours à toujours sur ceux qui le craignent, et sa justice sur les fils de leurs fils,',
+        'sur ceux qui gardent son alliance et se souviennent de ses commandements pour les accomplir.',
+        'Le Seigneur a établi son trône dans le ciel, et son règne domine sur tout.',
+        'Bénissez le Seigneur, vous tous ses anges, puissants en force, qui accomplissez sa parole en écoutant la voix de ses paroles.',
+        'Bénissez le Seigneur, toutes ses puissances, ses serviteurs qui faites sa volonté.',
+        'Bénissez le Seigneur, toutes ses œuvres, en tout lieu de sa domination : bénis le Seigneur, ô mon âme.'
+      ],
+      cs: [
+        'Благослови, душе моя, Господа, и вся внутренняя моя имя святое Его.',
+        'Благослови, душе моя, Господа, и не забывай всѣхъ воздаяній Его:',
+        'очищающаго вся беззаконія твоя, исцѣляющаго вся недуги твоя,',
+        'избавляющаго отъ истлѣнія животъ твой, вѣнчающаго тя милостію и щедротами,',
+        'исполняющаго во благихъ желаніе твое: обновится яко орля юность твоя.',
+        'Творяй милостыни Господь и судъ всѣмъ обидимымъ.',
+        'Сказа пути Своя Моисеови, сыномъ Израилевымъ хотѣнія Своя.',
+        'Щедръ и милостивъ Господь, долготерпѣливъ и многомилостивъ.',
+        'Не до конца прогнѣвается, ни во вѣкъ враждуетъ.',
+        'Не по беззакониемъ нашымъ сотворилъ есть намъ, ниже по грѣхомъ нашымъ воздалъ есть намъ.',
+        'Яко по высотѣ небесней отъ земли, утвердилъ есть Господь милость Свою на боящихся Его:',
+        'елико удалени суть востоцы отъ западъ, удали отъ насъ беззаконія наша.',
+        'Якоже щедритъ отецъ сыны, ущедри Господь боящихся Его:',
+        'яко Той позна создание наше, помяну, яко персть есмы.',
+        'Человѣкъ, яко трава дніе его, яко цвѣтъ селный, тако отцвѣтетъ:',
+        'яко духъ пройде въ немъ, и не будетъ, и не познаетъ ктому мѣста своего.',
+        'Милость же Господня отъ вѣка и до вѣка на боящихся Его, и правда Его на сынѣхъ сыновъ,',
+        'хранящихъ завѣтъ Его, и помнящихъ заповѣди Его, творити я.',
+        'Господь на небеси уготова престолъ Свой, и Царствіе Его всѣми обладаетъ.',
+        'Благословите Господа, вси Ангели Его, сильніи крѣпостію, творящіи слово Его, услышати глас словесъ Его.',
+        'Благословите Господа, вся силы Его, слуги Его, творящіи волю Его.',
+        'Благословите Господа, вся дѣла Его, на всякомъ мѣстѣ владычества Его: благослови, душе моя, Господа.'
+      ]
+    },
+    {
+      id: 'enfant-prodigue', ref: 'Lc 15:11-32', title: 'Le Fils prodigue', group: 'Évangiles', tags: ['parabole', 'pardon', 'repentir', 'père', 'carême', 'retour'],
+      intro: 'Évangile du dimanche de l’Enfant prodigue, qui ouvre le Triode et prépare au Grand Carême. Moins l’histoire d’un fils que celle d’un Père qui court à la rencontre : Dieu n’attend pas que nous soyons dignes, il nous accueille.',
+      fr: [
+        'Il dit encore : Un homme avait deux fils.',
+        'Le plus jeune dit à son père : Père, donne-moi la part de bien qui doit me revenir. Et le père leur partagea son bien.',
+        'Peu de jours après, le plus jeune fils, ayant tout rassemblé, partit pour un pays lointain, où il dissipa son bien en vivant dans la débauche.',
+        'Après qu’il eut tout dépensé, une grande famine survint dans ce pays, et il commença à manquer de tout.',
+        'Il alla s’attacher à l’un des habitants du pays, qui l’envoya dans ses champs garder les porcs.',
+        'Il aurait bien voulu se rassasier des gousses que mangeaient les porcs, mais personne ne lui en donnait.',
+        'Rentré en lui-même, il se dit : Combien d’ouvriers de mon père ont du pain en abondance, et moi, ici, je meurs de faim !',
+        'Je me lèverai, j’irai vers mon père et je lui dirai : Père, j’ai péché contre le ciel et devant toi ;',
+        'je ne suis plus digne d’être appelé ton fils ; traite-moi comme l’un de tes ouvriers.',
+        'Il se leva et alla vers son père. Comme il était encore loin, son père le vit et fut ému de compassion ; il courut, se jeta à son cou et le couvrit de baisers.',
+        'Le fils lui dit : Père, j’ai péché contre le ciel et devant toi ; je ne suis plus digne d’être appelé ton fils.',
+        'Mais le père dit à ses serviteurs : Apportez vite la plus belle robe et revêtez-l’en ; mettez un anneau à son doigt et des sandales à ses pieds.',
+        'Amenez le veau gras, tuez-le ; mangeons et réjouissons-nous,',
+        'car mon fils que voici était mort, et il est revenu à la vie ; il était perdu, et il est retrouvé. Et ils commencèrent à se réjouir.',
+        'Or le fils aîné était aux champs. À son retour, près de la maison, il entendit la musique et les danses.',
+        'Il appela un des serviteurs et lui demanda ce que c’était.',
+        'Celui-ci lui dit : Ton frère est revenu, et ton père a tué le veau gras, parce qu’il l’a retrouvé en bonne santé.',
+        'Il se mit en colère et ne voulait pas entrer. Son père sortit et le supplia.',
+        'Mais il répondit à son père : Voilà tant d’années que je te sers sans jamais avoir transgressé un de tes ordres, et jamais tu ne m’as donné un chevreau pour me réjouir avec mes amis.',
+        'Et quand ton fils que voici arrive, après avoir dévoré ton bien avec des prostituées, tu as tué pour lui le veau gras !',
+        'Le père lui dit : Mon enfant, tu es toujours avec moi, et tout ce qui est à moi est à toi.',
+        'Il fallait bien se réjouir et faire fête, car ton frère que voici était mort, et il est revenu à la vie ; il était perdu, et il est retrouvé.'
+      ],
+      csExtract: [
+        ['Lc 15:18', 'Воставъ пойду ко отцу моему, и реку ему: отче, согрѣшихъ на небо и предъ тобою, и ктому нѣсмь достоинъ нарещися сынъ твой: сотвори мя яко единаго отъ наемникъ твоихъ.'],
+        ['Lc 15:20', 'Еще же сущу ему далече, видѣ его отецъ его, и милосердова, и тече, и паде на выю его, и облобза его.'],
+        ['Lc 15:24', 'Яко сей сынъ мой мертвъ бѣ, и оживе: и погибъ бѣ, и обрѣтеся.']
+      ]
+    },
+    {
+      id: 'is53', ref: 'Is 53:1-12', title: 'Le Serviteur souffrant', group: 'Ancien Testament', tags: ['passion', 'prophétie', 'agneau', 'semaine sainte', 'vendredi saint'],
+      intro: 'La prophétie la plus claire de la Passion, lue pendant la Semaine sainte. Les Pères y reconnaissent le Christ conduit comme un agneau à l’abattoir, qui porte nos péchés. Texte selon la Septante, comme dans l’Église.',
+      fr: [
+        'Seigneur, qui a cru à ce que nous avons entendu ? Et le bras du Seigneur, à qui a-t-il été révélé ?',
+        'Nous avons annoncé devant lui : il est comme un enfant, comme une racine dans une terre desséchée ; il n’avait ni forme ni éclat ; nous l’avons vu, et il n’avait ni apparence ni beauté.',
+        'Mais son aspect était sans honneur, défait plus que celui de tous les fils des hommes ; homme sous les coups, qui sait supporter la souffrance, car son visage est détourné ; il a été méprisé et nous ne l’avons pas estimé.',
+        'Il porte nos péchés et souffre pour nous ; et nous, nous l’avons tenu pour un homme en peine, frappé et maltraité.',
+        'Mais lui a été blessé à cause de nos péchés et broyé à cause de nos iniquités ; le châtiment qui nous donne la paix est sur lui, et par ses meurtrissures nous avons été guéris.',
+        'Nous nous sommes tous égarés comme des brebis, chacun s’est égaré dans sa voie ; et le Seigneur l’a livré pour nos péchés.',
+        'Maltraité, il n’ouvre pas la bouche ; comme une brebis il a été mené à l’abattoir, comme un agneau muet devant celui qui le tond, ainsi il n’ouvre pas la bouche.',
+        'Dans son humiliation, son jugement a été enlevé. Sa génération, qui la racontera ? Car sa vie est enlevée de la terre ; à cause des iniquités de mon peuple il a été conduit à la mort.',
+        'Je donnerai les méchants pour sa sépulture et les riches pour sa mort, parce qu’il n’a pas commis d’iniquité, et qu’il n’y a pas eu de tromperie dans sa bouche.',
+        'Le Seigneur veut le purifier de sa plaie. Si vous offrez votre vie pour le péché, votre âme verra une longue postérité.',
+        'Le Seigneur veut retirer son âme de la peine, lui montrer la lumière, le former par l’intelligence, justifier le Juste qui sert bien la multitude, et il portera lui-même leurs péchés.',
+        'C’est pourquoi il aura la multitude en héritage et il partagera les dépouilles des forts, parce que son âme a été livrée à la mort et qu’il a été compté parmi les iniques ; lui-même a porté les péchés de beaucoup, et à cause de leurs péchés il a été livré.'
+      ],
+      csExtract: [
+        ['Is 53:5', 'Той язвенъ бысть за грѣхи наша, и мученъ бысть за беззаконія наша: наказаніе мира нашего на Немъ, язвою Его мы изцѣлѣхомъ.'],
+        ['Is 53:7', 'Яко овча на заколеніе веденъ бысть, и яко агнецъ прямо стригущаго его безгласенъ, такъ не отверзаетъ устъ своихъ.']
+      ]
+    }
   ];
 })();

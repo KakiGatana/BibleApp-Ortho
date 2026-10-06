@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Blagovest — Bible, calendrier et slavon orthodoxes</title>
 <meta name="description" content="Blagovest : une application orthodoxe pour lire l’Écriture, suivre le calendrier liturgique, méditer un verset par jour et apprendre le slavon d’Église.">
-<meta name="theme-color" content="#0d0f1f">
+<meta name="theme-color" content="#254287">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="icon.svg">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 <script>
   // Applique le thème avant le premier rendu (évite le flash)
   try { var s = JSON.parse(localStorage.getItem('blagovest:v1') || '{}').settings || {};
@@ -68,6 +68,7 @@
     <header class="topbar" id="topbar">
       <a class="brand brand-sm" href="#/today"><svg class="brand-mark" aria-hidden="true"><use href="#i-logo"/></svg><span class="brand-text"><b>Blagovest</b></span></a>
       <div class="top-actions">
+        <a class="icon-btn" href="#/search" aria-label="Rechercher" title="Rechercher"><svg class="ic"><use href="#i-search"/></svg></a>
         <button class="icon-btn" data-act="cycle-lang" aria-label="Changer la langue d’affichage" title="Langue d’affichage"><span id="langBadge">FR·СЛ</span></button>
         <button class="icon-btn" data-act="toggle-theme" aria-label="Changer de thème" title="Thème"><svg class="ic"><use href="#i-moon"/></svg></button>
       </div>
@@ -88,23 +89,27 @@
 
 <noscript><p style="padding:2rem;font-family:serif">Blagovest a besoin de JavaScript pour fonctionner.</p></noscript>
 
-<script src="calendar.js"></script>
-<script src="feasts.js"></script>
-<script src="saints.js"></script>
-<script src="verses1.js"></script>
-<script src="verses2.js"></script>
-<script src="verses3.js"></script>
-<script src="verses4.js"></script>
-<script src="prayers.js"></script>
-<script src="readings.js"></script>
-<script src="slavonic.js"></script>
-<script src="theology.js"></script>
-<script src="canon.js"></script>
-<script src="core.js"></script>
-<script src="views-day.js"></script>
-<script src="views-bible.js"></script>
-<script src="views-slavonic.js"></script>
-<script src="views-more.js"></script>
-<script src="boot.js"></script>
+<script src="js/calendar.js"></script>
+<script src="js/data/feasts.js"></script>
+<script src="js/data/saints.js"></script>
+<script src="js/data/verses1.js"></script>
+<script src="js/data/verses2.js"></script>
+<script src="js/data/verses3.js"></script>
+<script src="js/data/verses4.js"></script>
+<script src="js/data/verses-cs.js"></script>
+<script src="js/data/prayers.js"></script>
+<script src="js/data/readings.js"></script>
+<script src="js/data/slavonic.js"></script>
+<script src="js/data/theology.js"></script>
+<script src="js/data/canon.js"></script>
+<script src="js/core.js"></script>
+<script src="js/push-config.js"></script>
+<script src="js/notifications.js"></script>
+<script src="js/views-day.js"></script>
+<script src="js/views-bible.js"></script>
+<script src="js/views-slavonic.js"></script>
+<script src="js/views-more.js"></script>
+<script src="js/views-extra.js"></script>
+<script src="js/boot.js"></script>
 </body>
 </html>

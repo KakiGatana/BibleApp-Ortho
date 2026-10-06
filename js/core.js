@@ -36,7 +36,7 @@
     const lb = $('#langBadge');
     if (lb) lb.textContent = { both: 'FR · СЛ', fr: 'FR', cs: 'СЛ' }[S.settings.lang];
     const meta = $('meta[name="theme-color"]');
-    if (meta) meta.setAttribute('content', effectiveTheme() === 'dark' ? '#0d0f1f' : '#f2e9d4');
+    if (meta) meta.setAttribute('content', effectiveTheme() === 'dark' ? '#254287' : '#f2e9d4');
   }
   function effectiveTheme() {
     if (S.settings.theme !== 'auto') return S.settings.theme;
@@ -127,6 +127,7 @@
     ['prayers', 'Prières', 'pray', '#/prayers'],
     ['slavonic', 'Slavon', 'slav', '#/slavonic'],
     ['theology', 'Théologie', 'theo', '#/theology'],
+    ['search', 'Recherche', 'search', '#/search'],
     ['feasts', 'Fêtes', 'feast', '#/feasts'],
     ['saints', 'Saints', 'saint', '#/saints'],
     ['favorites', 'Favoris', 'heart', '#/favorites'],

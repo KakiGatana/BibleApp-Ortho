@@ -1,0 +1,17 @@
+name = "blagovest-push"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+[triggers]
+crons = ["*/15 * * * *"]
+
+[vars]
+# Adresse de ton site (sans chemin), pour restreindre le CORS. Ex. "https://moncompte.github.io"
+ALLOWED_ORIGIN = "https://kakigatana.github.io"
+# Contact exigé par le protocole VAPID
+VAPID_SUBJECT = "mailto:contact@example.com"
+
+# Après `npx wrangler kv namespace create SUBS`, colle ici l'id obtenu :
+[[kv_namespaces]]
+binding = "SUBS"
+id = "57425c30950a484dab186198087c6fac"

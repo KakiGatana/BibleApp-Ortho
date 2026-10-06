@@ -49,7 +49,7 @@
         ${U.tools({ id: 'passage:' + r.id, text: allFr + (allCs ? '\n\n' + r.cs.join('\n') : ''), cs: allCs, noteKey: 'passage:' + r.id, noteLabel: r.ref })}
       </div>
       <article class="card reader">
-        ${r.cs && r.cs.length ? U.pairs(r.fr, r.cs, +startV || 1) : `<div class="pairs">${r.fr.map((l, i) => `<div class="pair solo"><span class="vn">${i + 1}</span><p class="fr">${esc(l)}</p></div>`).join('')}</div>`}
+        ${r.cs && r.cs.length ? U.pairs(r.fr, r.cs, +startV || 1) : `<div class="pairs">${r.fr.map((l, i) => `<div class="pair solo"><span class="vn">${(+startV || 1) + i}</span><p class="fr">${esc(l)}</p></div>`).join('')}</div>`}
       </article>
       ${r.csExtract ? `<article class="card"><div class="card-k">Extraits en slavon</div>${r.csExtract.map(([ref, t]) => `<div class="extract"><span class="ref">${esc(ref)}</span><p class="cs rubric" data-act="speak" data-text="${esc(t)}">${esc(t)}</p></div>`).join('')}<p class="muted xs">Le passage complet en slavon est à lire dans une Bible slavonne imprimée.</p></article>` : ''}
       ${link ? `<p class="center"><a class="btn ghost small" href="${link}" target="_blank" rel="noopener">Lire le chapitre complet (AELF) ${ic('ext', 'ic xs')}</a></p>` : ''}
@@ -105,6 +105,7 @@
     O.PRAYERS.forEach((p) => (cats[p.cat] = cats[p.cat] || []).push(p));
     const html = `<section class="page">
       ${U.pageHead('Livre de prières', 'Prières', 'Les prières fondamentales de l’Église, en français et en slavon, avec lecture mot à mot pour apprendre le sens de chaque terme.')}
+      ${U.sectionTitle('Règle de prière')}${O.ruleTiles ? O.ruleTiles() : ''}
       ${Object.keys(cats).map((c) => `<div class="pgroup"><h3 class="group-h">${c}</h3><div class="cards">${cats[c].map((p) => `<a class="card p-card" href="#/prayer/${p.id}"><div class="pc-top"><span class="pc-ref cs">${esc(p.titleCs)}</span>${p.inter ? '<span class="badge">mot à mot</span>' : ''}</div><h3>${esc(p.title)}</h3><p class="muted small clamp">${esc(p.when)}</p></a>`).join('')}</div></div>`).join('')}
     </section>`;
     return { html, title: 'Prières', nav: 'prayers' };

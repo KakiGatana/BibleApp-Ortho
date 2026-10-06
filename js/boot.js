@@ -9,7 +9,7 @@
   if (window.matchMedia) matchMedia('(prefers-color-scheme: dark)').addEventListener('change', K.applySettings);
   K.render();
   if ('serviceWorker' in navigator && /^https?:/.test(location.protocol)) {
-    navigator.serviceWorker.register('sw.js').catch(() => {});
+    navigator.serviceWorker.register('sw.js').then(() => { if (O.push) O.push.sync(); }).catch(() => {});
   }
   if (window.speechSynthesis) speechSynthesis.getVoices();
 })();

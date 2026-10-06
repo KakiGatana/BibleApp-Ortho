@@ -82,9 +82,10 @@
         <div class="set-row"><div><b>Taille du texte</b><span class="muted small" id="fsv">${Math.round(st.fs * 100)} %</span></div><input type="range" id="fs" min="0.85" max="1.4" step="0.05" value="${st.fs}" aria-label="Taille du texte"></div>
         <div class="set-row"><div><b>Prononciation</b><span class="muted small">Afficher la prononciation dans la lecture mot à mot.</span></div><button class="switch ${st.translit ? 'on' : ''}" data-act="toggle-translit" role="switch" aria-checked="${st.translit}"><i></i></button></div>
       </article>
+      ${O.push ? O.push.card() : ''}
       <article class="card set">
         <div class="card-k">Mes données</div>
-        <p class="muted small">Tout est enregistré dans ton navigateur : favoris, notes, progression, cartes. Rien n’est envoyé nulle part.</p>
+        <p class="muted small">Tout est enregistré dans ton navigateur : favoris, notes, progression, cartes. Rien n’est envoyé nulle part, sauf si tu actives les notifications (voir ci-dessus).</p>
         <div class="row"><button class="btn small" data-act="export">Exporter (JSON)</button><label class="btn small ghost">Importer<input type="file" id="imp" accept="application/json" hidden></label><button class="btn small ghost danger" data-act="reset">Tout effacer</button></div>
         ${deferredInstall ? `<div class="row"><button class="btn" data-act="install">Installer l’application</button></div>` : '<p class="muted xs">Astuce : dans le menu de ton navigateur, « Ajouter à l’écran d’accueil » installe Blagovest comme une appli, qui fonctionne hors ligne.</p>'}
       </article>
