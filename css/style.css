@@ -365,3 +365,18 @@ input[type="range"] { accent-color: var(--gold2); width: min(220px, 100%); }
 .rule-track i { display: block; height: 100%; background: var(--gold); border-radius: 99px; transition: width .3s; }
 .rule-item { margin: 1rem 0; } .rule-item.done { opacity: .72; }
 .sel { padding: .45rem .6rem; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: inherit; font: inherit; }
+
+/* Assistant */
+.ask-warn { border-left: 3px solid var(--gold2); padding-left: .8rem; margin: .5rem 0 1rem; }
+.ask-log { display: grid; gap: .7rem; margin: 1rem 0; }
+.ask-msg { max-width: 92%; padding: .7rem 1rem; border-radius: 16px; line-height: 1.5; }
+.ask-msg p { margin: 0 0 .6rem; } .ask-msg p:last-child { margin: 0; }
+.ask-msg.me { justify-self: end; background: var(--gold-soft); border-bottom-right-radius: 4px; }
+.ask-msg.bot { justify-self: start; background: var(--surface); border: 1px solid var(--line); border-bottom-left-radius: 4px; }
+.ask-msg.err { border-color: var(--cinnabar); }
+.ask-link { color: var(--gold); text-decoration: underline; margin-right: .5rem; }
+.ask-sug { display: flex; flex-wrap: wrap; gap: .5rem; margin: .5rem 0 1rem; }
+.ask-form { display: flex; gap: .6rem; align-items: flex-end; position: sticky; bottom: calc(76px + env(safe-area-inset-bottom)); background: var(--bg); padding: .6rem 0; }
+.ask-form textarea { flex: 1; resize: none; padding: .7rem .9rem; border-radius: 14px; border: 1px solid var(--line); background: var(--surface); color: inherit; font: inherit; }
+.ask-form textarea:focus { outline: 0; border-color: var(--gold); box-shadow: 0 0 0 3px var(--gold-soft); }
+@media (min-width: 720px) { .ask-form { bottom: 0; } }

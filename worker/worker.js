@@ -4,6 +4,8 @@
    - cron (toutes les 15 min) : envoie un push VIDE (pas de chiffrement nécessaire) ;
      c'est le service worker de l'appli qui compose le texte. */
 
+import { handleAsk } from './ask.js';
+
 const enc = new TextEncoder();
 const b64u = (buf) => btoa(String.fromCharCode(...new Uint8Array(buf))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 const b64uJson = (o) => b64u(enc.encode(JSON.stringify(o)));
@@ -55,6 +57,8 @@ async function handle(req, env) {
   const path = new URL(req.url).pathname;
   let b;
   try { b = JSON.parse(await req.text()); } catch (e) { return reply(env, 400); }
+
+  if (path === '/ask') return handleAsk(req, env, b, cors(env));
 
   if (path === '/unsubscribe') {
     if (typeof b.endpoint !== 'string') return reply(env, 400);

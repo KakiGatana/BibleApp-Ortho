@@ -1,0 +1,8 @@
+{
+  "name": "blagovest-push",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest"
+  }
+}

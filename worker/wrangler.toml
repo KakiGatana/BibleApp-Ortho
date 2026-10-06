@@ -1,11 +1,16 @@
 name = "blagovest-push"
 main = "worker.js"
 compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
 
 [triggers]
 crons = ["*/15 * * * *"]
 
 [vars]
+# Assistant théologique : modèle, questions par personne et par jour, plafond global par mois
+MODEL = "claude-opus-5-5"
+DAILY_PER_IP = "15"
+MONTHLY_CAP = "250"
 # Adresse de ton site (sans chemin), pour restreindre le CORS. Ex. "https://moncompte.github.io"
 ALLOWED_ORIGIN = "https://kakigatana.github.io"
 # Contact exigé par le protocole VAPID

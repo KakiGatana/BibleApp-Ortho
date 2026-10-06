@@ -127,6 +127,7 @@
     ['prayers', 'Prières', 'pray', '#/prayers'],
     ['slavonic', 'Slavon', 'slav', '#/slavonic'],
     ['theology', 'Théologie', 'theo', '#/theology'],
+    ['ask', 'Demander', 'quiz', '#/ask'],
     ['search', 'Recherche', 'search', '#/search'],
     ['feasts', 'Fêtes', 'feast', '#/feasts'],
     ['saints', 'Saints', 'saint', '#/saints'],
