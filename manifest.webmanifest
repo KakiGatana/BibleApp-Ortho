@@ -1,0 +1,17 @@
+{
+  "name": "Blagovest — Bible, calendrier et slavon orthodoxes",
+  "short_name": "Blagovest",
+  "description": "Lire l’Écriture, suivre le calendrier liturgique, méditer un verset par jour et apprendre le slavon d’Église.",
+  "lang": "fr",
+  "start_url": "./#/today",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0d0f1f",
+  "theme_color": "#0d0f1f",
+  "categories": ["lifestyle", "education", "books"],
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
