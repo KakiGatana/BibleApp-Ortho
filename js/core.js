@@ -127,27 +127,41 @@
     ['prayers', 'Prières', 'pray', '#/prayers'],
     ['slavonic', 'Slavon', 'slav', '#/slavonic'],
     ['theology', 'Théologie', 'theo', '#/theology'],
-    ['ask', 'Demander', 'quiz', '#/ask'],
+    ['ask', 'Assistant IA', 'chat', '#/ask'],
     ['search', 'Recherche', 'search', '#/search'],
     ['feasts', 'Fêtes', 'feast', '#/feasts'],
     ['saints', 'Saints', 'saint', '#/saints'],
     ['favorites', 'Favoris', 'heart', '#/favorites'],
     ['settings', 'Réglages', 'gear', '#/settings']
   ];
-  const TABS = ['today', 'calendar', 'bible', 'slavonic'];
+  const TABS = ['today', 'calendar', 'ask', 'bible'];
+  const TAB_LABEL = { today: 'Accueil', calendar: 'Calendrier', ask: 'Assistant IA', bible: 'Écritures' };
+  const TAB_ICON = { today: 'home', calendar: 'cal', ask: 'chat', bible: 'book' };
   function buildNav() {
     $('#sideNav').innerHTML = NAV.map(([id, l, i, h]) => `<a href="${h}" data-nav="${id}">${ic(i)}<span>${l}</span></a>`).join('');
-    const short = { today: 'Jour', calendar: 'Calendrier', bible: 'Écritures', slavonic: 'Slavon' };
-    $('#tabbar').innerHTML = TABS.map((id) => { const n = NAV.find((x) => x[0] === id); return `<a href="${n[3]}" data-nav="${id}">${ic(n[2])}<span>${short[id] || n[1]}</span></a>`; }).join('') +
-      `<button data-act="more" data-nav="more">${ic('more')}<span>Plus</span></button>`;
+    const tab = (id) => {
+      const n = NAV.find((x) => x[0] === id);
+      return `<a href="${n[3]}" data-nav="${id}" class="${id === 'ask' ? 'tab-main' : ''}"><span class="tab-ic">${ic(TAB_ICON[id])}</span><span class="tab-l">${TAB_LABEL[id]}</span></a>`;
+    };
+    $('#tabbar').innerHTML = TABS.map(tab).join('') +
+      `<button data-act="more" data-nav="more" aria-label="Ouvrir le menu"><span class="tab-ic">${ic('menu')}</span><span class="tab-l">Menu</span></button>`;
   }
   function updateNav(id) {
     $$('[data-nav]').forEach((a) => a.classList.toggle('active', a.dataset.nav === id || (a.dataset.nav === 'more' && id && !TABS.includes(id))));
+    document.body.classList.toggle('not-home', !!id && id !== 'today');
   }
+  const MORE = [
+    ['Lire et prier', [['prayers', 'Prières', 'pray', 'Règle du matin et du soir, prières mot à mot'], ['slavonic', 'Slavon', 'slav', 'Alphabet, leçons, cartes, quiz'], ['theology', 'Théologie', 'theo', 'Les grands thèmes de la foi, les conciles']]],
+    ['Le temps de l’Église', [['feasts', 'Fêtes', 'feast', 'Sens des fêtes et tropaires'], ['saints', 'Saints', 'saint', 'Les saints de chaque jour']]],
+    ['Mon espace', [['search', 'Recherche', 'search', 'Chercher dans toute l’application'], ['favorites', 'Favoris et notes', 'heart', 'Ce que j’ai gardé'], ['settings', 'Réglages', 'gear', 'Notifications, thème, taille du texte']]]
+  ];
   function moreSheet() {
-    const items = NAV.filter((n) => !TABS.includes(n[0]));
-    openSheet(`<h2 class="sheet-title">Plus</h2><div class="more-grid">${items.map(([id, l, i, h]) => `<a href="${h}" data-act="sheet-close" class="more-item">${ic(i)}<span>${l}</span></a>`).join('')}
-      <a href="#/about" data-act="sheet-close" class="more-item">${ic('logo')}<span>À propos</span></a></div>`);
+    const href = (id) => NAV.find((n) => n[0] === id)[3];
+    const row = ([id, l, i, d]) => `<a href="${href(id)}" data-act="sheet-close" class="more-row"><span class="more-ic">${ic(i)}</span><span class="more-t"><b>${l}</b><small>${d}</small></span>${ic('right', 'ic more-go')}</a>`;
+    openSheet(`<h2 class="sheet-title">Menu</h2>
+      <a href="#/today" data-act="sheet-close" class="more-row more-home"><span class="more-ic">${ic('home')}</span><span class="more-t"><b>Retour à l’accueil</b><small>Le jour, le verset et les saints du jour</small></span>${ic('right', 'ic more-go')}</a>
+      ${MORE.map(([title, items]) => `<h3 class="more-h">${title}</h3><div class="more-list">${items.map(row).join('')}</div>`).join('')}
+      <div class="more-list"><a href="#/about" data-act="sheet-close" class="more-row"><span class="more-ic">${ic('logo')}</span><span class="more-t"><b>À propos de Blagovest</b><small>Sources, limites, avertissements</small></span>${ic('right', 'ic more-go')}</a></div>`);
   }
 
   /* ---------- favoris & notes ---------- */
@@ -172,7 +186,7 @@
     pageHead(kicker, title, sub, extra) {
       return `<header class="page-head">${kicker ? `<div class="kicker">${kicker}</div>` : ''}<h1>${title}</h1>${sub ? `<p class="sub">${sub}</p>` : ''}${extra || ''}</header>`;
     },
-    back(href, label) { return `<a class="back" href="${href}">${ic('left')}<span>${esc(label)}</span></a>`; },
+    back(href, label) { return `<a class="back" href="${href}">${ic('left')}<span>Retour : ${esc(label)}</span></a>`; },
     sectionTitle(t, right) { return `<div class="sec-title"><h2>${t}</h2>${right || ''}</div>`; },
     seg(opts, cur, act, extra) {
       return `<div class="seg" role="tablist">${opts.map(([v, l]) => `<button role="tab" aria-selected="${v === cur}" class="${v === cur ? 'on' : ''}" data-act="${act}" data-v="${esc(v)}" ${extra || ''}>${l}</button>`).join('')}</div>`;

@@ -1,5 +1,5 @@
 /* Service worker : fonctionnement hors ligne (réseau d'abord, cache en secours) + notifications */
-const VERSION = 'blagovest-v4';
+const VERSION = 'blagovest-v5';
 const DATA_CACHE = 'blagovest-data'; // écrit par js/notifications.js, à ne jamais purger
 const CORE = [
   './', 'index.html', 'manifest.webmanifest', 'css/style.css',

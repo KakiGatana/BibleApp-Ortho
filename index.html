@@ -26,6 +26,9 @@
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="i-logo" viewBox="0 0 48 48"><path d="M24 2c9 7 14 15 14 24 0 9-6 17-14 20C16 43 10 35 10 26 10 17 15 9 24 2z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M24 11v28M19 16h10M15 22h18M20 33l8-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3.5 11.2L12 4l8.5 7.2M5.5 9.8V20h13V9.8M10 20v-5.5h4V20"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-4.5 3.5V17H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="M12 8.2l.9 1.9 1.9.9-1.9.9-.9 1.9-.9-1.9-1.9-.9 1.9-.9z"/></symbol>
     <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></symbol>
     <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/></symbol>
     <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H11v16H5.5C4.7 20 4 19.3 4 18.5v-13zM20 5.5c0-.8-.7-1.5-1.5-1.5H13v16h5.5c.8 0 1.5-.7 1.5-1.5v-13z"/><path d="M7 8h2.5M15 8h2.5M7 11h2.5M15 11h2.5"/></symbol>
@@ -66,11 +69,12 @@
 
   <main class="main">
     <header class="topbar" id="topbar">
+      <a class="home-link" href="#/today" aria-label="Retour à l’accueil"><svg class="ic"><use href="#i-left"/></svg><span>Accueil</span></a>
       <a class="brand brand-sm" href="#/today"><svg class="brand-mark" aria-hidden="true"><use href="#i-logo"/></svg><span class="brand-text"><b>Blagovest</b></span></a>
       <div class="top-actions">
-        <a class="icon-btn" href="#/search" aria-label="Rechercher" title="Rechercher"><svg class="ic"><use href="#i-search"/></svg></a>
-        <button class="icon-btn" data-act="cycle-lang" aria-label="Changer la langue d’affichage" title="Langue d’affichage"><span id="langBadge">FR·СЛ</span></button>
-        <button class="icon-btn" data-act="toggle-theme" aria-label="Changer de thème" title="Thème"><svg class="ic"><use href="#i-moon"/></svg></button>
+        <a class="icon-btn lab" href="#/search" aria-label="Rechercher"><svg class="ic"><use href="#i-search"/></svg><small>Chercher</small></a>
+        <button class="icon-btn lab" data-act="cycle-lang" aria-label="Changer la langue d’affichage"><span id="langBadge">FR·СЛ</span><small>Langue</small></button>
+        <button class="icon-btn lab" data-act="toggle-theme" aria-label="Changer de thème"><svg class="ic"><use href="#i-moon"/></svg><small>Thème</small></button>
       </div>
     </header>
     <div id="view" class="view" tabindex="-1" aria-live="polite"></div>
