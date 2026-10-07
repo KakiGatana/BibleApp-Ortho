@@ -81,6 +81,8 @@
         <div class="set-row"><div><b>Langue d’affichage</b><span class="muted small">Dans les textes parallèles.</span></div>${U.seg([['fr', 'Français'], ['both', 'FR + СЛ'], ['cs', 'Слав.']], st.lang, 'set-lang')}</div>
         <div class="set-row"><div><b>Taille du texte</b><span class="muted small" id="fsv">${Math.round(st.fs * 100)} %</span></div><input type="range" id="fs" min="0.85" max="1.4" step="0.05" value="${st.fs}" aria-label="Taille du texte"></div>
         <div class="set-row"><div><b>Mode lecture</b><span class="muted small">Texte plus grand et plus aéré pour lire les passages et les prières.</span></div><button class="switch ${st.reading ? 'on' : ''}" data-act="toggle-reading" role="switch" aria-checked="${!!st.reading}"><i></i></button></div>
+        <div class="set-row"><div><b>Police très lisible</b><span class="muted small">Lettres plus ouvertes et plus espacées (Atkinson Hyperlegible), conçues pour la lisibilité. Utile en cas de dyslexie ou de vue fatiguée.</span></div><button class="switch ${st.font ? 'on' : ''}" data-act="toggle-font" role="switch" aria-checked="${!!st.font}"></button></div>
+        <div class="set-row"><div><b>Contraste renforcé</b><span class="muted small">Textes plus foncés ou plus clairs, bordures plus nettes.</span></div><button class="switch ${st.contrast ? 'on' : ''}" data-act="toggle-contrast" role="switch" aria-checked="${!!st.contrast}"></button></div>
         <div class="set-row"><div><b>Prononciation</b><span class="muted small">Afficher la prononciation dans la lecture mot à mot.</span></div><button class="switch ${st.translit ? 'on' : ''}" data-act="toggle-translit" role="switch" aria-checked="${st.translit}"><i></i></button></div>
       </article>
       ${O.i18n ? O.i18n.card() : ''}

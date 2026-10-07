@@ -149,6 +149,8 @@
         ${info.life ? `<div class="life"><span class="med-k">Un peu d’histoire</span><p>${info.life}</p></div>` : ''}
       </article>
 
+      ${O.peresCard ? O.peresCard(date) : ''}
+
       <div class="grid3">
         <article class="card mini-card">
           <div class="card-k">Lecture du jour</div>

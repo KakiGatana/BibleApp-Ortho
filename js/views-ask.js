@@ -62,6 +62,7 @@
       form.addEventListener('submit', (e) => { e.preventDefault(); send(inp.value); });
       inp.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(inp.value); } });
       const log = root.querySelector('#askLog'); if (log.lastElementChild) log.lastElementChild.scrollIntoView({ block: 'end' });
+      if (S.askAuto) { const q = S.askAuto; delete S.askAuto; K.save(); if (configured) send(q); }
     };
     return { html, title: 'Poser une question', nav: 'ask', after };
   }

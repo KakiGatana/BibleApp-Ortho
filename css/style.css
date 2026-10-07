@@ -875,3 +875,32 @@ html[data-reading="1"] .main { max-width: 760px; }
 
 /* balayage horizontal */
 [data-swipe], .page:has(.subtabs) { touch-action: pan-y; }
+
+/* accessibilité : police très lisible et contraste renforcé */
+:root[data-font="legible"] { --f-disp: 'Atkinson Hyperlegible', system-ui, -apple-system, 'Segoe UI', sans-serif; --f-body: 'Atkinson Hyperlegible', system-ui, -apple-system, 'Segoe UI', sans-serif; --f-label: 'Atkinson Hyperlegible', system-ui, sans-serif; }
+:root[data-font="legible"] body { line-height: 1.7; letter-spacing: .012em; word-spacing: .05em; }
+:root[data-font="legible"] .cs, :root[data-font="legible"] .hero-cs { font-family: var(--f-cs); letter-spacing: 0; }
+:root[data-contrast="1"] { --ink: #0b1226; --ink2: #1b2745; --ink3: #38446a; --gold: #6e4a00; --gold2: #8a5d00; --line: rgba(11, 18, 38, .45); --gold-soft: rgba(110, 74, 0, .28); }
+@media (prefers-color-scheme: dark) { :root[data-contrast="1"]:not([data-theme="light"]) { --ink: #ffffff; --ink2: #f6f1df; --ink3: #e3ddc8; --gold: #ffd978; --gold2: #ffe49a; --line: rgba(255, 233, 170, .55); --gold-soft: rgba(255, 217, 120, .3); } }
+:root[data-contrast="1"][data-theme="dark"] { --ink: #ffffff; --ink2: #f6f1df; --ink3: #e3ddc8; --gold: #ffd978; --gold2: #ffe49a; --line: rgba(255, 233, 170, .55); --gold-soft: rgba(255, 217, 120, .3); }
+:root[data-contrast="1"] .muted { opacity: 1; color: var(--ink2); }
+:root[data-contrast="1"] .card, :root[data-contrast="1"] .btn.ghost { border-width: 1.5px; }
+
+/* parole d'un Père */
+.pere { margin: 0; padding: .1rem 0 .1rem 1rem; border-left: 3px solid var(--gold2); }
+.pere p { margin: 0 0 .5rem; font-family: var(--f-disp); font-style: italic; font-size: 1.3rem; line-height: 1.4; }
+.pere footer { font-size: .95rem; }
+.pere-card .row { margin-top: .6rem; }
+
+/* psautier */
+.psal-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .6rem; }
+.psal-k { display: grid; gap: .15rem; margin: 0 !important; padding: .8rem 1rem; position: relative; }
+.psal-k.cur { box-shadow: 0 0 0 2px var(--gold2); }
+.psal-k.ok { opacity: .72; }
+.psal-ok { position: absolute; right: .8rem; top: .6rem; font-style: normal; color: var(--gold); font-weight: 700; }
+
+/* pour les enfants */
+.kid-saints { list-style: none; margin: .4rem 0; padding: 0; display: grid; gap: .7rem; }
+.kid-saints li { display: flex; align-items: center; justify-content: space-between; gap: .8rem; flex-wrap: wrap; }
+.kid-steps { margin: .4rem 0 0; padding-left: 1.3rem; display: grid; gap: .45rem; font-size: 1.12rem; }
+.kid-prayers { display: flex; flex-wrap: wrap; gap: .5rem; }

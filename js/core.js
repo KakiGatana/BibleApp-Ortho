@@ -33,6 +33,8 @@
     if (S.settings.theme === 'auto') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', S.settings.theme);
     r.setAttribute('data-lang', S.settings.lang);
     r.setAttribute('data-reading', S.settings.reading ? '1' : '0');
+    r.setAttribute('data-font', S.settings.font ? 'legible' : 'normal');
+    r.setAttribute('data-contrast', S.settings.contrast ? '1' : '0');
     r.style.setProperty('--fs', S.settings.fs);
     const lb = $('#langBadge');
     if (lb) { const uc = (S.settings.ui || 'fr').toUpperCase(); lb.textContent = { both: uc + ' · СЛ', fr: uc, cs: 'СЛ' }[S.settings.lang]; }
@@ -129,6 +131,8 @@
     ['slavonic', 'Slavon', 'slav', '#/slavonic'],
     ['theology', 'Théologie', 'theo', '#/theology'],
     ['apolo', 'Objections et réponses', 'theo', '#/apolo'],
+    ['psalter', 'Psautier', 'book', '#/psalter'],
+    ['kids', 'Pour les enfants', 'saint', '#/kids'],
     ['jesus', 'Prière de Jésus', 'beads', '#/jesus'],
     ['quiz', 'Quiz', 'quiz', '#/slavonic/quiz'],
     ['ask', 'Assistant IA', 'chat', '#/ask'],
@@ -157,8 +161,8 @@
     document.body.setAttribute('data-sec', id || '');
   }
   const MORE = [
-    ['Lire et prier', [['bible', 'Écritures', 'book', 'Psaumes, Évangiles, canon, plan de lecture'], ['prayers', 'Prières', 'pray', 'Prière du matin et du soir, prières mot à mot'], ['slavonic', 'Slavon', 'slav', 'Alphabet, leçons, cartes, quiz'], ['theology', 'Théologie', 'theo', 'Les grands thèmes de la foi, les conciles'], ['apolo', 'Objections et réponses', 'chat', 'Arguments contre la foi et l’Orthodoxie, et comment y répondre'], ['quiz', 'Quiz', 'quiz', 'Défi du jour, culture orthodoxe, slavon']]],
-    ['Le temps de l’Église', [['feasts', 'Fêtes', 'feast', 'Sens des fêtes et tropaires'], ['saints', 'Saints', 'saint', 'Les saints de chaque jour']]],
+    ['Lire et prier', [['bible', 'Écritures', 'book', 'Psaumes, Évangiles, canon, plan de lecture'], ['prayers', 'Prières', 'pray', 'Prière du matin et du soir, prières mot à mot'], ['psalter', 'Psautier', 'book', 'Les 150 psaumes en 20 kathismes, avec marque-page'], ['slavonic', 'Slavon', 'slav', 'Alphabet, leçons, cartes, quiz'], ['theology', 'Théologie', 'theo', 'Les grands thèmes de la foi, les conciles'], ['apolo', 'Objections et réponses', 'chat', 'Arguments contre la foi et l’Orthodoxie, et comment y répondre'], ['quiz', 'Quiz', 'quiz', 'Défi du jour, culture orthodoxe, slavon']]],
+    ['Le temps de l’Église', [['feasts', 'Fêtes', 'feast', 'Sens des fêtes et tropaires'], ['saints', 'Saints', 'saint', 'Les saints de chaque jour'], ['kids', 'Pour les enfants', 'saint', 'Le saint du jour raconté simplement, premières prières']]],
     ['Mon espace', [['search', 'Recherche', 'search', 'Chercher dans toute l’application'], ['favorites', 'Favoris et notes', 'heart', 'Ce que j’ai gardé'], ['settings', 'Réglages', 'gear', 'Notifications, sauvegarde, thème, mode lecture'], ['install', 'Installer et partager', 'share', 'Ajouter à l’écran d’accueil, l’envoyer à un proche']]]
   ];
   function moreSheet() {
@@ -275,6 +279,8 @@
     'set-style': (el) => { S.settings.style = el.dataset.v; save(); render(); },
     'set-lang': (el) => { S.settings.lang = el.dataset.v; save(); applySettings(); render(); },
     'toggle-reading': () => { S.settings.reading = !S.settings.reading; save(); applySettings(); render(); },
+    'toggle-font': () => { S.settings.font = !S.settings.font; save(); applySettings(); render(); },
+    'toggle-contrast': () => { S.settings.contrast = !S.settings.contrast; save(); applySettings(); render(); },
     'toggle-translit': () => { S.settings.translit = !S.settings.translit; save(); render(); }
   };
   document.addEventListener('click', (e) => {
