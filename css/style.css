@@ -675,3 +675,6 @@ html[data-reading="1"] .main { max-width: 760px; }
 .tabbar a.active:not(.tab-main)::before, .tabbar button.active:not(.tab-main)::before { display: none; }
 .tabbar .tab-main .tab-l { font-weight: 800; }
 @media (max-width: 359px) { .tabbar a:not(.tab-main) .tab-ic, .tabbar button:not(.tab-main) .tab-ic { width: 2.6rem; } .tabbar a, .tabbar button { font-size: .68rem; } }
+
+/* choix de langue */
+.lang-chips { display: flex; flex-wrap: wrap; gap: .4rem; margin: .2rem 2.2rem 1rem 0; }

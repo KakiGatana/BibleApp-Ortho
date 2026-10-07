@@ -7,6 +7,7 @@
    - cron (toutes les 15 min) : envoie les notifications dues, avec un petit message chiffré
      {"k": "verse" | "saint" | …} ; le texte est composé par le service worker de l'appli. */
 import { handleAsk } from './ask.js';
+import { handleTranslate } from './translate.js';
 
 const enc = new TextEncoder();
 const b64u = (buf) => btoa(String.fromCharCode(...new Uint8Array(buf))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
@@ -134,6 +135,7 @@ async function handle(req, env) {
   if (!b || typeof b !== 'object') return reply(env, 400);
 
   if (path === '/ask') return handleAsk(req, env, b, cors(env));
+  if (path === '/translate') return handleTranslate(req, env, b, cors(env));
   if (path === '/backup/put' || path === '/backup/get') return handleBackup(req, env, path, b);
   if (path === '/unsubscribe') {
     if (typeof b.endpoint !== 'string') return reply(env, 400);

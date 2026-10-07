@@ -85,6 +85,7 @@
       while (hist.length && hist[0].role !== 'user') hist = hist.slice(1);
       const payload = { messages: hist };
       if (S.askCtx) payload.context = { title: S.askCtx.title, text: S.askCtx.text };
+      if (S.settings.ui && S.settings.ui !== 'fr') payload.lang = S.settings.ui;
       const r = await fetch(CFG.server.replace(/\/$/, '') + '/ask', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
       const j = await r.json().catch(() => ({}));
       if (r.ok && j.answer) answer = j.answer; else err = j.message || 'L’assistant n’a pas pu répondre. Réessaie dans un instant.';

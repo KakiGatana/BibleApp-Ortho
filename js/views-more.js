@@ -83,6 +83,7 @@
         <div class="set-row"><div><b>Mode lecture</b><span class="muted small">Texte plus grand et plus aéré pour lire les passages et les prières.</span></div><button class="switch ${st.reading ? 'on' : ''}" data-act="toggle-reading" role="switch" aria-checked="${!!st.reading}"><i></i></button></div>
         <div class="set-row"><div><b>Prononciation</b><span class="muted small">Afficher la prononciation dans la lecture mot à mot.</span></div><button class="switch ${st.translit ? 'on' : ''}" data-act="toggle-translit" role="switch" aria-checked="${st.translit}"><i></i></button></div>
       </article>
+      ${O.i18n ? O.i18n.card() : ''}
       ${O.push ? O.push.card() : ''}
       ${O.sync ? O.sync.card() : ''}
       ${O.iconsCard ? O.iconsCard() : ''}

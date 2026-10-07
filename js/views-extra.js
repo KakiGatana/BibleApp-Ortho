@@ -181,7 +181,7 @@
   /* ---------- bienvenue (première ouverture seulement) ---------- */
   O.welcome = () => {
     if (S.seen || (S.visits || []).length > 1) return;
-    K.openSheet(`<h2 class="sheet-title">Bienvenue dans Blagovest</h2>
+    K.openSheet(`${O.i18n ? O.i18n.chips() : ''}<h2 class="sheet-title">Bienvenue dans Blagovest</h2>
       <p class="muted">Благовѣстъ : la « bonne nouvelle », et le carillon qui appelle à la prière. Quelques repères pour commencer :</p>
       <ul class="welcome">
         <li>${ic('home')}<div><b>Accueil</b><span>La date liturgique, le verset du jour, les saints et le jeûne.</span></div></li>

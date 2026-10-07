@@ -71,6 +71,12 @@ ${clean(cx.text, 1800)}
 </contexte>`;
   }
 
+  // langue de réponse choisie dans l'appli (par défaut le français)
+  const LANGNAMES = { en: 'English', ru: 'Russian', sr: 'Serbian (Cyrillic)', es: 'Spanish', de: 'German', it: 'Italian', zh: 'Simplified Chinese', ja: 'Japanese' };
+  if (body.lang && LANGNAMES[body.lang]) system += `
+
+Language: the user's interface is in ${LANGNAMES[body.lang]}. Answer in ${LANGNAMES[body.lang]} (the instructions above are in French, but your answers must be in ${LANGNAMES[body.lang]}).`;
+
   const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY });
   const params = {
     model: env.MODEL || 'claude-opus-5-5',

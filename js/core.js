@@ -35,7 +35,7 @@
     r.setAttribute('data-reading', S.settings.reading ? '1' : '0');
     r.style.setProperty('--fs', S.settings.fs);
     const lb = $('#langBadge');
-    if (lb) lb.textContent = { both: 'FR · СЛ', fr: 'FR', cs: 'СЛ' }[S.settings.lang];
+    if (lb) { const uc = (S.settings.ui || 'fr').toUpperCase(); lb.textContent = { both: uc + ' · СЛ', fr: uc, cs: 'СЛ' }[S.settings.lang]; }
     const meta = $('meta[name="theme-color"]');
     if (meta) meta.setAttribute('content', effectiveTheme() === 'dark' ? '#254287' : '#edf1f9');
   }

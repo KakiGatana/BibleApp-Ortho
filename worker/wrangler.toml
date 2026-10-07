@@ -11,6 +11,10 @@ crons = ["*/15 * * * *"]
 MODEL = "claude-opus-5-5"
 DAILY_PER_IP = "15"
 MONTHLY_CAP = "250"
+# Traduction à la demande : modèle, textes nouveaux par personne et par jour, plafond mensuel global
+TRANSLATE_MODEL = "claude-sonnet-5-5"
+TR_PER_IP = "500"
+TR_MONTHLY_CAP = "4000"
 # Adresse de ton site (sans chemin), pour restreindre le CORS. Ex. "https://moncompte.github.io"
 ALLOWED_ORIGIN = "https://kakigatana.github.io"
 # Contact exigé par le protocole VAPID

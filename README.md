@@ -9,6 +9,7 @@ Application orthodoxe (PWA, hors ligne) : Écriture en français et slavon d'Ég
 - **Prières** avec lecture interlinéaire, prononciation et écoute ; **prière du matin et du soir** à cocher chaque jour.
 - **Recherche globale** (écritures, prières, fêtes, théologie, vocabulaire slavon, versets), insensible aux accents.
 - **Icônes** des saints et des fêtes (197 images libres de droits de Wikimedia Commons, avec crédits), recherche des saints, écran de bienvenue.
+- **Langues** : français, English, Русский, Српски, Español, Deutsch, Italiano, 中文, 日本語. Interface essentielle traduite hors ligne, le reste traduit à la demande par l'IA (mis en cache), assistant dans la langue choisie.
 - **Prière de Jésus** : chapelet avec compteur, vibration, objectif et série de jours.
 - **Slavon** : alphabet, leçons, vocabulaire, cartes à répétition espacée.
 - **Quiz** : 80 questions de culture orthodoxe (histoire, Bible, liturgie, foi, saints, culture), défi du jour, et quiz de slavon.
