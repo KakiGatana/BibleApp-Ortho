@@ -135,13 +135,13 @@
           ${S.notes[v.id] ? `<div class="note-preview">${ic('note', 'ic xs')} ${esc(S.notes[v.id])}</div>` : ''}
         </article>
 
-        <article class="card">
+        <article class="card card-teal">
           <div class="card-k">Jeûne du jour</div>
           ${U.fastPanel(info.fast)}
         </article>
       </div>
 
-      <article class="card">
+      <article class="card card-wine">
         <div class="card-k">${info.saints.length > 1 ? 'Saints et mémoires du jour' : 'Saint du jour'}</div>
         ${info.items.length ? `<ul class="saint-list">${info.items.sort((a, b) => b.rank - a.rank).map((i) => `<li class="rank-${i.rank}"><span class="dot"></span><div><b>${esc(i.name)}</b>${i.cs ? `<div class="cs small">${esc(i.cs)}</div>` : ''}${i.feastId ? ` <a class="mini" href="#/feast/${i.feastId}">en savoir plus</a>` : ''}</div></li>`).join('')}</ul>` : ''}
         <ul class="saint-list">${info.saints.map((s, ix) => `<li class="rank-${s.rank}"><span class="dot"></span><div><b>${esc(s.name)}</b></div>${O.iconThumb ? O.iconThumb('entry:' + info.nominal.md + ':' + ix, s.name) : ''}${U.favBtn('s:' + info.nominal.md + ':' + s.name)}</li>`).join('') || '<li class="muted">Mémoire des saints du jour.</li>'}</ul>
@@ -156,14 +156,14 @@
           <p class="read-line"><b>Psaume ${plan.ps}</b> <span class="muted small">(LXX)</span></p>
           <div class="row"><a class="btn small ghost" href="${psLink}" target="_blank" rel="noopener">Lire ${ic('ext', 'ic xs')}</a>${O.READINGS.find((r) => r.id === 'ps' + plan.ps) ? `<a class="btn small ghost" href="#/passage/ps${plan.ps}">Texte ici</a>` : ''}</div>
         </article>
-        <article class="card mini-card">
+        <article class="card mini-card card-wine">
           <div class="card-k">Mot slavon</div>
           <div class="word-big cs" data-act="speak" data-text="${esc(word[0])}">${esc(word[0])}</div>
           <div class="muted tr">${esc(word[1])}</div>
           <div class="word-fr">${esc(word[2])}</div>
           <a class="btn small ghost" href="#/slavonic/cards">Réviser le vocabulaire</a>
         </article>
-        <article class="card mini-card">
+        <article class="card mini-card card-violet">
           <div class="card-k">Prière du jour</div>
           <h3 class="prayer-t">${esc(prayer.title)}</h3>
           <p class="cs small">${esc(prayer.titleCs)}</p>

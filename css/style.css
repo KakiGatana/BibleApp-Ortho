@@ -21,7 +21,7 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #254287; --bg2: #292640; --surface: #2f2c45; --surface2: #393655;
+    --bg: #254287; --bg2: #172650; --surface: #1f3469; --surface2: #273f7d;
     --ink: #f8f1de; --ink2: #dcd2b4; --ink3: #b3b4c0;
     --gold: #dcb55e; --gold2: #f0cd7a; --gold-soft: rgba(220, 181, 94, .24);
     --cinnabar: #e5604f; --lapis: #7f9fe6; --emerald: #5fbf93;
@@ -33,7 +33,7 @@
   }
 }
 :root[data-theme="dark"] {
-  --bg: #254287; --bg2: #292640; --surface: #2f2c45; --surface2: #393655;
+  --bg: #254287; --bg2: #172650; --surface: #1f3469; --surface2: #273f7d;
   --ink: #f8f1de; --ink2: #dcd2b4; --ink3: #b3b4c0;
   --gold: #dcb55e; --gold2: #f0cd7a; --gold-soft: rgba(220, 181, 94, .24);
   --cinnabar: #e5604f; --lapis: #7f9fe6; --emerald: #5fbf93;
@@ -203,7 +203,7 @@ svg.ic.xs { width: .95rem; height: .95rem; }
 .mini { font-family: var(--f-label); font-size: .6rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); display: inline-flex; align-items: center; gap: .25rem; }
 
 /* ---------- héros ---------- */
-.hero { position: relative; overflow: hidden; border-radius: 26px 26px 20px 20px; padding: 1rem 1.2rem 1.5rem; margin-bottom: 1.2rem; color: #f5ecd2; box-shadow: 0 24px 50px -28px #000, inset 0 0 0 1px rgba(240, 205, 122, .35); background: linear-gradient(160deg, #3b72c9 0%, #2756a6 55%, #1b3f84 100%); isolation: isolate; }
+.hero { position: relative; overflow: hidden; border-radius: 26px 26px 20px 20px; padding: 1rem 1.2rem 1.5rem; margin-bottom: 1.2rem; color: #f5ecd2; box-shadow: 0 24px 50px -28px #000, inset 0 0 0 1px rgba(240, 205, 122, .35); background: linear-gradient(160deg, #8e2c4c 0%, #5c1a35 55%, #33101f 100%); isolation: isolate; }
 .hero::before { content: ''; position: absolute; inset: 6px; border-radius: 20px 20px 15px 15px; border: 1px solid rgba(240, 205, 122, .28); z-index: -1; pointer-events: none; }
 .hero-careme { background: linear-gradient(160deg, #5a3d96 0%, #3a2370 55%, #24134a 100%); }
 .hero-passion { background: linear-gradient(160deg, #4d121b 0%, #2b0b11 55%, #12060a 100%); }
@@ -484,3 +484,14 @@ html[data-reading="1"] .main { max-width: 760px; }
 .welcome li > svg { width: 1.8rem; height: 1.8rem; color: var(--gold); flex: none; }
 .welcome li div { display: flex; flex-direction: column; } .welcome li span { font-size: .95rem; color: var(--ink2); line-height: 1.3; }
 .saint-list .icon-thumb { width: 4.8rem; height: 6.2rem; }
+
+/* encadrés de couleur (mode nuit) : violet, sarcelle, bordeaux ; le reste reste bleu marine */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .card-violet, :root:not([data-theme="light"]) .verse-card, :root:not([data-theme="light"]) .tropar { --surface: #2f2c45; --surface2: #393655; --bg2: #292640; }
+  :root:not([data-theme="light"]) .card-teal { --surface: #1d3b47; --surface2: #25495a; --bg2: #173039; }
+  :root:not([data-theme="light"]) .card-wine { --surface: #3b2233; --surface2: #482a3f; --bg2: #2e1a28; }
+}
+:root[data-theme="dark"] .card-violet, :root[data-theme="dark"] .verse-card, :root[data-theme="dark"] .tropar { --surface: #2f2c45; --surface2: #393655; --bg2: #292640; }
+:root[data-theme="dark"] .card-teal { --surface: #1d3b47; --surface2: #25495a; --bg2: #173039; }
+:root[data-theme="dark"] .card-wine { --surface: #3b2233; --surface2: #482a3f; --bg2: #2e1a28; }
+.verse-card { background: var(--surface); }
