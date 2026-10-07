@@ -699,13 +699,35 @@ html[data-reading="1"] .main { max-width: 760px; }
 @keyframes ropeDone { 0%, 100% { transform: scale(1); } 40% { transform: scale(1.04); filter: drop-shadow(0 0 14px var(--gold2)); } }
 
 
-/* Fond de l'appli : bleu qui descend vers un brun cuir (reliure de Bible) ; les encadrés restent inchangés */
-:root { --fond: linear-gradient(175deg, #e4ebf8 0%, #ece9ef 40%, #eddccb 78%, #e3cbb2 100%); --veil: rgba(236, 233, 239, .9); }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --fond: linear-gradient(175deg, #254287 0%, #2d3a74 32%, #4a3050 58%, #5a3526 82%, #6a402c 100%); --veil: rgba(45, 52, 100, .9); } }
-:root[data-theme="dark"] { --fond: linear-gradient(175deg, #254287 0%, #2d3a74 32%, #4a3050 58%, #5a3526 82%, #6a402c 100%); --veil: rgba(45, 52, 100, .9); }
-body {
-  background-image:
-    radial-gradient(1200px 520px at 80% -10%, color-mix(in srgb, var(--gold) 12%, transparent), transparent 70%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cpath d='M28 6v44M18 16h20M12 24h32' stroke='%23b8932f' stroke-opacity='.07' stroke-width='1.4' fill='none'/%3E%3C/svg%3E"),
-    var(--fond);
+/* ===== Cuir brun (reliure de Bible) : barres, menus et contrôles ; fond bleu uni ===== */
+:root { --lea: #6a3e2b; --lea2: #7b4a35; --lea3: #54301f; --lea-line: rgba(240, 205, 122, .38); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --lea: #4d2b1e; --lea2: #5d3626; --lea3: #3a2016; } }
+:root[data-theme="dark"] { --lea: #4d2b1e; --lea2: #5d3626; --lea3: #3a2016; }
+.topbar, .tabbar, .side, .sheet {
+  --ink: #f8f1de; --ink2: #e8d9b4; --ink3: #cdb98f; --gold: #f0cd7a; --gold2: #f6dc9a; --gold-soft: rgba(240, 205, 122, .2);
+  --surface: var(--lea2); --surface2: var(--lea2); --bg2: var(--lea3); --line: var(--lea-line); --bg: var(--lea); --on-accent: #2a1a05; --cs-ink: #f0cd7a;
+  color: var(--ink);
 }
+.topbar, .tabbar { background: var(--lea); backdrop-filter: none; -webkit-backdrop-filter: none; border-color: var(--lea-line); }
+.side { background: var(--lea); }
+.sheet { background: var(--lea); border-color: var(--lea-line); }
+.topbar .brand, .topbar .brand-sm { color: #f5ecd2; }
+.seg { background: var(--lea3); border-color: var(--lea-line); }
+.seg button { color: #e8d9b4; }
+.seg button.on { background: var(--lea2); color: #f0cd7a; box-shadow: 0 0 0 1px var(--lea-line); }
+.toast { background: var(--lea); color: #f8f1de; box-shadow: 0 0 0 1px var(--lea-line); }
+.chip-btn.on { background: var(--lea2); color: #f0cd7a; border-color: var(--lea-line); }
+
+/* Écritures : encadrés blancs, jour et nuit */
+[data-sec="bible"] .view .card, [data-sec="bible"] .view .plan, [data-sec="bible"] .view .search {
+  --surface: #ffffff; --surface2: #f4f1ea; --bg2: #ece7dc; --ink: #1b2a4a; --ink2: #43537a; --ink3: #6b7694;
+  --gold: #9c6f14; --gold2: #c4952b; --gold-soft: rgba(156, 111, 20, .22); --line: rgba(31, 59, 115, .15);
+  --cs-ink: #8a3f12; --lapis: #1f3b73; --cinnabar: #a3281e; --emerald: #2c6a4d; --on-accent: #fff8e6;
+  --shadow: 0 1px 0 rgba(255, 255, 255, .8) inset, 0 14px 30px -18px rgba(0, 0, 0, .5);
+  background: #fff; color: var(--ink);
+}
+/* pastilles de la barre du bas : teintes claires sur le cuir, jour comme nuit */
+#tabbar [data-nav="ask"]   { --tc: #9db4ff; --tc-fg: #10204f; }
+#tabbar [data-nav="calendar"] { --tc: #6fdcae; --tc-fg: #0c2f22; }
+#tabbar [data-nav="jesus"] { --tc: #e39cf0; --tc-fg: #3a1038; }
+#tabbar [data-nav="more"]  { --tc: #f0cd7a; --tc-fg: #3a2a06; }
