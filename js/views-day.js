@@ -171,19 +171,19 @@
         </article>
       </div>
 
-      ${isToday ? `<article class="card">
+      ${isToday ? `<article class="card card-slate">
         <div class="card-k">Ton chemin</div>
         <div class="streak"><div class="flame">${ic('flame')}<b>${K.streak()}</b></div><div><div><b>jour${K.streak() > 1 ? 's' : ''} de suite</b></div><div class="muted small">Chaque visite compte. Reviens demain pour continuer.</div></div>
         <div class="week">${last7.map((d) => `<span class="${vset.has(C.isoKey(d)) ? 'on' : ''}" title="${esc(C.longDate(d))}">${C.WD[d.getUTCDay()][0].toUpperCase()}</span>`).join('')}</div></div>
       </article>` : ''}
 
-      <article class="card">
+      <article class="card card-ochre">
         <div class="card-k">Pâques ${info.year}</div>
         <div class="paques-line"><b>${esc(C.longDate(pas))}</b> <span class="muted">${toPascha > 0 ? `dans ${toPascha} jour${toPascha > 1 ? 's' : ''}` : toPascha === 0 ? 'c’est aujourd’hui !' : `il y a ${-toPascha} jours`}</span></div>
         <a class="mini" href="#/year/${info.year}">Voir toute l’année liturgique ${ic('right', 'ic xs')}</a>
       </article>
 
-      ${up.length ? `<article class="card">
+      ${up.length ? `<article class="card card-indigo">
         <div class="card-k">Prochaines grandes fêtes</div>
         <ul class="up-list">${up.map((u) => `<li><span class="up-d">${esc(shortDate(u.d))}</span><a href="#/day/${C.isoKey(u.d)}">${esc(u.it.name)}</a><span class="muted small">dans ${u.i} j</span></li>`).join('')}</ul>
       </article>` : ''}
