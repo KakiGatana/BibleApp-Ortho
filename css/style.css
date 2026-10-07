@@ -816,3 +816,7 @@ html[data-reading="1"] .main { max-width: 760px; }
 .more-row, .more-item, .welcome li { background: #35305a; color: #f8f1de; --ink: #f8f1de; --ink2: #dcd2b4; --ink3: #b9b4c8; --gold: #f0cd7a; --gold-soft: rgba(240, 205, 122, .18); --surface: #443d70; }
 .more-row:hover, .more-item:hover { background: #413a6c; }
 .more-item { --ink2: #e8d9b4; }
+
+/* encadrés génériques de nuit : bleu marine profond, bien distinct du fond bleu (Lecture du jour, Ton chemin, Pâques, Réglages…) */
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --surface: #1c2e5e; --surface2: #263a72; --bg2: #16244d; } }
+:root[data-theme="dark"] { --surface: #1c2e5e; --surface2: #263a72; --bg2: #16244d; }
