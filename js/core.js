@@ -128,6 +128,7 @@
     ['prayers', 'Prières', 'pray', '#/prayers'],
     ['slavonic', 'Slavon', 'slav', '#/slavonic'],
     ['theology', 'Théologie', 'theo', '#/theology'],
+    ['apolo', 'Objections et réponses', 'theo', '#/apolo'],
     ['jesus', 'Prière de Jésus', 'beads', '#/jesus'],
     ['quiz', 'Quiz', 'quiz', '#/slavonic/quiz'],
     ['ask', 'Assistant IA', 'chat', '#/ask'],
@@ -156,7 +157,7 @@
     document.body.setAttribute('data-sec', id || '');
   }
   const MORE = [
-    ['Lire et prier', [['bible', 'Écritures', 'book', 'Psaumes, Évangiles, canon, plan de lecture'], ['prayers', 'Prières', 'pray', 'Prière du matin et du soir, prières mot à mot'], ['slavonic', 'Slavon', 'slav', 'Alphabet, leçons, cartes, quiz'], ['theology', 'Théologie', 'theo', 'Les grands thèmes de la foi, les conciles'], ['quiz', 'Quiz', 'quiz', 'Défi du jour, culture orthodoxe, slavon']]],
+    ['Lire et prier', [['bible', 'Écritures', 'book', 'Psaumes, Évangiles, canon, plan de lecture'], ['prayers', 'Prières', 'pray', 'Prière du matin et du soir, prières mot à mot'], ['slavonic', 'Slavon', 'slav', 'Alphabet, leçons, cartes, quiz'], ['theology', 'Théologie', 'theo', 'Les grands thèmes de la foi, les conciles'], ['apolo', 'Objections et réponses', 'chat', 'Arguments contre la foi et l’Orthodoxie, et comment y répondre'], ['quiz', 'Quiz', 'quiz', 'Défi du jour, culture orthodoxe, slavon']]],
     ['Le temps de l’Église', [['feasts', 'Fêtes', 'feast', 'Sens des fêtes et tropaires'], ['saints', 'Saints', 'saint', 'Les saints de chaque jour']]],
     ['Mon espace', [['search', 'Recherche', 'search', 'Chercher dans toute l’application'], ['favorites', 'Favoris et notes', 'heart', 'Ce que j’ai gardé'], ['settings', 'Réglages', 'gear', 'Notifications, sauvegarde, thème, mode lecture'], ['install', 'Installer et partager', 'share', 'Ajouter à l’écran d’accueil, l’envoyer à un proche']]]
   ];
