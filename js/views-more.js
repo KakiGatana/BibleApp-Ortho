@@ -140,6 +140,9 @@
         </ul>
         <h2>Technique</h2>
         <p>Application statique (HTML, CSS, JavaScript), sans suivi ni compte. Elle fonctionne hors ligne une fois chargée et peut être installée sur l’écran d’accueil. Les données sont enregistrées uniquement dans ton navigateur.</p>
+        <h2>Une erreur ? Une idée ?</h2>
+        <p>Une faute de français, une erreur de slavon, une icône qui n’est pas la bonne, un passage à ajouter : dis-le pour que ce soit corrigé. Il faut un compte GitHub (gratuit) ; sinon, préviens la personne qui t’a envoyé l’appli.</p>
+        <p class="center"><a class="btn small" href="https://github.com/KakiGatana/BibleApp-Ortho/issues/new" target="_blank" rel="noopener">Signaler une erreur</a></p>
         <p class="center"><a class="btn ghost small" href="#/credits">Crédits des icônes</a></p>
         <p class="center cs big">Слава Богу о всѣхъ. Аминь.</p>
       </div></section>`,
