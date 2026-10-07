@@ -179,13 +179,25 @@
   /* ---------- quiz ---------- */
   function quizHub() {
     const best = (t) => (S.quiz[t] ? `Record : ${S.quiz[t].best}/10` : 'Pas encore joué');
+    const dq = S.quiz.daily || {}, doneToday = dq.last === todayIso();
+    const dailyTxt = doneToday ? `Fait aujourd’hui : ${dq.score}/10` : 'Les mêmes 10 questions pour tous, chaque jour';
+    const streakTxt = dq.streak > 1 ? ` · ${dq.streak} jours de suite` : '';
+    const cats = O.QUIZ_CATS || {};
     const html = `<section class="page">
       ${U.back('#/slavonic', 'Slavon')}
-      ${U.pageHead('Испытаніе', 'Quiz', 'Dix questions, et une explication à chaque réponse.')}
+      ${U.pageHead('Испытаніе', 'Quiz', 'Dix questions, et une explication à chaque réponse. Les questions que tu n’as pas encore réussies reviennent en premier.')}
+      <div class="tiles">
+        <a class="tile" href="#/slavonic/quiz/daily"><span class="tile-ic">${ic('flame')}</span><div><b>Défi du jour</b><span>${dailyTxt}${streakTxt}</span></div>${doneToday ? '<span class="badge">Fait</span>' : '<span class="badge dim">À faire</span>'}</a>
+      </div>
+      ${U.sectionTitle('Culture orthodoxe')}
+      <div class="tiles">
+        <a class="tile" href="#/slavonic/quiz/culture"><span class="tile-ic">${ic('theo')}</span><div><b>Tout mélangé</b><span>${best('culture')} · ${O.QUIZ.length} questions</span></div></a>
+        ${Object.keys(cats).map((k) => `<a class="tile" href="#/slavonic/quiz/${k}"><span class="tile-ic">${ic('quiz')}</span><div><b>${cats[k]}</b><span>${best(k)} · ${O.QUIZ.filter((q) => O.quizCat(q) === k).length} questions</span></div></a>`).join('')}
+      </div>
+      ${U.sectionTitle('Slavon')}
       <div class="tiles">
         <a class="tile" href="#/slavonic/quiz/alphabet"><span class="tile-ic">${ic('slav')}</span><div><b>Lettres</b><span>${best('alphabet')}</span></div></a>
         <a class="tile" href="#/slavonic/quiz/vocab"><span class="tile-ic">${ic('cards')}</span><div><b>Vocabulaire</b><span>${best('vocab')}</span></div></a>
-        <a class="tile" href="#/slavonic/quiz/culture"><span class="tile-ic">${ic('theo')}</span><div><b>Culture orthodoxe</b><span>${best('culture')}</span></div></a>
       </div></section>`;
     return { html, title: 'Quiz', nav: 'slavonic' };
   }
@@ -213,21 +225,51 @@
         const opts = shuffle([v, ...others]); return { p: `Comment dit-on « ${v[2]} » en slavon ?`, optsCs: true, opts: opts.map((o) => o[0]), c: opts.indexOf(v), e: `${v[0]} (${v[1]}) = ${v[2]}.` };
       });
     }
-    return shuffle(O.QUIZ).slice(0, 10).map((q) => { const opts = shuffle(q.a.map((x, i) => [x, i === q.c])); return { p: q.q, opts: opts.map((o) => o[0]), c: opts.findIndex((o) => o[1]), e: q.e }; });
+    return cultureQuiz(type);
+  }
+
+  /* quiz de culture : défi du jour (mêmes questions pour tous), catégories, et on revoit d'abord ce qu'on n'a pas encore réussi */
+  function seeded(str) {
+    let h = 1779033703 ^ str.length;
+    for (let i = 0; i < str.length; i++) { h = Math.imul(h ^ str.charCodeAt(i), 3432918353); h = (h << 13) | (h >>> 19); }
+    return function () { h = Math.imul(h ^ (h >>> 16), 2246822507); h = Math.imul(h ^ (h >>> 13), 3266489909); h ^= h >>> 16; return (h >>> 0) / 4294967296; };
+  }
+  function shuffleWith(a, rnd) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+  function cultureQuiz(type) {
+    S.qstat = S.qstat || {};
+    const daily = type === 'daily', rnd = daily ? seeded('blagovest-' + todayIso()) : Math.random;
+    let pool = O.QUIZ.map((q, id) => ({ q, id })).filter((x) => daily || type === 'culture' || O.quizCat(x.q) === type);
+    if (daily) pool = shuffleWith(pool, rnd);
+    else {
+      // d'abord les questions jamais réussies, avec un peu de hasard
+      pool = pool.map((x) => { const st = S.qstat[x.id] || { ok: 0, ko: 0 }; return { x, k: st.ok * 2 - st.ko + Math.random() * 1.6 }; }).sort((a, b) => a.k - b.k).map((o) => o.x);
+    }
+    return pool.slice(0, 10).map(({ q, id }) => {
+      const opts = shuffleWith(q.a.map((x, i) => [x, i === q.c]), rnd);
+      return { id, p: q.q, opts: opts.map((o) => o[0]), c: opts.findIndex((o) => o[1]), e: q.e };
+    });
   }
   let quiz = null;
   function quizView(type) {
-    quiz = { type, qs: makeQuiz(type), i: 0, score: 0, answered: -1 };
-    const titles = { alphabet: 'Quiz : les lettres', vocab: 'Quiz : vocabulaire', culture: 'Quiz : culture orthodoxe' };
+    quiz = { type, qs: makeQuiz(type), i: 0, score: 0, answered: -1, wrong: [] };
+    const titles = Object.assign({ alphabet: 'Quiz : les lettres', vocab: 'Quiz : vocabulaire', culture: 'Quiz : culture orthodoxe', daily: 'Défi du jour' }, Object.fromEntries(Object.entries(O.QUIZ_CATS || {}).map(([k, v]) => [k, 'Quiz : ' + v])));
     return { html: `<section class="page">${U.back('#/slavonic/quiz', 'Quiz')}${U.pageHead('', titles[type] || 'Quiz')}<div id="quizArea"></div></section>`, title: 'Quiz', nav: 'slavonic', after: renderQuiz };
   }
   route('/slavonic/quiz/:type', quizView);
   function renderQuiz() {
     const a = K.$('#quizArea'); if (!a || !quiz) return;
     if (quiz.i >= quiz.qs.length) {
-      const b = S.quiz[quiz.type] || { best: 0, plays: 0 }; b.plays++; if (quiz.score > b.best) b.best = quiz.score; S.quiz[quiz.type] = b; K.save();
+      const b = S.quiz[quiz.type] || { best: 0, plays: 0 }; b.plays++; if (quiz.score > b.best) b.best = quiz.score; S.quiz[quiz.type] = b;
+      let dailyNote = '';
+      if (quiz.type === 'daily') {
+        const yest = C.isoKey(C.addDays(C.today(), -1));
+        if (b.last !== todayIso()) { b.streak = b.last === yest ? (b.streak || 0) + 1 : 1; b.last = todayIso(); b.score = quiz.score; }
+        dailyNote = `<p class="muted small">Défi du jour : ${b.streak} jour${b.streak > 1 ? 's' : ''} de suite. Reviens demain pour un nouveau défi.</p>`;
+      }
+      K.save();
       const msg = quiz.score >= 9 ? 'Excellent ! Слава Богу.' : quiz.score >= 6 ? 'Très bien, continue !' : 'Courage, on apprend en recommençant.';
-      a.innerHTML = `<div class="card center done-card"><div class="score">${quiz.score}<small>/10</small></div><p>${msg}</p><div class="row center"><a class="btn" href="#/slavonic/quiz/${quiz.type}" data-act="quiz-again">Rejouer</a><a class="btn ghost" href="#/slavonic/quiz">Autres quiz</a></div></div>`;
+      a.innerHTML = `<div class="card center done-card"><div class="score">${quiz.score}<small>/10</small></div><p>${msg}</p>${dailyNote}<div class="row center"><a class="btn" href="#/slavonic/quiz/${quiz.type}" data-act="quiz-again">${quiz.type === 'daily' ? 'Refaire (sans compter)' : 'Rejouer'}</a><a class="btn ghost" href="#/slavonic/quiz">Autres quiz</a></div></div>
+        ${quiz.wrong.length ? `<article class="card"><div class="card-k">À revoir (${quiz.wrong.length})</div><ul class="wrongs">${quiz.wrong.map((w) => `<li><b>${esc(w.p)}</b><span>Bonne réponse : ${esc(w.opts[w.c])}</span><span class="muted small">${esc(w.e)}</span></li>`).join('')}</ul></article>` : '<p class="center muted">Aucune erreur : sans faute !</p>'}`;
       return;
     }
     const q = quiz.qs[quiz.i], ans = quiz.answered;
@@ -237,7 +279,13 @@
       <div class="opts ${q.optsCs ? 'opts-cs' : ''}">${q.opts.map((o, i) => `<button class="opt ${ans >= 0 ? (i === q.c ? 'right' : i === ans ? 'wrong' : 'dim') : ''}" data-act="answer" data-i="${i}" ${ans >= 0 ? 'disabled' : ''}><span class="${q.optsCs ? 'cs' : ''}">${esc(o)}</span></button>`).join('')}</div>
       ${ans >= 0 ? `<div class="explain ${ans === q.c ? 'ok' : 'ko'}"><b>${ans === q.c ? 'Exact !' : 'Pas tout à fait.'}</b> ${esc(q.e)}</div><div class="row end"><button class="btn" data-act="quiz-next">${quiz.i + 1 >= quiz.qs.length ? 'Voir mon score' : 'Suivante'}</button></div>` : ''}</div>`;
   }
-  K.act.answer = (el) => { const q = quiz.qs[quiz.i]; quiz.answered = +el.dataset.i; if (quiz.answered === q.c) quiz.score++; renderQuiz(); };
+  K.act.answer = (el) => {
+    const q = quiz.qs[quiz.i]; quiz.answered = +el.dataset.i;
+    const ok = quiz.answered === q.c;
+    if (ok) quiz.score++; else quiz.wrong.push(q);
+    if (q.id != null) { S.qstat = S.qstat || {}; const st = (S.qstat[q.id] = S.qstat[q.id] || { ok: 0, ko: 0 }); ok ? st.ok++ : st.ko++; K.save(); }
+    renderQuiz();
+  };
   K.act['quiz-next'] = () => { quiz.i++; quiz.answered = -1; renderQuiz(); window.scrollTo({ top: 0, behavior: 'smooth' }); };
   K.act['quiz-again'] = () => {};
   O.runQuiz = (type) => K.go('#/slavonic/quiz/' + type);

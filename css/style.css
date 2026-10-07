@@ -623,3 +623,28 @@ html[data-reading="1"] .main { max-width: 760px; }
 :root[data-theme="dark"] .hero-ordinaire .chip, :root[data-theme="dark"] .hero-ordinaire .chip.gold { color: var(--sec-i2); background: color-mix(in srgb, var(--sec-i1) 10%, transparent); border-color: color-mix(in srgb, var(--sec-i1) 32%, transparent); }
 :root[data-theme="dark"] .hero-ordinaire .btn.light, :root[data-theme="dark"] .hero-ordinaire .icon-btn.light { color: var(--sec-i2); }
 .hero-slav { background: linear-gradient(160deg, var(--sec-g1) 0%, var(--sec-g2) 55%, var(--sec-g3) 100%); }
+
+/* Prière de Jésus : palette pourpre, grand bouton du chapelet */
+.view { }
+[data-sec="jesus"] .view { --sec-g1: #7b2d6e; --sec-g2: #531c4c; --sec-g3: #2e0f2b; --surface: #f7e8f4; --surface2: #f0d9ea; --bg2: #e8c9e0; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) [data-sec="jesus"] .view { --sec-i1: #8a2f7a; --sec-i2: #5c1f52; --sec-sub: #5d4a5c; --surface: #3a2036; --surface2: #472941; --bg2: #2e1a2a; } }
+:root[data-theme="dark"] [data-sec="jesus"] .view { --sec-i1: #8a2f7a; --sec-i2: #5c1f52; --sec-sub: #5d4a5c; --surface: #3a2036; --surface2: #472941; --bg2: #2e1a2a; }
+.jprayer { text-align: center; } .jprayer .fr { font-family: var(--f-disp); font-size: 1.45rem; font-style: italic; line-height: 1.35; margin: 0 0 .7rem; } .jprayer .cs { font-size: 1.3rem; margin: 0; cursor: pointer; color: var(--cs-ink); }
+.beads-wrap { position: relative; width: min(78vw, 320px); aspect-ratio: 1; margin: 1.2rem auto .8rem; }
+.bead-ring { position: absolute; inset: 0; pointer-events: none; }
+.bead-ring i { position: absolute; width: 9px; height: 9px; margin: -4.5px 0 0 -4.5px; border-radius: 50%; background: var(--line); border: 1px solid var(--gold-soft); transition: background .2s, transform .2s; }
+.bead-ring i.lit { background: var(--gold2); transform: scale(1.25); box-shadow: 0 0 8px var(--gold2); }
+.bead-btn { position: absolute; inset: 12%; border-radius: 50%; display: grid; place-content: center; text-align: center; background: radial-gradient(circle at 35% 30%, var(--gold2), var(--gold) 70%); color: var(--on-accent); box-shadow: 0 18px 40px -14px rgba(0, 0, 0, .65), inset 0 2px 0 rgba(255, 255, 255, .35); border: 0; cursor: pointer; -webkit-tap-highlight-color: transparent; touch-action: manipulation; user-select: none; }
+.bead-btn:active { transform: scale(.97); }
+.bead-btn.pulse { animation: beadPulse .28s ease; }
+@keyframes beadPulse { 0% { transform: scale(1); } 40% { transform: scale(.94); } 100% { transform: scale(1); } }
+.bead-n { font-family: var(--f-disp); font-size: clamp(3.4rem, 18vw, 5.4rem); font-weight: 700; line-height: 1; }
+.bead-of { font-family: var(--f-label); font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; opacity: .8; margin-top: .3rem; }
+.jbar { gap: .5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.jstats { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; text-align: center; margin-bottom: .8rem; }
+.jstats b { display: block; font-family: var(--f-disp); font-size: 1.9rem; color: var(--gold); } .jstats span { font-size: .85rem; color: var(--ink2); }
+
+.jesus .page-head { margin-bottom: .6rem; padding-bottom: .9rem; } .jesus .beads-wrap { margin-top: .6rem; }
+
+.wrongs { list-style: none; margin: 0; padding: 0; display: grid; gap: .8rem; } .wrongs li { display: flex; flex-direction: column; gap: .15rem; padding-bottom: .7rem; border-bottom: 1px dashed var(--line); } .wrongs li:last-child { border: 0; }
+.wrongs li span:not(.muted) { color: var(--gold); font-weight: 600; }

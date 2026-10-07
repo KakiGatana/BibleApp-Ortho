@@ -447,7 +447,7 @@
     },
     {
       id: 'enfant-prodigue', ref: 'Lc 15:11-32', title: 'Le Fils prodigue', group: 'Évangiles', tags: ['parabole', 'pardon', 'repentir', 'père', 'carême', 'retour'],
-      intro: 'Évangile du dimanche de l’Enfant prodigue, qui ouvre le Triode et prépare au Grand Carême. Moins l’histoire d’un fils que celle d’un Père qui court à la rencontre : Dieu n’attend pas que nous soyons dignes, il nous accueille.',
+      intro: 'Évangile du dimanche de l’Enfant prodigue, deuxième dimanche de préparation au Grand Carême (Triode). Moins l’histoire d’un fils que celle d’un Père qui court à la rencontre : Dieu n’attend pas que nous soyons dignes, il nous accueille.',
       fr: [
         'Il dit encore : Un homme avait deux fils.',
         'Le plus jeune dit à son père : Père, donne-moi la part de bien qui doit me revenir. Et le père leur partagea son bien.',

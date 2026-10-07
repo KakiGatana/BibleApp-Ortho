@@ -128,6 +128,8 @@
     ['prayers', 'Prières', 'pray', '#/prayers'],
     ['slavonic', 'Slavon', 'slav', '#/slavonic'],
     ['theology', 'Théologie', 'theo', '#/theology'],
+    ['jesus', 'Prière de Jésus', 'beads', '#/jesus'],
+    ['quiz', 'Quiz', 'quiz', '#/slavonic/quiz'],
     ['ask', 'Assistant IA', 'chat', '#/ask'],
     ['search', 'Recherche', 'search', '#/search'],
     ['feasts', 'Fêtes', 'feast', '#/feasts'],
@@ -136,14 +138,14 @@
     ['install', 'Installer et partager', 'share', '#/install'],
     ['settings', 'Réglages', 'gear', '#/settings']
   ];
-  const TABS = ['today', 'calendar', 'ask', 'theology'];
-  const TAB_LABEL = { today: 'Accueil', calendar: 'Calendrier', ask: 'Assistant IA', theology: 'Théologie' };
-  const TAB_ICON = { today: 'home', calendar: 'cal', ask: 'chat', theology: 'theo' };
+  const TABS = ['ask', 'calendar', 'today', 'jesus'];
+  const TAB_LABEL = { today: 'Accueil', calendar: 'Calendrier', ask: 'Assistant IA', jesus: 'Prière de Jésus' };
+  const TAB_ICON = { today: 'home', calendar: 'cal', ask: 'chat', jesus: 'beads' };
   function buildNav() {
     $('#sideNav').innerHTML = NAV.map(([id, l, i, h]) => `<a href="${h}" data-nav="${id}">${ic(i)}<span>${l}</span></a>`).join('');
     const tab = (id) => {
       const n = NAV.find((x) => x[0] === id);
-      return `<a href="${n[3]}" data-nav="${id}" class="${id === 'ask' ? 'tab-main' : ''}"><span class="tab-ic">${ic(TAB_ICON[id])}</span><span class="tab-l">${TAB_LABEL[id]}</span></a>`;
+      return `<a href="${n[3]}" data-nav="${id}" class="${id === 'today' ? 'tab-main' : ''}"><span class="tab-ic">${ic(TAB_ICON[id])}</span><span class="tab-l">${TAB_LABEL[id]}</span></a>`;
     };
     $('#tabbar').innerHTML = TABS.map(tab).join('') +
       `<button data-act="more" data-nav="more" aria-label="Ouvrir le menu"><span class="tab-ic">${ic('menu')}</span><span class="tab-l">Menu</span></button>`;
@@ -154,7 +156,7 @@
     document.body.setAttribute('data-sec', id || '');
   }
   const MORE = [
-    ['Lire et prier', [['bible', 'Écritures', 'book', 'Psaumes, Évangiles, canon, plan de lecture'], ['prayers', 'Prières', 'pray', 'Prière du matin et du soir, prières mot à mot'], ['slavonic', 'Slavon', 'slav', 'Alphabet, leçons, cartes, quiz']]],
+    ['Lire et prier', [['bible', 'Écritures', 'book', 'Psaumes, Évangiles, canon, plan de lecture'], ['prayers', 'Prières', 'pray', 'Prière du matin et du soir, prières mot à mot'], ['slavonic', 'Slavon', 'slav', 'Alphabet, leçons, cartes, quiz'], ['theology', 'Théologie', 'theo', 'Les grands thèmes de la foi, les conciles'], ['quiz', 'Quiz', 'quiz', 'Défi du jour, culture orthodoxe, slavon']]],
     ['Le temps de l’Église', [['feasts', 'Fêtes', 'feast', 'Sens des fêtes et tropaires'], ['saints', 'Saints', 'saint', 'Les saints de chaque jour']]],
     ['Mon espace', [['search', 'Recherche', 'search', 'Chercher dans toute l’application'], ['favorites', 'Favoris et notes', 'heart', 'Ce que j’ai gardé'], ['settings', 'Réglages', 'gear', 'Notifications, sauvegarde, thème, mode lecture'], ['install', 'Installer et partager', 'share', 'Ajouter à l’écran d’accueil, l’envoyer à un proche']]]
   ];

@@ -817,14 +817,6 @@
   "l": "Public domain",
   "u": "https://commons.wikimedia.org/w/index.php?curid=170736053"
  },
- "entry:07-26:1": {
-  "f": "entry-07-26-1.jpg",
-  "n": "Sainte Parascève",
-  "t": "Cretan Icon of Saint Parakevi.jpg",
-  "a": "Auteur inconnu",
-  "l": "Public domain",
-  "u": "https://commons.wikimedia.org/w/index.php?curid=170863427"
- },
  "entry:08-02:0": {
   "f": "entry-08-02-0.jpg",
   "n": "Translation des reliques de saint Étienne",

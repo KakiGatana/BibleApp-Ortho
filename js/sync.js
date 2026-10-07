@@ -3,7 +3,7 @@
   const O = window.ORTHO, K = O.core;
   const { S, esc } = K;
   const CFG = window.BLAGOVEST_PUSH || {};
-  const FIELDS = ['fav', 'notes', 'cards', 'done', 'visits', 'quiz', 'mile'];
+  const FIELDS = ['fav', 'notes', 'cards', 'done', 'visits', 'quiz', 'mile', 'jesus'];
   S.sync = S.sync || {};
 
   const ok = () => !!CFG.server;
@@ -49,6 +49,7 @@
     const cards = Object.assign({}, remote.cards || {});
     Object.keys(S.cards || {}).forEach((i) => { const a = S.cards[i], b = cards[i]; cards[i] = !b || (a.n || 0) >= (b.n || 0) ? a : b; });
     S.cards = cards;
+    if (remote.jesus && remote.jesus.days) { S.jesus = S.jesus || { days: {} }; const d = Object.assign({}, remote.jesus.days); Object.keys(S.jesus.days || {}).forEach((k) => { d[k] = Math.max(d[k] || 0, S.jesus.days[k]); }); S.jesus.days = d; }
   }
 
   async function download(code) {
