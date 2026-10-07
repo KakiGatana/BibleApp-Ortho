@@ -17,6 +17,7 @@
   --veil: rgba(241, 232, 210, .86);
   --lv1: #b9a6e0; --lv2: #9578cf; --lv3: #7550b8; --lv4: #54349b; --lv5: #2f1a6b;
   --on-accent: #fff8e6;
+  --cs-ink: #8a3f12;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -28,6 +29,7 @@
     --veil: rgba(37, 66, 135, .9);
     --lv1: #6e6190; --lv2: #8470b8; --lv3: #9d82dd; --lv4: #b49cf0; --lv5: #cdb8ff;
     --on-accent: #1a1405;
+    --cs-ink: #f0cd7a;
   }
 }
 :root[data-theme="dark"] {
@@ -39,6 +41,7 @@
   --veil: rgba(37, 66, 135, .9);
   --lv1: #6e6190; --lv2: #8470b8; --lv3: #9d82dd; --lv4: #b49cf0; --lv5: #cdb8ff;
   --on-accent: #1a1405;
+  --cs-ink: #f0cd7a;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -455,3 +458,7 @@ html[data-reading="1"] .main { max-width: 760px; }
 .notif-row { gap: .6rem; } .notif-row .sel { flex: none; }
 .steps { margin: .4rem 0 0; padding-left: 1.3rem; display: grid; gap: .5rem; font-size: 1.05rem; }
 .rule-streak { display: flex; align-items: center; gap: .5rem; margin: .4rem 0; color: var(--gold); font-weight: 600; } .rule-streak .ic { width: 1.3rem; height: 1.3rem; }
+
+/* le slavon a sa propre couleur : on le distingue du français d'un coup d'œil */
+.pair .cs, .inter .cs, .tok .cs, .extract .cs, .verse .cs, .cs.rubric, .prayer .cs { color: var(--cs-ink); }
+:root:not([data-theme="dark"]) .pair .cs { font-weight: 500; }
