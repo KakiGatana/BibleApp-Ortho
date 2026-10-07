@@ -800,3 +800,19 @@ html[data-reading="1"] .main { max-width: 760px; }
 }
 :root[data-theme="dark"] #tabbar [data-nav="calendar"] { --tc: #e6c9a0; --tc-fg: #3a2410; }
 :root[data-theme="dark"] #tabbar [data-nav="jesus"] { --tc: #c4b0f0; --tc-fg: #2a1a5a; }
+
+/* moins de blanc et de vert : bandeaux sable, parchemin plus chaud, « jeûne » en violet nuit, encadrés des menus en violet nuit */
+:root { --surface: #f1e8d6; --surface2: #e9dcc2; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --surface: #234a96; --surface2: #2c58a8; } }
+:root[data-theme="dark"] { --surface: #234a96; --surface2: #2c58a8; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .page-head, :root:not([data-theme="light"]) .hero-ordinaire { background: linear-gradient(160deg, #eadfc4 0%, #e1d3b0 60%, #d6c59b 100%); }
+}
+:root[data-theme="dark"] .page-head, :root[data-theme="dark"] .hero-ordinaire { background: linear-gradient(160deg, #eadfc4 0%, #e1d3b0 60%, #d6c59b 100%); }
+[data-sec="bible"] .view .card, [data-sec="bible"] .view .plan, [data-sec="bible"] .view .search { --surface: #f1e8d6; --surface2: #e9dcc2; --bg2: #ddd0b3; background: #f1e8d6; }
+.card-teal { --surface: #ece8f6; --surface2: #e1dbf0; --bg2: #d5cde8; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .card-teal { --surface: #2f2c45; --surface2: #393655; --bg2: #292640; } }
+:root[data-theme="dark"] .card-teal { --surface: #2f2c45; --surface2: #393655; --bg2: #292640; }
+.more-row, .more-item, .welcome li { background: #35305a; color: #f8f1de; --ink: #f8f1de; --ink2: #dcd2b4; --ink3: #b9b4c8; --gold: #f0cd7a; --gold-soft: rgba(240, 205, 122, .18); --surface: #443d70; }
+.more-row:hover, .more-item:hover { background: #413a6c; }
+.more-item { --ink2: #e8d9b4; }
