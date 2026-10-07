@@ -9,11 +9,11 @@
   const load = (file) => memo[file] || (memo[file] = fetch('bible/' + file, { cache: 'no-cache' }).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).catch((e) => { delete memo[file]; throw e; }));
 
   const body = (verses) => verses.map((t, i) => (t ? `<p><sup>${i + 1}</sup>${esc(t)}</p>` : '')).join('');
-  const nav = (prev, next) => `<div class="row between rnav">${prev ? `<a class="btn small ghost" href="${prev}">‹ Précédent</a>` : '<span></span>'}${next ? `<a class="btn small ghost" href="${next}">Suivant ›</a>` : '<span></span>'}</div>`;
+  const nav = (prev, next) => `<div class="row between rnav">${prev ? `<a class="btn small ghost" data-sw="prev" href="${prev}">‹ Précédent</a>` : '<span></span>'}${next ? `<a class="btn small ghost" data-sw="next" href="${next}">Suivant ›</a>` : '<span></span>'}</div>`;
   const credit = '<p class="muted xs center">Nouveau Testament : traduction Crampon · Psaumes : Septante, traduction Giguet · textes du domaine public. Numérotation de la Septante.</p>';
 
   function shell(title, sub, kicker, prev, next, extra) {
-    const html = `<section class="page read">
+    const html = `<section class="page read" data-swipe>
       ${U.back ? U.back('#/bible/plan', 'Plan de lecture') : ''}
       ${U.pageHead(kicker, title, sub)}
       <article class="card rtext" data-notrans id="readBox"><p class="muted">Chargement…</p></article>

@@ -97,13 +97,13 @@
 
     const html = `
     <section class="page day">
-      <div class="hero hero-${tone}">
+      <div class="hero hero-${tone}" data-swipe>
         <div class="hero-stars" aria-hidden="true"></div>
         <svg class="hero-cross" aria-hidden="true"><use href="#i-logo"/></svg>
         <div class="hero-nav">
-          <a class="icon-btn light" href="#/day/${C.isoKey(C.addDays(date, -1))}" aria-label="Jour précédent">${ic('left')}</a>
+          <a class="icon-btn light" data-sw="prev" href="#/day/${C.isoKey(C.addDays(date, -1))}" aria-label="Jour précédent">${ic('left')}</a>
           <div class="hero-date">${isToday ? '<b>Aujourd’hui</b> · ' : ''}${esc(C.longDate(date))}</div>
-          <a class="icon-btn light" href="#/day/${C.isoKey(C.addDays(date, 1))}" aria-label="Jour suivant">${ic('right')}</a>
+          <a class="icon-btn light" data-sw="next" href="#/day/${C.isoKey(C.addDays(date, 1))}" aria-label="Jour suivant">${ic('right')}</a>
         </div>
         <div class="hero-body">
           <div class="chips">
@@ -212,10 +212,10 @@
     const dow = ['L', 'M', 'M', 'J', 'V', 'S', 'D'];
     const pas = C.pascha(y);
     const html = `
-    <section class="page cal">
+    <section class="page cal" data-swipe>
       ${U.pageHead('Calendrier liturgique', `${C.MONTHS[m - 1][0].toUpperCase() + C.MONTHS[m - 1].slice(1)} ${y}`, null)}
       <div class="cal-controls">
-        <div class="cal-nav"><a class="icon-btn" href="#/calendar/${prev}" aria-label="Mois précédent">${ic('left')}</a><a class="btn small ghost" href="#/calendar/${tIso.slice(0, 7)}">Aujourd’hui</a><a class="icon-btn" href="#/calendar/${next}" aria-label="Mois suivant">${ic('right')}</a></div>
+        <div class="cal-nav"><a class="icon-btn" data-sw="prev" href="#/calendar/${prev}" aria-label="Mois précédent">${ic('left')}</a><a class="btn small ghost" href="#/calendar/${tIso.slice(0, 7)}">Aujourd’hui</a><a class="icon-btn" data-sw="next" href="#/calendar/${next}" aria-label="Mois suivant">${ic('right')}</a></div>
         ${U.seg([['new', 'Julien révisé'], ['old', 'Julien (ancien)']], style, 'set-style')}
       </div>
       <div class="cal-grid" role="grid" aria-label="${C.MONTHS[m - 1]} ${y}">
