@@ -144,7 +144,7 @@
       <article class="card">
         <div class="card-k">${info.saints.length > 1 ? 'Saints et mémoires du jour' : 'Saint du jour'}</div>
         ${info.items.length ? `<ul class="saint-list">${info.items.sort((a, b) => b.rank - a.rank).map((i) => `<li class="rank-${i.rank}"><span class="dot"></span><div><b>${esc(i.name)}</b>${i.cs ? `<div class="cs small">${esc(i.cs)}</div>` : ''}${i.feastId ? ` <a class="mini" href="#/feast/${i.feastId}">en savoir plus</a>` : ''}</div></li>`).join('')}</ul>` : ''}
-        <ul class="saint-list">${info.saints.map((s) => `<li class="rank-${s.rank}"><span class="dot"></span><div><b>${esc(s.name)}</b></div>${U.favBtn('s:' + info.nominal.md + ':' + s.name)}</li>`).join('') || '<li class="muted">Mémoire des saints du jour.</li>'}</ul>
+        <ul class="saint-list">${info.saints.map((s, ix) => `<li class="rank-${s.rank}"><span class="dot"></span><div><b>${esc(s.name)}</b></div>${O.iconThumb ? O.iconThumb('entry:' + info.nominal.md + ':' + ix, s.name) : ''}${U.favBtn('s:' + info.nominal.md + ':' + s.name)}</li>`).join('') || '<li class="muted">Mémoire des saints du jour.</li>'}</ul>
         ${info.life ? `<div class="life"><span class="med-k">Un peu d’histoire</span><p>${info.life}</p></div>` : ''}
       </article>
 
@@ -333,6 +333,7 @@
       <div class="prose">
         <h2>Le sens de la fête</h2>
         ${f.meaning.map((p) => `<p>${esc(p)}</p>`).join('')}
+        ${O.iconFigure ? O.iconFigure('feast:' + f.id, f.name) : ''}
         <div class="icon-note">${ic('saint')}<div><b>L’icône</b><p>${esc(f.icon)}</p></div></div>
       </div>
       <article class="card tropar">
@@ -359,7 +360,7 @@
   function saintsIndex() {
     if (O._sIdx) return O._sIdx;
     const arr = [];
-    Object.keys(O.SAINTS).forEach((md) => O.SAINTS[md].forEach((s) => { const p = C.parseSaint(s); arr.push({ md, m: +md.slice(0, 2), d: +md.slice(3), name: p.name, rank: p.rank }); }));
+    Object.keys(O.SAINTS).forEach((md) => O.SAINTS[md].forEach((s, ix) => { const p = C.parseSaint(s); arr.push({ md, ix, m: +md.slice(0, 2), d: +md.slice(3), name: p.name, rank: p.rank }); }));
     return (O._sIdx = arr);
   }
   function saintsList(q, month) {
@@ -370,7 +371,7 @@
     items.forEach((s) => {
       const key = s.md;
       if (key !== last) { if (last) out += '</ul>'; out += `<h3 class="day-h">${nomText(s.m, s.d)}</h3><ul class="saint-list">`; last = key; }
-      out += `<li class="rank-${s.rank}"><span class="dot"></span><div><b>${esc(s.name)}</b></div></li>`;
+      out += `<li class="rank-${s.rank}"><span class="dot"></span><div><b>${esc(s.name)}</b></div>${O.iconThumb ? O.iconThumb('entry:' + s.md + ':' + s.ix, s.name) : ''}</li>`;
     });
     return out + '</ul>';
   }

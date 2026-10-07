@@ -1,11 +1,12 @@
 /* Service worker : fonctionnement hors ligne (réseau d'abord, cache en secours) + notifications */
-const VERSION = 'blagovest-v9';
+const VERSION = 'blagovest-v10';
 const DATA_CACHE = 'blagovest-data'; // écrit par js/notifications.js, à ne jamais purger
+const ICON_CACHE = 'blagovest-icons'; // icônes des saints : mémorisées à la première vue, ou en bloc depuis les réglages
 const CORE = [
   './', 'index.html', 'manifest.webmanifest', 'css/style.css',
   'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable-512.png',
   'js/calendar.js', 'js/core.js', 'js/push-config.js', 'js/notifications.js', 'js/sync.js', 'js/share.js',
-  'js/views-day.js', 'js/views-bible.js', 'js/views-slavonic.js', 'js/views-more.js', 'js/views-extra.js', 'js/views-ask.js', 'js/data/verses-cs.js', 'js/boot.js',
+  'js/views-day.js', 'js/views-bible.js', 'js/views-slavonic.js', 'js/views-more.js', 'js/views-extra.js', 'js/views-ask.js', 'js/views-icons.js', 'js/data/icons.js', 'js/data/verses-cs.js', 'js/boot.js',
   'js/data/feasts.js', 'js/data/saints.js', 'js/data/verses1.js', 'js/data/verses2.js', 'js/data/verses3.js', 'js/data/verses4.js',
   'js/data/prayers.js', 'js/data/readings.js', 'js/data/slavonic.js', 'js/data/theology.js', 'js/data/canon.js'
 ];
@@ -13,7 +14,7 @@ self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(VERSION).then((c) => c.addAll(CORE)).then(() => self.skipWaiting()));
 });
 self.addEventListener('activate', (e) => {
-  e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== VERSION && k !== DATA_CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim()));
+  e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== VERSION && k !== DATA_CACHE && k !== ICON_CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim()));
 });
 self.addEventListener('fetch', (e) => {
   const req = e.request;
@@ -29,6 +30,14 @@ self.addEventListener('fetch', (e) => {
     return;
   }
   if (url.origin !== location.origin) return;
+  // icônes : d'abord le cache (elles ne changent pas), sinon réseau puis mémorisation
+  if (/\/icons\/saints\//.test(url.pathname)) {
+    e.respondWith(caches.open(ICON_CACHE).then(async (c) => {
+      const hit = await c.match(req); if (hit) return hit;
+      const r = await fetch(req); if (r.ok) c.put(req, r.clone()); return r;
+    }));
+    return;
+  }
   e.respondWith(
     fetch(req, { cache: 'no-cache' }).then((r) => { const copy = r.clone(); caches.open(VERSION).then((c) => c.put(req, copy)); return r; })
       .catch(() => caches.match(req).then((m) => m || caches.match('index.html')))

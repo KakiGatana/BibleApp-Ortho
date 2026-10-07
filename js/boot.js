@@ -8,7 +8,7 @@
   window.addEventListener('hashchange', () => { if (!K.$('#sheet').hidden) K.closeSheet(); K.render(); });
   if (window.matchMedia) matchMedia('(prefers-color-scheme: dark)').addEventListener('change', K.applySettings);
   K.render();
-  setTimeout(() => { if (O.milestones) O.milestones(); }, 900);
+  setTimeout(() => { if (O.milestones) O.milestones(); if (O.welcome) O.welcome(); }, 900);
   if ('serviceWorker' in navigator && /^https?:/.test(location.protocol)) {
     // une nouvelle version prend la main : on propose de recharger (pas à la toute première installation)
     const hadController = !!navigator.serviceWorker.controller;

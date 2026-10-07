@@ -26,6 +26,14 @@
     (O.THEOLOGY || []).forEach((t) => add('Théologie', t.title, t.sub || '', '#/theo/' + t.id));
     (O.VOCAB || []).forEach((w) => add('Slavon', w[0] + ' (' + w[1] + ')', w[2], '#/slavonic/vocab'));
     (O.VERSES || []).forEach((v) => add('Verset', v[0], v[1], '', (v[2] || '') + ' ' + (v[3] || '')));
+    // saints et mémoires : lien vers le jour de l'année en cours
+    const y = C.today().getUTCFullYear(), style = S.settings.style;
+    Object.keys(O.SAINTS || {}).forEach((md) => {
+      const [mm, dd] = md.split('-').map(Number);
+      let href = '#/saints';
+      try { href = '#/day/' + C.isoKey(C.civilFromNominal(y, mm, dd, style)); } catch (e) { /* on garde la liste des saints */ }
+      O.SAINTS[md].forEach((raw) => { const n = C.parseSaint(raw).name; add('Saint', n, dd + '/' + mm, href); });
+    });
     return rows;
   }
 
@@ -38,7 +46,7 @@
 
   function searchView() {
     const html = `<section class="page">
-      ${U.pageHead('Поиск', 'Recherche', 'Dans les Écritures, les prières, les fêtes, la théologie, le vocabulaire slavon et les versets du jour. Les accents sont ignorés.')}
+      ${U.pageHead('Поиск', 'Recherche', 'Dans les Écritures, les prières, les fêtes, les saints, la théologie, le vocabulaire slavon et les versets du jour. Les accents sont ignorés.')}
       <div class="search"><span>${ic('search')}</span><input id="gq" type="search" placeholder="berger, Magnificat, Господь, repentir…" autocomplete="off" autofocus></div>
       <div id="gres" class="gres"></div>
     </section>`;
@@ -169,4 +177,20 @@
     try { if (navigator.share) await navigator.share(data); else { await navigator.clipboard.writeText(appUrl()); K.toast('Lien copié'); } } catch (e) { /* partage annulé */ }
   };
   K.act['copy-app'] = async () => { try { await navigator.clipboard.writeText(appUrl()); K.toast('Lien copié'); } catch (e) { K.toast(appUrl()); } };
+
+  /* ---------- bienvenue (première ouverture seulement) ---------- */
+  O.welcome = () => {
+    if (S.seen || (S.visits || []).length > 1) return;
+    K.openSheet(`<h2 class="sheet-title">Bienvenue dans Blagovest</h2>
+      <p class="muted">Благовѣстъ : la « bonne nouvelle », et le carillon qui appelle à la prière. Quelques repères pour commencer :</p>
+      <ul class="welcome">
+        <li>${ic('home')}<div><b>Accueil</b><span>La date liturgique, le verset du jour, les saints et le jeûne.</span></div></li>
+        <li>${ic('chat')}<div><b>Assistant IA</b><span>Le bouton doré : pose tes questions de théologie et d’histoire de l’Église.</span></div></li>
+        <li>${ic('theo')}<div><b>Théologie</b><span>Les grands thèmes de la foi, expliqués simplement.</span></div></li>
+        <li>${ic('menu')}<div><b>Menu</b><span>Écritures, prières, slavon, fêtes, saints, favoris et réglages.</span></div></li>
+        <li>${ic('gear')}<div><b>Réglages</b><span>Notifications, sauvegarde entre appareils, mode lecture et thème.</span></div></li>
+      </ul>
+      <p class="center"><button class="btn" data-act="welcome-close">Commencer</button></p>`);
+  };
+  K.act['welcome-close'] = () => { S.seen = 1; K.save(); K.closeSheet(); };
 })();

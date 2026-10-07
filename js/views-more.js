@@ -85,6 +85,7 @@
       </article>
       ${O.push ? O.push.card() : ''}
       ${O.sync ? O.sync.card() : ''}
+      ${O.iconsCard ? O.iconsCard() : ''}
       <article class="card set">
         <div class="card-k">Mes données</div>
         <p class="muted small">Tout est enregistré dans ton navigateur : favoris, notes, progression, cartes. Rien n’est envoyé nulle part, sauf si tu actives les notifications (voir ci-dessus).</p>
@@ -139,6 +140,7 @@
         </ul>
         <h2>Technique</h2>
         <p>Application statique (HTML, CSS, JavaScript), sans suivi ni compte. Elle fonctionne hors ligne une fois chargée et peut être installée sur l’écran d’accueil. Les données sont enregistrées uniquement dans ton navigateur.</p>
+        <p class="center"><a class="btn ghost small" href="#/credits">Crédits des icônes</a></p>
         <p class="center cs big">Слава Богу о всѣхъ. Аминь.</p>
       </div></section>`,
     title: 'À propos', nav: 'settings'
