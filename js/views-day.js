@@ -38,6 +38,7 @@
   const NT = [];
   O.NT_CHAPTERS.forEach(([ab, name, n]) => { for (let i = 1; i <= n; i++) NT.push([ab, name, i]); });
   const hebPs = (n) => (n <= 8 ? n : n === 9 ? 9 : n <= 112 ? n + 1 : n === 113 ? 114 : n <= 115 ? 116 : n <= 145 ? n + 1 : n === 146 ? 147 : n);
+  O.planFor = planFor;
   function planFor(date) {
     const i = (C.dayOfYear(date) - 1);
     const nt = NT[i % NT.length];
@@ -152,9 +153,9 @@
         <article class="card mini-card">
           <div class="card-k">Lecture du jour</div>
           <p class="read-line"><b>${esc(plan.nt[1])} ${plan.nt[2]}</b><br><span class="muted small">Nouveau Testament en un an (260 chapitres)</span></p>
-          <div class="row">${ntLink ? `<a class="btn small ghost" href="${ntLink}" target="_blank" rel="noopener">Lire ${ic('ext', 'ic xs')}</a>` : ''}</div>
+          <div class="row"><a class="btn small" href="#/read/nt/${plan.nt[0]}/${plan.nt[2]}">Lire ici</a>${ntLink ? `<a class="btn small ghost" href="${ntLink}" target="_blank" rel="noopener">AELF ${ic('ext', 'ic xs')}</a>` : ''}</div>
           <p class="read-line"><b>Psaume ${plan.ps}</b> <span class="muted small">(LXX)</span></p>
-          <div class="row"><a class="btn small ghost" href="${psLink}" target="_blank" rel="noopener">Lire ${ic('ext', 'ic xs')}</a>${O.READINGS.find((r) => r.id === 'ps' + plan.ps) ? `<a class="btn small ghost" href="#/passage/ps${plan.ps}">Texte ici</a>` : ''}</div>
+          <div class="row"><a class="btn small" href="#/read/ps/${plan.ps}">Lire ici</a>${O.READINGS.find((r) => r.id === 'ps' + plan.ps) ? `<a class="btn small ghost" href="#/passage/ps${plan.ps}">Texte ici</a>` : ''}</div>
         </article>
         <article class="card mini-card card-wine">
           <div class="card-k">Mot slavon</div>

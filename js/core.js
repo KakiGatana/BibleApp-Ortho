@@ -232,6 +232,13 @@
     },
     /* Panneau de jeûne */
     fastPanel(f, compact) {
+      const MEALS = {
+        1: ['Omelette aux herbes et salade', 'Gratin de légumes', 'Pâtes au fromage', 'Poisson grillé et pommes de terre', 'Risotto aux champignons'],
+        2: ['Poisson au four et riz', 'Soupe de légumes avec du pain', 'Salade de lentilles', 'Pâtes aux fruits de mer', 'Tarte aux légumes sans laitage'],
+        3: ['Soupe de pois chiches', 'Lentilles et riz', 'Pâtes à la tomate et à l’huile d’olive', 'Ratatouille', 'Houmous avec du pain'],
+        4: ['Légumes vapeur', 'Soupe de légumes sans huile', 'Riz aux légumes', 'Pommes de terre au four', 'Haricots blancs à la tomate', 'Fruits et compote'],
+        5: ['Pain et eau', 'Fruits secs et noix', 'Légumes crus ou cuits à l’eau']
+      };
       const allow = [
         ['viande', '🥩', [1, 0, 0, 0, 0, 0]], ['laitages & œufs', '🧀', [1, 1, 0, 0, 0, 0]], ['poisson', '🐟', [1, 1, 1, 0, 0, 0]], ['huile', '🫒', [1, 1, 1, 1, 0, 0]], ['vin', '🍷', [1, 1, 1, 1, 2, 0]]
       ];
@@ -239,7 +246,8 @@
         <div class="fast-head"><div class="fast-meter" aria-hidden="true">${[1, 2, 3, 4, 5].map((n) => `<i class="${n <= f.level ? 'on' : ''}"></i>`).join('')}</div>
           <div><div class="fast-label">${esc(f.label)}</div>${f.period ? `<div class="fast-period">${esc(f.period)}</div>` : ''}</div></div>
         ${compact ? '' : `<p class="fast-desc">${esc(f.note || f.desc)}</p>
-        <ul class="allow">${allow.map(([n, e, a]) => { const s = a[f.level]; return `<li class="${s === 1 ? 'yes' : s === 2 ? 'maybe' : 'no'}"><span class="em">${e}</span><span>${n}</span><b>${s === 1 ? 'permis' : s === 2 ? 'toléré' : 'non'}</b></li>`; }).join('')}</ul>`}
+        <ul class="allow">${allow.map(([n, e, a]) => { const s = a[f.level]; return `<li class="${s === 1 ? 'yes' : s === 2 ? 'maybe' : 'no'}"><span class="em">${e}</span><span>${n}</span><b>${s === 1 ? 'permis' : s === 2 ? 'toléré' : 'non'}</b></li>`; }).join('')}</ul>
+        ${MEALS[f.level] ? `<details class="fast-ideas"><summary>Idées de repas pour aujourd’hui</summary><ul>${MEALS[f.level].map((m) => `<li>${esc(m)}</li>`).join('')}</ul><p class="muted xs">Simples suggestions. Le jeûne se vit selon ta santé et les conseils de ton père spirituel.</p></details>` : ''}`}
       </section>`;
     },
     toneBadge(t) { return t ? `<span class="chip tone" title="Ton de l’Octoèque">Ton ${t}</span>` : ''; },

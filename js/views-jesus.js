@@ -3,7 +3,7 @@
 (function () {
   const O = window.ORTHO, K = O.core, U = K.U;
   const { S, esc, route } = K;
-  S.jesus = Object.assign({ rope: 33, cur: 0, vib: true }, S.jesus || {});
+  S.jesus = Object.assign({ rope: 33, cur: 0, vib: true, snd: true, breath: false }, S.jesus || {});
   const J = () => S.jesus;
   const ROPES = [[33, '33'], [50, '50'], [100, '100']];
 
@@ -42,6 +42,7 @@
         <button class="btn small ghost" data-act="jesus-reset">Recommencer le tour</button>
         <button class="btn small ghost ${j.vib ? 'on' : ''}" data-act="jesus-vib" aria-pressed="${j.vib}">Vibration ${j.vib ? 'activée' : 'coupée'}</button>
       </div>
+      <div class="breath ${j.breath ? 'on' : ''}" id="breathBox" aria-live="polite">${j.breath ? '<span class="b-in">Inspire : Seigneur Jésus-Christ, Fils de Dieu</span><span class="b-out">Expire : aie pitié de moi, pécheur</span>' : ''}</div>
 
       <article class="card jprayer">
         <p class="fr">${esc(frLine).replace(/\n/g, '<br>')}</p>
@@ -51,6 +52,8 @@
       <article class="card set">
         <div class="card-k">Ma corde</div>
         <div class="set-row"><div><b>Nombre de nœuds</b><span class="muted small">Le tour est terminé quand toutes les billes sont remplies.</span></div>${U.seg(ROPES.map(([v, l]) => [String(v), l]), String(j.rope), 'jesus-rope')}</div>
+        <div class="set-row"><div><b>Son de la bille</b><span class="muted small">Un petit claquement de bois à chaque prière.</span></div><button class="switch ${j.snd ? 'on' : ''}" data-act="jesus-snd" role="switch" aria-checked="${j.snd}"></button></div>
+        <div class="set-row"><div><b>Guide de respiration</b><span class="muted small">Inspirer sur la première moitié, expirer sur la seconde.</span></div><button class="switch ${j.breath ? 'on' : ''}" data-act="jesus-breath" role="switch" aria-checked="${j.breath}"></button></div>
         <p class="muted xs">L’écran reste allumé pendant que tu pries sur cette page.</p>
       </article>
 
@@ -73,6 +76,20 @@
   window.addEventListener('hashchange', () => { if (lock && !/^#\/jesus/.test(location.hash)) { lock.release().catch(() => {}); lock = null; } });
   document.addEventListener('visibilitychange', () => { if (!document.hidden && /^#\/jesus/.test(location.hash)) keepAwake(); });
 
+  /* petit claquement de bois synthétisé (aucun fichier son) */
+  let ac = null;
+  function click(big) {
+    if (!J().snd) return;
+    try {
+      ac = ac || new (window.AudioContext || window.webkitAudioContext)();
+      if (ac.state === 'suspended') ac.resume();
+      const t = ac.currentTime, o = ac.createOscillator(), g = ac.createGain(), f = ac.createBiquadFilter();
+      o.type = 'triangle'; o.frequency.setValueAtTime(big ? 330 : 520, t); o.frequency.exponentialRampToValueAtTime(big ? 140 : 210, t + 0.07);
+      f.type = 'lowpass'; f.frequency.value = 1800;
+      g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(big ? 0.5 : 0.32, t + 0.004); g.gain.exponentialRampToValueAtTime(0.0001, t + 0.12);
+      o.connect(f); f.connect(g); g.connect(ac.destination); o.start(t); o.stop(t + 0.13);
+    } catch (e) { /* pas de son possible : on continue sans */ }
+  }
   const vibrate = (ms) => { if (J().vib && navigator.vibrate) navigator.vibrate(ms); };
 
   function refresh(popIdx) {
@@ -92,16 +109,18 @@
     j.cur++;
     if (j.cur >= j.rope) {
       // tour accompli : toute la corde s'allume, puis repart du début
-      finishing = true; vibrate([60, 60, 140]);
+      finishing = true; vibrate([60, 60, 140]); click(true);
       document.querySelectorAll('#ropeBox .bd').forEach((g) => g.classList.add('lit'));
       document.getElementById('ropeWrap')?.classList.add('done');
       K.toast('Un tour de corde accompli. Слава Тебѣ, Боже !');
       setTimeout(() => { j.cur = 0; K.save(); finishing = false; document.getElementById('ropeWrap')?.classList.remove('done'); refresh(); }, 1100);
-    } else { vibrate(14); refresh(j.cur - 1); }
+    } else { vibrate(14); click(false); refresh(j.cur - 1); }
     K.save();
   };
   K.act['jesus-undo'] = () => { const j = J(); j.cur = j.cur > 0 ? j.cur - 1 : j.rope - 1; K.save(); refresh(); };
   K.act['jesus-reset'] = () => { J().cur = 0; K.save(); refresh(); };
   K.act['jesus-vib'] = () => { J().vib = !J().vib; K.save(); K.render(); };
+  K.act['jesus-snd'] = () => { J().snd = !J().snd; K.save(); K.render(); if (J().snd) click(false); };
+  K.act['jesus-breath'] = () => { J().breath = !J().breath; K.save(); K.render(); };
   K.act['jesus-rope'] = (el) => { J().rope = +el.dataset.v; J().cur = 0; K.save(); K.render(); };
 })();

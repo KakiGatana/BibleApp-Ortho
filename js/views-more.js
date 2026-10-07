@@ -86,6 +86,7 @@
       ${O.i18n ? O.i18n.card() : ''}
       ${O.push ? O.push.card() : ''}
       ${O.sync ? O.sync.card() : ''}
+      ${O.textsCard ? O.textsCard() : ''}
       ${O.iconsCard ? O.iconsCard() : ''}
       <article class="card set">
         <div class="card-k">Mes données</div>

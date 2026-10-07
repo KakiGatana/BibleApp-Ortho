@@ -92,7 +92,7 @@
         const i = C.dayOfYear(d) - 1, nt = NT[i % NT.length], iso = C.isoKey(d), ok = (S.done[iso] || {}).nt;
         const link = O.aelfLink(nt[0] + ' ' + nt[2]);
         return `<li class="${iso === C.isoKey(t) ? 'today' : ''} ${ok ? 'ok' : ''}"><button class="check ${ok ? 'on' : ''}" data-act="done-nt" data-iso="${iso}" aria-label="Marquer comme lu">${ic('check')}</button>
-          <div><b>${esc(nt[1])} ${nt[2]}</b><span class="muted small"> · Ps ${(i % 150) + 1}</span><div class="muted xs">${esc(C.longDate(d))}</div></div>${link ? `<a class="icon-btn" href="${link}" target="_blank" rel="noopener" aria-label="Lire">${ic('ext')}</a>` : ''}</li>`;
+          <div><a href="#/read/nt/${nt[0]}/${nt[2]}"><b>${esc(nt[1])} ${nt[2]}</b></a><span class="muted small"> · <a href="#/read/ps/${(i % 150) + 1}">Ps ${(i % 150) + 1}</a></span><div class="muted xs">${esc(C.longDate(d))}</div></div>${link ? `<a class="icon-btn" href="${link}" target="_blank" rel="noopener" aria-label="Lire">${ic('ext')}</a>` : ''}</li>`;
       }).join('')}</ul>
     </section>`;
     return { html, title: 'Plan de lecture', nav: 'bible' };

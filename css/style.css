@@ -833,3 +833,21 @@ html[data-reading="1"] .main { max-width: 760px; }
 :root[data-theme="dark"] .card-slate { --surface: #20334f; --surface2: #294062; --bg2: #182741; }
 :root[data-theme="dark"] .card-ochre { --surface: #3a3020; --surface2: #483c28; --bg2: #2e2618; }
 :root[data-theme="dark"] .card-indigo { --surface: #222a52; --surface2: #2b3563; --bg2: #1b2142; }
+
+/* lecture du texte dans l'appli */
+.rtext { padding: 1.3rem 1.3rem; }
+.rtext p { margin: .5rem 0; font-size: 1.14rem; line-height: 1.75; font-family: var(--f-body); }
+.rtext sup { color: var(--gold); font-family: var(--f-label); font-size: .62em; margin-right: .4rem; font-weight: 600; }
+.rnav { margin: .4rem 0 1rem; }
+.read .back { margin-bottom: .9rem; }
+/* idées de repas */
+.fast-ideas { margin-top: .8rem; border-top: 1px dashed var(--line); padding-top: .7rem; }
+.fast-ideas summary { cursor: pointer; color: var(--gold); font-weight: 600; }
+.fast-ideas ul { margin: .5rem 0; padding-left: 1.2rem; display: grid; gap: .25rem; }
+/* guide de respiration (Prière de Jésus) */
+.breath { text-align: center; min-height: 0; margin: -.2rem 0 1rem; }
+.breath.on { min-height: 3.2rem; display: grid; gap: .15rem; }
+.breath span { font-size: 1rem; opacity: .35; animation: breathA 8s ease-in-out infinite; }
+.breath .b-out { animation-name: breathB; }
+@keyframes breathA { 0%, 45% { opacity: 1; transform: scale(1.03); } 55%, 100% { opacity: .3; transform: scale(1); } }
+@keyframes breathB { 0%, 45% { opacity: .3; transform: scale(1); } 55%, 95% { opacity: 1; transform: scale(1.03); } 100% { opacity: .3; } }
