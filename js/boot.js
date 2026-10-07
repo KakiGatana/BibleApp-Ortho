@@ -8,6 +8,13 @@
   window.addEventListener('hashchange', () => { if (!K.$('#sheet').hidden) K.closeSheet(); K.render(); });
   if (window.matchMedia) matchMedia('(prefers-color-scheme: dark)').addEventListener('change', K.applySettings);
   K.render();
+  // animation d'ouverture : retirée de la page après son déroulé (ou au toucher)
+  const splash = document.getElementById('splash');
+  if (splash) {
+    const gone = () => { if (splash.parentNode) splash.remove(); };
+    splash.addEventListener('click', () => { splash.style.transition = 'opacity .25s'; splash.style.opacity = '0'; setTimeout(gone, 260); });
+    setTimeout(gone, window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches ? 1400 : 2500);
+  }
   setTimeout(() => { if (O.milestones) O.milestones(); if (O.welcome) O.welcome(); }, 900);
   if ('serviceWorker' in navigator && /^https?:/.test(location.protocol)) {
     // une nouvelle version prend la main : on propose de recharger (pas à la toute première installation)

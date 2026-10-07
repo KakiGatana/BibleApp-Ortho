@@ -9,12 +9,12 @@
   --fs: 1;
 
   /* parchemin (clair) */
-  --bg: #f1e8d2; --bg2: #e9dec3; --surface: #fbf6e7; --surface2: #f4ebd2;
-  --ink: #2a1f17; --ink2: #5a4838; --ink3: #8b7860;
+  --bg: #edf1f9; --bg2: #dfe7f4; --surface: #ffffff; --surface2: #f3f6fc;
+  --ink: #1b2a4a; --ink2: #43537a; --ink3: #76849f;
   --gold: #9c6f14; --gold2: #c4952b; --gold-soft: rgba(156, 111, 20, .22);
   --cinnabar: #a3281e; --lapis: #1f3b73; --emerald: #2c6a4d;
-  --line: rgba(70, 50, 20, .17); --shadow: 0 1px 0 rgba(255, 255, 255, .55) inset, 0 14px 30px -18px rgba(60, 38, 8, .45);
-  --veil: rgba(241, 232, 210, .86);
+  --line: rgba(31, 59, 115, .15); --shadow: 0 1px 0 rgba(255, 255, 255, .8) inset, 0 14px 30px -18px rgba(31, 59, 115, .4);
+  --veil: rgba(237, 241, 249, .9);
   --lv1: #b9a6e0; --lv2: #9578cf; --lv3: #7550b8; --lv4: #54349b; --lv5: #2f1a6b;
   --on-accent: #fff8e6;
   --cs-ink: #8a3f12;
@@ -203,7 +203,7 @@ svg.ic.xs { width: .95rem; height: .95rem; }
 .mini { font-family: var(--f-label); font-size: .6rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); display: inline-flex; align-items: center; gap: .25rem; }
 
 /* ---------- héros ---------- */
-.hero { position: relative; overflow: hidden; border-radius: 26px 26px 20px 20px; padding: 1rem 1.2rem 1.5rem; margin-bottom: 1.2rem; color: #f5ecd2; box-shadow: 0 24px 50px -28px #000, inset 0 0 0 1px rgba(240, 205, 122, .35); background: linear-gradient(160deg, #8e2c4c 0%, #5c1a35 55%, #33101f 100%); isolation: isolate; }
+.hero { position: relative; overflow: hidden; border-radius: 26px 26px 20px 20px; padding: 1rem 1.2rem 1.5rem; margin-bottom: 1.2rem; color: #f5ecd2; box-shadow: 0 24px 50px -28px #000, inset 0 0 0 1px rgba(240, 205, 122, .35); background: linear-gradient(160deg, #3b72c9 0%, #2756a6 55%, #1b3f84 100%); isolation: isolate; }
 .hero::before { content: ''; position: absolute; inset: 6px; border-radius: 20px 20px 15px 15px; border: 1px solid rgba(240, 205, 122, .28); z-index: -1; pointer-events: none; }
 .hero-careme { background: linear-gradient(160deg, #5a3d96 0%, #3a2370 55%, #24134a 100%); }
 .hero-passion { background: linear-gradient(160deg, #4d121b 0%, #2b0b11 55%, #12060a 100%); }
@@ -495,3 +495,51 @@ html[data-reading="1"] .main { max-width: 760px; }
 :root[data-theme="dark"] .card-teal { --surface: #1d3b47; --surface2: #25495a; --bg2: #173039; }
 :root[data-theme="dark"] .card-wine { --surface: #3b2233; --surface2: #482a3f; --bg2: #2e1a28; }
 .verse-card { background: var(--surface); }
+
+/* mode clair : encadrés de couleur douce (lavande, menthe, rose), comme en mode nuit */
+.card-violet, .verse-card, .tropar { --surface: #efeafa; --surface2: #e6def5; --bg2: #ddd3ef; }
+.card-teal { --surface: #e2f2ef; --surface2: #d4ebe6; --bg2: #c6e2dc; }
+.card-wine { --surface: #f9e9ee; --surface2: #f3dae2; --bg2: #ecccd7; }
+.verse-card { background: var(--surface); }
+:root:not([data-theme="dark"]) .icon-btn.lab { color: var(--ink2); }
+
+/* mode nuit : bandeau du jour (temps ordinaire) en blanc ivoire, texte bordeaux */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .hero-ordinaire { background: linear-gradient(160deg, #ffffff 0%, #f7f2e6 60%, #ece3cc 100%); color: #2b2438; box-shadow: 0 24px 50px -28px #000, inset 0 0 0 1px rgba(142, 44, 76, .3); }
+  :root:not([data-theme="light"]) .hero-ordinaire::before { border-color: rgba(142, 44, 76, .25); }
+  :root:not([data-theme="light"]) .hero-ordinaire .hero-stars { opacity: 0; }
+  :root:not([data-theme="light"]) .hero-ordinaire .hero-cross { stroke: #8e2c4c; opacity: .12; }
+  :root:not([data-theme="light"]) .hero-ordinaire .hero-date { color: #6b2a42; } :root:not([data-theme="light"]) .hero-ordinaire .hero-date b { color: #8e2c4c; }
+  :root:not([data-theme="light"]) .hero-ordinaire .hero-title { background: linear-gradient(180deg, #9a3556 0%, #6b1f3d 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  :root:not([data-theme="light"]) .hero-ordinaire .hero-cs { color: #8a5a10; } :root:not([data-theme="light"]) .hero-ordinaire .hero-sub { color: #5d4a5c; }
+  :root:not([data-theme="light"]) .hero-ordinaire .chip, :root:not([data-theme="light"]) .hero-ordinaire .chip.gold { background: rgba(142, 44, 76, .09); color: #6b2a42; border-color: rgba(142, 44, 76, .3); }
+  :root:not([data-theme="light"]) .hero-ordinaire .btn.light { background: rgba(142, 44, 76, .09); color: #6b2a42; box-shadow: inset 0 0 0 1px rgba(142, 44, 76, .35); }
+  :root:not([data-theme="light"]) .hero-ordinaire .icon-btn.light { color: #6b2a42; } :root:not([data-theme="light"]) .hero-ordinaire .icon-btn.light:hover { background: rgba(142, 44, 76, .1); color: #8e2c4c; }
+}
+:root[data-theme="dark"] .hero-ordinaire { background: linear-gradient(160deg, #ffffff 0%, #f7f2e6 60%, #ece3cc 100%); color: #2b2438; box-shadow: 0 24px 50px -28px #000, inset 0 0 0 1px rgba(142, 44, 76, .3); }
+:root[data-theme="dark"] .hero-ordinaire::before { border-color: rgba(142, 44, 76, .25); }
+:root[data-theme="dark"] .hero-ordinaire .hero-stars { opacity: 0; }
+:root[data-theme="dark"] .hero-ordinaire .hero-cross { stroke: #8e2c4c; opacity: .12; }
+:root[data-theme="dark"] .hero-ordinaire .hero-date { color: #6b2a42; } :root[data-theme="dark"] .hero-ordinaire .hero-date b { color: #8e2c4c; }
+:root[data-theme="dark"] .hero-ordinaire .hero-title { background: linear-gradient(180deg, #9a3556 0%, #6b1f3d 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+:root[data-theme="dark"] .hero-ordinaire .hero-cs { color: #8a5a10; } :root[data-theme="dark"] .hero-ordinaire .hero-sub { color: #5d4a5c; }
+:root[data-theme="dark"] .hero-ordinaire .chip, :root[data-theme="dark"] .hero-ordinaire .chip.gold { background: rgba(142, 44, 76, .09); color: #6b2a42; border-color: rgba(142, 44, 76, .3); }
+:root[data-theme="dark"] .hero-ordinaire .btn.light { background: rgba(142, 44, 76, .09); color: #6b2a42; box-shadow: inset 0 0 0 1px rgba(142, 44, 76, .35); }
+:root[data-theme="dark"] .hero-ordinaire .icon-btn.light { color: #6b2a42; } :root[data-theme="dark"] .hero-ordinaire .icon-btn.light:hover { background: rgba(142, 44, 76, .1); color: #8e2c4c; }
+
+/* animation d'ouverture : un carillon (blagovest) qui s'étend en ondes autour du logo */
+#splash { position: fixed; inset: 0; z-index: 500; display: grid; place-content: center; justify-items: center; gap: .55rem; background: radial-gradient(circle at 50% 42%, #3b72c9 0%, #2756a6 45%, #142d63 100%); color: #f0cd7a; overflow: hidden; animation: splashOut .6s ease 1.7s forwards; cursor: pointer; }
+#splash .ring { position: absolute; left: 50%; top: 42%; width: 9rem; height: 9rem; margin: -4.5rem 0 0 -4.5rem; border-radius: 50%; border: 1.5px solid rgba(240, 205, 122, .55); opacity: 0; animation: ring 1.9s ease-out forwards; }
+#splash .r2 { animation-delay: .35s; } #splash .r3 { animation-delay: .7s; }
+#splash .splash-mark { width: 5.2rem; height: 5.2rem; fill: none; stroke: #f0cd7a; z-index: 1; animation: splashIn .8s cubic-bezier(.2, .8, .2, 1) both, bell 1.4s ease-in-out .5s; transform-origin: 50% 8%; }
+#splash .splash-name { font-family: var(--f-label); font-size: 1.5rem; letter-spacing: .32em; text-indent: .32em; color: #fff4d2; z-index: 1; animation: splashText .9s ease .35s both; }
+#splash .splash-cs { font-family: var(--f-cs); font-size: 1.3rem; z-index: 1; animation: splashText .9s ease .6s both; }
+@keyframes splashIn { from { opacity: 0; transform: scale(.7); } to { opacity: 1; transform: none; } }
+@keyframes splashText { from { opacity: 0; transform: translateY(10px); letter-spacing: .6em; } to { opacity: 1; transform: none; } }
+@keyframes bell { 0%, 100% { transform: rotate(0); } 20% { transform: rotate(7deg); } 40% { transform: rotate(-6deg); } 60% { transform: rotate(4deg); } 80% { transform: rotate(-2deg); } }
+@keyframes ring { 0% { opacity: .9; transform: scale(.5); } 100% { opacity: 0; transform: scale(3.6); } }
+@keyframes splashOut { to { opacity: 0; visibility: hidden; } }
+@media (prefers-reduced-motion: reduce) {
+  #splash { animation: splashOut .3s ease .9s forwards; }
+  #splash .ring { display: none; } #splash .splash-mark, #splash .splash-name, #splash .splash-cs { animation: none; }
+}
