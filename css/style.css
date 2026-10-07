@@ -703,12 +703,12 @@ html[data-reading="1"] .main { max-width: 760px; }
 :root { --lea: #6a3e2b; --lea2: #7b4a35; --lea3: #54301f; --lea-line: rgba(240, 205, 122, .38); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --lea: #4d2b1e; --lea2: #5d3626; --lea3: #3a2016; } }
 :root[data-theme="dark"] { --lea: #4d2b1e; --lea2: #5d3626; --lea3: #3a2016; }
-.topbar, .tabbar {
+.tabbar {
   --ink: #f8f1de; --ink2: #e8d9b4; --ink3: #cdb98f; --gold: #f0cd7a; --gold2: #f6dc9a; --gold-soft: rgba(240, 205, 122, .2);
   --surface: var(--lea2); --surface2: var(--lea2); --bg2: var(--lea3); --line: var(--lea-line); --bg: var(--lea); --on-accent: #2a1a05; --cs-ink: #f0cd7a;
   color: var(--ink);
 }
-.topbar, .tabbar { background: var(--lea); backdrop-filter: none; -webkit-backdrop-filter: none; border-color: var(--lea-line); }
+.tabbar { background: var(--lea); backdrop-filter: none; -webkit-backdrop-filter: none; border-color: var(--lea-line); }
 .topbar .brand, .topbar .brand-sm { color: #f5ecd2; }
 .seg { background: var(--lea3); border-color: var(--lea-line); }
 .seg button { color: #e8d9b4; }
@@ -737,3 +737,10 @@ html[data-reading="1"] .main { max-width: 760px; }
 .topbar .tools { gap: 0; }
 .topbar .home-link { padding: .22rem .8rem .22rem .5rem; font-size: .9rem; }
 .topbar .home-link .ic { width: 1.1rem; height: 1.1rem; }
+
+/* haut de l'appli de nouveau en bleu ; bleu de fond plus clair (celui de l'animation d'ouverture) */
+:root { --bg: #e4edfa; --veil: rgba(228, 237, 250, .92); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #2b5aae; --bg2: #1f4690; --surface: #234a96; --surface2: #2c58a8; --veil: rgba(43, 90, 174, .92); } }
+:root[data-theme="dark"] { --bg: #2b5aae; --bg2: #1f4690; --surface: #234a96; --surface2: #2c58a8; --veil: rgba(43, 90, 174, .92); }
+.topbar { background: var(--veil); border-bottom: 1px solid var(--line); }
+.topbar .icon-btn { white-space: nowrap; }
