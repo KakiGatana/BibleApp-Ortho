@@ -95,6 +95,7 @@
     if (el.closest && el.closest(SKIP)) return;
     for (const a of ['placeholder', 'aria-label', 'title']) {
       const raw = el.getAttribute && el.getAttribute(a); if (!raw) continue;
+      const dd = dateTr(raw); if (dd) { el.setAttribute(a, dd); continue; }
       const { key, nums } = norm(raw); if (!frenchy(key)) continue;
       const tr = lookup(key);
       if (tr) el.setAttribute(a, fill(tr, nums)); else queue(key, { el, a, nums });
