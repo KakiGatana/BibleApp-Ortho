@@ -744,3 +744,59 @@ html[data-reading="1"] .main { max-width: 760px; }
 :root[data-theme="dark"] { --bg: #2b5aae; --bg2: #1f4690; --surface: #234a96; --surface2: #2c58a8; --veil: rgba(43, 90, 174, .92); }
 .topbar { background: var(--veil); border-bottom: 1px solid var(--line); }
 .topbar .icon-btn { white-space: nowrap; }
+
+/* ===== palette sobre : bleu, cuir brun, violet nuit, or. Plus de vert, de bordeaux ni de blanc pur ===== */
+[data-sec="calendar"] .view { --sec-g1: #4c6a94; --sec-g2: #34507a; --sec-g3: #203457; --surface: #e6ecf5; --surface2: #d8e1ee; --bg2: #c9d5e6; }
+[data-sec="bible"] .view { --sec-g1: #8c5239; --sec-g2: #60331f; --sec-g3: #361a0f; --surface: #f6ece3; --surface2: #eddccd; --bg2: #e3cdba; }
+[data-sec="prayers"] .view { --sec-g1: #6a55a3; --sec-g2: #4b3a86; --sec-g3: #2d2057; --surface: #ece8f6; --surface2: #e1dbf0; --bg2: #d5cde8; }
+[data-sec="slavonic"] .view { --sec-g1: #3a73a8; --sec-g2: #285a8a; --sec-g3: #173a5e; --surface: #e3edf6; --surface2: #d4e3f0; --bg2: #c5d9ea; }
+[data-sec="feasts"] .view { --sec-g1: #4a5aa8; --sec-g2: #34428a; --sec-g3: #212c5c; --surface: #e6e9f7; --surface2: #d8def2; --bg2: #c9d1ec; }
+[data-sec="saints"] .view { --sec-g1: #8a6a45; --sec-g2: #664a2c; --sec-g3: #3e2a15; --surface: #f4ecdd; --surface2: #eadfca; --bg2: #e0d1b4; }
+[data-sec="favorites"] .view { --sec-g1: #a06a43; --sec-g2: #744626; --sec-g3: #46260f; --surface: #f7eddf; --surface2: #efdfca; --bg2: #e6d1b3; }
+[data-sec="jesus"] .view { --sec-g1: #5f4a9a; --sec-g2: #42307a; --sec-g3: #261a4c; --surface: #ece8f6; --surface2: #e1dbf0; --bg2: #d5cde8; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) [data-sec="calendar"] .view { --sec-i1: #3d5a86; --sec-i2: #27406a; --sec-sub: #46526a; --surface: #20334f; --surface2: #294062; --bg2: #182741; }
+  :root:not([data-theme="light"]) [data-sec="bible"] .view { --sec-i1: #7d4531; --sec-i2: #4b2417; --sec-sub: #6b5247; --surface: #3b271f; --surface2: #483128; --bg2: #2d1d16; }
+  :root:not([data-theme="light"]) [data-sec="prayers"] .view { --sec-i1: #5a4690; --sec-i2: #38276b; --sec-sub: #52476b; --surface: #2f2c45; --surface2: #393655; --bg2: #292640; }
+  :root:not([data-theme="light"]) [data-sec="slavonic"] .view { --sec-i1: #2f5f8f; --sec-i2: #1c4068; --sec-sub: #3f566b; --surface: #1c3550; --surface2: #254463; --bg2: #152a40; }
+  :root:not([data-theme="light"]) [data-sec="feasts"] .view { --sec-i1: #3b4a94; --sec-i2: #26326b; --sec-sub: #474c70; --surface: #222a52; --surface2: #2b3563; --bg2: #1b2142; }
+  :root:not([data-theme="light"]) [data-sec="saints"] .view { --sec-i1: #7a5a3a; --sec-i2: #4d3420; --sec-sub: #6a5c48; --surface: #382c1f; --surface2: #463829; --bg2: #2c2218; }
+  :root:not([data-theme="light"]) [data-sec="favorites"] .view { --sec-i1: #8b5a37; --sec-i2: #54331a; --sec-sub: #6b5a47; --surface: #3a2c1f; --surface2: #473628; --bg2: #2d2217; }
+  :root:not([data-theme="light"]) [data-sec="jesus"] .view { --sec-i1: #5a4690; --sec-i2: #3b2a6e; --sec-sub: #52476b; --surface: #2f2c45; --surface2: #393655; --bg2: #292640; }
+}
+:root[data-theme="dark"] [data-sec="calendar"] .view { --sec-i1: #3d5a86; --sec-i2: #27406a; --sec-sub: #46526a; --surface: #20334f; --surface2: #294062; --bg2: #182741; }
+:root[data-theme="dark"] [data-sec="bible"] .view { --sec-i1: #7d4531; --sec-i2: #4b2417; --sec-sub: #6b5247; --surface: #3b271f; --surface2: #483128; --bg2: #2d1d16; }
+:root[data-theme="dark"] [data-sec="prayers"] .view { --sec-i1: #5a4690; --sec-i2: #38276b; --sec-sub: #52476b; --surface: #2f2c45; --surface2: #393655; --bg2: #292640; }
+:root[data-theme="dark"] [data-sec="slavonic"] .view { --sec-i1: #2f5f8f; --sec-i2: #1c4068; --sec-sub: #3f566b; --surface: #1c3550; --surface2: #254463; --bg2: #152a40; }
+:root[data-theme="dark"] [data-sec="feasts"] .view { --sec-i1: #3b4a94; --sec-i2: #26326b; --sec-sub: #474c70; --surface: #222a52; --surface2: #2b3563; --bg2: #1b2142; }
+:root[data-theme="dark"] [data-sec="saints"] .view { --sec-i1: #7a5a3a; --sec-i2: #4d3420; --sec-sub: #6a5c48; --surface: #382c1f; --surface2: #463829; --bg2: #2c2218; }
+:root[data-theme="dark"] [data-sec="favorites"] .view { --sec-i1: #8b5a37; --sec-i2: #54331a; --sec-sub: #6b5a47; --surface: #3a2c1f; --surface2: #473628; --bg2: #2d2217; }
+:root[data-theme="dark"] [data-sec="jesus"] .view { --sec-i1: #5a4690; --sec-i2: #3b2a6e; --sec-sub: #52476b; --surface: #2f2c45; --surface2: #393655; --bg2: #292640; }
+[data-sec="today"] .view { --sec-g1: #3b72c9; --sec-g2: #2756a6; --sec-g3: #1b3f84; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) [data-sec="today"] .view { --sec-i1: #2f5fb5; --sec-i2: #1b3f84; --sec-sub: #4a5575; } }
+:root[data-theme="dark"] [data-sec="today"] .view { --sec-i1: #2f5fb5; --sec-i2: #1b3f84; --sec-sub: #4a5575; }
+:root { --surface: #f8f2e6; --surface2: #f0e7d4; --emerald: #3f6fa8; --cinnabar: #a4502d; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --emerald: #8fb4e6; --cinnabar: #e0875f; } }
+:root[data-theme="dark"] { --emerald: #8fb4e6; --cinnabar: #e0875f; }
+.btn.good { background: linear-gradient(180deg, #5b8fc7, #3f6fa8); }
+.btn.bad { background: linear-gradient(180deg, #c06a45, #8f4224); }
+.feast-card.k-passion { border-top-color: #6b4a3a; }
+.card-teal { --surface: #e3edf6; --surface2: #d4e3f0; --bg2: #c5d9ea; }
+.card-wine { --surface: #f6ece3; --surface2: #eddccd; --bg2: #e3cdba; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .card-teal { --surface: #1c3550; --surface2: #254463; --bg2: #152a40; }
+  :root:not([data-theme="light"]) .card-wine { --surface: #3b271f; --surface2: #483128; --bg2: #2d1d16; }
+}
+:root[data-theme="dark"] .card-teal { --surface: #1c3550; --surface2: #254463; --bg2: #152a40; }
+:root[data-theme="dark"] .card-wine { --surface: #3b271f; --surface2: #483128; --bg2: #2d1d16; }
+[data-sec="bible"] .view .card, [data-sec="bible"] .view .plan, [data-sec="bible"] .view .search { --surface: #f8f2e6; --surface2: #f0e7d4; --bg2: #e8dcc4; --cinnabar: #a4502d; --emerald: #3f6fa8; background: #f8f2e6; }
+#tabbar [data-nav="ask"]   { --tc: #9db4ff; --tc-fg: #10204f; }
+#tabbar [data-nav="calendar"] { --tc: #e6c9a0; --tc-fg: #3a2410; }
+#tabbar [data-nav="jesus"] { --tc: #c4b0f0; --tc-fg: #2a1a5a; }
+#tabbar [data-nav="more"]  { --tc: #f0cd7a; --tc-fg: #3a2a06; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) #tabbar [data-nav="calendar"] { --tc: #e6c9a0; --tc-fg: #3a2410; }
+  :root:not([data-theme="light"]) #tabbar [data-nav="jesus"] { --tc: #c4b0f0; --tc-fg: #2a1a5a; }
+}
+:root[data-theme="dark"] #tabbar [data-nav="calendar"] { --tc: #e6c9a0; --tc-fg: #3a2410; }
+:root[data-theme="dark"] #tabbar [data-nav="jesus"] { --tc: #c4b0f0; --tc-fg: #2a1a5a; }
