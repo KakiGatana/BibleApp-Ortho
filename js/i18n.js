@@ -6,9 +6,9 @@
 (function () {
   const O = window.ORTHO, K = O.core, { S, esc } = K;
   const CFG = window.BLAGOVEST_PUSH || {};
-  const LANGS = [['fr', 'Français'], ['en', 'English'], ['ru', 'Русский'], ['sr', 'Српски'], ['es', 'Español'], ['de', 'Deutsch'], ['it', 'Italiano'], ['zh', '中文'], ['ja', '日本語']];
+  const LANGS = [['fr', 'Français'], ['en', 'English'], ['ru', 'Русский'], ['sr', 'Српски'], ['es', 'Español'], ['de', 'Deutsch'], ['it', 'Italiano'], ['zh', '中文'], ['ja', '日本語'], ['el', 'Ελληνικά'], ['ro', 'Română']];
   const NAMES = Object.fromEntries(LANGS);
-  const LOCALE = { en: 'en', ru: 'ru', sr: 'sr-Cyrl', es: 'es', de: 'de', it: 'it', zh: 'zh-CN', ja: 'ja' };
+  const LOCALE = { en: 'en', ru: 'ru', sr: 'sr-Cyrl', es: 'es', de: 'de', it: 'it', zh: 'zh-CN', ja: 'ja', el: 'el', ro: 'ro' };
   const ui = () => (S.settings.ui && NAMES[S.settings.ui] ? S.settings.ui : 'fr');
   const lang = ui();
 

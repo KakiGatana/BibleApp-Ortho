@@ -5,7 +5,7 @@ import Anthropic from '@anthropic-ai/sdk';
 
 const LANGS = {
   en: 'English', ru: 'Russian', sr: 'Serbian (Cyrillic script)', es: 'Spanish', de: 'German', it: 'Italian',
-  zh: 'Simplified Chinese (Mandarin)', ja: 'Japanese'
+  zh: 'Simplified Chinese (Mandarin)', ja: 'Japanese', el: 'Greek', ro: 'Romanian'
 };
 const STYLE = {
   en: 'Use the vocabulary of English-speaking Orthodox Churches (Divine Liturgy, Theotokos, Great Lent, Pascha, Matins, Vespers, hierarch, repose, troparion).',
@@ -15,6 +15,8 @@ const STYLE = {
   de: 'Use German Orthodox vocabulary (Göttliche Liturgie, Gottesgebärerin, Große Fastenzeit, Ostern/Pascha, Orthros, Vesper). Address the reader as du.',
   it: 'Use Italian Orthodox vocabulary (Divina Liturgia, Madre di Dio, Grande Quaresima, Pasqua, Mattutino, Vespri). Address the reader as tu.',
   zh: 'Use the vocabulary of Orthodox Christianity in Chinese (东正教, 圣礼仪 / 神圣礼仪, 圣母, 大斋期, 复活节). Simplified characters.',
+  el: 'Use the vocabulary of the Greek Orthodox Church (Θεία Λειτουργία, Θεοτόκος, Μεγάλη Τεσσαρακοστή, Πάσχα, Όρθρος, Εσπερινός, τροπάριο). Address the reader informally (εσύ).',
+  ro: 'Use the vocabulary of the Romanian Orthodox Church (Sfânta Liturghie, Născătoarea de Dumnezeu, Postul Mare, Paștile, Utrenia, Vecernia, troparul). Address the reader as tu.',
   ja: 'Use the vocabulary of the Orthodox Church in Japan (正教会, 聖体礼儀, 生神女, 大斎, 復活祭, 聖人, 聖詠). Polite but warm tone.'
 };
 
@@ -22,6 +24,10 @@ async function sha(s) {
   const h = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
   return [...new Uint8Array(h)].slice(0, 12).map((b) => b.toString(16).padStart(2, '0')).join('');
 }
+// Le stockage KV gratuit limite les écritures (1000 par jour) : on ne bloque jamais un service pour ça.
+const safePut = async (env, k, v, o) => { try { await env.SUBS.put(k, v, o); return true; } catch (e) { return false; } };
+// compteurs par IP gardés en mémoire (limite souple, sans écriture KV)
+const MEM = globalThis.__blagCounters || (globalThis.__blagCounters = new Map());
 const json = (cors, status, obj) => new Response(JSON.stringify(obj), { status, headers: { ...cors, 'Content-Type': 'application/json' } });
 
 const system = (lang) => `You translate text of "Blagovest", a French-language Orthodox Christian app (Bible, liturgical calendar, prayers, saints, theology, Church Slavonic), into ${LANGS[lang]}.
@@ -52,11 +58,12 @@ export async function handleTranslate(req, env, body, cors) {
   const day = new Date().toISOString().slice(0, 10), month = day.slice(0, 7);
   const ip = req.headers.get('CF-Connecting-IP') || 'inconnu';
   const ipKey = 'tq:' + (await sha(ip)) + ':' + day, gKey = 'tg:' + month;
-  const perIp = +env.TR_PER_IP || 500, cap = +env.TR_MONTHLY_CAP || 4000;
-  const used = +((await env.SUBS.get(ipKey)) || 0), total30 = +((await env.SUBS.get(gKey)) || 0);
+  const perIp = +env.TR_PER_IP || 2000, cap = +env.TR_MONTHLY_CAP || 6000;
+  const used = MEM.get(ipKey) || 0;
+  let total30 = 0; try { total30 = +((await env.SUBS.get(gKey)) || 0); } catch (e) { total30 = 0; }
   if (used + miss.length > perIp || total30 + miss.length > cap) return json(cors, 200, { t: out, limited: true });
-  await env.SUBS.put(ipKey, String(used + miss.length), { expirationTtl: 172800 });
-  await env.SUBS.put(gKey, String(total30 + miss.length), { expirationTtl: 3456000 });
+  MEM.set(ipKey, used + miss.length);
+  await safePut(env, gKey, String(total30 + miss.length), { expirationTtl: 3456000 });
 
   // 3) traduction des manquants
   const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY });
@@ -73,11 +80,11 @@ export async function handleTranslate(req, env, body, cors) {
     const m = text.match(/\[[\s\S]*\]/);
     const arr = m ? JSON.parse(m[0]) : null;
     if (!Array.isArray(arr) || arr.length !== src.length || arr.some((x) => typeof x !== 'string')) throw new Error('format');
-    await Promise.all(miss.map(async (i, j) => { out[i] = arr[j]; await env.SUBS.put(keys[i], arr[j], { expirationTtl: 60 * 60 * 24 * 365 }); }));
+    await Promise.all(miss.map(async (i, j) => { out[i] = arr[j]; await safePut(env, keys[i], arr[j], { expirationTtl: 60 * 60 * 24 * 365 }); }));
     return json(cors, 200, { t: out });
   } catch (e) {
-    // on rend les compteurs : rien n'a été traduit
-    try { await env.SUBS.put(ipKey, String(used), { expirationTtl: 172800 }); await env.SUBS.put(gKey, String(total30), { expirationTtl: 3456000 }); } catch (e2) { /* ignoré */ }
+    MEM.set(ipKey, used);
+    await safePut(env, gKey, String(total30), { expirationTtl: 3456000 });
     return json(cors, 200, { t: out, error: 'translate_failed' });
   }
 }

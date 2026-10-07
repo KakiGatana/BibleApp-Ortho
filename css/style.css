@@ -678,3 +678,22 @@ html[data-reading="1"] .main { max-width: 760px; }
 
 /* choix de langue */
 .lang-chips { display: flex; flex-wrap: wrap; gap: .4rem; margin: .2rem 2.2rem 1rem 0; }
+
+/* ===== corde de prière (komboskini) ===== */
+.rope-wrap { position: relative; width: min(88vw, 360px); aspect-ratio: 1; margin: .6rem auto .8rem; }
+.rope-svg { width: 100%; height: 100%; display: block; overflow: visible; }
+.rope-svg .cord { fill: none; stroke: color-mix(in srgb, var(--ink) 30%, transparent); stroke-width: 3; stroke-dasharray: 2 0; }
+.rope-svg .rope-cross path { fill: none; stroke: var(--gold2); stroke-width: 3; stroke-linecap: round; }
+.rope-svg .bd-off { fill: color-mix(in srgb, var(--ink) 20%, transparent); stroke: color-mix(in srgb, var(--ink) 45%, transparent); stroke-width: 1.2; }
+.rope-svg .bd-on { opacity: 0; stroke: #8a5e12; stroke-width: .8; transition: opacity .3s ease; }
+.rope-svg .bd.lit .bd-on { opacity: 1; filter: drop-shadow(0 0 3px rgba(240, 205, 122, .8)); }
+.rope-svg .bd.now .bd-off { stroke: var(--gold2); stroke-width: 2.2; animation: beadNow 1.6s ease-in-out infinite; }
+.rope-svg .bd { transform-box: fill-box; }
+.rope-svg .bd.pop .bd-on { animation: beadPop .45s ease-out; transform-box: fill-box; transform-origin: center; }
+@keyframes beadNow { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+@keyframes beadPop { 0% { transform: scale(2.2); } 60% { transform: scale(.85); } 100% { transform: scale(1); } }
+.rope-btn { position: absolute; inset: 17%; border-radius: 50%; border: 1.5px solid var(--gold-soft); background: radial-gradient(circle at 35% 28%, color-mix(in srgb, var(--gold2) 22%, transparent), color-mix(in srgb, var(--gold2) 6%, transparent) 70%); color: var(--ink); display: grid; place-items: center; cursor: pointer; -webkit-tap-highlight-color: transparent; touch-action: manipulation; user-select: none; transition: transform .12s, background .2s; }
+.rope-btn:active { transform: scale(.97); background: radial-gradient(circle at 35% 28%, color-mix(in srgb, var(--gold2) 40%, transparent), color-mix(in srgb, var(--gold2) 12%, transparent) 70%); }
+.rope-n { font-family: var(--f-label); letter-spacing: .12em; font-size: .78rem; color: var(--ink3); opacity: .8; }
+.rope-wrap.done .rope-svg { animation: ropeDone 1s ease; }
+@keyframes ropeDone { 0%, 100% { transform: scale(1); } 40% { transform: scale(1.04); filter: drop-shadow(0 0 14px var(--gold2)); } }

@@ -86,6 +86,7 @@ const reply = (env, status, body) => new Response(body || null, { status, header
 const json = (env, status, obj) => new Response(JSON.stringify(obj), { status, headers: { ...cors(env), 'Content-Type': 'application/json' } });
 
 const TTL_SUB = 60 * 60 * 24 * 90;
+const safePut = async (env, k, v, o) => { try { await env.SUBS.put(k, v, o); return true; } catch (e) { return false; } };
 
 async function handleSync(env, b) {
   const sub = b.sub;
@@ -103,7 +104,9 @@ async function handleSync(env, b) {
   const rd = { m: isIso((b.rd || {}).m || '') ? (b.rd || {}).m || '' : '', e: isIso((b.rd || {}).e || '') ? (b.rd || {}).e || '' : '' };
   const key = await keyId(sub.endpoint);
   const old = JSON.parse((await env.SUBS.get(key)) || '{}');
-  await env.SUBS.put(key, JSON.stringify({ endpoint: sub.endpoint, keys, tz: b.tz, k, last: b.last || '', n: b.n, fe, cd, rd, sent: old.sent || {} }), { expirationTtl: TTL_SUB });
+  const rec = { endpoint: sub.endpoint, keys, tz: b.tz, k, last: b.last || '', n: b.n, fe, cd, rd, sent: old.sent || {} };
+  const same = old.endpoint && JSON.stringify({ ...old, sent: 0 }) === JSON.stringify({ ...rec, sent: 0 });
+  if (!same) await safePut(env, key, JSON.stringify(rec), { expirationTtl: TTL_SUB });
   return reply(env, 204);
 }
 
@@ -111,7 +114,8 @@ const CODE_RE = /^[A-Za-z0-9-]{16,48}$/;
 async function handleBackup(req, env, path, b) {
   if (typeof b.code !== 'string' || !CODE_RE.test(b.code)) return reply(env, 400);
   const day = new Date().toISOString().slice(0, 10), ip = req.headers.get('CF-Connecting-IP') || 'inconnu';
-  const qKey = 'bq:' + (await sha(ip, 12)) + ':' + day, used = +((await env.SUBS.get(qKey)) || 0);
+  const qKey = 'bq:' + (await sha(ip, 12)) + ':' + day, used = (globalThis.__blagBk = globalThis.__blagBk || new Map()).get(qKey) || 0;
+  globalThis.__blagBk.set(qKey, used + 1);
   if (used >= 40) return json(env, 429, { error: 'limit', message: 'Trop de demandes aujourd’hui.' });
   const key = 'b:' + (await sha(b.code));
   if (path === '/backup/get') {
@@ -121,9 +125,8 @@ async function handleBackup(req, env, path, b) {
   }
   if (typeof b.data !== 'string' || b.data.length > 400000) return json(env, 413, { error: 'too_big', message: 'Sauvegarde trop volumineuse.' });
   try { JSON.parse(b.data); } catch (e) { return reply(env, 400); }
-  await env.SUBS.put(qKey, String(used + 1), { expirationTtl: 172800 });
-  await env.SUBS.put(key, JSON.stringify({ data: b.data, t: new Date().toISOString() }), { expirationTtl: 60 * 60 * 24 * 365 });
-  return json(env, 200, { ok: true });
+  const okw = await safePut(env, key, JSON.stringify({ data: b.data, t: new Date().toISOString() }), { expirationTtl: 60 * 60 * 24 * 365 });
+  return okw ? json(env, 200, { ok: true }) : json(env, 503, { error: 'busy', message: 'Sauvegarde momentanément impossible, réessaie plus tard.' });
 }
 
 async function handle(req, env) {
