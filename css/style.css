@@ -438,3 +438,20 @@ html[data-lang="fr"] .pairs.novn .pair, html[data-lang="cs"] .pairs.novn .pair {
 .update-bar span { flex: 1; line-height: 1.3; }
 .update-bar .icon-btn { color: var(--bg); min-width: 2rem; height: 2rem; }
 @media (min-width: 1000px) { .update-bar { bottom: 1.5rem; } }
+
+/* mode lecture */
+html[data-reading="1"] .pair .fr { font-size: 1.42rem; line-height: 1.75; }
+html[data-reading="1"] .pair .cs { font-size: 1.5rem; line-height: 1.7; }
+html[data-reading="1"] .reader { padding: 1.4rem 1.2rem; }
+html[data-reading="1"] .prose p, html[data-reading="1"] .prose li { font-size: 1.25rem; line-height: 1.8; }
+html[data-reading="1"] .main { max-width: 760px; }
+
+/* assistant : contexte, bouton sur les pages */
+.ask-ctx { display: flex; align-items: center; gap: .6rem; padding: .6rem .6rem .6rem 1rem; border-radius: 14px; background: var(--gold-soft); margin-bottom: .8rem; }
+.ask-ctx span { flex: 1; line-height: 1.3; }
+.ask-about { display: inline-flex; align-items: center; gap: .45rem; } .ask-about .ic { width: 1.2rem; height: 1.2rem; }
+.sync-code { font-family: var(--f-label); letter-spacing: .08em; font-size: 1.15rem; user-select: all; word-break: break-all; }
+.sync-in { flex: 1; min-width: 12rem; }
+.notif-row { gap: .6rem; } .notif-row .sel { flex: none; }
+.steps { margin: .4rem 0 0; padding-left: 1.3rem; display: grid; gap: .5rem; font-size: 1.05rem; }
+.rule-streak { display: flex; align-items: center; gap: .5rem; margin: .4rem 0; color: var(--gold); font-weight: 600; } .rule-streak .ic { width: 1.3rem; height: 1.3rem; }

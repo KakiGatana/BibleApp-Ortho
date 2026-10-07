@@ -129,6 +129,7 @@
           <div class="meditation"><span class="med-k">Méditation</span><p>${esc(v.med)}</p></div>
           <div class="verse-actions">
             ${U.tools({ id: v.id, text: `${v.fr} — ${v.ref}${v.cs ? '\n' + v.cs : ''}`, cs: v.cs, share: `« ${v.fr} » — ${v.ref} (Blagovest)`, noteKey: v.id, noteLabel: v.ref })}
+            ${O.askBtn ? O.askBtn(v.ref, v.fr + ' — ' + (v.med || '')) : ''}${O.shareBtn ? O.shareBtn(v) : ''}
             <button class="btn small ${done ? 'done' : ''}" data-act="done-verse" data-iso="${C.isoKey(date)}">${ic('check', 'ic xs')} ${done ? 'Lu' : 'Marquer comme lu'}</button>
           </div>
           ${S.notes[v.id] ? `<div class="note-preview">${ic('note', 'ic xs')} ${esc(S.notes[v.id])}</div>` : ''}
@@ -339,6 +340,7 @@
         <p class="fr big">${esc(f.troparion.fr)}</p>
         ${f.troparion.cs ? `<p class="cs rubric big" data-act="speak" data-text="${esc(f.troparion.cs)}">${esc(f.troparion.cs)}</p>` : '<p class="muted small">Slavon : à compléter.</p>'}
         ${U.tools({ id: 'feast:' + f.id, text: f.troparion.fr + (f.troparion.cs ? '\n' + f.troparion.cs : ''), cs: f.troparion.cs, noteKey: 'feast:' + f.id, noteLabel: f.name })}
+        ${O.askBtn ? O.askBtn(f.name, (f.troparion.fr || '') + ' ' + ((f.meaning && f.meaning[0]) || '')) : ''}
       </article>
       <div class="grid2">
         <article class="card"><div class="card-k">Lectures de la Liturgie</div>

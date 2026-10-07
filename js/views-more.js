@@ -29,7 +29,7 @@
       <p class="lead">${esc(t.lead)}</p>
       <div class="prose">${U.blocks(t.blocks)}</div>
       ${t.quote ? `<figure class="pull"><blockquote>« ${esc(t.quote.t)} »</blockquote><figcaption>${esc(t.quote.a)}</figcaption></figure>` : ''}
-      <div class="row center">${U.favBtn('theo:' + t.id, 'Favori')}<button class="tool ${S.notes['theo:' + t.id] ? 'on' : ''}" data-act="note" data-key="theo:${t.id}" data-label="${esc(t.title)}">${ic('note')}<span>Note</span></button></div>
+      <div class="row center">${U.favBtn('theo:' + t.id, 'Favori')}${O.askBtn ? O.askBtn(t.title, t.sub || '') : ''}<button class="tool ${S.notes['theo:' + t.id] ? 'on' : ''}" data-act="note" data-key="theo:${t.id}" data-label="${esc(t.title)}">${ic('note')}<span>Note</span></button></div>
       <nav class="pager">${prev ? `<a href="#/theo/${prev.id}">${ic('left')}<span>${esc(prev.title)}</span></a>` : '<span></span>'}${next ? `<a href="#/theo/${next.id}"><span>${esc(next.title)}</span>${ic('right')}</a>` : '<span></span>'}</nav>
     </section>`;
     return { html, title: t.title, nav: 'theology' };
@@ -80,9 +80,11 @@
         <div class="set-row"><div><b>Calendrier</b><span class="muted small">Julien révisé : fêtes fixes alignées sur le civil (Constantinople, Grèce, Roumanie, Antioche, France…). Julien : décalage de 13 jours (Russie, Serbie, Jérusalem, Athos…).</span></div>${U.seg([['new', 'Julien révisé'], ['old', 'Julien']], st.style, 'set-style')}</div>
         <div class="set-row"><div><b>Langue d’affichage</b><span class="muted small">Dans les textes parallèles.</span></div>${U.seg([['fr', 'Français'], ['both', 'FR + СЛ'], ['cs', 'Слав.']], st.lang, 'set-lang')}</div>
         <div class="set-row"><div><b>Taille du texte</b><span class="muted small" id="fsv">${Math.round(st.fs * 100)} %</span></div><input type="range" id="fs" min="0.85" max="1.4" step="0.05" value="${st.fs}" aria-label="Taille du texte"></div>
+        <div class="set-row"><div><b>Mode lecture</b><span class="muted small">Texte plus grand et plus aéré pour lire les passages et les prières.</span></div><button class="switch ${st.reading ? 'on' : ''}" data-act="toggle-reading" role="switch" aria-checked="${!!st.reading}"><i></i></button></div>
         <div class="set-row"><div><b>Prononciation</b><span class="muted small">Afficher la prononciation dans la lecture mot à mot.</span></div><button class="switch ${st.translit ? 'on' : ''}" data-act="toggle-translit" role="switch" aria-checked="${st.translit}"><i></i></button></div>
       </article>
       ${O.push ? O.push.card() : ''}
+      ${O.sync ? O.sync.card() : ''}
       <article class="card set">
         <div class="card-k">Mes données</div>
         <p class="muted small">Tout est enregistré dans ton navigateur : favoris, notes, progression, cartes. Rien n’est envoyé nulle part, sauf si tu actives les notifications (voir ci-dessus).</p>

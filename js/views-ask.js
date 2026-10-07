@@ -15,6 +15,16 @@
     'Quelle est la différence entre le calendrier julien et grégorien ?',
     'Pourquoi vénère-t-on les icônes ?'
   ];
+  const SUGGEST_CTX = [
+    'Explique-moi ce texte simplement.',
+    'Quel est son contexte historique ?',
+    'Que disent les Pères de l’Église à ce sujet ?',
+    'Comment le vivre ou le prier concrètement ?'
+  ];
+
+  /* bouton « Demander à l'assistant » pour une page : titre + extrait du texte */
+  O.askBtn = (title, text) =>
+    `<button class="btn small ghost ask-about" data-act="ask-about" data-title="${esc(title)}" data-text="${esc(String(text || '').slice(0, 1800))}">${ic('chat')}<span>Demander à l’assistant</span></button>`;
 
   /* mise en forme sûre : on échappe tout, puis on remet gras, italique, liens internes */
   function fmt(text) {
@@ -33,12 +43,14 @@
   const bubble = (m) => `<div class="ask-msg ${m.role === 'user' ? 'me' : 'bot'}">${m.role === 'user' ? '<p>' + esc(m.content) + '</p>' : fmt(m.content)}</div>`;
 
   function askView() {
-    const configured = !!CFG.server;
+    const configured = !!CFG.server, cx = S.askCtx;
+    const sugg = cx ? SUGGEST_CTX : SUGGEST;
     const html = `<section class="page ask">
       ${U.pageHead('Вопросы', 'Poser une question', 'Un assistant pour la théologie et l’histoire de l’Église, dans l’esprit de l’Orthodoxie.')}
       <p class="muted small ask-warn">Réponse générée par une IA : elle peut se tromper, surtout sur les citations et les dates. Vérifie dans les sources, et pour ta vie spirituelle, parle à ton prêtre.</p>
+      ${cx ? `<div class="ask-ctx"><span>À propos de : <b>${esc(cx.title)}</b></span><button class="icon-btn" data-act="ask-ctx-clear" aria-label="Retirer ce texte">✕</button></div>` : ''}
       <div id="askLog" class="ask-log" aria-live="polite">${S.ask.map(bubble).join('')}</div>
-      <div id="askSug" class="ask-sug" ${S.ask.length ? 'hidden' : ''}>${SUGGEST.map((q) => `<button class="chip-btn" data-act="ask-suggest" data-q="${esc(q)}">${esc(q)}</button>`).join('')}</div>
+      <div id="askSug" class="ask-sug" ${S.ask.length ? 'hidden' : ''}>${sugg.map((q) => `<button class="chip-btn" data-act="ask-suggest" data-q="${esc(q)}">${esc(q)}</button>`).join('')}</div>
       <form id="askForm" class="ask-form">
         <textarea id="askIn" rows="2" maxlength="1000" placeholder="${configured ? 'Ta question…' : 'Assistant non configuré'}" ${configured ? '' : 'disabled'}></textarea>
         <button class="btn" type="submit" ${configured ? '' : 'disabled'}>Envoyer</button>
@@ -71,7 +83,9 @@
       // le serveur attend une alternance user / assistant qui commence et finit par « user »
       let hist = S.ask.slice(-SEND);
       while (hist.length && hist[0].role !== 'user') hist = hist.slice(1);
-      const r = await fetch(CFG.server.replace(/\/$/, '') + '/ask', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ messages: hist }) });
+      const payload = { messages: hist };
+      if (S.askCtx) payload.context = { title: S.askCtx.title, text: S.askCtx.text };
+      const r = await fetch(CFG.server.replace(/\/$/, '') + '/ask', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
       const j = await r.json().catch(() => ({}));
       if (r.ok && j.answer) answer = j.answer; else err = j.message || 'L’assistant n’a pas pu répondre. Réessaie dans un instant.';
     } catch (e) { err = 'Pas de connexion. L’assistant a besoin d’Internet.'; }
@@ -90,5 +104,7 @@
   }
 
   K.act['ask-suggest'] = (el) => send(el.dataset.q);
-  K.act['ask-clear'] = () => { if (confirm('Effacer la conversation sur cet appareil ?')) { S.ask = []; K.save(); K.render(); } };
+  K.act['ask-about'] = (el) => { S.askCtx = { title: el.dataset.title, text: el.dataset.text }; S.ask = []; K.save(); K.go('#/ask'); };
+  K.act['ask-ctx-clear'] = () => { delete S.askCtx; K.save(); K.render(); };
+  K.act['ask-clear'] = () => { if (confirm('Effacer la conversation sur cet appareil ?')) { S.ask = []; delete S.askCtx; K.save(); K.render(); } };
 })();

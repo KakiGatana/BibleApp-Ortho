@@ -51,6 +51,7 @@
       <article class="card reader">
         ${r.cs && r.cs.length ? U.pairs(r.fr, r.cs, +startV || 1) : `<div class="pairs">${r.fr.map((l, i) => `<div class="pair solo"><span class="vn">${(+startV || 1) + i}</span><p class="fr">${esc(l)}</p></div>`).join('')}</div>`}
       </article>
+      <p class="center">${O.askBtn ? O.askBtn(r.ref + ' — ' + r.title, r.intro + ' ' + allFr) : ''}</p>
       ${r.csExtract ? `<article class="card"><div class="card-k">Extraits en slavon</div>${r.csExtract.map(([ref, t]) => `<div class="extract"><span class="ref">${esc(ref)}</span><p class="cs rubric" data-act="speak" data-text="${esc(t)}">${esc(t)}</p></div>`).join('')}<p class="muted xs">Le passage complet en slavon est à lire dans une Bible slavonne imprimée.</p></article>` : ''}
       ${link ? `<p class="center"><a class="btn ghost small" href="${link}" target="_blank" rel="noopener">Lire le chapitre complet (AELF) ${ic('ext', 'ic xs')}</a></p>` : ''}
       <p class="muted xs center">Traduction française libre, d’après le texte de la Septante et du texte reçu. Appuie sur une ligne slavonne pour l’écouter (voix russe moderne, approximatif).</p>
@@ -135,6 +136,7 @@
         <article class="card"><div class="card-k">Quand la prier ?</div><p>${esc(p.when)}</p></article>
         <article class="card"><div class="card-k">À savoir</div><p>${esc(p.note)}</p></article>
       </div>
+      <p class="center">${O.askBtn ? O.askBtn(p.title, p.fr.split('\n').join(' ')) : ''}</p>
       ${m === 'inter' ? '<p class="muted xs center">Chaque mot est cliquable. La prononciation est une approximation à la française, d’après la lecture liturgique russe.</p>' : ''}
       <nav class="pager">${prev ? `<a href="#/prayer/${prev.id}">${ic('left')}<span>${esc(prev.title)}</span></a>` : '<span></span>'}${next ? `<a href="#/prayer/${next.id}"><span>${esc(next.title)}</span>${ic('right')}</a>` : '<span></span>'}</nav>
     </section>`;

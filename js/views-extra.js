@@ -84,8 +84,18 @@
   const doneList = (kind, iso) => (((S.done[iso || todayIso()] || {}).rule || {})[kind]) || [];
   const progress = (kind) => `${doneList(kind).length}/${items(kind).length}`;
 
+  // jours de suite où une règle (matin ou soir) a été entièrement cochée
+  function ruleStreak() {
+    const full = (iso) => ['morning', 'evening'].some((k) => items(k).length && doneList(k, iso).length >= items(k).length);
+    let d = C.today(), n = 0;
+    if (!full(C.isoKey(d))) d = C.addDays(d, -1);
+    while (full(C.isoKey(d))) { n++; d = C.addDays(d, -1); }
+    return n;
+  }
+
   function ruleTiles() {
-    return `<div class="tiles">${['morning', 'evening'].map((k) => {
+    const rs = ruleStreak();
+    return (rs ? `<p class="rule-streak">${ic('flame')}<b>${rs}</b> jour${rs > 1 ? 's' : ''} de règle de suite</p>` : '') + `<div class="tiles">${['morning', 'evening'].map((k) => {
       const ok = doneList(k).length === items(k).length;
       return `<a class="tile" href="#/rule/${k}"><span class="tile-ic">${ic(k === 'morning' ? 'sun' : 'moon')}</span><div><b>${RULES[k].title}</b><span>${esc(RULES[k].sub)}</span></div><span class="badge ${ok ? '' : 'dim'}">${ok ? 'Faite' : progress(k)}</span></a>`;
     }).join('')}</div>`;
@@ -126,5 +136,37 @@
     if (prog) prog.textContent = set.size + ' / ' + total;
     if (fill) fill.style.width = (set.size / total) * 100 + '%';
     if (on && set.size === total) K.toast('Règle accomplie. Слава Богу !');
+    if (O.push) O.push.sync();
   };
+
+  /* ---------- jalons de série ---------- */
+  O.milestones = () => {
+    const n = K.streak(), M = [7, 14, 30, 50, 100, 200, 365];
+    S.mile = S.mile || {};
+    if (M.includes(n) && !S.mile[n]) { S.mile[n] = 1; K.save(); K.toast(n + ' jours de suite ! Слава Богу.'); }
+  };
+
+  /* ---------- installer et partager ---------- */
+  const appUrl = () => location.origin + location.pathname.replace(/index\.html$/, '');
+  route('/install', () => ({
+    html: `<section class="page prose-page">
+      ${U.pageHead('Установка', 'Installer et partager', 'Blagovest s’installe comme une vraie appli, sans magasin d’applications, et fonctionne hors ligne.')}
+      <article class="card"><div class="card-k">Sur Android (Chrome)</div>
+        <ol class="steps"><li>Ouvre le site dans Chrome.</li><li>Touche le menu <b>⋮</b> en haut à droite.</li><li>Choisis <b>Installer l’application</b> (ou « Ajouter à l’écran d’accueil »).</li></ol></article>
+      <article class="card"><div class="card-k">Sur iPhone et iPad (Safari)</div>
+        <ol class="steps"><li>Ouvre le site dans <b>Safari</b> (pas dans un autre navigateur).</li><li>Touche le bouton <b>Partager</b> (le carré avec une flèche).</li><li>Choisis <b>Sur l’écran d’accueil</b>, puis <b>Ajouter</b>.</li><li>Ouvre ensuite l’appli <b>depuis son icône</b>. Les notifications demandent iOS 16.4 ou plus.</li></ol></article>
+      <article class="card"><div class="card-k">Sur ordinateur (Chrome, Edge)</div>
+        <ol class="steps"><li>Dans la barre d’adresse, touche l’icône d’installation (un petit écran avec une flèche).</li><li>Confirme avec <b>Installer</b>.</li></ol></article>
+      <article class="card center"><div class="card-k">Partager Blagovest</div>
+        <p class="muted small">Envoie le lien à un proche, à ta paroisse ou à ton catéchuménat.</p>
+        <div class="row center"><button class="btn" data-act="share-app">${ic('share')}<span>Partager l’application</span></button><button class="btn ghost" data-act="copy-app">Copier le lien</button></div>
+        <p class="muted xs">${esc(appUrl())}</p></article>
+    </section>`,
+    title: 'Installer et partager', nav: 'install'
+  }));
+  K.act['share-app'] = async () => {
+    const data = { title: 'Blagovest', text: 'Blagovest : Bible, calendrier, prières et slavon orthodoxes.', url: appUrl() };
+    try { if (navigator.share) await navigator.share(data); else { await navigator.clipboard.writeText(appUrl()); K.toast('Lien copié'); } } catch (e) { /* partage annulé */ }
+  };
+  K.act['copy-app'] = async () => { try { await navigator.clipboard.writeText(appUrl()); K.toast('Lien copié'); } catch (e) { K.toast(appUrl()); } };
 })();

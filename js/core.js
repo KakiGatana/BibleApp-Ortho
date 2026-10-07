@@ -32,6 +32,7 @@
     const r = document.documentElement;
     if (S.settings.theme === 'auto') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', S.settings.theme);
     r.setAttribute('data-lang', S.settings.lang);
+    r.setAttribute('data-reading', S.settings.reading ? '1' : '0');
     r.style.setProperty('--fs', S.settings.fs);
     const lb = $('#langBadge');
     if (lb) lb.textContent = { both: 'FR · СЛ', fr: 'FR', cs: 'СЛ' }[S.settings.lang];
@@ -132,6 +133,7 @@
     ['feasts', 'Fêtes', 'feast', '#/feasts'],
     ['saints', 'Saints', 'saint', '#/saints'],
     ['favorites', 'Favoris', 'heart', '#/favorites'],
+    ['install', 'Installer et partager', 'share', '#/install'],
     ['settings', 'Réglages', 'gear', '#/settings']
   ];
   const TABS = ['today', 'calendar', 'ask', 'theology'];
@@ -153,7 +155,7 @@
   const MORE = [
     ['Lire et prier', [['bible', 'Écritures', 'book', 'Psaumes, Évangiles, canon, plan de lecture'], ['prayers', 'Prières', 'pray', 'Règle du matin et du soir, prières mot à mot'], ['slavonic', 'Slavon', 'slav', 'Alphabet, leçons, cartes, quiz']]],
     ['Le temps de l’Église', [['feasts', 'Fêtes', 'feast', 'Sens des fêtes et tropaires'], ['saints', 'Saints', 'saint', 'Les saints de chaque jour']]],
-    ['Mon espace', [['search', 'Recherche', 'search', 'Chercher dans toute l’application'], ['favorites', 'Favoris et notes', 'heart', 'Ce que j’ai gardé'], ['settings', 'Réglages', 'gear', 'Notifications, thème, taille du texte']]]
+    ['Mon espace', [['search', 'Recherche', 'search', 'Chercher dans toute l’application'], ['favorites', 'Favoris et notes', 'heart', 'Ce que j’ai gardé'], ['settings', 'Réglages', 'gear', 'Notifications, sauvegarde, thème, mode lecture'], ['install', 'Installer et partager', 'share', 'Ajouter à l’écran d’accueil, l’envoyer à un proche']]]
   ];
   function moreSheet() {
     const href = (id) => NAV.find((n) => n[0] === id)[3];
@@ -260,6 +262,7 @@
     'set-theme': (el) => { S.settings.theme = el.dataset.v; save(); applySettings(); render(); },
     'set-style': (el) => { S.settings.style = el.dataset.v; save(); render(); },
     'set-lang': (el) => { S.settings.lang = el.dataset.v; save(); applySettings(); render(); },
+    'toggle-reading': () => { S.settings.reading = !S.settings.reading; save(); applySettings(); render(); },
     'toggle-translit': () => { S.settings.translit = !S.settings.translit; save(); render(); }
   };
   document.addEventListener('click', (e) => {
