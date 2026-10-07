@@ -698,18 +698,14 @@ html[data-reading="1"] .main { max-width: 760px; }
 .rope-wrap.done .rope-svg { animation: ropeDone 1s ease; }
 @keyframes ropeDone { 0%, 100% { transform: scale(1); } 40% { transform: scale(1.04); filter: drop-shadow(0 0 14px var(--gold2)); } }
 
-/* Cuir brun, inspiré d'une Bible reliée : Écritures, Aujourd'hui, Favoris et encadrés « vin » */
-[data-sec="bible"] .view, [data-sec="today"] .view { --sec-g1: #8c5239; --sec-g2: #60331f; --sec-g3: #361a0f; }
-[data-sec="bible"] .view { --surface: #f6ece3; --surface2: #eddccd; --bg2: #e3cdba; }
-[data-sec="favorites"] .view { --sec-g1: #a06a43; --sec-g2: #744626; --sec-g3: #46260f; --surface: #f7eddf; --surface2: #efdfca; --bg2: #e6d1b3; }
-.card-wine { --surface: #f6ece3; --surface2: #eddccd; --bg2: #e3cdba; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) [data-sec="bible"] .view, :root:not([data-theme="light"]) [data-sec="today"] .view { --sec-i1: #7d4531; --sec-i2: #4b2417; --sec-sub: #6b5247; }
-  :root:not([data-theme="light"]) [data-sec="bible"] .view { --surface: #3b271f; --surface2: #483128; --bg2: #2d1d16; }
-  :root:not([data-theme="light"]) [data-sec="favorites"] .view { --sec-i1: #8b5a37; --sec-i2: #54331a; --sec-sub: #6b5a47; --surface: #3a2c1f; --surface2: #473628; --bg2: #2d2217; }
-  :root:not([data-theme="light"]) .card-wine { --surface: #3b271f; --surface2: #483128; --bg2: #2d1d16; }
+
+/* Fond de l'appli : bleu qui descend vers un brun cuir (reliure de Bible) ; les encadrés restent inchangés */
+:root { --fond: linear-gradient(175deg, #e4ebf8 0%, #ece9ef 40%, #eddccb 78%, #e3cbb2 100%); --veil: rgba(236, 233, 239, .9); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --fond: linear-gradient(175deg, #254287 0%, #2d3a74 32%, #4a3050 58%, #5a3526 82%, #6a402c 100%); --veil: rgba(45, 52, 100, .9); } }
+:root[data-theme="dark"] { --fond: linear-gradient(175deg, #254287 0%, #2d3a74 32%, #4a3050 58%, #5a3526 82%, #6a402c 100%); --veil: rgba(45, 52, 100, .9); }
+body {
+  background-image:
+    radial-gradient(1200px 520px at 80% -10%, color-mix(in srgb, var(--gold) 12%, transparent), transparent 70%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cpath d='M28 6v44M18 16h20M12 24h32' stroke='%23b8932f' stroke-opacity='.07' stroke-width='1.4' fill='none'/%3E%3C/svg%3E"),
+    var(--fond);
 }
-:root[data-theme="dark"] [data-sec="bible"] .view, :root[data-theme="dark"] [data-sec="today"] .view { --sec-i1: #7d4531; --sec-i2: #4b2417; --sec-sub: #6b5247; }
-:root[data-theme="dark"] [data-sec="bible"] .view { --surface: #3b271f; --surface2: #483128; --bg2: #2d1d16; }
-:root[data-theme="dark"] [data-sec="favorites"] .view { --sec-i1: #8b5a37; --sec-i2: #54331a; --sec-sub: #6b5a47; --surface: #3a2c1f; --surface2: #473628; --bg2: #2d2217; }
-:root[data-theme="dark"] .card-wine { --surface: #3b271f; --surface2: #483128; --bg2: #2d1d16; }
