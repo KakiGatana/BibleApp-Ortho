@@ -1,5 +1,5 @@
 /* Service worker : fonctionnement hors ligne (réseau d'abord, cache en secours) + notifications */
-const VERSION = 'blagovest-v16';
+const VERSION = 'blagovest-v17';
 const DATA_CACHE = 'blagovest-data'; // écrit par js/notifications.js, à ne jamais purger
 const ICON_CACHE = 'blagovest-icons'; // icônes des saints : mémorisées à la première vue, ou en bloc depuis les réglages
 const CORE = [
@@ -70,7 +70,7 @@ self.addEventListener('push', (e) => {
       const sa = data.saints && data.saints[today];
       title = 'Saint du jour'; body = sa || 'Découvre qui l’Église célèbre aujourd’hui.'; url = './#/saints';
     } else if (kind === 'rulem' || kind === 'rulee') {
-      title = kind === 'rulem' ? 'Règle du matin' : 'Règle du soir';
+      title = kind === 'rulem' ? 'Prière du matin' : 'Prière du soir';
       body = kind === 'rulem' ? 'Prends quelques minutes pour prier avant de commencer la journée.' : 'Termine la journée par quelques prières avant la nuit.';
       url = './#/rule/' + (kind === 'rulem' ? 'morning' : 'evening');
     } else if (kind === 'feast') {

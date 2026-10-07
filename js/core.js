@@ -154,7 +154,7 @@
     document.body.setAttribute('data-sec', id || '');
   }
   const MORE = [
-    ['Lire et prier', [['bible', 'Écritures', 'book', 'Psaumes, Évangiles, canon, plan de lecture'], ['prayers', 'Prières', 'pray', 'Règle du matin et du soir, prières mot à mot'], ['slavonic', 'Slavon', 'slav', 'Alphabet, leçons, cartes, quiz']]],
+    ['Lire et prier', [['bible', 'Écritures', 'book', 'Psaumes, Évangiles, canon, plan de lecture'], ['prayers', 'Prières', 'pray', 'Prière du matin et du soir, prières mot à mot'], ['slavonic', 'Slavon', 'slav', 'Alphabet, leçons, cartes, quiz']]],
     ['Le temps de l’Église', [['feasts', 'Fêtes', 'feast', 'Sens des fêtes et tropaires'], ['saints', 'Saints', 'saint', 'Les saints de chaque jour']]],
     ['Mon espace', [['search', 'Recherche', 'search', 'Chercher dans toute l’application'], ['favorites', 'Favoris et notes', 'heart', 'Ce que j’ai gardé'], ['settings', 'Réglages', 'gear', 'Notifications, sauvegarde, thème, mode lecture'], ['install', 'Installer et partager', 'share', 'Ajouter à l’écran d’accueil, l’envoyer à un proche']]]
   ];

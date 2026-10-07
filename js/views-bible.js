@@ -106,7 +106,7 @@
     O.PRAYERS.forEach((p) => (cats[p.cat] = cats[p.cat] || []).push(p));
     const html = `<section class="page">
       ${U.pageHead('Livre de prières', 'Prières', 'Les prières fondamentales de l’Église, en français et en slavon, avec lecture mot à mot pour apprendre le sens de chaque terme.')}
-      ${U.sectionTitle('Règle de prière')}${O.ruleTiles ? O.ruleTiles() : ''}
+      ${U.sectionTitle('Prière du matin et du soir')}${O.ruleTiles ? O.ruleTiles() : ''}
       ${Object.keys(cats).map((c) => `<div class="pgroup"><h3 class="group-h">${c}</h3><div class="cards">${cats[c].map((p) => `<a class="card p-card" href="#/prayer/${p.id}"><div class="pc-top"><span class="pc-ref cs">${esc(p.titleCs)}</span>${p.inter ? '<span class="badge">mot à mot</span>' : ''}</div><h3>${esc(p.title)}</h3><p class="muted small clamp">${esc(p.when)}</p></a>`).join('')}</div></div>`).join('')}
     </section>`;
     return { html, title: 'Prières', nav: 'prayers' };

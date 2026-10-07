@@ -1,4 +1,4 @@
-/* Vues : recherche globale, règle de prière du matin et du soir */
+/* Vues : recherche globale, prière du matin et du soir */
 (function () {
   const O = window.ORTHO, K = O.core, C = O.cal, U = K.U;
   const { S, esc, ic, route } = K;
@@ -75,14 +75,14 @@
   }
   route('/search', searchView);
 
-  /* ---------- règle de prière ---------- */
+  /* ---------- prière du matin et du soir ---------- */
   const RULES = {
     morning: {
-      title: 'Règle du matin', cs: 'Правило утреннее', sub: 'Pour commencer la journée devant Dieu.',
+      title: 'Prière du matin', cs: 'Правило утреннее', sub: 'Pour commencer la journée devant Dieu.',
       ids: ['roi-celeste', 'trisagion', 'pater', 'venez-adorons', 'symbole', 'jesus', 'bogoroditse', 'doxologie']
     },
     evening: {
-      title: 'Règle du soir', cs: 'Правило вечернее', sub: 'Pour rendre grâce et confier la nuit au Seigneur.',
+      title: 'Prière du soir', cs: 'Правило вечернее', sub: 'Pour rendre grâce et confier la nuit au Seigneur.',
       ids: ['roi-celeste', 'trisagion', 'pater', 'phos-hilaron', 'symbole', 'dostoino', 'jesus', 'doxologie']
     }
   };
@@ -103,7 +103,7 @@
 
   function ruleTiles() {
     const rs = ruleStreak();
-    return (rs ? `<p class="rule-streak">${ic('flame')}<b>${rs}</b> jour${rs > 1 ? 's' : ''} de règle de suite</p>` : '') + `<div class="tiles">${['morning', 'evening'].map((k) => {
+    return (rs ? `<p class="rule-streak">${ic('flame')}<b>${rs}</b> jour${rs > 1 ? 's' : ''} de prière de suite</p>` : '') + `<div class="tiles">${['morning', 'evening'].map((k) => {
       const ok = doneList(k).length === items(k).length;
       return `<a class="tile" href="#/rule/${k}"><span class="tile-ic">${ic(k === 'morning' ? 'sun' : 'moon')}</span><div><b>${RULES[k].title}</b><span>${esc(RULES[k].sub)}</span></div><span class="badge ${ok ? '' : 'dim'}">${ok ? 'Faite' : progress(k)}</span></a>`;
     }).join('')}</div>`;
@@ -112,7 +112,7 @@
 
   function ruleView(kind) {
     const R = RULES[kind];
-    if (!R) return { html: '<section class="page"><p>Règle introuvable.</p></section>', nav: 'prayers' };
+    if (!R) return { html: '<section class="page"><p>Prière introuvable.</p></section>', nav: 'prayers' };
     const list = items(kind), done = new Set(doneList(kind));
     const html = `<section class="page rule" data-kind="${kind}">
       ${U.back('#/prayers', 'Prières')}
@@ -125,7 +125,7 @@
         ${U.pairs(p.fr.split('\n'), p.cs.split('\n'), 1).replace('<div class="pairs">', '<div class="pairs novn">')}
         <p class="muted xs"><a href="#/prayer/${p.id}">Lecture mot à mot et explications</a></p>
       </article>`).join('')}
-      <p class="muted xs center">Règle indicative et abrégée : adapte-la avec ton père spirituel. Pendant le Carême, ajoute la prière de saint Éphrem.</p>
+      <p class="muted xs center">Prière indicative et abrégée : adapte-la avec ton père spirituel. Pendant le Carême, ajoute la prière de saint Éphrem.</p>
     </section>`;
     return { html, title: R.title, nav: 'prayers' };
   }
@@ -143,7 +143,7 @@
     const prog = document.getElementById('rprog'), fill = document.getElementById('rfill');
     if (prog) prog.textContent = set.size + ' / ' + total;
     if (fill) fill.style.width = (set.size / total) * 100 + '%';
-    if (on && set.size === total) K.toast('Règle accomplie. Слава Богу !');
+    if (on && set.size === total) K.toast('Prière accomplie. Слава Богу !');
     if (O.push) O.push.sync();
   };
 

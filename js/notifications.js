@@ -1,4 +1,4 @@
-/* Notifications : verset, saint du jour, règle de prière, fête du lendemain, cartes, série
+/* Notifications : verset, saint du jour, prière du matin et du soir, fête du lendemain, cartes, série
    (Web Push, via le petit serveur de worker/) */
 (function () {
   const O = window.ORTHO, K = O.core, C = O.cal;
@@ -9,8 +9,8 @@
   const KINDS = [
     ['verse', 'Verset du jour', 'Le verset et sa méditation, chaque matin.', true, 7],
     ['saint', 'Saint du jour', 'Le saint ou la sainte que l’Église célèbre aujourd’hui.', false, 8],
-    ['rulem', 'Rappel de la règle du matin', 'Si tu ne l’as pas encore cochée ce jour-là.', false, 6],
-    ['rulee', 'Rappel de la règle du soir', 'Si tu ne l’as pas encore cochée ce jour-là.', false, 21],
+    ['rulem', 'Rappel de la prière du matin', 'Si tu ne l’as pas encore cochée ce jour-là.', false, 6],
+    ['rulee', 'Rappel de la prière du soir', 'Si tu ne l’as pas encore cochée ce jour-là.', false, 21],
     ['feast', 'Fête du lendemain', 'La veille des grandes fêtes : « Demain, la Transfiguration ».', true, 18],
     ['cards', 'Cartes de slavon à réviser', 'Quand des cartes sont à revoir.', false, 19],
     ['streak', 'Série en danger', 'Seulement si tu n’as pas encore ouvert l’appli ce jour-là.', true, 20]
