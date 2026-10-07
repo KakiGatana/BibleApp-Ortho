@@ -1,5 +1,5 @@
 /* Service worker : fonctionnement hors ligne (réseau d'abord, cache en secours) + notifications */
-const VERSION = 'blagovest-v25';
+const VERSION = 'blagovest-v27';
 const DATA_CACHE = 'blagovest-data'; // écrit par js/notifications.js, à ne jamais purger
 const ICON_CACHE = 'blagovest-icons'; // icônes des saints : mémorisées à la première vue, ou en bloc depuis les réglages
 const CORE = [
