@@ -543,3 +543,83 @@ html[data-reading="1"] .main { max-width: 760px; }
   #splash { animation: splashOut .3s ease .9s forwards; }
   #splash .ring { display: none; } #splash .splash-mark, #splash .splash-name, #splash .splash-cs { animation: none; }
 }
+
+/* ===== couleur par partie de l'appli (mêmes teintes en mode nuit et en mode jour) ===== */
+.view { --sec-g1: #3b72c9; --sec-g2: #2756a6; --sec-g3: #1b3f84; --sec-i1: #254287; --sec-i2: #17275a; --sec-sub: #4a5575; }
+[data-sec="calendar"] .view { --sec-g1: #2f8a62; --sec-g2: #1f6247; --sec-g3: #0f3a2a; --surface: #e3f2ec; --surface2: #d4eadf; --bg2: #c5e2d3; }
+[data-sec="bible"] .view { --sec-g1: #8e2c4c; --sec-g2: #5c1a35; --sec-g3: #33101f; --surface: #f9e9ee; --surface2: #f3dae2; --bg2: #ecccd7; }
+[data-sec="prayers"] .view { --sec-g1: #6a4aa8; --sec-g2: #4b3190; --sec-g3: #2c1a5e; --surface: #efeafa; --surface2: #e6def5; --bg2: #ddd3ef; }
+[data-sec="slavonic"] .view { --sec-g1: #1f7a9a; --sec-g2: #16587a; --sec-g3: #0c3249; --surface: #e2f2f5; --surface2: #d3e8ee; --bg2: #c4dfe8; }
+[data-sec="theology"] .view { --sec-g1: #b27a1c; --sec-g2: #8a5a10; --sec-g3: #5a3a08; --surface: #f8efd8; --surface2: #f1e4c4; --bg2: #e9d8ae; }
+[data-sec="feasts"] .view { --sec-g1: #b02a36; --sec-g2: #7c1520; --sec-g3: #430a12; --surface: #fae7e8; --surface2: #f4d7d9; --bg2: #ecc4c7; }
+[data-sec="saints"] .view { --sec-g1: #2d7d7a; --sec-g2: #1d5a66; --sec-g3: #0f343d; --surface: #e1f1f0; --surface2: #d1e8e7; --bg2: #c0dfdd; }
+[data-sec="ask"] .view { --sec-g1: #4a6fd0; --sec-g2: #33509f; --sec-g3: #243a78; --surface: #e5ebfa; --surface2: #d6e0f6; --bg2: #c6d4f0; }
+[data-sec="favorites"] .view { --sec-g1: #b04a7a; --sec-g2: #7e2d5a; --sec-g3: #4a1536; --surface: #fae8f2; --surface2: #f4d9e9; --bg2: #eccae0; }
+[data-sec="today"] .view { --sec-g1: #3b72c9; --sec-g2: #2756a6; --sec-g3: #1b3f84; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) [data-sec="calendar"] .view { --sec-i1: #1f7a57; --sec-i2: #124a36; --sec-sub: #3f5a4e; --surface: #1c3b36; --surface2: #244a43; --bg2: #152e2a; }
+  :root:not([data-theme="light"]) [data-sec="bible"] .view { --sec-i1: #9a3556; --sec-i2: #6b1f3d; --sec-sub: #5d4a5c; --surface: #3b2233; --surface2: #482a3f; --bg2: #2e1a28; }
+  :root:not([data-theme="light"]) [data-sec="prayers"] .view { --sec-i1: #6a4aa8; --sec-i2: #3f2680; --sec-sub: #52476b; --surface: #2f2c45; --surface2: #393655; --bg2: #292640; }
+  :root:not([data-theme="light"]) [data-sec="slavonic"] .view { --sec-i1: #1f6f8e; --sec-i2: #0f4560; --sec-sub: #3f5a68; --surface: #1d3b47; --surface2: #25495a; --bg2: #173039; }
+  :root:not([data-theme="light"]) [data-sec="theology"] .view { --sec-i1: #9a6410; --sec-i2: #6b430a; --sec-sub: #6a5a3c; --surface: #3a3020; --surface2: #483c28; --bg2: #2e2618; }
+  :root:not([data-theme="light"]) [data-sec="feasts"] .view { --sec-i1: #a62633; --sec-i2: #701420; --sec-sub: #6a4a4e; --surface: #40232a; --surface2: #4d2c34; --bg2: #331b21; }
+  :root:not([data-theme="light"]) [data-sec="saints"] .view { --sec-i1: #1d6e70; --sec-i2: #124347; --sec-sub: #3f5c5e; --surface: #1c3a3d; --surface2: #244749; --bg2: #142e30; }
+  :root:not([data-theme="light"]) [data-sec="ask"] .view { --sec-i1: #33509f; --sec-i2: #1f2f70; --sec-sub: #464e72; --surface: #222f66; --surface2: #2b3a7a; --bg2: #1b2655; }
+  :root:not([data-theme="light"]) [data-sec="favorites"] .view { --sec-i1: #a03d6e; --sec-i2: #6e2350; --sec-sub: #665061; --surface: #3d2238; --surface2: #4a2b44; --bg2: #301a2c; }
+  :root:not([data-theme="light"]) [data-sec="today"] .view { --sec-i1: #9a3556; --sec-i2: #6b1f3d; --sec-sub: #5d4a5c; }
+}
+
+:root[data-theme="dark"] .view { --sec-i1: #254287; --sec-i2: #17275a; --sec-sub: #4a5575; }
+:root[data-theme="dark"] [data-sec="calendar"] .view { --sec-i1: #1f7a57; --sec-i2: #124a36; --sec-sub: #3f5a4e; --surface: #1c3b36; --surface2: #244a43; --bg2: #152e2a; }
+:root[data-theme="dark"] [data-sec="bible"] .view { --sec-i1: #9a3556; --sec-i2: #6b1f3d; --sec-sub: #5d4a5c; --surface: #3b2233; --surface2: #482a3f; --bg2: #2e1a28; }
+:root[data-theme="dark"] [data-sec="prayers"] .view { --sec-i1: #6a4aa8; --sec-i2: #3f2680; --sec-sub: #52476b; --surface: #2f2c45; --surface2: #393655; --bg2: #292640; }
+:root[data-theme="dark"] [data-sec="slavonic"] .view { --sec-i1: #1f6f8e; --sec-i2: #0f4560; --sec-sub: #3f5a68; --surface: #1d3b47; --surface2: #25495a; --bg2: #173039; }
+:root[data-theme="dark"] [data-sec="theology"] .view { --sec-i1: #9a6410; --sec-i2: #6b430a; --sec-sub: #6a5a3c; --surface: #3a3020; --surface2: #483c28; --bg2: #2e2618; }
+:root[data-theme="dark"] [data-sec="feasts"] .view { --sec-i1: #a62633; --sec-i2: #701420; --sec-sub: #6a4a4e; --surface: #40232a; --surface2: #4d2c34; --bg2: #331b21; }
+:root[data-theme="dark"] [data-sec="saints"] .view { --sec-i1: #1d6e70; --sec-i2: #124347; --sec-sub: #3f5c5e; --surface: #1c3a3d; --surface2: #244749; --bg2: #142e30; }
+:root[data-theme="dark"] [data-sec="ask"] .view { --sec-i1: #33509f; --sec-i2: #1f2f70; --sec-sub: #464e72; --surface: #222f66; --surface2: #2b3a7a; --bg2: #1b2655; }
+:root[data-theme="dark"] [data-sec="favorites"] .view { --sec-i1: #a03d6e; --sec-i2: #6e2350; --sec-sub: #665061; --surface: #3d2238; --surface2: #4a2b44; --bg2: #301a2c; }
+:root[data-theme="dark"] [data-sec="today"] .view { --sec-i1: #9a3556; --sec-i2: #6b1f3d; --sec-sub: #5d4a5c; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .view { --sec-i1: #254287; --sec-i2: #17275a; --sec-sub: #4a5575; } }
+
+/* bandeau de titre de chaque page : bleu/coloré le jour, blanc ivoire la nuit (comme l'accueil) */
+.page-head { position: relative; overflow: hidden; padding: 1.25rem 1.3rem 1.15rem; margin: .2rem 0 1.3rem; border-radius: 22px; background: linear-gradient(160deg, var(--sec-g1) 0%, var(--sec-g2) 55%, var(--sec-g3) 100%); color: #f5ecd2; box-shadow: 0 18px 38px -24px rgba(0, 0, 0, .6), inset 0 0 0 1px rgba(240, 205, 122, .35); isolation: isolate; }
+.page-head::before { content: ''; position: absolute; inset: 5px; border-radius: 18px; border: 1px solid rgba(240, 205, 122, .28); pointer-events: none; z-index: -1; }
+.page-head .kicker { color: #f0cd7a; } .page-head .kicker::after { background: linear-gradient(90deg, #f0cd7a, transparent); }
+.page-head h1 { background: linear-gradient(180deg, #fff2c4 0%, #f0cd7a 55%, #d9a948 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.page-head .sub { color: #ece0c2; }
+.page-head .sub b, .page-head .sub a { color: #fff2c4; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .page-head { background: linear-gradient(160deg, #ffffff 0%, #f7f2e6 60%, #ece3cc 100%); color: #2b2438; box-shadow: 0 18px 38px -24px #000, inset 0 0 0 1px color-mix(in srgb, var(--sec-i1) 30%, transparent); }
+  :root:not([data-theme="light"]) .page-head::before { border-color: color-mix(in srgb, var(--sec-i1) 25%, transparent); }
+  :root:not([data-theme="light"]) .page-head .kicker { color: var(--sec-i1); } :root:not([data-theme="light"]) .page-head .kicker::after { background: linear-gradient(90deg, var(--sec-i1), transparent); }
+  :root:not([data-theme="light"]) .page-head h1 { background: linear-gradient(180deg, var(--sec-i1) 0%, var(--sec-i2) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  :root:not([data-theme="light"]) .page-head .sub { color: var(--sec-sub); } :root:not([data-theme="light"]) .page-head .sub b, :root:not([data-theme="light"]) .page-head .sub a { color: var(--sec-i2); }
+}
+:root[data-theme="dark"] .page-head { background: linear-gradient(160deg, #ffffff 0%, #f7f2e6 60%, #ece3cc 100%); color: #2b2438; box-shadow: 0 18px 38px -24px #000, inset 0 0 0 1px color-mix(in srgb, var(--sec-i1) 30%, transparent); }
+:root[data-theme="dark"] .page-head::before { border-color: color-mix(in srgb, var(--sec-i1) 25%, transparent); }
+:root[data-theme="dark"] .page-head .kicker { color: var(--sec-i1); } :root[data-theme="dark"] .page-head .kicker::after { background: linear-gradient(90deg, var(--sec-i1), transparent); }
+:root[data-theme="dark"] .page-head h1 { background: linear-gradient(180deg, var(--sec-i1) 0%, var(--sec-i2) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+:root[data-theme="dark"] .page-head .sub { color: var(--sec-sub); } :root[data-theme="dark"] .page-head .sub b, :root[data-theme="dark"] .page-head .sub a { color: var(--sec-i2); }
+
+/* bandeau du jour (temps ordinaire) : suit la couleur de la partie ; en nuit, texte aux couleurs de la partie */
+.hero-ordinaire { background: linear-gradient(160deg, var(--sec-g1) 0%, var(--sec-g2) 55%, var(--sec-g3) 100%); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .hero-ordinaire { box-shadow: 0 24px 50px -28px #000, inset 0 0 0 1px color-mix(in srgb, var(--sec-i1) 30%, transparent); }
+  :root:not([data-theme="light"]) .hero-ordinaire::before { border-color: color-mix(in srgb, var(--sec-i1) 25%, transparent); }
+  :root:not([data-theme="light"]) .hero-ordinaire .hero-cross { stroke: var(--sec-i1); }
+  :root:not([data-theme="light"]) .hero-ordinaire .hero-date { color: var(--sec-i2); } :root:not([data-theme="light"]) .hero-ordinaire .hero-date b { color: var(--sec-i1); }
+  :root:not([data-theme="light"]) .hero-ordinaire .hero-title { background: linear-gradient(180deg, var(--sec-i1) 0%, var(--sec-i2) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  :root:not([data-theme="light"]) .hero-ordinaire .hero-sub { color: var(--sec-sub); }
+  :root:not([data-theme="light"]) .hero-ordinaire .chip, :root:not([data-theme="light"]) .hero-ordinaire .chip.gold { color: var(--sec-i2); background: color-mix(in srgb, var(--sec-i1) 10%, transparent); border-color: color-mix(in srgb, var(--sec-i1) 32%, transparent); }
+  :root:not([data-theme="light"]) .hero-ordinaire .btn.light, :root:not([data-theme="light"]) .hero-ordinaire .icon-btn.light { color: var(--sec-i2); }
+}
+:root[data-theme="dark"] .hero-ordinaire { box-shadow: 0 24px 50px -28px #000, inset 0 0 0 1px color-mix(in srgb, var(--sec-i1) 30%, transparent); }
+:root[data-theme="dark"] .hero-ordinaire::before { border-color: color-mix(in srgb, var(--sec-i1) 25%, transparent); }
+:root[data-theme="dark"] .hero-ordinaire .hero-cross { stroke: var(--sec-i1); }
+:root[data-theme="dark"] .hero-ordinaire .hero-date { color: var(--sec-i2); } :root[data-theme="dark"] .hero-ordinaire .hero-date b { color: var(--sec-i1); }
+:root[data-theme="dark"] .hero-ordinaire .hero-title { background: linear-gradient(180deg, var(--sec-i1) 0%, var(--sec-i2) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+:root[data-theme="dark"] .hero-ordinaire .hero-sub { color: var(--sec-sub); }
+:root[data-theme="dark"] .hero-ordinaire .chip, :root[data-theme="dark"] .hero-ordinaire .chip.gold { color: var(--sec-i2); background: color-mix(in srgb, var(--sec-i1) 10%, transparent); border-color: color-mix(in srgb, var(--sec-i1) 32%, transparent); }
+:root[data-theme="dark"] .hero-ordinaire .btn.light, :root[data-theme="dark"] .hero-ordinaire .icon-btn.light { color: var(--sec-i2); }
+.hero-slav { background: linear-gradient(160deg, var(--sec-g1) 0%, var(--sec-g2) 55%, var(--sec-g3) 100%); }

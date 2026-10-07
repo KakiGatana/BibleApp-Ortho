@@ -151,6 +151,7 @@
   function updateNav(id) {
     $$('[data-nav]').forEach((a) => a.classList.toggle('active', a.dataset.nav === id || (a.dataset.nav === 'more' && id && !TABS.includes(id))));
     document.body.classList.toggle('not-home', !!id && id !== 'today');
+    document.body.setAttribute('data-sec', id || '');
   }
   const MORE = [
     ['Lire et prier', [['bible', 'Écritures', 'book', 'Psaumes, Évangiles, canon, plan de lecture'], ['prayers', 'Prières', 'pray', 'Règle du matin et du soir, prières mot à mot'], ['slavonic', 'Slavon', 'slav', 'Alphabet, leçons, cartes, quiz']]],
