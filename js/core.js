@@ -134,6 +134,7 @@
     ['psalter', 'Psautier', 'book', '#/psalter'],
     ['kids', 'Pour les enfants', 'saint', '#/kids'],
     ['liturgy', 'La Divine Liturgie', 'pray', '#/liturgy'],
+    ['pray', 'Prier', 'pray', '#/pray'],
     ['learn', 'Découvrir l’Orthodoxie', 'book', '#/learn'],
     ['glossary', 'Glossaire', 'book', '#/glossary'],
     ['distinctions', 'Distinctions théologiques', 'theo', '#/distinctions'],
@@ -149,11 +150,13 @@
     ['install', 'Installer et partager', 'share', '#/install'],
     ['settings', 'Réglages', 'gear', '#/settings']
   ];
-  const TABS = ['ask', 'calendar', 'today', 'jesus'];
-  const TAB_LABEL = { today: 'Accueil', calendar: 'Calendrier', ask: 'Assistant IA', jesus: 'Prière de Jésus' };
-  const TAB_ICON = { today: 'home', calendar: 'cal', ask: 'chat', jesus: 'beads' };
+  const TABS = ['ask', 'calendar', 'today', 'pray'];
+  const GROUP = { jesus: 'pray', prayers: 'pray', liturgy: 'pray', psalter: 'pray' }; // pages qui allument l’onglet « Prier »
+  const SIDE = ['today', 'calendar', 'ask', 'pray', 'bible', 'theology', 'slavonic', 'quiz', 'feasts', 'saints', 'liturgy', 'parishes', 'favorites', 'search', 'settings', 'install'];
+  const TAB_LABEL = { today: 'Accueil', calendar: 'Calendrier', ask: 'Assistant IA', pray: 'Prier' };
+  const TAB_ICON = { today: 'home', calendar: 'cal', ask: 'chat', pray: 'pray' };
   function buildNav() {
-    $('#sideNav').innerHTML = NAV.map(([id, l, i, h]) => `<a href="${h}" data-nav="${id}">${ic(i)}<span>${l}</span></a>`).join('');
+    $('#sideNav').innerHTML = SIDE.map((id) => NAV.find((x) => x[0] === id)).filter(Boolean).map(([id, l, i, h]) => `<a href="${h}" data-nav="${id}">${ic(i)}<span>${l}</span></a>`).join('');
     const tab = (id) => {
       const n = NAV.find((x) => x[0] === id);
       return `<a href="${n[3]}" data-nav="${id}" class="${id === 'today' ? 'tab-main' : ''}"><span class="tab-ic">${ic(TAB_ICON[id])}</span><span class="tab-l">${TAB_LABEL[id]}</span></a>`;
@@ -162,22 +165,19 @@
       `<button data-act="more" data-nav="more" aria-label="Ouvrir le menu"><span class="tab-ic">${ic('menu')}</span><span class="tab-l">Menu</span></button>`;
   }
   function updateNav(id) {
-    $$('[data-nav]').forEach((a) => a.classList.toggle('active', a.dataset.nav === id || (a.dataset.nav === 'more' && id && !TABS.includes(id))));
+    const g = GROUP[id] || id;
+    $$('[data-nav]').forEach((a) => a.classList.toggle('active', a.dataset.nav === g || (a.dataset.nav === 'more' && id && !TABS.includes(g))));
     document.body.classList.toggle('not-home', !!id && id !== 'today');
     document.body.setAttribute('data-sec', id || '');
   }
-  const MORE = [
-    ['Lire et prier', [['bible', 'Écritures', 'book', 'Psaumes, Évangiles, canon, plan de lecture'], ['prayers', 'Prières', 'pray', 'Prière du matin et du soir, prières mot à mot'], ['psalter', 'Psautier', 'book', 'Les 150 psaumes en 20 kathismes, avec marque-page'], ['slavonic', 'Slavon', 'slav', 'Alphabet, leçons, cartes, quiz'], ['theology', 'Théologie', 'theo', 'Les grands thèmes de la foi, les conciles'], ['apolo', 'Objections et réponses', 'chat', 'Arguments contre la foi et l’Orthodoxie, et comment y répondre'], ['learn', 'Découvrir l’Orthodoxie', 'book', 'Onze fiches simples : la foi, l’église, la prière'], ['glossary', 'Glossaire', 'book', 'Les mots que l’on entend à l’église'], ['quiz', 'Quiz', 'quiz', 'Défi du jour, culture orthodoxe, slavon']]],
-    ['Le temps de l’Église', [['feasts', 'Fêtes', 'feast', 'Sens des fêtes et tropaires'], ['saints', 'Saints', 'saint', 'Les saints de chaque jour'], ['kids', 'Pour les enfants', 'saint', 'Le saint du jour raconté simplement, premières prières'], ['liturgy', 'La Divine Liturgie', 'pray', 'Pas à pas : ce qui se passe, ce qui se dit, ce que je fais'], ['parishes', 'Paroisses près de moi', 'pin', 'Trouver une paroisse orthodoxe à proximité']]],
-    ['Mon espace', [['search', 'Recherche', 'search', 'Chercher dans toute l’application'], ['favorites', 'Favoris et notes', 'heart', 'Ce que j’ai gardé'], ['settings', 'Réglages', 'gear', 'Notifications, sauvegarde, thème, mode lecture'], ['install', 'Installer et partager', 'share', 'Ajouter à l’écran d’accueil, l’envoyer à un proche']]]
+  const TILES = [
+    ['#/bible', 'book', 'Écritures'], ['#/hub/theo', 'theo', 'Théologie'], ['#/slavonic', 'slav', 'Slavon'],
+    ['#/hub/church', 'feast', 'Vie de l’Église'], ['#/slavonic/quiz', 'quiz', 'Quiz'], ['#/hub/me', 'gear', 'Mon espace']
   ];
   function moreSheet() {
-    const href = (id) => NAV.find((n) => n[0] === id)[3];
-    const row = ([id, l, i, d]) => `<a href="${href(id)}" data-act="sheet-close" class="more-row"><span class="more-ic">${ic(i)}</span><span class="more-t"><b>${l}</b><small>${d}</small></span>${ic('right', 'ic more-go')}</a>`;
     openSheet(`<h2 class="sheet-title">Menu</h2>
       <a href="#/today" data-act="sheet-close" class="more-row more-home"><span class="more-ic">${ic('home')}</span><span class="more-t"><b>Retour à l’accueil</b><small>Le jour, le verset et les saints du jour</small></span>${ic('right', 'ic more-go')}</a>
-      ${MORE.map(([title, items]) => `<h3 class="more-h">${title}</h3><div class="more-list">${items.map(row).join('')}</div>`).join('')}
-      <div class="more-list"><a href="#/about" data-act="sheet-close" class="more-row"><span class="more-ic">${ic('logo')}</span><span class="more-t"><b>À propos de Blagovest</b><small>Sources, limites, avertissements</small></span>${ic('right', 'ic more-go')}</a></div>`);
+      <div class="more-grid more-tiles">${TILES.map(([h, i, l]) => `<a href="${h}" data-act="sheet-close" class="more-item">${ic(i)}<span>${l}</span></a>`).join('')}</div>`);
   }
 
   /* ---------- favoris & notes ---------- */

@@ -950,3 +950,16 @@ html[data-reading="1"] .main { max-width: 760px; }
 .council-local li { display: grid; grid-template-columns: 5.4rem 1fr; gap: .7rem; padding: .4rem 0; border-bottom: 1px dashed var(--line); }
 .heresies { display: grid; gap: .7rem; }
 .heresies .card { margin: 0 !important; } .heresies p { margin: .25rem 0 0; }
+
+/* refonte du menu et de la barre du bas */
+#tabbar [data-nav="pray"] { --tc: #c4b0f0; --tc-fg: #2a1a5a; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #tabbar [data-nav="pray"] { --tc: #c4b0f0; --tc-fg: #2a1a5a; } }
+:root[data-theme="dark"] #tabbar [data-nav="pray"] { --tc: #c4b0f0; --tc-fg: #2a1a5a; }
+.more-tiles { grid-template-columns: repeat(2, 1fr); gap: .7rem; margin-top: .8rem; }
+.more-tiles .more-item { flex-direction: row; justify-content: flex-start; gap: .8rem; padding: 1.05rem 1rem; font-size: .72rem; }
+.more-tiles .more-item svg { width: 1.9rem; height: 1.9rem; flex: none; }
+.pray-main { display: flex; align-items: center; gap: 1rem; padding: 1.1rem 1.2rem; margin-bottom: 1rem; text-decoration: none; background: #35305a; color: #f8f1de; --ink: #f8f1de; --ink2: #dcd2b4; --gold: #f0cd7a; }
+.pray-main b { font-size: 1.3rem; display: block; }
+.pray-main .more-ic { width: 3.2rem; height: 3.2rem; }
+.pray-main .more-ic svg { width: 1.9rem; height: 1.9rem; }
+.pray-main .more-go { margin-left: auto; }

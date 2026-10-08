@@ -20,12 +20,12 @@
       <div class="cards psal-grid">${KATH.map(([a, b], i) => `<a class="card psal-k ${p.done[i + 1] ? 'ok' : ''} ${p.k === i + 1 ? 'cur' : ''}" href="#/psalter/${i + 1}"><b>Kathisme ${i + 1}</b><span class="muted small">${label(a, b)}</span>${p.done[i + 1] ? '<i class="psal-ok">✓</i>' : ''}</a>`).join('')}</div>
       <p class="muted xs center">Texte : Septante, traduction Giguet (domaine public), numérotation de la Septante.</p>
     </section>`;
-    return { html, title: 'Psautier', nav: 'bible' };
+    return { html, title: 'Psautier', nav: 'prayers' };
   }
 
   function kView(k) {
     k = +k;
-    if (!(k >= 1 && k <= 20)) return { html: '<section class="page"><p>Kathisme introuvable.</p></section>', title: 'Psautier', nav: 'bible' };
+    if (!(k >= 1 && k <= 20)) return { html: '<section class="page"><p>Kathisme introuvable.</p></section>', title: 'Psautier', nav: 'prayers' };
     if (!P().done[k]) { P().k = k; K.save(); } // le marque-page reste sur le prochain kathisme à lire
     const [a, b] = KATH[k - 1], prev = k > 1 ? '#/psalter/' + (k - 1) : '', next = k < 20 ? '#/psalter/' + (k + 1) : '';
     const done = !!P().done[k];
@@ -43,7 +43,7 @@
       h += '<p class="center muted">Gloire au Père, et au Fils, et au Saint-Esprit, maintenant et toujours et dans les siècles des siècles. Amen.</p>';
       const box = document.getElementById('psBox'); if (box) box.innerHTML = h;
     }).catch(fail);
-    return { html, title: 'Kathisme ' + k, nav: 'bible', after };
+    return { html, title: 'Kathisme ' + k, nav: 'prayers', after };
   }
 
   K.act['psalter-done'] = (el) => {
