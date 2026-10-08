@@ -11,6 +11,9 @@
       <div class="cards theo-cards">${O.THEOLOGY.map((t, i) => `<a class="card theo-card" href="#/theo/${t.id}"><span class="roman">${ROMAN[i]}</span><div><h3>${esc(t.title)}</h3><p class="muted small">${esc(t.sub)}</p></div></a>`).join('')}</div>
       ${U.sectionTitle('Aller plus loin')}
       <div class="tiles">
+        <a class="tile" href="#/distinctions"><span class="tile-ic">${ic('theo')}</span><div><b>Distinctions théologiques</b><span>Essence et énergies, ousia et hypostase, synergie, théosis…</span></div></a>
+        <a class="tile" href="#/councils"><span class="tile-ic">${ic('theo')}</span><div><b>Conciles et hérésies</b><span>Qui a dit quoi, quel concile, quelle réponse</span></div></a>
+        <a class="tile" href="#/apolo"><span class="tile-ic">${ic('chat')}</span><div><b>Objections et réponses</b><span>Arguments contre la foi et l’Orthodoxie</span></div></a>
         <a class="tile" href="#/theo-conciles"><span class="tile-ic">${ic('theo')}</span><div><b>Les sept conciles</b><span>De Nicée I (325) à Nicée II (787)</span></div></a>
         <a class="tile" href="#/slavonic/quiz/culture"><span class="tile-ic">${ic('quiz')}</span><div><b>Quiz de culture orthodoxe</b><span>Teste tes connaissances</span></div></a>
       </div>

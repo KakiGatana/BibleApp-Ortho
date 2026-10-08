@@ -1,5 +1,5 @@
 /* Service worker : fonctionnement hors ligne (réseau d'abord, cache en secours) + notifications */
-const VERSION = 'blagovest-v39';
+const VERSION = 'blagovest-v41';
 const DATA_CACHE = 'blagovest-data'; // écrit par js/notifications.js, à ne jamais purger
 const BIBLE_CACHE = 'blagovest-bible'; // textes bibliques (bible/*.json) : ne changent pas, gardés d'une version à l'autre
 const ICON_CACHE = 'blagovest-icons'; // icônes des saints : mémorisées à la première vue, ou en bloc depuis les réglages
@@ -9,7 +9,7 @@ const CORE = [
   'js/calendar.js', 'js/core.js', 'js/push-config.js', 'js/notifications.js', 'js/sync.js', 'js/share.js',
   'js/views-day.js', 'js/views-bible.js', 'js/views-slavonic.js', 'js/views-more.js', 'js/views-extra.js', 'js/views-ask.js', 'js/views-icons.js', 'js/views-jesus.js', 'js/i18n.js', 'js/data/i18n-static.js', 'js/data/icons.js', 'js/data/verses-cs.js', 'js/boot.js',
   'js/data/feasts.js', 'js/data/saints.js', 'js/data/verses1.js', 'js/data/verses2.js', 'js/data/verses3.js', 'js/data/verses4.js',
-  'js/data/prayers.js', 'js/data/readings.js', 'js/data/slavonic.js', 'js/data/theology.js', 'js/data/canon.js', 'js/data/quiz2.js', 'js/views-read.js', 'js/data/apolo.js', 'js/views-apolo.js', 'js/swipe.js', 'js/data/peres.js', 'js/views-peres.js', 'js/views-psalter.js', 'js/views-kids.js', 'js/views-liturgy.js', 'js/views-parishes.js'
+  'js/data/prayers.js', 'js/data/readings.js', 'js/data/slavonic.js', 'js/data/theology.js', 'js/data/canon.js', 'js/data/quiz2.js', 'js/views-read.js', 'js/data/apolo.js', 'js/views-apolo.js', 'js/swipe.js', 'js/data/peres.js', 'js/views-peres.js', 'js/views-psalter.js', 'js/views-kids.js', 'js/views-liturgy.js', 'js/views-parishes.js', 'js/data/learn.js', 'js/data/theo2.js', 'js/views-learn.js'
 ];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(VERSION).then((c) => c.addAll(CORE)).then(() => self.skipWaiting()));

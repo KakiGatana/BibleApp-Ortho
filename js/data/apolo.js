@@ -218,5 +218,61 @@
       ['Historique', `Au XXᵉ siècle, des millions de chrétiens orthodoxes sont morts en Russie, en Roumanie, en Serbie, en Grèce, en Albanie comme « nouveaux martyrs ». Mais une partie de la hiérarchie a collaboré (déclaration de 1927 du métropolite Serge, infiltration par le KGB).`],
       ['Théologique', `L’Église est sainte comme corps du Christ, mais ses membres sont pécheurs. Le dossier montre à la fois des saints et des compromis, et il ne faut pas masquer l’un ni l’autre.`]
     ], lim: `Il y a eu et il y a encore des liens inquiétants entre des hiérarchies et le pouvoir (par exemple aujourd’hui en Russie). L’Orthodoxie le reconnaît comme une tentation permanente.`, lire: `Mgr Hilarion Alfeyev ; Dimitri Pospielovsky, The Russian Church under the Soviet Regime.` }
+    ,
+    { id: 'nicee-divinite', cat: 'foi', q: `« La divinité de Jésus a été inventée à Nicée, sous Constantin. »`, pts: [
+      ['Biblique', `Les textes du Nouveau Testament affirment déjà sa divinité : le prologue de Jean (Jn 1, 1-18), l’hymne de Philippiens 2, 6-11 (écrit dans les années 50, qui reprend probablement une prière plus ancienne), la confession de Thomas (« Mon Seigneur et mon Dieu », Jn 20, 28).`],
+      ['Historique', `Vers 112, Pline le Jeune rapporte que les chrétiens chantent le Christ « comme à un dieu ». Ignace d’Antioche (vers 110) écrit « notre Dieu, Jésus le Christ » (Aux Éphésiens, 18, 2).`],
+      ['Historique', `À Nicée (325), la question était posée par Arius, prêtre d’Alexandrie : le Fils est-il créé ? Presque tous les évêques (environ 300) ont rejeté sa position, et très peu ont refusé de signer. Constantin a convoqué le concile mais n’en a pas inventé le sujet. Le concile n’a pas non plus fixé le canon biblique.`]
+    ], lim: `Les débats ont continué pendant des décennies après Nicée, et l’empereur a parfois soutenu un camp, parfois l’autre. Les formulations se sont précisées avec le temps, mais la foi qu’elles expriment est plus ancienne.`, lire: `Saint Athanase, Contre les ariens ; Larry Hurtado, Lord Jesus Christ.` },
+
+    { id: 'chalcedoine', cat: 'orth', q: `« Chalcédoine n’était qu’une querelle de mots : pourquoi les Coptes et les Arméniens sont-ils séparés ? »`, pts: [
+      ['Historique', `Après Chalcédoine (451), les Églises copte, arménienne, syriaque, éthiopienne et malankare n’ont pas reçu la formule « en deux natures ». On les dit « non chalcédoniennes » ou « orthodoxes orientaux » (Oriental Orthodox), à ne pas confondre avec les orthodoxes byzantins (grecs, russes, serbes…) de la tradition chalcédonienne.`],
+      ['Théologique', `Elles ne sont pas « monophysites » au sens d’Eutychès : elles condamnent l’eutychianisme et parlent de « miaphysisme » (une nature « composée », en reprenant la formule de saint Cyrille d’Alexandrie).`],
+      ['Historique', `Des dialogues théologiques officiels (Chambésy, 1990, et d’autres) ont conclu que les deux familles confessent la même foi en la divinité et l’humanité parfaites du Christ, avec des mots différents.`],
+      ['Théologique', `Mais l’unité n’est pas rétablie : il reste la question de l’autorité des conciles postérieurs (Orthodoxes : sept ; Orientaux : trois), de l’anathème porté contre certains Pères, et des mémoires blessées.`]
+    ], lim: `C’est un des sujets les plus délicats : les dialogues ont montré de grandes convergences, mais les Églises ne sont pas d’accord sur la conclusion à en tirer. Évite de réduire cette histoire à « une pure querelle de mots ».`, lire: `Déclarations communes de Chambésy (1990) ; Jean Meyendorff, Le Christ dans la pensée byzantine.` },
+
+    { id: 'palamas', cat: 'orth', q: `« La distinction entre essence et énergies est une invention tardive de Palamas et brise la simplicité de Dieu. »`, pts: [
+      ['Patristique', `Elle se trouve en germe bien avant lui : Basile (« nous connaissons Dieu par ses énergies »), Grégoire de Nysse, Denys l’Aréopagite, Maxime le Confesseur et Jean Damascène parlent de l’énergie divine.`],
+      ['Historique', `Palamas (XIVᵉ siècle) la systématise pour répondre à Barlaam de Calabre. Elle est reçue par des conciles locaux (1341, 1347, 1351) et par la tradition orthodoxe.`],
+      ['Théologique', `Elle protège deux vérités : Dieu reste inconnaissable en son essence, et pourtant nous pouvons vraiment participer à lui (théosis). Sans elle, soit Dieu est inaccessible, soit la divinisation est une illusion.`],
+      ['Philosophique', `Critique thomiste : elle ruinerait la simplicité divine. Réponse orthodoxe : la distinction est réelle mais non une division : chaque énergie est Dieu tout entier agissant.`]
+    ], lim: `C’est un vrai désaccord entre traditions : des théologiens catholiques contemporains y voient une position acceptable, d’autres une ambiguïté. Palamas n’est pas condamné par Rome, mais il n’est pas reçu non plus comme docteur.`, lire: `Palamas, Triades ; John Meyendorff, Introduction à l’étude de Grégoire Palamas.` },
+
+    { id: 'hesychasme', cat: 'orth', q: `« L’hésychasme est une technique importée (yoga, soufisme), et la lumière du Thabor est une illusion. »`, pts: [
+      ['Biblique', `« Prie ton Père dans le secret » (Mt 6, 6) ; « priez sans cesse » (1 Th 5, 17) ; la Transfiguration (Mt 17) montre la gloire divine visible aux disciples.`],
+      ['Historique', `La répétition d’une courte invocation est attestée chez les Pères du désert (IVᵉ siècle) et chez Diadoque de Photicé (Vᵉ siècle). Les consignes sur la respiration et la posture apparaissent beaucoup plus tard (XIIIᵉ siècle) et sont toujours secondaires.`],
+      ['Théologique', `Palamas défend que la lumière du Thabor est la gloire incréée de Dieu, que les saints peuvent contempler par grâce. Barlaam la jugeait créée, et le concile de 1341 l’a condamné.`]
+    ], lim: `Les Pères eux-mêmes mettent en garde : un exercice mal compris peut mener à l’illusion (prélest) ou à l’orgueil. C’est pourquoi l’Église demande un père spirituel et de l’humilité. Des similitudes extérieures avec d’autres traditions ne prouvent pas une origine commune.`, lire: `La Philocalie ; Palamas, Triades ; Récits d’un pèlerin russe.` },
+
+    { id: 'defunts', cat: 'orth', q: `« Prier pour les morts n’est pas biblique ; et l’Orthodoxie n’a pas de purgatoire, c’est incohérent. »`, pts: [
+      ['Biblique', `2 Maccabées 12, 43-45 (livre que le canon orthodoxe retient) montre des prières et un sacrifice pour les défunts. Paul prie pour Onésiphore (2 Tm 1, 16-18, texte discuté) et mentionne le baptême pour les morts (1 Co 15, 29, texte obscur).`],
+      ['Historique', `La prière pour les défunts est très ancienne : Tertullien (vers 211) parle d’offrandes pour les morts ; le Martyre de Perpétue (vers 203) la montre priant pour son frère Dinocrate ; les inscriptions des catacombes demandent le repos des défunts.`],
+      ['Théologique', `L’Orthodoxie prie pour les défunts sans enseigner un purgatoire défini (feu purificateur, satisfaction des peines). Elle croit que l’amour de l’Église peut les aider, sans dire comment ni où. Le jugement appartient à Dieu.`]
+    ], lim: `Certains textes populaires (« les douanes aériennes ») sont débattus entre orthodoxes, et ne sont pas une doctrine de l’Église. Il y a des nuances réelles entre cette position et le purgatoire latin, mais aussi des points communs.`, lire: `Saint Marc d’Éphèse, Discours sur le purgatoire ; Mgr Kallistos Ware, L’Orthodoxie.` },
+
+    { id: 'divorce', cat: 'orth', q: `« Jésus interdit le divorce (Mt 19) ; pourquoi l’Orthodoxie permet-elle le remariage ? »`, pts: [
+      ['Biblique', `Jésus déclare que ce que Dieu a uni, l’homme ne doit pas le séparer (Mt 19, 6). Mais Matthieu rapporte aussi la clause d’exception « sauf pour fornication » (Mt 19, 9).`],
+      ['Théologique', `L’Orthodoxie considère que le mariage est sacré et indissoluble dans son idéal, mais que le péché peut le détruire en fait. Par économie (miséricorde pastorale), l’Église reconnaît la mort d’un mariage, comme elle accepte la mort physique d’un conjoint, et peut accorder un second mariage, avec un rite de pénitence.`],
+      ['Historique', `Les canons de saint Basile et la pratique de l’Église ancienne tolèrent des situations de ce genre, avec pénitence. L’Occident a suivi une autre voie (indissolubilité absolue, nullité du mariage).`]
+    ], lim: `Les orthodoxes ne se mettent pas d’accord sur les conditions et sur la pratique : certaines juridictions sont plus strictes. Le troisième mariage est encore plus restreint. Cette pratique est un point de débat avec les catholiques.`, lire: `Paul Evdokimov, Le Sacrement de l’amour ; Canons de saint Basile.` },
+
+    { id: 'femmes-pretres', cat: 'orth', q: `« Pourquoi l’Église n’ordonne-t-elle pas de femmes prêtres ? »`, pts: [
+      ['Biblique', `Jésus a choisi douze apôtres hommes, mais des femmes l’ont suivi, ont été les premiers témoins de la Résurrection (Marie-Madeleine est appelée « égale aux apôtres ») et ont eu un rôle essentiel. Marie, la plus honorée des saints, n’a pas été ordonnée.`],
+      ['Historique', `Il y a eu des diaconesses (Phébé, Rm 16, 1 ; plusieurs dans l’Église byzantine), mais leur service était distinct de celui du diacre : accompagner les femmes au baptême, par exemple. Elles ne présidaient pas l’Eucharistie.`],
+      ['Théologique', `Le prêtre préside l’Eucharistie en « icône » du Christ, dans la continuité de l’Église des apôtres. Ce n’est pas une question de valeur : les saintes ont une dignité égale à celle des saints.`]
+    ], lim: `La question du rétablissement d’un diaconat féminin est discutée parmi les orthodoxes, sans décision commune. C’est un sujet sur lequel les théologiens sont partagés. Dire qu’il n’y a aucune difficulté serait malhonnête.`, lire: `Kyriaki FitzGerald (éd.), Orthodox Women Speak ; Mgr Kallistos Ware, Man, Woman and the Priesthood of Christ.` },
+
+    { id: 'bapteme-enfants', cat: 'orth', q: `« Le baptême des petits enfants n’est pas biblique : il faut croire pour être baptisé. »`, pts: [
+      ['Biblique', `Le Nouveau Testament parle de baptêmes de « maisonnées » entières (Ac 16, 15 et 33 ; 1 Co 1, 16). Paul rapproche le baptême de la circoncision, qui se faisait à huit jours (Col 2, 11-12). Jésus dit : « Laissez venir à moi les petits enfants » (Mt 19, 14).`],
+      ['Historique', `Irénée parle de nourrissons « renés pour Dieu » (Contre les hérésies, II, 22, 4). Origène dit que l’Église a reçu des apôtres la tradition de baptiser les petits enfants. Au concile de Carthage (vers 253), Cyprien et les évêques affirment qu’on n’a pas à attendre le huitième jour.`],
+      ['Théologique', `Le baptême n’est pas d’abord une décision de l’homme, mais un don de Dieu qui accueille. La foi des parents et de l’Église porte l’enfant, qui reçoit aussi la chrismation et la communion, et grandira ensuite dans cette foi.`]
+    ], lim: `Aucun texte du Nouveau Testament ne le commande explicitement, et les Églises baptistes comprennent le baptême autrement, avec sincérité. Les arguments sont des indices solides, pas une démonstration.`, lire: `Origène, Commentaire sur l’épître aux Romains, V ; Alexandre Schmemann, De l’eau et de l’Esprit.` },
+
+    { id: 'priere-exaucee', cat: 'foi', q: `« Dieu ne répond pas aux prières ; prier ne sert à rien. »`, pts: [
+      ['Théologique', `Pour l’Orthodoxie, la prière n’est pas une commande qu’on passe à Dieu : c’est une relation. Le Christ lui-même prie « que ta volonté soit faite » (Lc 22, 42).`],
+      ['Biblique', `L’Écriture dit que Dieu répond, mais pas toujours comme on l’attend : Jc 4, 3 (« vous demandez mal »), 2 Co 12, 8-9 (Paul demande trois fois, et reçoit « ma grâce te suffit »).`],
+      ['Patristique', `Évagre : « la prière est l’entretien de l’esprit avec Dieu ». Les Pères disent que la première réponse de Dieu, c’est le changement du cœur de celui qui prie.`]
+    ], lim: `Il existe des prières sans réponse visible, parfois très douloureuses. L’Église ne prétend pas l’expliquer, elle invite à continuer à prier et à ne pas rester seul.`, lire: `Évagre le Pontique, Traité de l’oraison ; Mgr Antoine Bloom, École de la prière.` }
   ];
 })();
