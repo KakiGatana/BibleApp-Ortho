@@ -56,7 +56,8 @@
   function card(c, i) {
     return `<article class="card ch-card" data-i="${i}"><div class="ch-top"><div><b>${esc(c.t)}</b><span class="muted small"> · ${esc(c.kind)}</span></div>
       <button class="icon-btn" data-act="chant-del" data-i="${i}" aria-label="Retirer cette playlist">✕</button></div>
-      <div class="ch-player" id="chP${i}"><div class="row"><button class="btn small" data-act="chant-play" data-i="${i}">Écouter</button><a class="btn small ghost" href="${esc(c.open)}" target="_blank" rel="noopener">Ouvrir dans l’application</a></div></div></article>`;
+      <div class="ch-player" id="chP${i}"><div class="row"><button class="btn small ${c.kind === 'Spotify' ? 'ghost' : ''}" data-act="chant-play" data-i="${i}">Écouter ici</button><a class="btn small ${c.kind === 'Spotify' ? '' : 'ghost'}" href="${esc(c.open)}" target="_blank" rel="noopener">Ouvrir dans ${esc(c.kind)}</a></div></div>
+      ${c.kind === 'Spotify' ? '<p class="muted xs">Ici, Spotify ne joue que des extraits de 30 secondes si tu n’es pas connecté à Spotify dans ce navigateur. Pour écouter en entier, « Ouvrir dans Spotify ».</p>' : ''}</article>`;
   }
   K.act['chant-play'] = (el) => {
     const c = LISTS()[+el.dataset.i], box = document.getElementById('chP' + el.dataset.i);
