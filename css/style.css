@@ -963,3 +963,9 @@ html[data-reading="1"] .main { max-width: 760px; }
 .pray-main .more-ic { width: 3.2rem; height: 3.2rem; }
 .pray-main .more-ic svg { width: 1.9rem; height: 1.9rem; }
 .pray-main .more-go { margin-left: auto; }
+
+/* chants */
+.ch-form { display: grid; gap: .6rem; margin-top: .6rem; }
+.ch-form input { padding: .7rem 1rem; border-radius: 999px; border: 1px solid var(--line); background: var(--surface2); color: var(--ink); font: inherit; min-width: 0; }
+.ch-top { display: flex; align-items: center; justify-content: space-between; gap: .6rem; margin-bottom: .6rem; }
+.ch-frame { width: 100%; border: 0; border-radius: 14px; background: #000; }

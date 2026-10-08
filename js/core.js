@@ -135,6 +135,7 @@
     ['kids', 'Pour les enfants', 'saint', '#/kids'],
     ['liturgy', 'La Divine Liturgie', 'pray', '#/liturgy'],
     ['pray', 'Prier', 'pray', '#/pray'],
+    ['chants', 'Chants', 'speak', '#/chants'],
     ['learn', 'Découvrir l’Orthodoxie', 'book', '#/learn'],
     ['glossary', 'Glossaire', 'book', '#/glossary'],
     ['distinctions', 'Distinctions théologiques', 'theo', '#/distinctions'],
@@ -151,7 +152,7 @@
     ['settings', 'Réglages', 'gear', '#/settings']
   ];
   const TABS = ['ask', 'calendar', 'today', 'pray'];
-  const GROUP = { jesus: 'pray', prayers: 'pray', liturgy: 'pray', psalter: 'pray' }; // pages qui allument l’onglet « Prier »
+  const GROUP = { jesus: 'pray', prayers: 'pray', liturgy: 'pray', psalter: 'pray', chants: 'pray' }; // pages qui allument l’onglet « Prier »
   const SIDE = ['today', 'calendar', 'ask', 'pray', 'bible', 'theology', 'slavonic', 'quiz', 'feasts', 'saints', 'liturgy', 'parishes', 'favorites', 'search', 'settings', 'install'];
   const TAB_LABEL = { today: 'Accueil', calendar: 'Calendrier', ask: 'Assistant IA', pray: 'Prier' };
   const TAB_ICON = { today: 'home', calendar: 'cal', ask: 'chat', pray: 'pray' };

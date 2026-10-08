@@ -52,7 +52,8 @@
         ['#/rule/evening', 'Prière du soir', 'moon', 'Pour finir la journée dans la paix'],
         ['#/prayers', 'Prières', 'pray', 'Le livre de prières, mot à mot en slavon'],
         ['#/psalter', 'Psautier', 'book', ps.k ? 'Reprendre : kathisme ' + ps.k : 'Les 150 psaumes en 20 kathismes'],
-        ['#/liturgy', 'La Divine Liturgie', 'pray', 'Suivre l’office pas à pas']
+        ['#/liturgy', 'La Divine Liturgie', 'pray', 'Suivre l’office pas à pas'],
+        ['#/chants', 'Chants', 'speak', 'Mes playlists Spotify et YouTube de chants orthodoxes']
       ].map(row).join('')}</div>
     </section>`;
     return { html, title: 'Prier', nav: 'prayers' };
