@@ -12,6 +12,7 @@
       ['#/distinctions', 'Distinctions théologiques', 'theo', 'Essence et énergies, théosis, synergie…'],
       ['#/councils', 'Conciles et hérésies', 'theo', 'Qui a dit quoi, quelle réponse de l’Église'],
       ['#/apolo', 'Objections et réponses', 'chat', 'Arguments contre la foi et l’Orthodoxie'],
+      ['#/debats', 'Cahier de débats', 'chat', 'Catholiques, protestants, non-croyants : mes notes relues'],
       ['#/glossary', 'Glossaire', 'book', 'Les mots que l’on entend à l’église'],
       ['#/peres', 'Paroles des Pères', 'pray', 'Des phrases à méditer']
     ] },

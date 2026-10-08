@@ -148,6 +148,7 @@
     { id: 'sola-scriptura', cat: 'orth', q: `« Seule l’Écriture compte (sola scriptura) : la Tradition est une invention humaine. »`, pts: [
       ['Biblique', `La Bible elle-même ne dit pas « l’Écriture seule ». Paul écrit : « Tenez les traditions que vous avez apprises, soit par parole, soit par lettre » (2 Th 2, 15 ; 1 Co 11, 2). Jean dit que le monde ne pourrait contenir tout ce que Jésus a fait (Jn 21, 25).`],
       ['Historique', `L’Église a existé avant le Nouveau Testament : le canon des 27 livres s’est fixé progressivement, et saint Athanase en donne la liste en 367 (39ᵉ lettre festale). C’est l’Église qui a reconnu les Écritures.`],
+      ['Biblique', `1 Tm 3, 15 : c’est l’Église, et non l’Écriture, qui est « colonne et soutien de la vérité ».`],
       ['Historique', `Le principe « sola scriptura » apparaît au XVIᵉ siècle (Luther). Il a produit des milliers de confessions qui lisent la même Bible de façons opposées : l’Écriture seule ne dit pas laquelle des lectures est la bonne.`],
       ['Théologique', `Pour l’Orthodoxie, Tradition n’est pas un ajout à l’Écriture mais la vie de l’Église, qui est la bonne manière de lire l’Écriture (liturgie, Pères, conciles).`]
     ], lim: `Les Réformateurs voulaient corriger de vrais abus (indulgences, ignorance, superstition). Ces critiques ne sont pas sans fondement, et l’Orthodoxie n’a pas non plus à justifier tout ce qui s’est fait.`, lire: `Saint Vincent de Lérins, Commonitorium ; Georges Florovsky.` },
@@ -155,7 +156,8 @@
     { id: 'marie', cat: 'orth', q: `« Le culte de Marie n’est pas biblique ; on y prête une place qui revient au Christ seul. »`, pts: [
       ['Biblique', `Gabriel dit : « Réjouis-toi, pleine de grâce » (Lc 1, 28) ; Élisabeth l’appelle « mère de mon Seigneur » (Lc 1, 43) ; et Marie elle-même prophétise : « toutes les générations me diront bienheureuse » (Lc 1, 48).`],
       ['Historique', `Le titre de Théotokos (« Mère de Dieu ») a été défini à Éphèse (431), non pour exalter Marie mais pour protéger l’identité du Christ : si Marie n’est pas la mère de Dieu, Jésus n’est pas pleinement Dieu. C’est une affirmation sur le Christ.`],
-      ['Théologique', `L’Orthodoxie distingue vénération (douleia, avec un honneur particulier pour Marie) et adoration (latreia), qui n’est due qu’à Dieu. Marie est « le plus honorable des chérubins » mais une créature.`]
+      ['Théologique', `L’Orthodoxie distingue vénération (douleia, avec un honneur particulier pour Marie) et adoration (latreia), qui n’est due qu’à Dieu. Marie est « le plus honorable des chérubins » mais une créature.`],
+      ['Biblique', `À Cana, Marie présente un besoin à son Fils (« Ils n’ont plus de vin », Jn 2, 3) et il agit : c’est la forme de l’intercession.`]
     ], lim: `Les Orthodoxes ne reçoivent ni l’Immaculée Conception (1854) ni l’Assomption définie en dogme (1950). Ils fêtent la Dormition, selon la Tradition, sans la définir.`, lire: `Saint Jean Damascène, Homélies sur la Dormition ; Serge Boulgakov (à lire avec prudence).` },
 
     { id: 'icones', cat: 'orth', q: `« Les icônes sont de l’idolâtrie : la Bible interdit les images (Ex 20, 4). »`, pts: [

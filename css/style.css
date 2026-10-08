@@ -1045,3 +1045,12 @@ html[data-reading="1"] .main { max-width: 760px; }
   :root:not([data-theme="light"]) .page-head, :root:not([data-theme="light"]) .hero-ordinaire { background: linear-gradient(160deg, #eadfc4 0%, #e1d3b0 60%, #d6c59b 100%); }
 }
 :root[data-theme="dark"] .page-head, :root[data-theme="dark"] .hero-ordinaire { background: linear-gradient(160deg, #eadfc4 0%, #e1d3b0 60%, #d6c59b 100%); }
+
+/* cahier de débats */
+.deb-table-wrap { overflow-x: auto; margin: .6rem 0; border-radius: 12px; border: 1px solid var(--line); }
+.deb-table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: .95rem; }
+.deb-table th, .deb-table td { padding: .55rem .7rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+.deb-table thead th { background: var(--gold-soft); font-family: var(--f-label); font-size: .64rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); }
+.deb-table tbody th { font-weight: 700; width: 28%; }
+.deb-table tr:last-child th, .deb-table tr:last-child td { border-bottom: 0; }
+.apo-b.k-avis { background: var(--gold); color: var(--on-accent); }

@@ -31,6 +31,7 @@
     (O.GLOSS || []).forEach(([w, d]) => add('Glossaire', w, d, '#/glossary'));
     (O.DISTINCTIONS || []).forEach((d) => add('Distinction', d.t, d.def, '#/distinctions', d.pts.join(' ') + ' ' + d.refs));
     (O.APOLO || []).forEach((e) => add('Objection', e.q.replace(/[«»]/g, '').trim(), e.pts.map((x) => x[1]).join(' '), '#/apolo', e.lim + ' ' + (e.lire || '')));
+    (O.DEBATS || []).forEach((e) => add('Débat', e.q.replace(/[«»]/g, '').trim(), e.pts.map((x) => x[1]).join(' '), '#/debats', e.lim + ' ' + (e.refs || '') + ' ' + (e.table ? e.table.rows.map((r) => r.join(' ')).join(' ') : '')));
     (O.PERES || []).forEach((x) => add('Parole des Pères', x.a, x.t, '#/peres', x.s));
     (O.COUNCILS || []).forEach((c) => add('Concile', c.n + ' (' + c.y + ')', c.res, '#/councils', c.who + ' ' + c.note));
     (O.HERESIES || []).forEach((h) => add('Hérésie', h.n, h.th, '#/councils', h.d + ' ' + h.rep));
