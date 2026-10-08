@@ -969,3 +969,10 @@ html[data-reading="1"] .main { max-width: 760px; }
 .ch-form input { padding: .7rem 1rem; border-radius: 999px; border: 1px solid var(--line); background: var(--surface2); color: var(--ink); font: inherit; min-width: 0; }
 .ch-top { display: flex; align-items: center; justify-content: space-between; gap: .6rem; margin-bottom: .6rem; }
 .ch-frame { width: 100%; border: 0; border-radius: 14px; background: #000; }
+
+/* son d'ambiance */
+.amb-pill { position: fixed; left: 12px; bottom: calc(96px + env(safe-area-inset-bottom)); z-index: 40; padding: .5rem .9rem; border-radius: 999px; background: #35305a; color: #f0cd7a; border: 1px solid rgba(240, 205, 122, .4); font-size: .85rem; font-weight: 600; box-shadow: 0 8px 20px -8px #000; }
+.amb-pill span { font-weight: 500; color: #f8f1de; }
+.amb-name { margin: .2rem 0 .6rem; padding: .5rem .8rem; border-radius: 12px; background: var(--gold-soft); word-break: break-all; }
+.amb-pick { cursor: pointer; }
+@media (min-width: 1000px) { .amb-pill { bottom: 20px; } }
