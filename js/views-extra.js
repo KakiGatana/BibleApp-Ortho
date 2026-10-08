@@ -26,6 +26,18 @@
     (O.THEOLOGY || []).forEach((t) => add('Théologie', t.title, t.sub || '', '#/theo/' + t.id));
     (O.VOCAB || []).forEach((w) => add('Slavon', w[0] + ' (' + w[1] + ')', w[2], '#/slavonic/vocab'));
     (O.VERSES || []).forEach((v) => add('Verset', v[0], v[1], '', (v[2] || '') + ' ' + (v[3] || '')));
+    // fiches, glossaire, distinctions, objections, conciles, hérésies, paroles des Pères, pages utiles
+    (O.DECOUVRIR || []).forEach((f, i) => add('Fiche', f.t, f.intro + ' ' + f.pts.join(' '), '#/learn/' + (i + 1), f.ret));
+    (O.GLOSS || []).forEach(([w, d]) => add('Glossaire', w, d, '#/glossary'));
+    (O.DISTINCTIONS || []).forEach((d) => add('Distinction', d.t, d.def, '#/distinctions', d.pts.join(' ') + ' ' + d.refs));
+    (O.APOLO || []).forEach((e) => add('Objection', e.q.replace(/[«»]/g, '').trim(), e.pts.map((x) => x[1]).join(' '), '#/apolo', e.lim + ' ' + (e.lire || '')));
+    (O.PERES || []).forEach((x) => add('Parole des Pères', x.a, x.t, '#/peres', x.s));
+    (O.COUNCILS || []).forEach((c) => add('Concile', c.n + ' (' + c.y + ')', c.res, '#/councils', c.who + ' ' + c.note));
+    (O.HERESIES || []).forEach((h) => add('Hérésie', h.n, h.th, '#/councils', h.d + ' ' + h.rep));
+    [['Psautier', 'Les 150 psaumes en 20 kathismes, lecture avec marque-page', '#/psalter'], ['La Divine Liturgie', 'Déroulé pas à pas : ce qui se passe, ce qui se dit, ce que je fais', '#/liturgy'],
+      ['Chants', 'Mes playlists Spotify et YouTube de chants orthodoxes', '#/chants'], ['Paroisses près de moi', 'Trouver une paroisse orthodoxe à proximité', '#/parishes'],
+      ['Pour les enfants', 'Le saint du jour raconté simplement, signe de la croix, premières prières', '#/kids'], ['Son d’ambiance', 'Un bourdon discret ou ton propre fichier audio', '#/settings'],
+      ['Prière de Jésus', 'Corde de prière : 33, 50 ou 100 nœuds', '#/jesus']].forEach(([t, d, h]) => add('Page', t, d, h));
     // saints et mémoires : lien vers le jour de l'année en cours
     const y = C.today().getUTCFullYear(), style = S.settings.style;
     Object.keys(O.SAINTS || {}).forEach((md) => {
@@ -46,7 +58,7 @@
 
   function searchView() {
     const html = `<section class="page">
-      ${U.pageHead('Поиск', 'Recherche', 'Dans les Écritures, les prières, les fêtes, les saints, la théologie, le vocabulaire slavon et les versets du jour. Les accents sont ignorés.')}
+      ${U.pageHead('Поиск', 'Recherche', 'Dans les Écritures, les prières, les fêtes, les saints, la théologie, les objections, le glossaire, les conciles, le vocabulaire slavon et les versets du jour. Les accents sont ignorés.')}
       <div class="search"><span>${ic('search')}</span><input id="gq" type="search" placeholder="berger, Magnificat, Господь, repentir…" autocomplete="off" autofocus></div>
       <div id="gres" class="gres"></div>
     </section>`;
@@ -184,11 +196,11 @@
     K.openSheet(`${O.i18n ? O.i18n.chips() : ''}<h2 class="sheet-title">Bienvenue dans Blagovest</h2>
       <p class="muted">Благовѣстъ : la « bonne nouvelle », et le carillon qui appelle à la prière. Quelques repères pour commencer :</p>
       <ul class="welcome">
-        <li>${ic('home')}<div><b>Accueil</b><span>La date liturgique, le verset du jour, les saints et le jeûne.</span></div></li>
-        <li>${ic('chat')}<div><b>Assistant IA</b><span>Le bouton doré : pose tes questions de théologie et d’histoire de l’Église.</span></div></li>
-        <li>${ic('theo')}<div><b>Théologie</b><span>Les grands thèmes de la foi, expliqués simplement.</span></div></li>
-        <li>${ic('menu')}<div><b>Menu</b><span>Écritures, prières, slavon, fêtes, saints, favoris et réglages.</span></div></li>
-        <li>${ic('gear')}<div><b>Réglages</b><span>Notifications, sauvegarde entre appareils, mode lecture et thème.</span></div></li>
+        <li>${ic('home')}<div><b>Accueil</b><span>Le bouton doré au centre : la date liturgique, le verset du jour, les saints et le jeûne.</span></div></li>
+        <li>${ic('chat')}<div><b>Assistant IA</b><span>À gauche : pose tes questions de théologie et d’histoire de l’Église.</span></div></li>
+        <li>${ic('cal')}<div><b>Calendrier</b><span>Les fêtes, les jeûnes et les saints de chaque jour de l’année.</span></div></li>
+        <li>${ic('pray')}<div><b>Prier</b><span>La Prière de Jésus, les prières du matin et du soir, le psautier et la liturgie.</span></div></li>
+        <li>${ic('menu')}<div><b>Menu</b><span>Écritures, théologie, slavon, vie de l’Église, quiz et réglages.</span></div></li>
       </ul>
       <p class="center"><button class="btn" data-act="welcome-close">Commencer</button></p>`);
   };

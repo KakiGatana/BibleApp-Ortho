@@ -32,7 +32,7 @@
   };
 
   route('/hub/:id', (id) => {
-    const h = HUBS[id];
+    const h = Object.prototype.hasOwnProperty.call(HUBS, id) ? HUBS[id] : null;
     if (!h) return { html: '<section class="page"><p>Page introuvable.</p></section>', title: 'Menu', nav: 'today' };
     const html = `<section class="page hub">
       ${U.pageHead(h.cs, h.t, h.sub)}

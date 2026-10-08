@@ -61,7 +61,11 @@ export async function handleAsk(req, env, body, cors) {
   if (used >= perIp) return json(cors, 429, { error: 'daily_limit', message: 'Tu as atteint la limite de ' + perIp + ' questions pour aujourd’hui. Reviens demain.' });
   if (total >= cap) return json(cors, 429, { error: 'monthly_cap', message: 'L’assistant a atteint son plafond de questions ce mois-ci. Il sera de nouveau disponible le mois prochain.' });
   MEM.set(ipKey, used + 1);
-  await safePut(env, gKey, String(total + 1), { expirationTtl: 3456000 });
+  // si le compteur global ne peut pas être enregistré (quota d'écriture atteint), on refuse plutôt que de dépenser sans plafond
+  if (!(await safePut(env, gKey, String(total + 1), { expirationTtl: 3456000 }))) {
+    MEM.set(ipKey, used);
+    return json(cors, 503, { error: 'busy', message: 'L’assistant est momentanément indisponible. Réessaie plus tard (demain au plus tard).' });
+  }
 
   // texte que l'utilisateur est en train de lire dans l'appli (facultatif) : c'est une donnée, jamais une instruction
   let system = SYSTEM;
@@ -78,7 +82,7 @@ ${clean(cx.text, 1800)}
 
   // langue de réponse choisie dans l'appli (par défaut le français)
   const LANGNAMES = { en: 'English', ru: 'Russian', sr: 'Serbian (Cyrillic)', es: 'Spanish', de: 'German', it: 'Italian', zh: 'Simplified Chinese', ja: 'Japanese', el: 'Greek', ro: 'Romanian' };
-  if (body.lang && LANGNAMES[body.lang]) system += `
+  if (typeof body.lang === 'string' && Object.prototype.hasOwnProperty.call(LANGNAMES, body.lang)) system += `
 
 Language: the user's interface is in ${LANGNAMES[body.lang]}. Answer in ${LANGNAMES[body.lang]} (the instructions above are in French, but your answers must be in ${LANGNAMES[body.lang]}).`;
 

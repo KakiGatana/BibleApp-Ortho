@@ -96,7 +96,7 @@
       ${O.iconsCard ? O.iconsCard() : ''}
       <article class="card set">
         <div class="card-k">Mes données</div>
-        <p class="muted small">Tout est enregistré dans ton navigateur : favoris, notes, progression, cartes. Rien n’est envoyé nulle part, sauf si tu actives les notifications (voir ci-dessus).</p>
+        <p class="muted small">Tout est enregistré dans ton navigateur : favoris, notes, progression, cartes. Rien n’est envoyé à un serveur, sauf si tu actives les notifications ou la sauvegarde par code, ou si tu poses une question à l’assistant (voir « À propos »).</p>
         <div class="row"><button class="btn small" data-act="export">Exporter (JSON)</button><label class="btn small ghost">Importer<input type="file" id="imp" accept="application/json" hidden></label><button class="btn small ghost danger" data-act="reset">Tout effacer</button></div>
         ${deferredInstall ? `<div class="row"><button class="btn" data-act="install">Installer l’application</button></div>` : '<p class="muted xs">Astuce : dans le menu de ton navigateur, « Ajouter à l’écran d’accueil » installe Blagovest comme une appli, qui fonctionne hors ligne.</p>'}
       </article>
@@ -136,7 +136,10 @@
           <li><b>Écritures</b> en parallèle français / slavon d’Église (psaumes, Béatitudes, Magnificat, Prologue de Jean…).</li>
           <li><b>Prières</b> avec lecture mot à mot, prononciation et écoute.</li>
           <li><b>Slavon</b> : alphabet, leçons, vocabulaire, cartes à répétition espacée, quiz.</li>
-          <li><b>Théologie</b> : quinze articles et la liste des sept conciles.</li>
+          <li><b>Théologie</b> : quinze articles, des distinctions théologiques, les conciles et les hérésies, des objections courantes contre la foi et l’Orthodoxie avec des pistes de réponse, un glossaire.</li>
+          <li><b>Découvrir l’Orthodoxie</b> : onze fiches simples ; <b>La Divine Liturgie</b> pas à pas ; <b>Pour les enfants</b>.</li>
+          <li><b>Prier</b> : Prière de Jésus avec corde à billes, prières du matin et du soir, <b>psautier</b> en 20 kathismes, lecture du chapitre du jour (Nouveau Testament et psaumes), <b>chants</b> (tes playlists), son d’ambiance facultatif.</li>
+          <li><b>Paroisses près de moi</b> (données libres d’OpenStreetMap), un <b>assistant IA</b> et le <b>quiz</b>.</li>
         </ul>
         <h2>À lire avant de s’y fier</h2>
         <ul>
@@ -146,8 +149,10 @@
           <li>Les <b>citations des Pères</b> sont données de mémoire ou en substance : consulte les éditions critiques pour les citer.</li>
           <li>La <b>synthèse vocale</b> utilise une voix russe moderne : c’est une aide d’écoute approximative, pas un modèle de chant liturgique.</li>
         </ul>
-        <h2>Technique</h2>
-        <p>Application statique (HTML, CSS, JavaScript), sans suivi ni compte. Elle fonctionne hors ligne une fois chargée et peut être installée sur l’écran d’accueil. Les données sont enregistrées uniquement dans ton navigateur.</p>
+        <h2>Technique et vie privée</h2>
+        <p>L’application elle-même est statique (HTML, CSS, JavaScript), sans compte ni pistage. Elle fonctionne hors ligne une fois chargée et peut être installée sur l’écran d’accueil. Tes favoris, notes et progression sont enregistrés dans ton navigateur.</p>
+        <p>Certaines fonctions, facultatives, passent par un petit serveur : l’<b>assistant IA</b> (ta question est envoyée à un modèle d’IA), la <b>traduction</b> de l’interface (seuls les textes de l’appli sont envoyés, jamais tes notes), les <b>notifications</b> et la <b>sauvegarde par code</b>. D’autres appellent un service extérieur seulement quand tu appuies sur un bouton : <b>paroisses</b> (OpenStreetMap), <b>chants</b> (Spotify, YouTube). Les polices viennent de Google Fonts.</p>
+        <p>Textes : Nouveau Testament, traduction Crampon, et psaumes de la Septante, traduction Giguet (domaine public). Icônes : Wikimedia Commons, avec leurs crédits.</p>
         <h2>Une erreur ? Une idée ?</h2>
         <p>Une faute de français, une erreur de slavon, une icône qui n’est pas la bonne, un passage à ajouter : dis-le pour que ce soit corrigé. Il faut un compte GitHub (gratuit) ; sinon, préviens la personne qui t’a envoyé l’appli.</p>
         <p class="center"><a class="btn small" href="https://github.com/KakiGatana/BibleApp-Ortho/issues/new" target="_blank" rel="noopener">Signaler une erreur</a></p>

@@ -21,8 +21,15 @@
   function load() {
     const d = defaults();
     try {
-      const raw = JSON.parse(localStorage.getItem(KEY) || '{}');
-      return Object.assign(d, raw, { settings: Object.assign(d.settings, raw.settings || {}) });
+      let raw = JSON.parse(localStorage.getItem(KEY) || '{}');
+      if (!raw || typeof raw !== 'object' || Array.isArray(raw)) raw = {};
+      const out = Object.assign(d, raw, { settings: Object.assign(d.settings, raw.settings && typeof raw.settings === 'object' ? raw.settings : {}) });
+      // données abîmées : on garde ce qui est valide et on remet à neuf le reste
+      ['fav', 'visits', 'ask'].forEach((k) => { if (k in out && !Array.isArray(out[k])) out[k] = k === 'ask' ? [] : defaults()[k]; });
+      ['notes', 'cards', 'done', 'quiz', 'qstat', 'jesus', 'psalter', 'learn', 'liturgy', 'chants', 'ambient', 'sync', 'push'].forEach((k) => { if (k in out && (!out[k] || typeof out[k] !== 'object' || Array.isArray(out[k]))) { if (defaults()[k]) out[k] = defaults()[k]; else delete out[k]; } });
+      if (!Array.isArray((out.chants || {}).lists) && out.chants) delete out.chants;
+      if (typeof out.settings.fs !== 'number' || !(out.settings.fs >= 0.7 && out.settings.fs <= 2)) out.settings.fs = 1;
+      return out;
     } catch (e) { return d; }
   }
   const S = load();
@@ -39,7 +46,7 @@
     const lb = $('#langBadge');
     if (lb) { const uc = (S.settings.ui || 'fr').toUpperCase(); lb.textContent = { both: uc + ' · СЛ', fr: uc, cs: 'СЛ' }[S.settings.lang]; }
     const meta = $('meta[name="theme-color"]');
-    if (meta) meta.setAttribute('content', effectiveTheme() === 'dark' ? '#254287' : '#edf1f9');
+    if (meta) meta.setAttribute('content', effectiveTheme() === 'dark' ? '#2b5aae' : '#e4edfa');
   }
   function effectiveTheme() {
     if (S.settings.theme !== 'auto') return S.settings.theme;
@@ -103,6 +110,14 @@
     routes.push([new RegExp('^' + pattern.replace(/:\w+/g, '([^/]+)') + '$'), fn]);
   }
   function go(h) { if (location.hash === h) render(); else location.hash = h; }
+  /* accessibilité : donne un nom aux interrupteurs et aux champs qui n'en ont pas (lecteurs d'écran) */
+  function a11y(root) {
+    root.querySelectorAll('.switch:not([aria-label])').forEach((b) => { const r = b.closest('.set-row'), t = r && r.querySelector('b'); if (t) b.setAttribute('aria-label', t.textContent.trim()); });
+    root.querySelectorAll('input:not([type=hidden]):not([aria-label]), textarea:not([aria-label])').forEach((i) => {
+      if ((i.id && root.querySelector('label[for="' + i.id + '"]')) || i.closest('label')) return;
+      const ph = i.getAttribute('placeholder'); if (ph) i.setAttribute('aria-label', ph);
+    });
+  }
   function render() {
     const path = location.hash.replace(/^#/, '') || '/today';
     const view = $('#view');
@@ -117,6 +132,7 @@
       updateNav(out.nav);
       window.scrollTo(0, 0);
       if (out.after) out.after(view);
+      a11y(view);
       return;
     }
     go('#/today');

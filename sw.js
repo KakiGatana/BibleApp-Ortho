@@ -1,7 +1,7 @@
 /* Service worker : fonctionnement hors ligne (réseau d'abord, cache en secours) + notifications */
-const VERSION = 'blagovest-v45';
+const VERSION = 'blagovest-v62';
 const DATA_CACHE = 'blagovest-data'; // écrit par js/notifications.js, à ne jamais purger
-const BIBLE_CACHE = 'blagovest-bible'; // textes bibliques (bible/*.json) : ne changent pas, gardés d'une version à l'autre
+const BIBLE_CACHE = 'blagovest-bible-1'; // textes bibliques (bible/*.json) : gardés d'une version à l'autre. Si un texte est corrigé un jour, passer à « -2 » : l'ancien cache sera supprimé.
 const ICON_CACHE = 'blagovest-icons'; // icônes des saints : mémorisées à la première vue, ou en bloc depuis les réglages
 const CORE = [
   './', 'index.html', 'manifest.webmanifest', 'css/style.css',
@@ -12,7 +12,8 @@ const CORE = [
   'js/data/prayers.js', 'js/data/readings.js', 'js/data/slavonic.js', 'js/data/theology.js', 'js/data/canon.js', 'js/data/quiz2.js', 'js/views-read.js', 'js/data/apolo.js', 'js/views-apolo.js', 'js/swipe.js', 'js/data/peres.js', 'js/views-peres.js', 'js/views-psalter.js', 'js/views-kids.js', 'js/views-liturgy.js', 'js/views-parishes.js', 'js/data/learn.js', 'js/data/theo2.js', 'js/views-learn.js', 'js/views-hubs.js', 'js/views-chants.js', 'js/ambient.js'
 ];
 self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(VERSION).then((c) => c.addAll(CORE)).then(() => self.skipWaiting()));
+  // cache: 'reload' : on ne reprend jamais une copie périmée du cache HTTP du navigateur lors d'une mise à jour
+  e.waitUntil(caches.open(VERSION).then((c) => Promise.all(CORE.map((u) => c.add(new Request(u, { cache: 'reload' }))))).then(() => self.skipWaiting()));
 });
 self.addEventListener('activate', (e) => {
   e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== VERSION && k !== DATA_CACHE && k !== ICON_CACHE && k !== BIBLE_CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim()));
@@ -48,7 +49,7 @@ self.addEventListener('fetch', (e) => {
     return;
   }
   e.respondWith(
-    fetch(req, { cache: 'no-cache' }).then((r) => { const copy = r.clone(); caches.open(VERSION).then((c) => c.put(req, copy)); return r; })
+    fetch(req, { cache: 'no-cache' }).then((r) => { if (r.ok) { const copy = r.clone(); caches.open(VERSION).then((c) => c.put(req, copy)); } return r; }) // on ne garde pas les erreurs (404, 500) pour le mode hors ligne
       .catch(() => caches.match(req).then((m) => m || caches.match('index.html')))
   );
 });

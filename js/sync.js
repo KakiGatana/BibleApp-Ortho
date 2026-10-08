@@ -3,7 +3,7 @@
   const O = window.ORTHO, K = O.core;
   const { S, esc } = K;
   const CFG = window.BLAGOVEST_PUSH || {};
-  const FIELDS = ['fav', 'notes', 'cards', 'done', 'visits', 'quiz', 'mile', 'jesus'];
+  const FIELDS = ['fav', 'notes', 'cards', 'done', 'visits', 'quiz', 'mile', 'jesus', 'psalter', 'learn', 'chants', 'qstat'];
   S.sync = S.sync || {};
 
   const ok = () => !!CFG.server;
@@ -49,6 +49,16 @@
     const cards = Object.assign({}, remote.cards || {});
     Object.keys(S.cards || {}).forEach((i) => { const a = S.cards[i], b = cards[i]; cards[i] = !b || (a.n || 0) >= (b.n || 0) ? a : b; });
     S.cards = cards;
+    // psautier, fiches lues, playlists de chants, statistiques de quiz : on réunit sans rien perdre
+    const obj = (x) => (x && typeof x === 'object' && !Array.isArray(x) ? x : {});
+    if (remote.psalter) { S.psalter = S.psalter || { k: 1, done: {} }; const d = Object.assign({}, obj(remote.psalter.done)); Object.keys(obj(S.psalter.done)).forEach((k) => { d[k] = !!(d[k] || S.psalter.done[k]); }); S.psalter.done = d; }
+    if (remote.learn) { S.learn = S.learn || { done: {} }; const d = Object.assign({}, obj(remote.learn.done)); Object.keys(obj(S.learn.done)).forEach((k) => { d[k] = !!(d[k] || S.learn.done[k]); }); S.learn.done = d; }
+    if (remote.chants && Array.isArray(remote.chants.lists)) {
+      S.chants = S.chants || { lists: [] };
+      const have = new Set((S.chants.lists || []).map((c) => c.open));
+      remote.chants.lists.forEach((c) => { if (c && typeof c.open === 'string' && typeof c.t === 'string' && !have.has(c.open)) S.chants.lists.push({ t: c.t.slice(0, 60), kind: c.kind, open: c.open, embed: c.embed, h: c.h }); });
+    }
+    if (remote.qstat) { const q = Object.assign({}, obj(remote.qstat)); Object.keys(obj(S.qstat)).forEach((i) => { const a = S.qstat[i] || {}, b = q[i] || {}; q[i] = { ok: Math.max(a.ok || 0, b.ok || 0), ko: Math.max(a.ko || 0, b.ko || 0) }; }); S.qstat = q; }
     if (remote.jesus && remote.jesus.days) { S.jesus = S.jesus || { days: {} }; const d = Object.assign({}, remote.jesus.days); Object.keys(S.jesus.days || {}).forEach((k) => { d[k] = Math.max(d[k] || 0, S.jesus.days[k]); }); S.jesus.days = d; }
   }
 

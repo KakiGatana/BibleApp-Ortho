@@ -65,7 +65,7 @@
     if (!('caches' in window)) { K.toast('Non pris en charge ici'); return; }
     if (btn) btn.disabled = true;
     let done = 0, bad = 0;
-    const cache = await caches.open('blagovest-bible');
+    const cache = await caches.open('blagovest-bible-1');
     for (const f of files) {
       try { if (!(await cache.match(f))) { const r = await fetch(f); if (r.ok) await cache.put(f, r); else bad++; } } catch (e) { bad++; }
       done++; if (st) st.textContent = done + ' / ' + files.length;

@@ -42,14 +42,14 @@ Rules:
 export async function handleTranslate(req, env, body, cors) {
   if (!env.ANTHROPIC_API_KEY) return json(cors, 503, { error: 'unavailable' });
   const lang = body.lang, texts = body.texts;
-  if (!LANGS[lang] || !Array.isArray(texts) || !texts.length || texts.length > 40) return json(cors, 400, { error: 'bad_request' });
+  if (typeof lang !== 'string' || !Object.prototype.hasOwnProperty.call(LANGS, lang) || !Array.isArray(texts) || !texts.length || texts.length > 40) return json(cors, 400, { error: 'bad_request' });
   let total = 0;
   for (const t of texts) { if (typeof t !== 'string' || !t.trim() || t.length > 900) return json(cors, 400, { error: 'bad_request' }); total += t.length; }
   if (total > 14000) return json(cors, 400, { error: 'too_long' });
 
   // 1) ce qui est déjà traduit (cache partagé)
   const keys = await Promise.all(texts.map(async (t) => 't:' + lang + ':' + (await sha(t))));
-  const cached = await Promise.all(keys.map((k) => env.SUBS.get(k)));
+  const cached = await Promise.all(keys.map((k) => env.SUBS.get(k).catch(() => null)));
   const out = cached.map((v) => (v == null ? null : v));
   const miss = out.map((v, i) => (v == null ? i : -1)).filter((i) => i >= 0);
   if (!miss.length) return json(cors, 200, { t: out });
@@ -63,7 +63,8 @@ export async function handleTranslate(req, env, body, cors) {
   let total30 = 0; try { total30 = +((await env.SUBS.get(gKey)) || 0); } catch (e) { total30 = 0; }
   if (used + miss.length > perIp || total30 + miss.length > cap) return json(cors, 200, { t: out, limited: true });
   MEM.set(ipKey, used + miss.length);
-  await safePut(env, gKey, String(total30 + miss.length), { expirationTtl: 3456000 });
+  // compteur global non enregistrable (quota d'écriture) : on ne traduit pas, pour ne pas dépenser sans plafond
+  if (!(await safePut(env, gKey, String(total30 + miss.length), { expirationTtl: 3456000 }))) { MEM.set(ipKey, used); return json(cors, 200, { t: out, limited: true }); }
 
   // 3) traduction des manquants
   const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY });

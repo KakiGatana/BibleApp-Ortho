@@ -134,7 +134,9 @@ async function handle(req, env) {
   if (req.method !== 'POST') return reply(env, 405);
   const path = new URL(req.url).pathname;
   let b;
-  try { b = JSON.parse(await req.text()); } catch (e) { return reply(env, 400); }
+  const len = +req.headers.get('content-length') || 0;
+  if (len > 500000) return reply(env, 413);
+  try { const txt = await req.text(); if (txt.length > 500000) return reply(env, 413); b = JSON.parse(txt); } catch (e) { return reply(env, 400); }
   if (!b || typeof b !== 'object') return reply(env, 400);
 
   if (path === '/ask') return handleAsk(req, env, b, cors(env));
@@ -175,8 +177,8 @@ async function tick(env) {
     const page = await env.SUBS.list({ prefix: 's:', cursor });
     cursor = page.list_complete ? undefined : page.cursor;
     for (const { name } of page.keys) {
-      const s = JSON.parse((await env.SUBS.get(name)) || 'null'); if (!s) continue;
-      const t = localParts(s.tz, now), prefs = prefsOf(s);
+      let s; try { s = JSON.parse((await env.SUBS.get(name)) || 'null'); } catch (e) { continue; } if (!s) continue;
+      let t, prefs; try { t = localParts(s.tz, now); prefs = prefsOf(s); } catch (e) { console.error('abonnement ignoré', name, e && e.message); continue; } // un abonnement abîmé ne bloque pas les autres
       s.sent = s.sent || {};
       let changed = false, gone = false;
       for (const kind of KINDS) {
@@ -189,12 +191,12 @@ async function tick(env) {
         } catch (e) { /* on réessaiera au prochain passage */ }
       }
       if (gone) { await env.SUBS.delete(name); continue; }
-      if (changed) await env.SUBS.put(name, JSON.stringify(s), { expirationTtl: TTL_SUB });
+      if (changed) await safePut(env, name, JSON.stringify(s), { expirationTtl: TTL_SUB });
     }
   } while (cursor);
 }
 
 export default {
-  fetch: (req, env) => handle(req, env).catch(() => reply(env, 500)),
+  fetch: (req, env) => handle(req, env).catch((e) => { console.error('blagovest-push', e && e.stack || e); return reply(env, 500); }),
   scheduled: (_e, env, ctx) => ctx.waitUntil(tick(env))
 };

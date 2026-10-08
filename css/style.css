@@ -976,3 +976,72 @@ html[data-reading="1"] .main { max-width: 760px; }
 .amb-name { margin: .2rem 0 .6rem; padding: .5rem .8rem; border-radius: 12px; background: var(--gold-soft); word-break: break-all; }
 .amb-pick { cursor: pointer; }
 @media (min-width: 1000px) { .amb-pill { bottom: 20px; } }
+
+/* audit : les suggestions de l'assistant ne doivent pas déborder de l'écran */
+.ask-sug .chip-btn { white-space: normal; text-align: left; max-width: 100%; line-height: 1.3; }
+
+/* audit : très petits écrans (320 px) — barres du haut et du bas sans débordement */
+.tabbar { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.tabbar .tab-l { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (max-width: 359px) {
+  .topbar { padding-inline: .6rem; margin-inline: -.6rem; }
+  .topbar .brand-text b { font-size: .8rem; letter-spacing: .06em; }
+  .topbar .brand-mark { width: 1.6rem; height: 1.6rem; }
+  .topbar .icon-btn { min-width: 2rem; }
+  .topbar .icon-btn.lab small { font-size: .5rem; }
+  .tabbar a:not(.tab-main), .tabbar button:not(.tab-main) { font-size: .62rem; }
+  .tabbar a:not(.tab-main) .tab-ic, .tabbar button:not(.tab-main) .tab-ic { width: 2.3rem; }
+}
+
+/* audit de contraste (WCAG AA) : or plus foncé le jour, plus clair la nuit ; gris secondaires renforcés */
+:root { --gold: #6f4b00; --ink3: #55627f; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --gold: #f4d78e; --ink2: #ebe2c8; --ink3: #d6d8e4; } }
+:root[data-theme="dark"] { --gold: #f4d78e; --ink2: #ebe2c8; --ink3: #d6d8e4; }
+:root[data-theme="light"] { --gold: #6f4b00; --ink3: #55627f; }
+[data-sec="bible"] .view .card, [data-sec="bible"] .view .plan, [data-sec="bible"] .view .search { --gold: #6f4b00; --ink3: #55627f; }
+.home-link { color: var(--gold); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .home-link { background: rgba(10, 20, 60, .4); } }
+:root[data-theme="dark"] .home-link { background: rgba(10, 20, 60, .4); }
+.badge.hot { color: var(--on-accent); }
+.badge, .apo-b, .badge.dim { font-size: .64rem; }
+#tabbar [data-nav="ask"] { --tc: #bccaff; }
+.pray-main .muted, .pray-main .small { color: #e8dcbc; }
+:root { --emerald: #2a5282; }
+.badge.dim { color: var(--ink2); }
+
+/* audit de contraste : bandeaux de titre (nuit) et héros « slavon » */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .page-head .kicker { color: var(--sec-i2); }
+  :root:not([data-theme="light"]) .page-head .kicker::after { background: linear-gradient(90deg, var(--sec-i2), transparent); }
+  :root:not([data-theme="light"]) .page-head .sub { color: #3d3a52; }
+}
+:root[data-theme="dark"] .page-head .kicker { color: var(--sec-i2); }
+:root[data-theme="dark"] .page-head .kicker::after { background: linear-gradient(90deg, var(--sec-i2), transparent); }
+:root[data-theme="dark"] .page-head .sub { color: #3d3a52; }
+.hero-slav { background: linear-gradient(160deg, #3a5db0 0%, #2b4585 55%, #1d3166 100%); }
+.hero-sub { color: #eadfc2; }
+
+/* palette sobre aussi pour les héros de l'accueil selon le temps liturgique (plus de rouge, de vert ni de turquoise) */
+.hero-careme { background: linear-gradient(160deg, #5a459a 0%, #3b2a74 55%, #241650 100%); }
+.hero-passion { background: linear-gradient(160deg, #4a2a1e 0%, #2b180f 55%, #140a06 100%); }
+.hero-pascha { background: linear-gradient(160deg, #8c5e12 0%, #6a4308 55%, #3b2504 100%); }
+.hero-pentecote { background: linear-gradient(160deg, #3b4a94 0%, #26326b 55%, #171e45 100%); }
+.hero-noel { background: linear-gradient(160deg, #2756a6 0%, #1b3f84 55%, #102658 100%); }
+.hero-theotokos { background: linear-gradient(160deg, #3a6fc4 0%, #2a55a0 55%, #1b3a78 100%); }
+.hero-jeune { background: linear-gradient(160deg, #3b4766 0%, #232d47 55%, #131a2c 100%); }
+.hero-cs { color: #f8e8b8; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .hero-ordinaire .hero-date b { color: var(--sec-i2); }
+}
+:root[data-theme="dark"] .hero-ordinaire .hero-date b { color: var(--sec-i2); }
+.hero-pascha { background: linear-gradient(160deg, #7d5410 0%, #5c3a07 55%, #321f03 100%); }
+.hero-theotokos { background: linear-gradient(160deg, #2f60b5 0%, #234a92 55%, #17346a 100%); }
+
+/* audit de contraste (jour) : bandeaux un peu plus profonds pour que l'or et l'ivoire restent lisibles */
+.page-head, .hero-ordinaire, .hero-slav { --g1d: color-mix(in srgb, var(--sec-g1) 70%, #000); --g2d: color-mix(in srgb, var(--sec-g2) 88%, #000); }
+.page-head { background: linear-gradient(160deg, var(--g1d) 0%, var(--g2d) 55%, var(--sec-g3) 100%); }
+.hero-ordinaire { background: linear-gradient(160deg, var(--g1d) 0%, var(--g2d) 55%, var(--sec-g3) 100%); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .page-head, :root:not([data-theme="light"]) .hero-ordinaire { background: linear-gradient(160deg, #eadfc4 0%, #e1d3b0 60%, #d6c59b 100%); }
+}
+:root[data-theme="dark"] .page-head, :root[data-theme="dark"] .hero-ordinaire { background: linear-gradient(160deg, #eadfc4 0%, #e1d3b0 60%, #d6c59b 100%); }
