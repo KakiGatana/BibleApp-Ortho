@@ -904,3 +904,27 @@ html[data-reading="1"] .main { max-width: 760px; }
 .kid-saints li { display: flex; align-items: center; justify-content: space-between; gap: .8rem; flex-wrap: wrap; }
 .kid-steps { margin: .4rem 0 0; padding-left: 1.3rem; display: grid; gap: .45rem; font-size: 1.12rem; }
 .kid-prayers { display: flex; flex-wrap: wrap; gap: .5rem; }
+
+/* Divine Liturgie pas à pas */
+.lit-bar { position: sticky; top: 3.1rem; z-index: 15; display: flex; align-items: center; justify-content: space-between; gap: .8rem; padding: .5rem .8rem; margin: .6rem 0 1rem; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow); }
+.lit-bar span { font-family: var(--f-label); font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink2); }
+.lit-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+.lit-step { border: 1px solid var(--line); border-radius: 16px; background: var(--surface); overflow: hidden; }
+.lit-step.cur { box-shadow: 0 0 0 2px var(--gold2); }
+.lit-step summary { list-style: none; cursor: pointer; display: flex; gap: .8rem; align-items: center; padding: .8rem 1rem; }
+.lit-step summary::-webkit-details-marker { display: none; }
+.lit-n { flex: none; width: 2rem; height: 2rem; border-radius: 50%; display: grid; place-items: center; background: var(--gold-soft); color: var(--gold); font-weight: 700; }
+.lit-part { display: block; font-style: normal; font-family: var(--f-label); font-size: .56rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink3); }
+.lit-step summary b { font-size: 1.12rem; }
+.lit-body { padding: 0 1rem 1rem; display: grid; gap: .6rem; }
+.lit-body p { margin: 0; line-height: 1.55; }
+.lit-say, .lit-do { padding: .6rem .8rem; border-radius: 12px; background: var(--gold-soft); }
+.lit-say b, .lit-do b { font-family: var(--f-label); font-size: .6rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
+.lit-say p { margin-top: .35rem; }
+.lit-say .cs { display: block; margin-top: .15rem; }
+
+/* paroisses */
+.par-form { display: flex; gap: .5rem; margin-top: .8rem; }
+.par-form input { flex: 1; min-width: 0; padding: .65rem 1rem; border-radius: 999px; border: 1px solid var(--line); background: var(--surface2); color: var(--ink); font: inherit; }
+.par-top { display: flex; align-items: center; justify-content: space-between; gap: .6rem; }
+.par-card .row { margin-top: .6rem; }

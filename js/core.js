@@ -133,6 +133,8 @@
     ['apolo', 'Objections et réponses', 'theo', '#/apolo'],
     ['psalter', 'Psautier', 'book', '#/psalter'],
     ['kids', 'Pour les enfants', 'saint', '#/kids'],
+    ['liturgy', 'La Divine Liturgie', 'pray', '#/liturgy'],
+    ['parishes', 'Paroisses près de moi', 'pin', '#/parishes'],
     ['jesus', 'Prière de Jésus', 'beads', '#/jesus'],
     ['quiz', 'Quiz', 'quiz', '#/slavonic/quiz'],
     ['ask', 'Assistant IA', 'chat', '#/ask'],
@@ -162,7 +164,7 @@
   }
   const MORE = [
     ['Lire et prier', [['bible', 'Écritures', 'book', 'Psaumes, Évangiles, canon, plan de lecture'], ['prayers', 'Prières', 'pray', 'Prière du matin et du soir, prières mot à mot'], ['psalter', 'Psautier', 'book', 'Les 150 psaumes en 20 kathismes, avec marque-page'], ['slavonic', 'Slavon', 'slav', 'Alphabet, leçons, cartes, quiz'], ['theology', 'Théologie', 'theo', 'Les grands thèmes de la foi, les conciles'], ['apolo', 'Objections et réponses', 'chat', 'Arguments contre la foi et l’Orthodoxie, et comment y répondre'], ['quiz', 'Quiz', 'quiz', 'Défi du jour, culture orthodoxe, slavon']]],
-    ['Le temps de l’Église', [['feasts', 'Fêtes', 'feast', 'Sens des fêtes et tropaires'], ['saints', 'Saints', 'saint', 'Les saints de chaque jour'], ['kids', 'Pour les enfants', 'saint', 'Le saint du jour raconté simplement, premières prières']]],
+    ['Le temps de l’Église', [['feasts', 'Fêtes', 'feast', 'Sens des fêtes et tropaires'], ['saints', 'Saints', 'saint', 'Les saints de chaque jour'], ['kids', 'Pour les enfants', 'saint', 'Le saint du jour raconté simplement, premières prières'], ['liturgy', 'La Divine Liturgie', 'pray', 'Pas à pas : ce qui se passe, ce qui se dit, ce que je fais'], ['parishes', 'Paroisses près de moi', 'pin', 'Trouver une paroisse orthodoxe à proximité']]],
     ['Mon espace', [['search', 'Recherche', 'search', 'Chercher dans toute l’application'], ['favorites', 'Favoris et notes', 'heart', 'Ce que j’ai gardé'], ['settings', 'Réglages', 'gear', 'Notifications, sauvegarde, thème, mode lecture'], ['install', 'Installer et partager', 'share', 'Ajouter à l’écran d’accueil, l’envoyer à un proche']]]
   ];
   function moreSheet() {
