@@ -3,7 +3,7 @@
    table? {head, rows}, lim (« À nuancer » : ce qui, dans l'argument, prête le flanc), refs, avis? (true = opinion, pas doctrine). */
 (function () {
   const O = window.ORTHO;
-  O.DEBATS_WHO = [['tous', 'Tous'], ['cath', 'Catholiques'], ['prot', 'Protestants'], ['athee', 'Non-croyants']];
+  O.DEBATS_WHO = [['tous', 'Tous'], ['cath', 'Catholiques'], ['prot', 'Protestants'], ['athee', 'Non-croyants'], ['islam', 'Musulmans'], ['juif', 'Juifs']];
 
   O.DEBATS = [
     { id: 'anselme', who: ['cath', 'prot'], q: `« Le Christ a payé à Dieu le Père la dette de nos péchés : la justice divine exigeait une satisfaction. »`, pts: [
