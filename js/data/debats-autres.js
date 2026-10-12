@@ -2826,6 +2826,294 @@
  "lim": "C’est un avis de lecture, pas un ordre. Chacun a son propre point de départ : un lecteur plus tourné vers l’histoire commencera par Augustin ou Boèce. Pour une base chrétienne, ajoute Augustin (Confessions), Pascal (Pensées) et un Père grec.",
  "refs": "Kierkegaard, Crainte et tremblement ; Platon, Apologie de Socrate ; Nietzsche, Généalogie de la morale ; Dostoïevski, Les frères Karamazov.",
  "avis": true
+},
+{
+ "id": "sources-historiques-sur-jesus-et-apotres",
+ "th": "Histoire",
+ "who": [
+  "athee",
+  "islam"
+ ],
+ "q": "« Josèphe, Tertullien et les autres sources sont faux, incohérents ou invérifiables, et tout cela a été fait pour convertir » : que répondre ?",
+ "pts": [
+  [
+   "Historique",
+   "Premier point : Tertullien (vers 200) n’est pas un contemporain des apôtres ; Josèphe (né en 37) l’est à peu près. Les sources antiques sont toutes tardives et copiées : appliquer un critère de rejet systématique obligerait à écarter une grande part de l’histoire ancienne. Le Nouveau Testament compte plus de 5 700 manuscrits grecs, avec des fragments très anciens (P52, vers 125 ± 25). Les autres témoins hors du christianisme : Tacite (Annales XV, 44 : Christus exécuté sous Pilate), Pline le Jeune (lettre X, 96, vers 112 : les chrétiens chantent le Christ « comme un dieu »), Josèphe."
+  ],
+  [
+   "Historique",
+   "Josèphe : le Testimonium Flavianum (Antiquités XVIII, 63-64) a été retouché par des copistes chrétiens ; la majorité des historiens retient un noyau authentique (théorie de l’authenticité partielle, appuyée par la version d’Agapius, plus sobre). Antiquités XX, 200 : lapidation de « Jacques, frère de Jésus appelé Christ » sous le grand prêtre Ananos, vers 62 : reconnu comme authentique par presque tous. Reste l’argument « c’est de la propagande pour convertir » : le motif d’un témoin ne décide pas de la vérité de ce qu’il dit (sophisme génétique) ; mais la sincérité ne prouve pas non plus que le témoin ait raison."
+  ]
+ ],
+ "lim": "Ces sources établissent l’existence de Jésus, sa mort sous Pilate et l’existence précoce du christianisme ; elles ne prouvent pas la résurrection, qui est une affirmation de foi. Le critère « d’embarras » (reniement de Pierre, fuite des disciples) a de la valeur mais reste un argument parmi d’autres. Ne dis pas « personne ne conteste Josèphe » : le Testimonium reste débattu.",
+ "refs": "Josèphe, Antiquités juives XVIII, 63-64 ; XX, 200 ; Tacite, Annales XV, 44 ; Pline le Jeune, Lettres X, 96 ; John P. Meier, Un certain Juif, Jésus."
+},
+{
+ "id": "mort-des-apotres-niveaux-certitude",
+ "th": "Histoire",
+ "who": [
+  "athee",
+  "islam"
+ ],
+ "q": "À quel point est-on sûr de la mort des apôtres ?",
+ "pts": [
+  [
+   "Historique",
+   "Il faut classer par solidité : Jacques frère de Jésus (lapidé vers 62, Josèphe) et Jacques fils de Zébédée (exécuté vers 44, Ac 12, 2) sont les mieux attestés. Pierre et Paul : martyre à Rome sous Néron, attesté par 1 Clément 5-6 (vers 96), Ignace (Aux Romains 4, 3), Denys de Corinthe (vers 170), Gaïus de Rome (vers 200, qui mentionne leurs « trophées »). Pour les autres apôtres, les traditions (André, Philippe, Thomas, Barthélemy, Matthieu…) viennent d’écrits tardifs, souvent légendaires (Actes apocryphes, IIIe siècle et après). Jean, selon Irénée, est mort à Éphèse de mort naturelle : tous ne sont donc pas martyrs."
+  ],
+  [
+   "Archéologique",
+   "Sous Saint-Pierre de Rome, les fouilles (1939-1949) ont mis au jour une nécropole et, au centre, une niche surmontée d’un monument du IIe siècle (le « trophée de Gaïus » vers 160). Pour les ossements retrouvés ensuite, Paul VI a annoncé en 1968 que l’identification était jugée « convaincante » ; elle reste débattue par les scientifiques. L’argument « ils sont morts sans se rétracter » établit la sincérité d’une poignée de témoins, non la vérité de ce qu’ils croyaient."
+  ]
+ ],
+ "lim": "Aucun document ancien ne dit qu’un apôtre se serait rétracté, mais l’absence de rétractation n’est pas non plus une preuve en soi. Dire que « tous » les apôtres sont morts pour leur foi est une généralisation que les sources n’autorisent pas.",
+ "refs": "1 Clément 5-6 ; Ignace, Aux Romains ; Eusèbe, Histoire ecclésiastique II, 25 ; Irénée, Contre les hérésies III, 3 ; Josèphe, Antiquités XX, 200 ; Actes 12, 2."
+},
+{
+ "id": "croisades-orthodoxes-1182-1204",
+ "th": "Histoire",
+ "who": [
+  "cath",
+  "athee"
+ ],
+ "q": "Les croisades vues par les orthodoxes : que répondre au « massacre des Latins » de 1182 ?",
+ "pts": [
+  [
+   "Historique",
+   "Théologie : les canons de Basile (can. 13) demandent aux soldats ayant tué à la guerre de s’abstenir de la communion pendant trois ans, preuve que tuer reste grave même légitimement ; l’Orient n’a pas de doctrine de la « guerre sainte » à indulgences comme Urbain II (Clermont, 1095). Mémoire historique : 1204, le sac de Constantinople par les croisés de la 4e croisade (pillage des églises, dont Sainte-Sophie, reliques et manuscrits emportés, Empire latin 1204-1261) ; Nicétas Choniatès, témoin, juge les Sarrasins plus cléments. Aussi les croisades du Nord contre Novgorod (bataille du lac Peïpous, 1242, Alexandre Nevski)."
+  ],
+  [
+   "Historique",
+   "La réplique catholique : le massacre des Latins à Constantinople en 1182 (sous Andronic Comnène), pillages et meurtres, la tête du légat jetée dans la rue, survivants vendus aux Turcs. Cadre : privilèges commerciaux des Vénitiens, rancœurs. Mais 1204 n’est pas une vengeance planifiée : la 4e croisade est partie en 1202, détournée par des dettes envers Venise (doge Dandolo) et par un prétendant byzantin. Innocent III a réprouvé le sac. Jean-Paul II a exprimé ses regrets en 2001 (Athènes) et Rome a rendu en 2004 les reliques de Jean Chrysostome et Grégoire de Nazianze. Alexis Ier avait demandé des mercenaires en 1095, non une croisade."
+  ]
+ ],
+ "lim": "Les deux camps ont tendance à ne retenir que leurs victimes. Les Byzantins eux aussi ont conduit des guerres religieuses (Héraclius, Nicéphore Phocas ; l’Église avait refusé de reconnaître comme martyrs ses soldats morts au combat). L’ordre de grandeur n’est pas comparable (1182 : quelques milliers au plus ; 1204 : dizaines de milliers) mais on ne justifie pas l’un par l’autre.",
+ "refs": "Basile, Lettre 188 (canon 13) ; Nicétas Choniatès, Histoire ; Steven Runciman, Histoire des croisades ; Jean-Paul II, discours d’Athènes (4 mai 2001)."
+},
+{
+ "id": "pourquoi-pas-de-pretres-femmes",
+ "th": "Vie chrétienne",
+ "who": [
+  "prot",
+  "athee"
+ ],
+ "q": "Où est le verset qui réserve le sacerdoce aux hommes, et pourquoi l’Orthodoxie et le catholicisme n’ordonnent pas de femmes ?",
+ "pts": [
+  [
+   "Biblique",
+   "Aucun verset ne dit explicitement « le sacerdoce est réservé aux hommes ». Textes invoqués : 1 Tm 2, 12 (« je ne permets pas à la femme d’enseigner ni d’exercer l’autorité sur l’homme »), 1 Co 14, 34-35 (silence dans l’assemblée), 1 Tm 3, 2 (l’évêque « mari d’une seule femme »), et le choix des Douze par Jésus (Lc 6, 12-16), alors que des femmes étaient proches de lui. Paul loue pourtant des femmes de ministère (Phœbé diaconesse, Rm 16, 1 ; Priscille, Rm 16, 3 ; Junie/Junias, Rm 16, 7), ce qui rend ces versets débattus."
+  ],
+  [
+   "Théologique",
+   "Arguments : (1) la Tradition ininterrompue (ni Jésus, ni les apôtres, ni un concile œcuménique n’ont ordonné de femmes) ; (2) le prêtre comme icône du Christ à l’autel : les catholiques insistent sur l’« in persona Christi » (Inter insigniores, 1976 ; Ordinatio sacerdotalis, 1994) ; (3) la complémentarité sans hiérarchie de valeur (Marie, plus honorée que les anges, n’est pas prêtre). Chez les orthodoxes, l’argument de la Tradition apostolique domine, mais ils parlent aussi du prêtre comme icône du Christ, notamment dans la célébration eucharistique : ce n’est pas une catégorie étrangère. L’ordination des femmes dans les Églises anglicane ou luthérienne vient de l’idée que le sacerdoce est une fonction, non une icône."
+  ]
+ ],
+ "lim": "Il est incorrect de dire que l’Orthodoxie ne se réfère pas à l’icône du Christ. Il existe un débat orthodoxe interne sur le diaconat féminin (diaconesses antiques, Rm 16, 1) ; l’Église d’Alexandrie a rétabli des diaconesses en 2016, sans ordination sacerdotale. L’argument d’autorité ne convainc pas ceux qui contestent la Tradition elle-même.",
+ "refs": "1 Timothée 2, 12 ; 3, 2 ; Romains 16, 1-7 ; Jean-Paul II, Ordinatio sacerdotalis ; Kallistos Ware, Les femmes et le sacerdoce."
+},
+{
+ "id": "pretres-maries-et-celibat",
+ "th": "Vie chrétienne",
+ "who": [
+  "cath",
+  "prot"
+ ],
+ "q": "Pourquoi les prêtres orthodoxes peuvent-ils être mariés alors que les prêtres catholiques latins ne le sont pas ?",
+ "pts": [
+  [
+   "Canonique",
+   "Règle orthodoxe (canons 6 et 13 du concile in Trullo, 691-692) : un homme marié peut être ordonné diacre ou prêtre ; on ne peut pas se marier après l’ordination ; les évêques sont célibataires, en pratique tirés du monachisme. Appuis : 1 Tm 3, 2 et 3, 12 (« mari d’une seule femme »), Pierre marié (Mc 1, 30). Dans l’Occident latin, le célibat devient obligatoire progressivement (concile d’Elvire vers 305, canons sur la continence, Latran I et II au XIIe siècle) ; les Églises catholiques orientales gardent des prêtres mariés. Trullo a été rejeté par Rome (non reçu, au moins sur ce canon)."
+  ],
+  [
+   "Théologique",
+   "Argument latin : le prêtre agit « in persona Christi », donc époux de l’Église comme le Christ ; le célibat est à la fois imitation du Christ et signe du Royaume. Réponse orthodoxe : le Christ-Époux est présent dans la communauté eucharistique et ne se réduit pas au prêtre ; le mariage est un sacrement et un chemin de sainteté ; le célibat monastique garde sa valeur eschatologique (Mt 22, 30). Chaque tradition reconnaît l’autre comme légitime : le célibat n’est pas un dogme (discipline pour les Latins)."
+  ]
+ ],
+ "lim": "La date du célibat obligatoire en Occident est discutée (Elvire est parfois contestée ; la loi générale vient du XIIe siècle). Les prêtres mariés ne sont pas sans difficultés : revenus, disponibilité, veuvage sans remariage possible.",
+ "refs": "Concile in Trullo, canons 6, 12, 13 ; 1 Timothée 3, 2 ; Concile d’Elvire, canon 33 ; Paul VI, Sacerdotalis caelibatus (1967)."
+},
+{
+ "id": "orthodoxie-face-aux-questionnaires-de-denominations",
+ "th": "Protestants",
+ "who": [
+  "prot",
+  "cath"
+ ],
+ "q": "Où se situe l’Orthodoxie sur les grandes questions qu’on retrouve dans les « tests de dénomination » (baptême, images, charismes, enlèvement, au-delà, éthique…) ?",
+ "pts": [
+  [
+   "Pédagogique",
+   "Un questionnaire donne des cases qui conviennent rarement à l’Orthodoxie : elle répond autrement. Baptême : sacrement qui unit à la mort et à la résurrection du Christ (Rm 6), donné aux nourrissons avec chrismation et communion le même jour. Images : icônes plates vénérées (Nicée II, 787), statues rares. Charismes : jamais éteints mais non recherchés pour eux-mêmes ; méfiance du prelest (illusion). Enlèvement avant la tribulation : inconnu des Pères, systématisé au XIXe siècle (Darby, Frères de Plymouth). Au-delà : jugement particulier, âmes en attente, prière pour les morts sans doctrine du purgatoire. Enfer : réel, éternel ; sur la nature du feu (« présence de l’amour de Dieu » pour les uns), les Pères divergent ; l’apocatastase d’Origène (Ve concile œcuménique, 553) est condamnée."
+  ]
+ ],
+ "table": {
+  "head": [
+   "Question",
+   "Orthodoxie",
+   "Remarque"
+  ],
+  "rows": [
+   [
+    "Baptême des nourrissons",
+    "Oui, avec chrismation et communion",
+    "Baptistes : seulement la profession de foi personnelle"
+   ],
+   [
+    "Images",
+    "Icônes plates, vénération (non adoration)",
+    "Réformés stricts : refus des images"
+   ],
+   [
+    "Création et science",
+    "Pas de dogme sur la méthode ; Hexaméron lu spirituellement",
+    "Créationnisme jeune défendu par certains (Séraphim Rose)"
+   ],
+   [
+    "Guerre",
+    "Nécessaire parfois mais jamais « juste » ; pénitence du soldat",
+    "Pas de guerre sainte"
+   ],
+   [
+    "Mariage",
+    "Un homme et une femme ; tentation distinguée de l’acte",
+    "Pastorale de miséricorde sans bénir l’acte"
+   ],
+   [
+    "But de la vie chrétienne",
+    "Théosis (participation à la vie divine)",
+    "Pas seulement la bonne doctrine"
+   ],
+   [
+    "Morale",
+    "Conscience formée par la Tradition et la direction spirituelle",
+    "Ni Bible seule, ni conscience seule"
+   ]
+  ]
+ },
+ "lim": "Ces réponses résument des positions majoritaires : certaines questions (évolution, au-delà, nature du feu de l’enfer) restent ouvertes entre orthodoxes. Un questionnaire ne remplace pas la vie de l’Église : ne t’en sers pas pour attribuer une étiquette à quelqu’un.",
+ "refs": "Romains 6 ; Nicée II (787) ; Catéchisme orthodoxe (Kallistos Ware, L’Orthodoxie) ; Concile de Constantinople II (553)."
+},
+{
+ "id": "luc-14-26-hair-sa-famille",
+ "th": "Vie chrétienne",
+ "who": [
+  "islam",
+  "athee"
+ ],
+ "q": "Que veut dire Luc 14, 26 : « si quelqu’un ne hait pas son père et sa mère… il ne peut être mon disciple » ?",
+ "pts": [
+  [
+   "Biblique",
+   "Le verbe « haïr » (miseô) est ici un sémitisme comparatif : « aimer moins », « placer après ». Gn 29, 30-31 (Jacob « haïssait » Léa en ce sens), Dt 21, 15-17 ; Mt 10, 37 en donne la formule adoucie : « celui qui aime son père ou sa mère plus que moi n’est pas digne de moi ». Le verset ne contredit pas le commandement d’honorer ses parents (Ex 20, 12 ; Mc 7, 10-13). Il dit qu’aucun lien, y compris sa propre vie, ne peut passer avant le Christ, et que suivre Jésus pouvait coûter la rupture avec sa famille (Mc 10, 29-30)."
+  ],
+  [
+   "Patristique",
+   "Origène et Augustin y voient un détachement : refuser que le lien charnel fixe l’identité ultime. Pour l’apologétique, le verset est parfois cité pour la divinité : aucun prophète n’a demandé d’être préféré à sa famille. Cet argument est suggestif mais non démonstratif : un envoyé de Dieu pourrait demander l’obéissance totale. Les textes plus directs sont d’autres (voir la fiche sur la divinité du Christ dans les synoptiques)."
+  ]
+ ],
+ "lim": "Plusieurs lectures du verset coexistent (hyperbole, rupture sociale réelle, détachement mystique). Ne tire pas de Lc 14, 26 une preuve à elle seule de la divinité de Jésus.",
+ "refs": "Luc 14, 26 ; Matthieu 10, 37 ; Genèse 29, 30-31 ; Deutéronome 21, 15-17."
+},
+{
+ "id": "tendre-l-autre-joue-wink-chrysostome",
+ "th": "Vie chrétienne",
+ "who": [
+  "athee",
+  "prot"
+ ],
+ "q": "« Tendre l’autre joue » est-il un appel à la passivité ? Et Chrysostome n’a-t-il pas dit de frapper les blasphémateurs ?",
+ "pts": [
+  [
+   "Biblique",
+   "Mt 5, 38-42 : la loi du talion (Ex 21, 24) est limitée par Jésus, qui demande de ne pas résister « au méchant » par la violence. Walter Wink (Engaging the Powers) lit le « soufflet sur la joue droite » comme une gifle du revers de la main, geste de supérieur à inférieur : tendre l’autre joue contraint l’agresseur à frapper d’égal à égal, ce qui est un acte de dignité non violente ; de même « deuxième mille » (réquisition romaine) et « manteau » (nudité honteuse pour celui qui regarde). Lecture influente mais discutée par plusieurs exégètes, qui jugent les détails juridiques non démontrés ; le sens central (refuser l’escalade, vaincre le mal par le bien, Rm 12, 17-21) ne dépend pas de ces détails."
+  ],
+  [
+   "Patristique",
+   "Vengeance : « à moi la vengeance » (Rm 12, 19 ; Dt 32, 35) ; la justice institutionnelle n’est pas interdite (Rm 13) et chercher réparation n’est pas se venger. Chrysostome : dans les Homélies sur les Statues (I), il exhorte, à propos des blasphémateurs, à les reprendre avec fermeté, jusqu’à une réprimande physique dans des termes vifs : citation à vérifier dans le texte, et à replacer dans le contexte rhétorique du IVe siècle. Distinction classique : l’offense personnelle se pardonne ; l’offense envers Dieu ou les faibles appelle un zèle, jamais la haine. Les Pères ne sont pas infaillibles à titre individuel."
+  ]
+ ],
+ "lim": "Je n’ai pas retrouvé le passage exact de Chrysostome (le texte cité d’après la discussion d’origine demande vérification). La citation selon laquelle garder de la haine revient à boire du poison est attribuée à tort à plusieurs auteurs : ne la prête pas à saint Silouane sans source.",
+ "refs": "Matthieu 5, 38-42 ; Romains 12, 17-21 ; 13 ; Walter Wink, Engaging the Powers ; Jean Chrysostome, Homélies sur les Statues."
+},
+{
+ "id": "mormonisme-et-orthodoxie-doctrine",
+ "th": "Sectes et nouvelles religions",
+ "who": [
+  "prot",
+  "cath"
+ ],
+ "q": "En quoi la doctrine mormone s’éloigne-t-elle du christianisme historique, du point de vue orthodoxe ?",
+ "pts": [
+  [
+   "Théologique",
+   "Les points de rupture avec Nicée et la Tradition : un Père céleste doté d’un corps ; trois personnes distinctes plutôt qu’une essence (tritheisme) ; la possibilité pour les hommes de devenir dieux (« exaltation »), à ne pas confondre avec la théosis orthodoxe, participation aux énergies sans devenir Dieu par nature ; la préexistence des âmes (« enfants spirituels »), que la tradition a rejetée avec Origène (condamnations de 543-553) ; un canon ouvert (Livre de Mormon, 1830, Doctrine et Alliances, Perle de grand prix) ; une « apostasie totale » suivie d’une restauration par Joseph Smith, ce qui contredit Mt 16, 18 et Mt 28, 20 ; le baptême pour les morts (1 Co 15, 29, texte obscur que Paul ne recommande pas)."
+  ]
+ ],
+ "lim": "L’Église de Jésus-Christ des saints des derniers jours se dit chrétienne ; les grandes confessions historiques ne reconnaissent pas son baptême, parce que sa doctrine de Dieu diffère. Cette fiche expose la divergence théologique : elle ne juge pas les personnes. Les mormons actuels nuancent certaines positions anciennes (par exemple sur le Père et la « Mère céleste »).",
+ "refs": "Symbole de Nicée-Constantinople ; Matthieu 16, 18 ; 28, 20 ; 1 Corinthiens 15, 29 ; Irénée, Contre les hérésies III, 3."
+},
+{
+ "id": "livre-de-mormon-anachronismes-adn",
+ "th": "Sectes et nouvelles religions",
+ "who": [
+  "prot",
+  "athee"
+ ],
+ "q": "Quels problèmes factuels pose le Livre de Mormon ? Que répondent les mormons ?",
+ "pts": [
+  [
+   "Archéologique",
+   "Le Livre de Mormon (1830) raconte des peuples hébreux arrivés en Amérique vers 600 av. J.-C. Objections : chevaux, bœufs, ânes, blé, orge, fer, acier, chars, soie, absents de l’Amérique précolombienne selon l’archéologie ; aucun site, inscription ou monnaie ne correspond aux cités et aux guerres décrites (bataille finale de Cumorah, 230 000 morts) ; la génétique montre pour les Amérindiens une origine surtout nord-asiatique, sans marqueur proche-oriental ; « égyptien réformé » est inconnu des linguistes. Textuellement : de longues citations d’Isaïe en version de la Bible de Jacques Ier (KJV, 1611), y compris des chapitres 40-55 que beaucoup datent de l’exil, donc après le départ supposé de Léhi ; l’édition de 1830 a été corrigée de nombreuses fois (la plupart des modifications sont orthographiques)."
+  ],
+  [
+   "Philosophique",
+   "Réponses mormones : modèle de géographie limitée (les événements auraient eu lieu dans une zone restreinte d’Amérique centrale), mots employés dans un sens large (« cheval » pour le tapir ?), les peuples de Léhi dilués génétiquement dans une population plus vaste. Les critiques jugent ces réponses ad hoc, car le texte semble décrire de grandes nations. L’argument est de nature historique : il laisse la question de foi intacte pour ceux qui croient à une révélation, mais fragilise la prétention à décrire des faits."
+  ]
+ ],
+ "lim": "Je n’ai pas vérifié chaque chiffre (« plus de 3 900 changements » vient de la discussion d’origine : le chiffre est souvent cité mais la plupart relèvent de la grammaire). Des chercheurs mormons répondent point par point : écoute leurs arguments avant de juger.",
+ "refs": "Livre de Mormon, Premier livre de Néphi 1 ; Mormon 6 ; Isaïe 40-55 ; Simon Southerton, Losing a Lost Tribe ; Terryl Givens, By the Hand of Mormon."
+},
+{
+ "id": "incoherences-comparees-coran-judaisme-bible",
+ "th": "Islam",
+ "who": [
+  "islam",
+  "juif",
+  "prot"
+ ],
+ "q": "Le christianisme serait-il plus « cohérent » que l’islam, le judaïsme ou le mormonisme ?",
+ "pts": [
+  [
+   "Philosophique",
+   "Cette thèse est un plaidoyer plus qu’un constat. Pour le christianisme : on ne peut pas dire que « la Bible n’a pas d’incohérences » (âge de Joaquin, 2 R 24, 8 : 18 ans, et 2 Ch 36, 9 : 8 ans dans le texte hébreu, erreur de copie probable ; généalogies ; chronologies des évangiles ; fin de Marc ; Comma johannique) ; la critique historique y décèle des couches rédactionnelles. L’argument chrétien est que ces difficultés ne touchent pas l’essentiel et que la foi ne dépend pas d’un texte parfait au sens musulman."
+  ],
+  [
+   "Philosophique",
+   "Difficultés attribuées à l’islam : l’abrogation (naskh, par ex. Q 2, 106) ; Q 19, 28 appelle Marie « sœur d’Aaron » (les musulmans répondent qu’il s’agit d’un nom de lignée ; un hadith rapporte une réponse du Prophète) ; Q 5, 116 présente la Trinité comme Dieu, Jésus et Marie (reflet probable d’un courant précis, les collyridiens, non du christianisme conciliaire) ; emprunts à des récits apocryphes. Judaïsme : les passages comme Is 53 sont lus par la tradition rabbinique comme parlant d’Israël, et les chrétiens y voient le Christ ; Ps 22 (« ils ont percé mes mains et mes pieds », leçon discutée du texte hébreu) ; Dn 9 (soixante-dix semaines). Les rabbins répondent que les lectures chrétiennes forcent le texte."
+  ]
+ ],
+ "lim": "Aucune religion n’est “réfutée” par une liste de difficultés : chaque tradition répond à ses objections avec ses propres outils. Les mormons sont un cas à part en ce que leurs affirmations portent sur des faits matériels vérifiables. Ne compare pas sans lire des spécialistes de chaque camp.",
+ "refs": "2 Rois 24, 8 ; 2 Chroniques 36, 9 ; Coran 2, 106 ; 19, 28 ; 5, 116 ; Isaïe 53 ; Psaume 22."
+},
+{
+ "id": "ecriture-seule-canon-et-tradition",
+ "th": "Protestants",
+ "who": [
+  "prot"
+ ],
+ "q": "La sola scriptura se contredit-elle ? Que répondre à « le canon, la Trinité et le dimanche ne sont pas dans la Bible » ?",
+ "pts": [
+  [
+   "Théologique",
+   "Arguments catholiques et orthodoxes : (1) la Bible ne contient pas la liste de ses livres, établie par l’Église (Rome 382, Hippone 393, Carthage 397) ; (2) le mot « Trinité » et la formule « une essence, trois personnes » ne sont pas écrits, et Nicée a défini des termes non bibliques (homoousios) ; (3) le dimanche remplace le sabbat par la pratique apostolique (Ac 20, 7 ; 1 Co 16, 2 ; Ap 1, 10 ; Didachè 14) ; (4) 2 Th 2, 15 (« gardez les traditions que vous avez reçues, de vive voix ou par lettre »). Donc la sola scriptura serait un principe que l’Écriture elle-même n’énonce pas."
+  ],
+  [
+   "Théologique",
+   "Réponses protestantes : l’Église a reconnu le canon sans le créer (l’autorité vient de l’inspiration, non du décret) ; la Trinité est enseignée dans l’Écriture (Mt 28, 19 ; 2 Co 13, 13) même si le vocabulaire est postérieur ; 2 Tm 3, 16 et la pratique de Jésus (« il est écrit ») donnent à l’Écriture une autorité normative sur la Tradition ; la sola scriptura n’exclut pas toute tradition mais la subordonne (prima scriptura chez beaucoup). Autre argument catholique et orthodoxe : « si le IIe siècle était déjà corrompu, il faut le montrer » : les disciples des apôtres (Ignace, Polycarpe) enseignent déjà l’épiscopat et l’eucharistie réelle ; réponse protestante : l’ancienneté d’une pratique ne la rend pas apostolique (Is 29, 13)."
+  ]
+ ],
+ "lim": "Aucun camp ne l’emporte par un seul argument. Le critère « l’Église ne peut se tromper » est circulaire contre quelqu’un qui le conteste, et le critère « tout doit être écrit » ne se prouve pas par l’Écriture. Il faut dire aux protestants que leur position est plus nuancée que sa caricature.",
+ "refs": "2 Thessaloniciens 2, 15 ; 2 Timothée 3, 16 ; Matthieu 28, 19 ; Athanase, Lettre festale 39 (367) ; Concile de Carthage (397) ; Didachè 14."
 }
   );
 })();

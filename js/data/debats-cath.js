@@ -1449,6 +1449,111 @@
  ],
  "lim": "Aucune pièce nouvelle ici : c’est l’accumulation qui fait effet. Les catholiques répondent que la déférence orientale en crise montre précisément ce que l’on attendait de Rome et que la pratique de la ratification papale est constante. Je n’ai pas vérifié chaque citation : relis les actes.",
  "refs": "Actes de Chalcédoine ; Actes d’Éphèse ; Formule d’Hormisdas (519) ; Constantinople III, lettre à Agathon."
+},
+{
+ "id": "freres-de-jesus-jacques-trois-positions",
+ "th": "Saints, Marie et icônes",
+ "who": [
+  "prot",
+  "cath"
+ ],
+ "q": "Les « frères de Jésus » : cousins, demi-frères ou frères ? Que disent orthodoxes, catholiques et protestants ?",
+ "pts": [
+  [
+   "Théologique",
+   "Trois positions : (1) hélvidienne (protestante) : frères biologiques, enfants de Marie et Joseph après Jésus ; (2) épiphanienne (orthodoxe) : demi-frères, fils de Joseph d’un premier mariage (Épiphane de Salamine, Protévangile de Jacques) ; (3) hiéronymienne (catholique romaine) : cousins (Jérôme). Dans les deux derniers cas, Marie reste vierge. Les orthodoxes distinguent Jacques frère du Seigneur (fêté le 23 octobre) de Jacques d’Alphée, l’un des Douze (fêté le 9 octobre) ; les catholiques les identifient en général."
+  ],
+  [
+   "Philologique",
+   "Arguments : adelphos désigne d’abord le frère, mais dans la Septante il s’emploie aussi pour un parent (Gn 13, 8 ; 29, 12) et le grec avait anepsios (cousin, Col 4, 10). Josèphe dit « frère » ; Ga 1, 19 appelle Jacques « frère du Seigneur ». Jn 7, 5 : « ses frères ne croyaient pas en lui ». Jn 19, 26-27 : Jésus confie sa mère au disciple bien-aimé, ce que beaucoup lisent comme impliquant qu’elle n’avait pas d’autres fils. Mt 1, 25 (« il ne la connut pas jusqu’à ce qu’elle enfantât ») ne dit rien sur l’après (sens de « jusqu’à » discuté)."
+  ]
+ ],
+ "lim": "Sur le plan purement grammatical, la lecture protestante est la plus directe ; la discipline de la virginité perpétuelle repose sur la Tradition (Protévangile, Pères). L’argument de Jn 19 est solide mais réfuté par certains (les frères ne croyaient pas encore, le disciple bien-aimé était présent). Dire « laquelle est historiquement la meilleure » est un avis.",
+ "refs": "Galates 1, 19 ; Jean 7, 5 ; 19, 26-27 ; Épiphane, Panarion 78 ; Jérôme, Contre Helvidius ; Richard Bauckham, Jude and the Relatives of Jesus."
+},
+{
+ "id": "clement-de-rome-et-corinthe",
+ "th": "Papauté et unité",
+ "who": [
+  "cath",
+  "orient"
+ ],
+ "q": "La lettre de Clément de Rome aux Corinthiens (vers 96) prouve-t-elle une primauté de juridiction ?",
+ "pts": [
+  [
+   "Historique",
+   "Le texte s’ouvre ainsi : « L’Église de Dieu qui séjourne à Rome à l’Église de Dieu qui séjourne à Corinthe ». Il ne porte pas le nom de Clément (la tradition ultérieure le lui attribue) ; il supplie et exhorte, sans menaces d’excommunication. Argument orthodoxe : c’est une Église qui écrit à une autre par sollicitude, avec un prestige apostolique (Pierre et Paul y sont morts), comme Ignace d’Antioche ou Polycarpe écrivent à d’autres Églises ; la lettre est reçue avec vénération, lue à Corinthe vers 170 (Denys). Argument catholique : une Église extérieure à Corinthe, encore du vivant de Jean, intervient dans une querelle interne, avec un ton d’autorité (1 Clément 59, 1 : celui qui n’obéit pas « se met dans un grand danger » ; 63, 2 : on les presse d’obéir à ce que l’Esprit a dicté)."
+  ],
+  [
+   "Historique",
+   "Ignace d’Antioche (vers 107) dit que l’Église de Rome « préside à la charité » (Aux Romains, inscription). Irénée (Contre les hérésies III, 3, 2) parle de la « principalité » de Rome, formule dont le sens est discuté. Ces textes montrent un prestige et une sollicitude réels ; la question est de savoir si l’on y lit une juridiction universelle, ce que catholiques et orthodoxes décident selon leur ecclésiologie."
+  ]
+ ],
+ "lim": "Aucun des deux camps ne peut prouver son point par ce seul texte : lire la monarchie papale du XIe siècle dans un texte de 96 est anachronique ; dire que Rome n’avait aucune autorité l’est aussi. Les historiens catholiques et orthodoxes (Meyendorff, Dvornik, Congar) reconnaissent un « primat de service » et un développement ultérieur.",
+ "refs": "1 Clément (inscription, 59, 63) ; Ignace, Aux Romains ; Irénée, Contre les hérésies III, 3, 2 ; Jean Meyendorff, L’Église orthodoxe."
+},
+{
+ "id": "etapes-primaute-romaine-damase-gregoire-vii",
+ "th": "Papauté et unité",
+ "who": [
+  "cath",
+  "orient"
+ ],
+ "q": "À partir de quand voit-on se dessiner l’autorité universelle du pape ? (Damase, Léon, Gélase, Grégoire VII, Vatican I)",
+ "pts": [
+  [
+   "Historique",
+   "Repères : Clément (vers 96), Victor (années 190, querelle de Pâques), Étienne (années 250, contre Cyprien). Damase (366-384) parle de « siège apostolique » et fonde son autorité sur Pierre. Léon le Grand (440-461) : Pierre « vit et préside dans son siège » (formule du légat Philippe à Éphèse, 431) ; son Tome est reçu à Chalcédoine (451) ; il rejette le canon 28. Gélase (492-496) : la lettre « Duo sunt » distingue deux pouvoirs, sacerdotal et royal. Attention : le titre « vicaire du Christ » est donné à plusieurs (empereurs, évêques) et ne devient propre au pape qu’avec Innocent III (1198)."
+  ],
+  [
+   "Historique",
+   "Grégoire VII, Dictatus Papae (1075) : 27 propositions (le pape peut déposer des empereurs, nul ne peut le juger, etc.). Innocent III (1198-1216) et le IVe Latran (1215). Vatican I (1870), Pastor aeternus : primauté de juridiction universelle et infaillibilité ex cathedra. Position orthodoxe : primauté d’honneur et de service (le « premier parmi égaux », dans la Pentarchie) ; aucun des sept conciles œcuméniques ne proclame une juridiction universelle. Position catholique : un développement doctrinal du ministère de Pierre (Mt 16, 18 ; Lc 22, 32 ; Jn 21, 15-17)."
+  ]
+ ],
+ "lim": "Il est vrai que le pape médiéval n’a pas d’équivalent au premier millénaire ; il est vrai aussi que Rome a été sollicitée comme arbitre (Sardique, Chalcédoine). Que quatre patriarcats anciens sur cinq ne soient pas en communion avec Rome ne prouve pas que Rome ait tort : c’est un argument historique, non théologique. Attention : Pierre « premier évêque d’Antioche » est une tradition tardive (Origène, Eusèbe).",
+ "refs": "Léon Ier, Sermon 3 ; Gélase, Lettre à Anastase ; Grégoire VII, Dictatus Papae ; Vatican I, Pastor aeternus ; Francis Dvornik, Byzance et la primauté romaine."
+},
+{
+ "id": "saint-esprit-lien-d-amour-ou-personne",
+ "th": "Filioque",
+ "who": [
+  "cath",
+  "orient"
+ ],
+ "q": "Le Saint-Esprit est-il le « lien d’amour » du Père et du Fils ? Est-il alors une personne ?",
+ "pts": [
+  [
+   "Patristique",
+   "Image augustinienne (De Trinitate VIII-XV) : le Père aime, le Fils est aimé, l’Esprit est l’amour qui les unit ; ou l’analogie psychologique mémoire, intelligence, volonté. Augustin précise que ces images sont limitées. Thomas d’Aquin : l’Esprit est l’Amour subsistant, personne distincte. Les Cappadociens (Basile, Grégoire de Nazianze) enseignent que l’Esprit est une hypostase propre, qui procède du Père comme source unique (Jn 15, 26). Les textes : volonté propre (1 Co 12, 11), il parle (Ac 13, 2), il s’attriste (Ép 4, 30), il intercède (Rm 8, 26) : ce sont des actes d’une personne."
+  ],
+  [
+   "Théologique",
+   "Critique orthodoxe (Lossky, Photius) : si l’Esprit n’est que la relation entre deux, il risque de devenir un lien impersonnel et de dépendre du Fils (voir Filioque). Réponse catholique : le « lien » est une relation subsistante, comme la paternité et la filiation, sans réduire l’Esprit à une force ; le document du Conseil pontifical (1995) sur le Filioque distingue les traditions grecque et latine. Même des orthodoxes (Boulgakov) reçoivent cette image dans certaines limites. Distinction palamite : l’Esprit est personne (hypostase) et se communique par les énergies, sans que ces deux plans se confondent."
+  ]
+ ],
+ "lim": "La querelle porte sur des analogies et une procession ; les deux traditions disent que l’Esprit est une personne divine. Ne présente pas le « lien d’amour » comme une hérésie de l’Occident : c’est une image que les Latins ne prennent pas pour une définition.",
+ "refs": "Augustin, De Trinitate XV, 17, 27 ; Thomas d’Aquin, Somme I, q. 37 ; Jean 15, 26 ; Conseil pontifical pour l’unité (1995), Les traditions grecque et latine concernant la procession du Saint-Esprit."
+},
+{
+ "id": "intercession-des-saints-1-timothee-2-5",
+ "th": "Saints, Marie et icônes",
+ "who": [
+  "prot",
+  "cath"
+ ],
+ "q": "Où est l’intercession des saints dans l’Écriture ? 1 Timothée 2, 5 (« un seul médiateur ») l’interdit-il ?",
+ "pts": [
+  [
+   "Biblique",
+   "Argument protestant : aucun texte du Nouveau Testament ne montre un croyant s’adressant à un saint défunt ; 1 Tm 2, 5 (« un seul médiateur entre Dieu et les hommes ») et Hé 4, 16 (accès direct au trône de grâce). Textes invoqués par catholiques et orthodoxes : Hé 12, 1 (« nuée de témoins ») ; Ap 5, 8 et 6, 9-10 (les saints au ciel présentent des prières et intercèdent) ; Jc 5, 16 (« la prière du juste est efficace ») ; Lc 20, 38 (Dieu des vivants) ; Mt 17 (Moïse et Élie avec le Christ) ; 2 M 15, 12-14 (Jérémie prie pour le peuple, texte deutérocanonique). Ap 5, 8 montre des êtres célestes offrant les prières des saints."
+  ],
+  [
+   "Historique",
+   "Logique de la pratique : demander à un frère vivant en Christ de prier pour soi n’est pas remplacer le Christ ; 1 Tm 2, 5 parle de la médiation rédemptrice, exclusive, non de la prière d’intercession entre fidèles (Paul demande des prières, Rm 15, 30). Ancienneté : le papyrus Rylands 470 contenant le « Sub tuum praesidium » (vers 250) est l’une des plus anciennes invocations à Marie ; les graffitis de San Sebastiano à Rome (IIIe siècle) invoquent Pierre et Paul ; Origène (De oratione 11) parle de l’intercession des saints. Le IIe siècle n’offre pas de preuve directe de l’invocation : « les catacombes du IIe siècle » est un raccourci inexact."
+  ]
+ ],
+ "lim": "Il s’agit d’une question que l’Écriture ne tranche pas explicitement : chacun l’interprète à partir de son principe d’autorité (Écriture seule ou Écriture et Tradition). Une discussion avec une IA l’a vu changer d’avis selon l’interlocuteur : ne lui demande pas de trancher. Les orthodoxes distinguent vénération (doulia) et adoration (latrie).",
+ "refs": "1 Timothée 2, 5 ; Hébreux 12, 1 ; Apocalypse 5, 8 ; 6, 9-10 ; Jacques 5, 16 ; Origène, De oratione 11 ; Jean Damascène, Sur les images."
 }
   );
 })();

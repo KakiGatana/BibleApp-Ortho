@@ -1551,6 +1551,158 @@
  ],
  "lim": "Cette fiche complète la fiche « Adam et l’évolution ». La souffrance animale sur des millions d’années reste le point le plus dur de l’évolution théiste ; aucune réponse n’est décisive. Les modèles généalogiques (Swamidass) sont discutés par les généticiens et les théologiens.",
  "refs": "Pie XII, Humani generis ; Dobzhansky, Nothing in Biology Makes Sense (1973) ; Maxime, Ambigua 8 ; Seraphim Rose, Genesis, Creation and Early Man."
+},
+{
+ "id": "divinite-du-christ-pas-invention-de-paul-ou-nicee",
+ "th": "Trinité et christologie",
+ "who": [
+  "islam",
+  "athee"
+ ],
+ "q": "« La divinité de Jésus est une erreur de Paul reprise à Nicée, et les premiers chrétiens étaient unitariens » : est-ce vrai ?",
+ "pts": [
+  [
+   "Historique",
+   "Paul écrit dans les années 50 mais cite des formules reçues : 1 Co 15, 3-5 (« j’ai reçu… ») remonte à quelques années après la mort de Jésus (Ga 1, 18 permet de la dater vers 35) ; Ph 2, 6-11 est souvent considéré comme un hymne antérieur (thèse débattue : certains y voient une composition de Paul) ; « Maranatha » (1 Co 16, 22) est une invocation araméenne au Seigneur ; 1 Co 8, 6 divise le Shema entre « un seul Dieu, le Père » et « un seul Seigneur, Jésus-Christ ». Vers 112, Pline écrit que les chrétiens chantent le Christ « comme un dieu ». Nicée (325) n’invente donc pas la croyance : il condamne Arius, qui innove en faisant du Fils une créature."
+  ],
+  [
+   "Historique",
+   "Courants pluriels : ébionites (judéo-chrétiens qui voient en Jésus un homme choisi), gnostiques, marcionites. Les ébionites sont décrits par Irénée vers 180 ; rien ne montre qu’ils précèdent Paul. Les « éradiquer » est une exagération : ils ont perdu des débats et se sont éteints. Bart Ehrman (How Jesus Became God, 2014), non croyant, estime que des formes très élevées de christologie apparaissent très tôt, mais soutient que l’idée d’un Jésus préexistant et égal à Dieu s’est précisée progressivement : l’accord est donc partiel."
+  ]
+ ],
+ "lim": "La question « quand a-t-on cru à la divinité de Jésus ? » reste débattue (christologie « haute » dès l’origine pour Hurtado et Bauckham ; développement progressif pour Ehrman et d’autres). Ma fiche dit seulement que l’explication par « Paul puis Nicée » ne tient pas. Les textes comme Ph 2 admettent plusieurs lectures.",
+ "refs": "1 Corinthiens 15, 3-5 ; 8, 6 ; 16, 22 ; Philippiens 2, 6-11 ; Pline, Lettres X, 96 ; Larry Hurtado, Lord Jesus Christ ; Ehrman, How Jesus Became God."
+},
+{
+ "id": "critique-textuelle-femme-adultere-marc-comma",
+ "th": "Écriture et canon",
+ "who": [
+  "islam",
+  "athee",
+  "prot"
+ ],
+ "q": "Pourquoi la femme adultère (Jn 7, 53-8, 11), la fin de Marc (16, 9-20) et la Comma johannique sont-elles jugées tardives ? Et comment sait-on que le reste n’est pas corrompu ?",
+ "pts": [
+  [
+   "Historique",
+   "Méthode de la critique textuelle : comparer les manuscrits (âge, diversité géographique), le style, et le témoignage des Pères. Femme adultère : absente de P66, P75, du Sinaïticus et du Vaticanus, et des commentaires grecs de Jean avant le XIIe siècle ; elle flotte dans les manuscrits (après Jn 7, 36, Jn 21, 25 ou Lc 21) ; vocabulaire plus lucanien. Probablement un épisode authentique transmis oralement puis inséré. Fin longue de Marc : omise par le Sinaïticus et le Vaticanus, Eusèbe et Jérôme savent que de nombreux manuscrits s’arrêtent à 16, 8 ; style et vocabulaire différents."
+  ],
+  [
+   "Historique",
+   "Comma johannique (1 Jn 5, 7-8, « le Père, la Parole et l’Esprit ») : aucun manuscrit grec avant le XIVe siècle, jamais citée par les Pères grecs dans les controverses trinitaires ; entrée dans le texte grec imprimé avec la 3e édition d’Érasme (1522), selon la tradition sous pression, point débattu."
+  ],
+  [
+   "Théologique",
+   "Comment garantir le reste ? On ne peut pas garantir l’absolu, mais le nombre de manuscrits (plus de 5 700 en grec, des milliers en latin, syriaque, copte…), leur ancienneté et leur dispersion permettent de reconstituer le texte avec une grande confiance ; les variantes sont en immense majorité orthographiques ; aucune doctrine centrale ne repose sur un passage disputé (divinité du Christ : Jn 1, 1 ; Col 1, 15-17 ; résurrection : 1 Co 15, Mt 28, Lc 24, Jn 20). Ehrman, critique, le reconnaît tout en soulignant les variantes. D’autres passages disputés existent (Ac 8, 37 absent des meilleurs manuscrits ; Lc 22, 43-44)."
+  ]
+ ],
+ "lim": "Orthodoxes et catholiques lisent liturgiquement ces passages (la péricope de la femme adultère est lue dans l’office, la fin de Marc fait partie des évangiles de la Résurrection) : « tardif » ne veut pas dire « sans valeur ». Les Églises ne traitent pas la critique textuelle de la même façon (texte byzantin pour l’Orthodoxie, Néo-Vulgate ou textes critiques ailleurs).",
+ "refs": "Bruce Metzger, Le texte du Nouveau Testament ; Bart Ehrman, Misquoting Jesus ; Jean 7, 53-8, 11 ; Marc 16, 9-20 ; 1 Jean 5, 7-8."
+},
+{
+ "id": "ancien-testament-violence-esclavage-herem",
+ "th": "Ancien Testament",
+ "who": [
+  "athee",
+  "islam",
+  "prot"
+ ],
+ "q": "Comment répondre à l’esclavage, au massacre des Cananéens (hérem) et aux textes violents de l’Ancien Testament ?",
+ "pts": [
+  [
+   "Biblique",
+   "Esclavage : l’Ancien Testament l’encadre, il ne l’institue pas. Le Hébreu est libéré la 7e année (Ex 21, 2) et le Jubilé (Lv 25) libère les Hébreux asservis pour dettes, non tous les esclaves : Lv 25, 44-46 permet de garder des esclaves étrangers. Ex 21, 16 punit de mort l’enlèvement d’un homme pour le vendre ; Dt 23, 16 interdit de rendre l’esclave fugitif. Ces règles sont plus protectrices que d’autres droits antiques sur certains points, mais ne font pas de l’esclavage un idéal. La réponse chrétienne : Mt 19, 8 (« à cause de la dureté de vos cœurs »), Ga 3, 28, Philémon."
+  ],
+  [
+   "Archéologique",
+   "Hérem (Dt 7 ; 20, 16-18 ; Jos 6-11 ; 1 S 15) : le point le plus difficile. Pistes : (1) la conquête décrite dans Josué n’est pas confirmée par l’archéologie (Jéricho, Aï), et Jg 1 montre des Cananéens encore là : le langage est hyperbolique, comme dans d’autres inscriptions du Proche-Orient (stèle de Mésha) ; (2) la lecture spirituelle des Pères (Origène, Augustin) fait des Cananéens les vices à combattre ; (3) la révélation progressive : le Christ réoriente (Mt 5, 38-48 ; Jn 18, 36) ; (4) le jugement moral évoqué pour les pratiques cananéennes (Lv 18, 21), sans que ce soit une justification complète."
+  ]
+ ],
+ "lim": "Aucune de ces réponses ne satisfait tout le monde : l’hérem et le Psaume 137, 9 restent scandaleux, et les croyants honnêtes l’admettent. Dire « c’est descriptif, non prescriptif » ne vaut pas pour tous les passages (Dt 20 est une loi). Le sacrifice d’enfants à Carthage, souvent cité, est discuté par les archéologues.",
+ "refs": "Exode 21 ; Lévitique 25 ; Deutéronome 7 ; 20 ; 23, 16 ; Matthieu 19, 8 ; Paul Copan, Is God a Moral Monster ?"
+},
+{
+ "id": "divinite-du-christ-synoptiques",
+ "th": "Trinité et christologie",
+ "who": [
+  "islam"
+ ],
+ "q": "La divinité du Christ est-elle seulement chez Paul et Jean ? Que disent Matthieu, Marc, Luc et l’épître aux Hébreux ?",
+ "pts": [
+  [
+   "Biblique",
+   "Mc 2, 5-7 (pardon des péchés : « qui peut pardonner sinon Dieu seul ? ») ; Mc 2, 28 (« le Fils de l’homme est maître du sabbat ») ; Mc 14, 61-64 (devant le grand prêtre, Jésus répond « je le suis » et cite Dn 7, 13 et Ps 110, 1 : condamné pour blasphème) ; Mt 11, 27 / Lc 10, 22 (connaissance réciproque exclusive du Père et du Fils) ; Mt 28, 19 (baptême « au nom du Père, du Fils et du Saint-Esprit », un seul nom) ; Mt 5, 21-48 (« moi je vous dis », au-dessus de la Loi) ; Mt 25, 31-46 (le Fils de l’homme juge). Hébreux 1, 3 (« reflet de sa gloire, expression de son être ») et 1, 8 (Ps 45, 7 : « ton trône, ô Dieu »)."
+  ],
+  [
+   "Théologique",
+   "Limites à reconnaître : « Fils de Dieu » peut être un titre messianique (Mt 14, 33) ; l’adoration (proskynèse) n’a pas toujours un sens divin ; le Christ dit aussi « le Père est plus grand que moi » (Jn 14, 28), que la tradition rapporte à son humanité ou à l’origine éternelle du Fils. Le sens vient de la convergence de ces textes. Mt 11, 27 est un verset christologique, non trinitaire : le Saint-Esprit n’y est pas mentionné ; on le trouve avec le Père et le Fils au baptême (Mt 3, 16-17) et en Mt 28, 19."
+  ]
+ ],
+ "lim": "L’argument « on lui a dit blasphème donc il s’est dit Dieu » est fort mais non unique (le blasphème peut viser la prétention messianique ou l’affirmation de siéger à la droite de Dieu). Dis aux musulmans que ces textes forment un faisceau, non une preuve d’un seul verset.",
+ "refs": "Marc 2, 5-7 ; 14, 61-64 ; Matthieu 11, 27 ; 28, 19 ; Hébreux 1, 3-8 ; Richard Bauckham, Jesus and the God of Israel."
+},
+{
+ "id": "monarchie-du-pere-et-arianisme",
+ "th": "Trinité et christologie",
+ "who": [
+  "islam",
+  "prot"
+ ],
+ "q": "Si le Père est la seule source de la divinité, le Fils engendré n’est-il pas inférieur ? (arianisme)",
+ "pts": [
+  [
+   "Patristique",
+   "Arius disait : le Fils est une créature produite par le Père, « il fut un temps où il n’était pas ». Nicée (325) répond : « engendré, non créé, consubstantiel (homoousios) au Père » et condamne ceux qui disent qu’il y eut un temps où il n’était pas. L’engendrement du Fils est éternel, hors du temps : le Père est cause (aitia) selon l’ordre de l’origine, non selon le temps ou l’essence. Basile, Grégoire de Nazianze : le Père est « principe » sans supériorité de nature ; le Fils a la même nature. Image souvent utilisée : la lumière qui vient du soleil sans lui être postérieure (Symbole : « lumière née de la lumière »)."
+  ],
+  [
+   "Philosophique",
+   "Ce qui sépare Arius de Nicée : pour Arius, tout ce qui vient d’un autre est inférieur (logique de la création) ; pour Nicée, la génération divine n’est pas une fabrication mais communication de la même nature. L’iota entre homoousios (même substance) et homoiousios (substance semblable) a été en jeu dans les débats ultérieurs (années 350) contre les semi-ariens. Textes que citent les musulmans et ariens : Jn 14, 28 (« le Père est plus grand que moi »), lu par les Pères comme relatif à l’origine ou à l’incarnation."
+  ]
+ ],
+ "lim": "La « monarchie du Père » est une doctrine orthodoxe classique ; le catholicisme latin la tient aussi (le Père est source), mais la place du Fils dans la procession de l’Esprit est le point de désaccord (Filioque). Les analogies (soleil, fleuve) ont des limites que les Pères reconnaissaient.",
+ "refs": "Symbole de Nicée-Constantinople ; Athanase, Contre les ariens ; Basile, Contre Eunome ; Jean 14, 28."
+},
+{
+ "id": "origines-du-monotheisme-israelite",
+ "th": "Ancien Testament",
+ "who": [
+  "juif",
+  "athee"
+ ],
+ "q": "Le judaïsme était-il d’abord polythéiste, devenu monothéiste sous l’influence de la religion d’El et du zoroastrisme ?",
+ "pts": [
+  [
+   "Archéologique",
+   "Le consensus critique actuel : l’Israël ancien partage le fonds cananéen ; El est le dieu suprême du panthéon, Baal dieu de l’orage, Asherah son épouse ; des inscriptions du IXe-VIIIe siècle à Kuntillet Ajrud mentionnent « YHWH de Samarie et son Asherah ». La monolâtrie (adorer YHWH seul sans nier les autres dieux) précède, selon cette lecture, le monothéisme strict, qui s’exprime clairement dans le Deutéro-Isaïe (Is 40-55, vers l’exil, VIe siècle : « hors de moi il n’y a pas de Dieu », Is 45, 5). On discute l’origine méridionale de YHWH (hypothèse madianite ou kénite) et sa fusion avec El."
+  ],
+  [
+   "Théologique",
+   "Sur le zoroastrisme : l’influence perse (retour de l’exil, 538) sur la résurrection, Satan, les anges, le jugement est souvent affirmée mais pas démontrée : Satan figure déjà en Jb 1-2 et Za 3 ; la résurrection apparaît en Is 26, 19 et Dn 12 ; la datation des textes avestiques est elle-même incertaine. Lecture chrétienne : révélation progressive, jusqu’au Christ ; les « dieux » des nations sont des puissances trompeuses ou des démons (Dt 32, 17 ; Ps 95, 5 LXX ; 1 Co 10, 20), ce qui explique que Dieu dise qu’il n’y en a pas d’autre qui lui soit comparable. Le mal est privation du bien (Augustin, Denys), non principe égal à Dieu : c’est ce qui distingue le christianisme du dualisme gnostique ou zoroastrien."
+  ]
+ ],
+ "lim": "La tradition juive et la foi chrétienne tiennent le monothéisme pour originel et révélé ; la lecture historico-critique décrit l’histoire des textes. Les deux répondent à des questions différentes, mais la seconde pose une vraie question aux croyants (voir la fiche sur YHWH). Le fait que le ciel soit « peuplé » de divinités dans certains textes (Ps 82) est interprété par les Pères comme des anges ou des hommes appelés « dieux ».",
+ "refs": "Isaïe 45, 5 ; Deutéronome 32, 8-9 LXX et 17 ; Psaume 82 ; Mark S. Smith, The Early History of God ; 1 Corinthiens 10, 20."
+},
+{
+ "id": "polygamie-ancien-testament",
+ "th": "Ancien Testament",
+ "who": [
+  "athee",
+  "islam"
+ ],
+ "q": "Pourquoi David, Salomon et les patriarches avaient-ils plusieurs femmes ?",
+ "pts": [
+  [
+   "Biblique",
+   "La polygynie n’est jamais ordonnée dans la Bible mais elle est décrite et encadrée (Dt 21, 15-17 ; Ex 21, 10). Elle répond au contexte du Proche-Orient ancien : descendance, alliances politiques, protection de femmes sans soutien. Le récit en montre les fruits : Sarah et Agar (Gn 16), Léa et Rachel (Gn 29-30), Amnon, Tamar et Absalom chez David (2 S 13-18), femmes étrangères et idolâtrie de Salomon (1 R 11) ; la loi royale d’avertissement : le roi « n’aura pas beaucoup de femmes » (Dt 17, 17). Gn 2, 24 pose l’idéal d’un homme et d’une femme, que Jésus cite (Mt 19, 4-8, « dès le commencement il n’en était pas ainsi »)."
+  ],
+  [
+   "Pédagogique",
+   "Quant à la révolte d’Absalom : la vengeance pour sa sœur Tamar (2 S 13) était un vrai grief, mais il s’est fait justice lui-même, a manœuvré contre son père et a profané ses concubines (2 S 16, 22). David est coupable aussi : il n’a pas puni Amnon (2 S 13, 21), et la prophétie de Nathan (2 S 12, 10) se réalise. L’Orthodoxie y lit un enchaînement de fautes plutôt qu’un conflit à départager."
+  ]
+ ],
+ "lim": "La polygynie avait des défenseurs : l’idée que « la Bible tolère » ne signifie pas qu’elle l’approuve, mais certains textes sont ambigus (Ex 21, 10 ; 2 S 12, 8 où Nathan dit que Dieu a donné à David les femmes de Saül). La monogamie du Nouveau Testament est sans exception pour l’évêque (1 Tm 3, 2), mais le texte n’interdit pas explicitement la polygamie aux laïcs.",
+ "refs": "Genèse 2, 24 ; Deutéronome 17, 17 ; 21, 15-17 ; 2 Samuel 12-16 ; 1 Rois 11 ; Matthieu 19, 4-8."
 }
   );
 })();

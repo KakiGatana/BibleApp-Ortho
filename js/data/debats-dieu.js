@@ -2104,6 +2104,64 @@
  "lim": "Dire que le milieu de l’IA est une religion déguisée est une métaphore d’avis, non une démonstration. Certains y voient en effet une eschatologie séculière (singularité, jugement, élus), d’autres une simple discipline technique. Ne prends pas l’analogie à la lettre.",
  "refs": "Pascal, Pensées (fr. 233 Brunschvicg) ; 1 Jean 4, 8 ; Eliezer Yudkowsky, interventions sur LessWrong.",
  "avis": true
+},
+{
+ "id": "144000-apocalypse-sens",
+ "th": "Fins dernières",
+ "who": [
+  "prot",
+  "athee"
+ ],
+ "q": "Que signifient les 144 000 de l’Apocalypse ? Pourquoi les Témoins de Jéhovah les prennent-ils à la lettre ?",
+ "pts": [
+  [
+   "Biblique",
+   "Ap 7, 4-8 : 12 000 marqués par tribu, soit 144 000 (liste des tribus étonnante : Dan manque, Manassé est cité) ; Ap 14, 1-5 : ils suivent l’Agneau sur le mont Sion, « vierges », sans mensonge. Le chiffre est 12 × 12 × 1000 : douze pour Israël et pour les apôtres, mille pour une multitude. Juste après, Ap 7, 9 montre « une foule immense que nul ne pouvait dénombrer » : image du même peuple vu autrement (le peuple de Dieu ordonné, puis la multitude glorifiée). Lecture dominante chez catholiques, orthodoxes et nombre de protestants : l’Église comme Israël de Dieu (Ga 6, 16), symbole de plénitude."
+  ],
+  [
+   "Historique",
+   "Les Témoins de Jéhovah (Russell, puis Rutherford, 1930-35) lisent le nombre à la lettre : une « classe céleste » de 144 000, tandis que la « grande foule » espère la terre paradisiaque ; seuls les premiers prennent le pain et le vin au Mémorial. Problème interne : le nombre a été déclaré « presque complet » dès les années 1930, et le nombre de participants annuels reste de plusieurs milliers. Ap 14, 4 les compare à des « prémices », non à une classe d’élite exclusive."
+  ]
+ ],
+ "lim": "D’autres lectures existent (dispensationalistes : 144 000 Juifs convertis à la fin des temps ; historicistes). L’Apocalypse est un livre symbolique : on ne peut pas dire qu’une lecture littérale est « impossible », seulement qu’elle rencontre des difficultés dans le texte.",
+ "refs": "Apocalypse 7, 4-9 ; 14, 1-5 ; Galates 6, 16 ; Richard Bauckham, The Theology of the Book of Revelation."
+},
+{
+ "id": "vision-de-dieu-essence-energies-epectase",
+ "th": "Fins dernières",
+ "who": [
+  "cath",
+  "orient"
+ ],
+ "q": "Dans l’éternité, verra-t-on l’essence de Dieu (vision béatifique) ou seulement ses énergies ? Que signifie l’épectase de Grégoire de Nysse ?",
+ "pts": [
+  [
+   "Théologique",
+   "Orthodoxie (Palamas, Triades, conciles de Constantinople 1341, 1347, 1351) : l’essence divine reste à jamais inaccessible, même dans la gloire ; les saints participent aux énergies divines incréées (la lumière du Thabor), ce qui est une union réelle avec Dieu lui-même. Catholicisme (Thomas d’Aquin, Somme I, q. 12 ; Benoît XII, Benedictus Deus, 1336) : les bienheureux voient l’essence divine, élevés par la « lumière de gloire » ; ils ne la comprennent pas totalement (Dieu reste incompréhensible, car infini). Les deux traditions refusent l’idée que la créature devienne Dieu par nature."
+  ],
+  [
+   "Patristique",
+   "Grégoire de Nysse, Vie de Moïse II, 225-239 et Ph 3, 13 (epekteinomenos) : l’épectase, le progrès éternel ; Dieu étant infini, l’âme ne s’arrête jamais, toujours plus loin dans la connaissance et l’amour ; le désir n’est pas frustré, il est comblé et relancé. Les orthodoxes y voient un appui de leur théologie ; plusieurs théologiens catholiques (Daniélou, de Lubac, Balthasar) en font aussi un thème de l’éternité. Le désaccord reste sur la distinction réelle entre essence et énergies : l’objection latine est qu’elle menace la simplicité divine ; la réponse orthodoxe est que distinction n’est pas composition."
+  ]
+ ],
+ "lim": "Plusieurs théologiens contemporains pensent que le désaccord est en partie verbal ; d’autres le jugent profond. La lumière de gloire est-elle « créée » au sens où elle séparerait de Dieu ? Les catholiques le nient. Je n’arbitre pas : la question demande une étude des textes originaux.",
+ "refs": "Grégoire Palamas, Triades ; Thomas d’Aquin, Somme I, q. 12 ; Benoît XII, Benedictus Deus ; Grégoire de Nysse, Vie de Moïse ; Philippiens 3, 13."
+},
+{
+ "id": "nietzsche-turin-cheval",
+ "th": "Athéisme et philosophie",
+ "who": [
+  "athee"
+ ],
+ "q": "L’anecdote du cheval fouetté à Turin (Nietzsche, janvier 1889) est-elle fiable ?",
+ "pts": [
+  [
+   "Historique",
+   "Le 3 janvier 1889 à Turin, Nietzsche s’effondre. L’histoire du cheval qu’il aurait étreint en pleurant est rapportée par des témoignages tardifs et indirects, repris dans les récits ultérieurs (notamment Anacleto Verrecchia, La catastrofe di Nietzsche a Torino, 1978) ; Franz Overbeck est venu le chercher après avoir reçu les « billets de la folie » (signés « Dionysos » ou « le Crucifié »). La scène, très belle, n’est donc pas solidement documentée, et le film Le Cheval de Turin (Béla Tarr, 2011) la prend comme point de départ de fiction, non comme source."
+  ]
+ ],
+ "lim": "L’effondrement est certain ; le détail du cheval reste une tradition. La cause de sa maladie est discutée (syphilis tertiaire, tumeur cérébrale, autres hypothèses). Ne tire pas de cette anecdote une interprétation de la philosophie de Nietzsche.",
+ "refs": "Anacleto Verrecchia, La catastrofe di Nietzsche a Torino ; lettres de Nietzsche à Overbeck (janvier 1889)."
 }
   );
 })();
