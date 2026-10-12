@@ -1951,6 +1951,159 @@
  ],
  "lim": "Les calvinistes répondent que prévoir infailliblement et décréter reviennent au même si Dieu crée en sachant (le problème de la prescience reste pour tous). Le molinisme et l’ouvertisme proposent d’autres schémas. La lecture de Rm 8, 29 est discutée (connaître d’avance = aimer d’avance, Am 3, 2). Voir aussi les fiches sur Romains 8 et 9.",
  "refs": "Jean Damascène, Foi orthodoxe II, 30 ; Romains 8, 29 ; Apocalypse 13, 8 ; 1 Pierre 1, 20 ; Confession de Westminster III."
+},
+{
+ "id": "materialisme-dialectique-et-foi",
+ "th": "Athéisme et philosophie",
+ "who": [
+  "athee"
+ ],
+ "q": "Qu’est-ce que le matérialisme dialectique, et que lui répond un chrétien ?",
+ "pts": [
+  [
+   "Philosophique",
+   "Marx et Engels reprennent la dialectique de Hegel (le réel avance par contradictions) mais la « remettent sur ses pieds » : la matière et les rapports économiques sont premiers, les idées en sont le reflet. Appliqué à l’histoire, cela donne le matérialisme historique : forces productives contre rapports de production, lutte des classes. La formule « thèse, antithèse, synthèse » n’est pas de Marx et peu de Hegel (on la doit surtout à Fichte et à ses commentateurs) ; Marx s’en moquait chez Proudhon. « Ça dépend » ne la résume pas : la dialectique prétend donner une logique du changement."
+  ],
+  [
+   "Théologique",
+   "Points de désaccord chrétiens : (1) la matière ne s’explique pas elle-même, et l’esprit n’est pas un simple reflet (la liberté et la raison supposent autre chose qu’un mécanisme) ; (2) l’histoire n’obéit pas à une loi qui conduirait inévitablement quelque part : la Providence respecte la liberté ; (3) la lutte des classes érigée en moteur nécessaire installe la haine comme méthode ; (4) l’homme y est un rouage de classe, non une personne appelée à la communion. Ce que le chrétien peut reconnaître : l’exploitation est réelle et condamnée (Jc 5, 1-6 ; Rerum novarum, 1891), l’économie pèse sur les consciences."
+  ]
+ ],
+ "lim": "Marx lui-même disait que sa méthode n’était pas un schéma à plaquer ; c’est le marxisme soviétique qui en a fait une philosophie de la nature obligatoire (Engels, Dialectique de la nature). Beaucoup de marxistes occidentaux rejettent ce déterminisme. Un chrétien qui critique le matérialisme historique ne dit pas que l’économie n’a aucun rôle.",
+ "refs": "Marx et Engels, L’idéologie allemande ; Engels, Anti-Dühring ; Léon XIII, Rerum novarum ; Gaudium et spes 19-21 ; Berdiaev, Les sources et le sens du communisme russe."
+},
+{
+ "id": "chretien-et-kantien",
+ "th": "Athéisme et philosophie",
+ "who": [
+  "athee",
+  "prot"
+ ],
+ "q": "Peut-on être chrétien et kantien ?",
+ "pts": [
+  [
+   "Philosophique",
+   "Convergences : l’impératif de traiter l’humanité « toujours en même temps comme une fin, jamais simplement comme un moyen » rejoint l’image de Dieu en tout homme ; la loi morale accessible à la raison rejoint Rm 2, 14-15 ; refus de justifier le mal par ses effets. Kant disait avoir dû « abolir le savoir pour faire place à la foi » (préface de la Critique de la raison pure, 2e éd.). Kant parle même d’un « mal radical » dans la nature humaine, proche de l’idée de péché hérité."
+  ],
+  [
+   "Théologique",
+   "Tensions : (1) la morale kantienne est autonome, le chrétien reçoit la grâce (Rm 7, 15-25) ; (2) Kant donne peu de valeur morale à l’acte accompli par amour, alors que l’agapè est le centre de l’Évangile (1 Co 13) ; (3) son Dieu est un postulat de la raison pratique, non le Dieu personnel de la Révélation ; (4) sa « religion dans les limites de la simple raison » écarte miracles, sacrements, Incarnation comme nécessaires. Voies de synthèse : le personnalisme de Mounier, Ricœur ; Rawls est kantien sans être théologien."
+  ]
+ ],
+ "lim": "On peut être « kantien » de plusieurs façons : en éthique (dignité de la personne), en théorie de la connaissance (limites de la raison), ou en religion (autonomie). Un chrétien acceptera plus facilement le premier que le dernier. L’Orthodoxie, qui distingue dianoia et nous, répond surtout à la limitation kantienne de la connaissance.",
+ "refs": "Kant, Fondements de la métaphysique des mœurs ; La religion dans les limites de la simple raison ; Romains 2, 14-15."
+},
+{
+ "id": "nietzsche-christianisme-antisemitisme-girard",
+ "th": "Athéisme et philosophie",
+ "who": [
+  "athee"
+ ],
+ "q": "Nietzsche critique le christianisme mais détestait l’antisémitisme : comment s’y retrouver ? Et la réponse de Girard ?",
+ "pts": [
+  [
+   "Philosophique",
+   "Dans la Généalogie de la morale et L’Antéchrist, Nietzsche décrit la morale chrétienne comme une inversion des valeurs par les faibles (ressentiment, culpabilité, pitié). Il a rejeté l’antisémitisme de son entourage : brouille avec Wagner (1876-78, pour plusieurs raisons dont l’évolution chrétienne et nationaliste de Wagner) puis avec sa sœur Elisabeth et son beau-frère Bernhard Förster, antisémite militant (1885-1887). Après sa folie (1889), Elisabeth a édité et arrangé ses inédits (La volonté de puissance) ; l’édition critique de Colli et Montinari a rétabli les textes dans les années 1960-70."
+  ],
+  [
+   "Théologique",
+   "René Girard retourne l’argument : le christianisme n’est pas une morale d’esclaves, il est le seul texte à dévoiler le mécanisme du bouc émissaire (violence collective cachée par le mythe) en donnant raison à la victime (La violence et le sacré, Je vois Satan tomber comme l’éclair). Le Christ innocent condamné par la foule révèle ce que les mythes dissimulent. Nietzsche ne se trompe donc pas sur la violence de l’histoire, mais sur ce que l’Évangile en fait."
+  ]
+ ],
+ "lim": "Nietzsche n’est pas un ami des Juifs sans réserve : la Généalogie (I, 7) attribue au « peuple sacerdotal » juif l’origine de la révolte des esclaves en morale, ce que d’autres lisent comme un thème antijudaïque classique. Girard est discuté (sa thèse du sacrifice, sa lecture de l’Ancien Testament). Le réduire à une réponse définitive serait trop.",
+ "refs": "Nietzsche, Généalogie de la morale ; L’Antéchrist ; René Girard, Je vois Satan tomber comme l’éclair (1999)."
+},
+{
+ "id": "hobbes-rousseau-et-le-peche",
+ "th": "Athéisme et philosophie",
+ "who": [
+  "athee"
+ ],
+ "q": "Hobbes et Rousseau s’opposent-ils vraiment, et que dit la tradition chrétienne de la nature humaine ?",
+ "pts": [
+  [
+   "Philosophique",
+   "Hobbes (Léviathan, 1651) : à l’état de nature, c’est la guerre de chacun contre chacun, la vie y est « solitaire, pauvre, méchante, brutale et courte » (ch. 13) ; remède : un souverain absolu. Rousseau (Discours sur l’inégalité, 1755 ; Du contrat social, 1762) : l’homme naturel est bon (amour de soi et pitié), la société et la propriété le corrompent ; remède : la volonté générale. Robespierre se réclamait de Rousseau, ce qui montre le risque d’une volonté « générale » devenue sacrée."
+  ]
+ ],
+ "table": {
+  "head": [
+   "Question",
+   "Hobbes",
+   "Rousseau",
+   "Tradition chrétienne"
+  ],
+  "rows": [
+   [
+    "Nature humaine",
+    "Égoïste, compétitive",
+    "Bonne, corrompue par la société",
+    "Créée bonne, blessée par la chute"
+   ],
+   [
+    "Source du mal",
+    "La nature",
+    "La propriété, l’inégalité",
+    "Le péché libre, puis les structures qu’il crée"
+   ],
+   [
+    "Remède",
+    "Souverain absolu",
+    "Volonté générale",
+    "Grâce et Église, loi civile limitée"
+   ],
+   [
+    "Pouvoir",
+    "Indivisible",
+    "Populaire",
+    "Jamais absolu (Ac 5, 29)"
+   ]
+  ]
+ },
+ "lim": "Faire d’Augustin un « mélange des deux » est une image commode, pas une thèse. Rousseau refuse expressément le péché originel (lettre à Christophe de Beaumont, 1762). Les Orthodoxes parlent de péché ancestral et de nature blessée, non de dépravation totale ; les calvinistes vont plus loin. La citation hobbésienne souvent donnée avec « misérable » et « animale » est approximative.",
+ "refs": "Hobbes, Léviathan XIII ; Rousseau, Discours sur l’origine de l’inégalité ; Rousseau, Lettre à Christophe de Beaumont."
+},
+{
+ "id": "fallibilisme-et-foi-chretienne",
+ "th": "Dieu et la raison",
+ "who": [
+  "athee",
+  "prot"
+ ],
+ "q": "Le trilemme d’Agrippa ruine-t-il toute certitude ? Fallibilisme et foi sont-ils compatibles ?",
+ "pts": [
+  [
+   "Philosophique",
+   "Le trilemme d’Agrippa (sceptiques pyrrhoniens, rapporté par Sextus Empiricus) : toute justification aboutit à une régression infinie, à un cercle, ou à un axiome posé sans preuve. Réponses classiques : le fondationnalisme (Descartes), la cohérence, le pragmatisme (James), le fallibilisme de Peirce (agir sur les meilleures hypothèses en restant révisable), les « croyances de base » de Plantinga (épistémologie réformée) : croire en un monde extérieur ou à la mémoire n’est pas irrationnel bien qu’indémontrable. Le trilemme se retourne aussi contre lui-même, ce que les sceptiques admettaient."
+  ],
+  [
+   "Théologique",
+   "Pour le croyant : les vérités révélées (Incarnation, Résurrection) ne sont pas des hypothèses provisoires. Thomas d’Aquin distingue les préambules de la foi (démontrables) de la Révélation ; Hébreux 11, 1 définit la foi comme « fondement » (hypostasis) de ce qu’on espère. Dans la tradition orthodoxe, on distingue la dianoia (raison discursive) du nous (intellect qui perçoit) : le doute méthodique s’applique à la première. Le fallibilisme vaut donc pour les sciences, la politique, l’économie, et la foi s’y ajoute comme adhésion à une personne, non comme hypothèse."
+  ]
+ ],
+ "lim": "L’objection sérieuse : si la foi est « au-dessus » du doute, qu’est-ce qui la distingue d’un dogmatisme commode ? Les athées pointent la pluralité des religions ; Plantinga répond qu’on peut croire à bon droit sans preuve, ce qui est contesté. Cette fiche expose des positions, elle ne prouve pas la foi.",
+ "refs": "Sextus Empiricus, Esquisses pyrrhoniennes I, 15 ; Plantinga, Warranted Christian Belief ; Thomas d’Aquin, Somme I, q. 2 ; Hébreux 11, 1."
+},
+{
+ "id": "basilic-de-roko-pari-de-pascal",
+ "th": "Athéisme et philosophie",
+ "who": [
+  "athee"
+ ],
+ "q": "Le basilic de Roko : un enfer pour ceux qui n’aident pas l’IA ? Quel rapport avec le pari de Pascal ?",
+ "pts": [
+  [
+   "Philosophique",
+   "Expérience de pensée publiée en 2010 sur le forum LessWrong par un utilisateur nommé Roko : une IA future toute-puissante pourrait punir rétroactivement (en simulant) ceux qui, connaissant son possible avènement, n’ont pas aidé à la créer. Yudkowsky, fondateur du forum, a supprimé le message, ce qui lui a donné une grande notoriété ; il a jugé plus tard cette réaction une erreur. L’argument est jugé peu convaincant : une IA bienveillante n’a aucune raison de punir, la menace n’agit pas sur le passé, et il suffit d’inventer une entité future à punition infinie pour justifier n’importe quoi."
+  ],
+  [
+   "Philosophique",
+   "Le lien avec Pascal est superficiel : le pari de Pascal (Pensées, fr. 233) s’adresse à quelqu’un qui cherche déjà et ne peut trancher par la raison ; ce n’est pas une menace. L’objection des « autres dieux » (pourquoi pas une autre divinité punitive ?) vaut contre une version naïve du pari ; chez Pascal, la foi est présentée comme réponse à un Dieu qui se cache et se révèle, non comme un calcul. Théologiquement, le Dieu chrétien n’est pas un maître chanteur : « Dieu est amour » (1 Jn 4, 8), et l’enfer n’est pas un châtiment pour ignorance (voir la fiche sur l’enfer)."
+  ]
+ ],
+ "lim": "Dire que le milieu de l’IA est une religion déguisée est une métaphore d’avis, non une démonstration. Certains y voient en effet une eschatologie séculière (singularité, jugement, élus), d’autres une simple discipline technique. Ne prends pas l’analogie à la lettre.",
+ "refs": "Pascal, Pensées (fr. 233 Brunschvicg) ; 1 Jean 4, 8 ; Eliezer Yudkowsky, interventions sur LessWrong.",
+ "avis": true
 }
   );
 })();

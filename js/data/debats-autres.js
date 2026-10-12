@@ -2515,6 +2515,317 @@
  ],
  "lim": "Un catholique peut distinguer « sans péché » et « en état de grâce » ; 1 Jn 3, 6-9 (« celui qui est né de Dieu ne pèche pas ») est un texte difficile qui demande aussi lecture. Les perfectionnistes (méthodistes) n’y voient pas d’impossibilité. Ne tranche pas sur les personnes.",
  "refs": "1 Jean 1, 5-10 ; 3, 6-9 ; Concile de Trente, session 6, canon 23 ; Apophtegmes, Sisoès."
+},
+{
+ "id": "courants-du-communisme-tableau",
+ "th": "Société et politique",
+ "who": [
+  "athee"
+ ],
+ "q": "Les grandes familles du communisme : en quoi diffèrent-elles ?",
+ "pts": [
+  [
+   "Historique",
+   "Le plus simple pour s’y retrouver : chaque courant naît d’une critique du précédent. Marx : libérer les ouvriers en abolissant la propriété privée des moyens de production, l’État devant finir par dépérir. Lénine : il faut un parti d’avant-garde et une dictature du prolétariat transitoire. Staline : le « socialisme dans un seul pays », parti omnipotent, terreur. Trotski : révolution permanente et internationale, critique de la bureaucratie. Mao : la paysannerie et la guerre populaire. Luxemburg : liberté politique et spontanéité des masses. Anarcho-communistes : abolir l’État tout de suite. Eurocommunistes : voie parlementaire."
+  ]
+ ],
+ "table": {
+  "head": [
+   "Courant",
+   "Rôle du parti",
+   "Place de l’État",
+   "Stratégie"
+  ],
+  "rows": [
+   [
+    "Marx",
+    "Flou",
+    "Transitoire, doit dépérir",
+    "Révolution"
+   ],
+   [
+    "Léninisme",
+    "Avant-garde disciplinée",
+    "Dictature du prolétariat",
+    "Révolution organisée"
+   ],
+   [
+    "Stalinisme",
+    "Omnipotent",
+    "Centralisé, permanent",
+    "Socialisme dans un seul pays"
+   ],
+   [
+    "Trotskisme",
+    "Avant-garde",
+    "État ouvrier dégénéré à renverser",
+    "Révolution permanente"
+   ],
+   [
+    "Maoïsme",
+    "Avant-garde",
+    "Transitoire",
+    "Guerre populaire paysanne"
+   ],
+   [
+    "Luxemburgisme",
+    "Limité",
+    "Démocratique",
+    "Spontanéité des masses"
+   ],
+   [
+    "Anarcho-communisme",
+    "Aucun",
+    "Aboli aussitôt",
+    "Fédérations libres"
+   ],
+   [
+    "Eurocommunisme",
+    "Électoral",
+    "Démocratique",
+    "Voie parlementaire"
+   ]
+  ]
+ },
+ "lim": "C’est une carte simplifiée : les historiens distinguent aussi le titisme, le conseillisme, le castrisme et d’autres. Les trotskistes disent que Trotski et ses camarades furent les premières victimes de Staline ; d’autres rappellent que Trotski a dirigé la répression de Kronstadt (1921). Aucun régime « communiste » réel n’a vu l’État dépérir.",
+ "refs": "Marx, Critique du programme de Gotha ; Lénine, L’État et la révolution ; Rosa Luxemburg, La révolution russe ; Trotski, La révolution trahie."
+},
+{
+ "id": "commune-de-paris-marx-eglise",
+ "th": "Histoire",
+ "who": [
+  "athee"
+ ],
+ "q": "La Commune de Paris (1871) : que fut-elle, et que dit Marx de l’Église ?",
+ "pts": [
+  [
+   "Historique",
+   "Du 18 mars au 28 mai 1871 (72 jours), après la défaite face à la Prusse, Paris insurgé s’administre seul. Les Communards étaient surtout des proudhoniens, des blanquistes et des jacobins : la Commune n’est pas « marxiste ». Marx, dans La guerre civile en France, y voit « la forme politique enfin trouvée » et en tire que la classe ouvrière ne peut pas simplement prendre la machine d’État telle quelle (préface de 1872 au Manifeste). Elle s’achève dans la Semaine sanglante (21-28 mai) : de 6 000 à 20 000 morts selon les estimations."
+  ],
+  [
+   "Historique",
+   "Rapport à l’Église : séparation de l’Église et de l’État décrétée, églises fermées ou transformées en clubs. Mgr Darboy, archevêque de Paris, et d’autres otages (prêtres, jésuites, dominicains d’Arcueil) sont fusillés en mai 1871, notamment en représailles des exécutions de Versailles. L’épisode a pesé durablement sur la méfiance de l’Église envers le socialisme (puis Divini Redemptoris, 1937)."
+  ]
+ ],
+ "lim": "Les chiffres de la Semaine sanglante restent discutés. Dire que la Commune « confirme la dialectique » est une lecture marxiste a posteriori, non un fait. Les otages ne furent pas tous tués par décision d’une autorité unique.",
+ "refs": "Marx, La guerre civile en France (1871) ; Jacques Rougerie, Paris libre 1871 ; Jean-Baptiste Duroselle (Église et socialisme au XIXe siècle)."
+},
+{
+ "id": "aristote-esclave-naturel-et-eglise",
+ "th": "Histoire",
+ "who": [
+  "athee",
+  "prot"
+ ],
+ "q": "Aristote et l’« esclave par nature » : quel mot grec, et qu’a répondu le christianisme ?",
+ "pts": [
+  [
+   "Philosophique",
+   "L’expression grecque est phusei doulos (φύσει δοῦλος), l’« esclave par nature » (Politique I, 4-7, 1254a-1255b) : Aristote pense que certains êtres, privés de la faculté délibérative complète, sont faits pour être commandés. Il reconnaît pourtant que la thèse était contestée de son temps et que l’esclavage « selon la loi » (guerre) n’est pas toujours juste (1255a). Attention : le mot ΕΞΩΦΡΕΝΙΚΟΣ proposé dans la discussion d’origine (« hors de l’esprit ») est un mot de grec moderne sans rapport avec cette théorie."
+  ],
+  [
+   "Patristique",
+   "Face à cela : Ga 3, 28 et Philémon (Onésime reçu « comme un frère bien-aimé ») ; Grégoire de Nysse, 4e Homélie sur l’Ecclésiaste, est la condamnation la plus radicale de l’Antiquité (celui qui possède un esclave prétend dominer l’image de Dieu) ; Chrysostome voit dans la servitude une suite du péché, non une nature. Mais l’Église n’a pas aboli le système antique et l’a longtemps toléré. Les Espagnols du XVIe siècle ont réutilisé Aristote (Sepúlveda) contre Las Casas (controverse de Valladolid, 1550-1551) ; Paul III, Sublimis Deus (1537), proclame les Indiens capables de foi et de liberté."
+  ]
+ ],
+ "lim": "Le bilan est mêlé : le christianisme a fourni les arguments de l’abolition (Wilberforce, Grégoire de Nysse) et aussi des justifications de l’esclavage (Malédiction de Cham, Eph 6, 5). Ne pas dire que « l’Église a toujours condamné » ni qu’« elle l’a toujours justifié ».",
+ "refs": "Aristote, Politique I ; Grégoire de Nysse, Homélie IV sur l’Ecclésiaste ; Paul III, Sublimis Deus (1537) ; Las Casas, Très brève relation."
+},
+{
+ "id": "distributisme-et-doctrine-sociale",
+ "th": "Société et politique",
+ "who": [
+  "prot",
+  "athee"
+ ],
+ "q": "Qu’est-ce que le distributisme, et que dit la doctrine sociale de l’Église ?",
+ "pts": [
+  [
+   "Historique",
+   "Le distributisme est une « troisième voie » élaborée par Chesterton et Belloc (Belloc, L’État servile, 1912 ; Chesterton, Ce qui cloche dans le monde, 1910) à partir de Rerum novarum (Léon XIII, 1891) et de Quadragesimo anno (Pie XI, 1931). Idée centrale : le tort du capitalisme est que trop peu de gens possèdent ; la solution est de répartir la propriété productive (terre, outils, atelier, coopératives) au plus grand nombre, non d’abolir la propriété. Le principe de subsidiarité (QA 79-80) : ce que peut faire une petite communauté ne doit pas lui être retiré par une plus grande."
+  ],
+  [
+   "Théologique",
+   "Rerum novarum défend la propriété privée comme droit naturel, condamne le socialisme d’État et l’exploitation, et reconnaît le droit de s’associer. Elle ne fonde pas un « système » distributiste. Dans l’Orthodoxie, l’Église russe a fixé un cadre dans les Fondements de la doctrine sociale (2000), sans modèle économique imposé. Objections sérieuses faites au distributisme : l’industrie lourde et les réseaux ne se font pas à l’échelle d’un atelier ; répartir la propriété suppose un pouvoir qui la redistribue, donc l’arbitre fort qu’on veut éviter ; la concentration reviendrait. Réalisations proches : Mondragón (coopératives basques), certaines régions d’Italie du Nord."
+  ]
+ ],
+ "lim": "Le distributisme n’est pas la doctrine officielle de l’Église, qui ne canonise aucun système économique (Compendium de la doctrine sociale, 2004). La question de la propriété universelle des biens (Jean-Chrysostome, Basile : les biens du riche appartiennent aussi aux pauvres) est plus ancienne et plus radicale que Chesterton. Mon avis : intéressant à lire, difficile à appliquer.",
+ "refs": "Léon XIII, Rerum novarum ; Pie XI, Quadragesimo anno ; Belloc, The Servile State ; Compendium de la doctrine sociale de l’Église.",
+ "avis": true
+},
+{
+ "id": "eglise-et-communisme-condamnation",
+ "th": "Société et politique",
+ "who": [
+  "athee"
+ ],
+ "q": "Pourquoi l’Église condamne-t-elle le communisme, alors que les premiers chrétiens mettaient tout en commun ?",
+ "pts": [
+  [
+   "Historique",
+   "Condamnations : Léon XIII, Quod apostolici muneris (1878) ; Pie XI, Divini Redemptoris (19 mars 1937). Motifs : l’athéisme militant, la lutte des classes comme moteur nécessaire, la négation de la personne comme fin, l’abolition de la propriété privée. Pie XI condamne l’idéologie, non le souci des ouvriers (Rerum novarum, 1891, dénonçait déjà la misère prolétarienne). L’Église orthodoxe russe a subi la plus grande persécution de son histoire : des dizaines de milliers de martyrs, canonisés en 2000 comme nouveaux martyrs, et la Déclaration de métropolite Serge (1927) de loyauté au pouvoir reste controversée."
+  ],
+  [
+   "Biblique",
+   "Ac 2, 44-45 et 4, 32-35 : mise en commun volontaire dans la communauté de Jérusalem ; Ac 5, 4 : Pierre dit à Ananie que la terre lui appartenait et que le prix était à sa disposition : il n’y a donc ni obligation ni abolition de la propriété. Les Pères sont durs sur la richesse (Basile, Chrysostome), sans proposer un système économique. La différence essentielle avec le communisme d’État : la liberté du don, la charité, le fondement en Dieu."
+  ]
+ ],
+ "lim": "Après 1960, la théologie de la libération a repris des outils marxistes ; la Congrégation pour la doctrine de la foi l’a critiquée en 1984 et 1986 tout en défendant l’option préférentielle pour les pauvres. Dire que les premiers chrétiens étaient communistes est une analogie qui force le texte.",
+ "refs": "Pie XI, Divini Redemptoris ; Actes 2, 44-45 ; 4, 32-35 ; 5, 1-4 ; Congrégation pour la doctrine de la foi, Libertatis nuntius (1984)."
+},
+{
+ "id": "critique-autrichienne-de-marx",
+ "th": "Société et politique",
+ "who": [
+  "athee"
+ ],
+ "q": "Menger, Böhm-Bawerk, Mises, Hayek ont-ils « détruit » le marxisme ?",
+ "pts": [
+  [
+   "Philosophique",
+   "Menger (1871) : la valeur vient de l’utilité marginale, non du travail, ce qui ruine la théorie de la valeur-travail au sens strict. Böhm-Bawerk : le profit rémunère le temps et le risque, non un vol du travail. Mises (1920) et Hayek : sans prix de marché, la planification ne peut calculer, car la connaissance utile est dispersée. Ces arguments sont solides sur la mécanique économique et expliquent en partie les échecs de la planification soviétique."
+  ],
+  [
+   "Philosophique",
+   "Limites : Marx visait surtout les rapports de pouvoir entre classes, qu’une théorie de la valeur fausse n’efface pas ; l’échange de travail contre salaire n’est pas toujours libre si l’on n’a pas de capital ; les marchés réels ont des externalités et des crises (1929, 2008) ; Oskar Lange a répondu à Mises par un modèle de socialisme de marché. Piketty (2013) a relancé la question de la concentration du capital."
+  ]
+ ],
+ "table": {
+  "head": [
+   "Question",
+   "Marx",
+   "École autrichienne"
+  ],
+  "rows": [
+   [
+    "Origine de la valeur",
+    "Le travail",
+    "Les préférences subjectives"
+   ],
+   [
+    "Profit",
+    "Plus-value, exploitation",
+    "Rémunération du temps et du risque"
+   ],
+   [
+    "Planification",
+    "Possible",
+    "Impossible sans prix"
+   ],
+   [
+    "Point faible",
+    "Théorie de la valeur ; incitations",
+    "Concurrence parfaite supposée ; externalités"
+   ]
+  ]
+ },
+ "lim": "Résumé volontairement bref : l’économie n’est pas ma spécialité et ces écoles sont toujours débattues. L’Église ne se range dans aucune (Centesimus annus, 1991, reconnaît la valeur du marché tout en rappelant ses limites morales).",
+ "refs": "Menger, Principes d’économie politique ; Böhm-Bawerk, Karl Marx and the Close of His System ; Mises, Le calcul économique en régime socialiste ; Hayek, L’usage de la connaissance dans la société ; Jean-Paul II, Centesimus annus."
+},
+{
+ "id": "corporatisme-fascisme-et-quadragesimo-anno",
+ "th": "Société et politique",
+ "who": [
+  "cath",
+  "athee"
+ ],
+ "q": "Le corporatisme est-il fasciste ? Quel rapport avec Quadragesimo anno ?",
+ "pts": [
+  [
+   "Historique",
+   "Le corporatisme organise la société en corps professionnels (patrons et ouvriers) qui négocient sous l’arbitrage de l’État pour éviter la lutte des classes. Le fascisme italien l’a adopté (Charte du travail, 1927), mais les syndicats indépendants y étaient interdits : la « coopération » était contrôlée par le parti. Pie XI, Quadragesimo anno (1931) parle d’« ordres » ou corporations libres, fondées sur la subsidiarité et la solidarité, ce qu’on appelle le solidarisme, et critique expressément le corporatisme d’État italien (n° 95). La même année Non abbiamo bisogno dénonce la statolâtrie fasciste ; Mit brennender Sorge (1937) condamne le nazisme."
+  ],
+  [
+   "Historique",
+   "Des régimes se sont réclamés de la doctrine sociale catholique : Dollfuss en Autriche (1934), Salazar au Portugal (Estado Novo, 1933). Leur corporatisme est resté autoritaire. Mussolini aurait dit que le fascisme devrait s’appeler « corporatisme », citation en fait douteuse (souvent attribuée sans source). Leçon : un système d’arbitrage dépend de la qualité de l’arbitre, qui devient vite le joueur dominant."
+  ]
+ ],
+ "lim": "Les historiens discutent encore de l’influence réelle de Quadragesimo anno sur ces régimes. Le corporatisme n’est pas un « individualisme » : il subordonne l’individu au groupe, ce que le libéralisme refuse. Ne pas confondre solidarisme catholique, corporatisme d’État et syndicalisme libre.",
+ "refs": "Pie XI, Quadragesimo anno ; Non abbiamo bisogno (1931) ; Mit brennender Sorge (1937) ; Mussolini, La doctrine du fascisme (1932)."
+},
+{
+ "id": "complots-reels-et-complotisme",
+ "th": "Histoire",
+ "who": [
+  "athee",
+  "juif"
+ ],
+ "q": "Certains « complots » se sont révélés réels : comment distinguer le réel du complotisme ?",
+ "pts": [
+  [
+   "Historique",
+   "Cas documentés : COINTELPRO (FBI, 1956-71, surveillance et sabotage de mouvements dont celui de M. L. King, révélé en 1971) ; MKUltra (CIA, expériences non consenties, documents détruits en 1973, ce qui reste est partiel) ; Gladio (réseaux « stay-behind » de l’OTAN, dévoilés par Andreotti en 1990 : leur lien avec le terrorisme en Italie reste très débattu) ; Opération Ajax (1953, coup d’État contre Mossadegh, reconnu par les États-Unis en 2013) ; PRISM (révélations de Snowden, 2013) ; le tabac et le climat (industries qui ont financé le doute malgré leurs propres études). L’opération Northwoods (1962) était un plan proposé par les chefs d’état-major et refusé par Kennedy, jamais exécuté."
+  ],
+  [
+   "Philosophique",
+   "Critères utiles : un complot réel implique peu de personnes, sert un intérêt identifiable, laisse des documents, des témoins, des fuites ; un récit improbable exige des milliers de complices silencieux, n’a aucun bénéficiaire clair et explique tout par un groupe unique. Les récits qui attribuent à un peuple (les Juifs, les francs-maçons, etc.) la conduite du monde (Protocoles des sages de Sion, faux fabriqué par la police tsariste) sont du second type. Le christianisme n’y adhère pas : le mal est dans le cœur de tous (Mc 7, 21-23), non dans un groupe."
+  ]
+ ],
+ "lim": "« Avoir eu raison une fois » ne prouve pas la théorie suivante : c’est le biais de la fausse analogie. Le mot « complot » recouvre des choses très différentes (opération d’État, collusion d’entreprises, fantasme). Vérifie les sources avant de citer un cas.",
+ "refs": "Rapport Church (1975-76) ; Nostra Aetate 4 (1965) ; Marc 7, 21-23 ; Norman Cohn, Histoire d’un mythe : la conspiration juive."
+},
+{
+ "id": "origine-juive-capitalisme-communisme",
+ "th": "Judaïsme",
+ "who": [
+  "juif",
+  "athee"
+ ],
+ "q": "« Le capitalisme et le communisme sont d’origine juive » : que vaut cette thèse ?",
+ "pts": [
+  [
+   "Historique",
+   "La thèse est historiquement fausse et sert de véhicule à l’antisémitisme. Sombart (Les Juifs et la vie économique, 1911) attribuait le capitalisme à l’esprit juif ; Weber (L’éthique protestante, 1905) le rattachait au protestantisme ascétique, thèse elle-même discutée (les grandes banques précoces, Fugger et Médicis, étaient catholiques). Marx, né dans une famille juive convertie, fut baptisé luthérien à six ans, athée militant, et son texte La question juive (1844) assimile le judaïsme à l’argent dans un sens social choquant. Engels, Lénine, Staline, Mao n’étaient pas juifs. Faire du communisme un complot juif est la propagande nazie du « judéo-bolchevisme »."
+  ],
+  [
+   "Historique",
+   "Le fait réel derrière l’illusion : exclus des corporations, de la terre et des charges, des Juifs d’Europe ont été cantonnés à certains métiers (commerce, prêt, médecine), et la culture de l’écrit a facilité leur place dans les économies du savoir. Cette histoire sociale n’a rien d’un plan. Les mêmes mécanismes de captation du pouvoir (oligarchies, connivences) existent dans toutes les civilisations, chrétiennes et musulmanes comprises. Le christianisme parle d’un péché commun à tous les hommes (Rm 3, 23), pas d’un groupe coupable."
+  ]
+ ],
+ "lim": "Cette fiche ne traite pas des débats sur la politique d’Israël ni sur les groupes de pression, qui relèvent d’une analyse politique distincte et non religieuse. Le mélange des deux est souvent la porte d’entrée du préjugé. L’Église condamne l’antisémitisme (Nostra Aetate 4, 1965).",
+ "refs": "Sombart, Les Juifs et la vie économique ; Weber, L’éthique protestante et l’esprit du capitalisme ; Marx, La question juive ; Nostra Aetate 4 ; Romains 3, 23."
+},
+{
+ "id": "tout-est-politique-chretien",
+ "th": "Société et politique",
+ "who": [
+  "athee"
+ ],
+ "q": "« Tout est politique » : un chrétien peut-il le dire ?",
+ "pts": [
+  [
+   "Philosophique",
+   "Deux sens. Au sens restreint (élections, partis, gouvernement), évidemment non. Au sens large (tout rapport de pouvoir ou de ressource), la formule vient d’Aristote (l’homme est un animal politique), du slogan féministe « le personnel est politique » (années 1960-70) et de Foucault (le pouvoir est partout). Danger de la version forte : elle dissout l’intime, le gratuit, le sacré, et transforme chaque goût en prise de position à juger. Mieux : tout est traversé par le politique, mais tout n’y est pas réductible."
+  ],
+  [
+   "Théologique",
+   "Repères chrétiens : « Mon Royaume n’est pas de ce monde » (Jn 18, 36) ; « Rendez à César… » (Mt 22, 21) ; « Il faut obéir à Dieu plutôt qu’aux hommes » (Ac 5, 29) ; Rm 13 sur l’autorité. L’Église n’est pas un parti, mais la liturgie (leitourgia, « œuvre du peuple ») a une portée publique, et les Pères (Chrysostome, Ambroise) ont repris les puissants. Catéchisme de l’Église catholique, n° 2240 : la participation à la vie civique, y compris le vote, est un devoir moral. L’Orthodoxie n’a pas de texte uniforme (les Fondements de la doctrine sociale russes encouragent la participation)."
+  ]
+ ],
+ "lim": "Un chrétien peut défendre le retrait (monachisme, abstention de principe) comme le service public. Les deux traditions s’appuient sur Augustin, La Cité de Dieu : les cités humaines passent, mais cela ne dispense pas d’agir. Le « Benedict Option » de Rod Dreher défend le retrait communautaire : c’est un avis, discuté.",
+ "refs": "Jean 18, 36 ; Matthieu 22, 21 ; Actes 5, 29 ; Augustin, La Cité de Dieu ; Catéchisme de l’Église catholique, n° 2239-2240 ; Fondements de la doctrine sociale de l’Église orthodoxe russe (2000).",
+ "avis": true
+},
+{
+ "id": "par-ou-commencer-philosophie-chretien",
+ "th": "Lectures",
+ "who": [
+  "athee"
+ ],
+ "q": "Quel philosophe lire en premier quand on est chrétien : Kierkegaard, Platon, Nietzsche, Aristote, Kant, Heidegger ?",
+ "pts": [
+  [
+   "Pédagogique",
+   "Ordre proposé pour un lecteur chrétien tenaillé entre foi et doute : 1. Kierkegaard, Crainte et tremblement (1843) : court, centré sur la foi d’Abraham et sur ce que la raison ne justifie pas ; 2. Platon (Apologie de Socrate, puis République), la source de la philosophie occidentale, très lisible ; 3. Nietzsche, Généalogie de la morale (plus analytique que Zarathoustra) ; 4. Aristote, Éthique à Nicomaque ; 5. Kant, Fondements de la métaphysique des mœurs (et non la Critique de la raison pure d’abord) ; 6. Heidegger en dernier (Être et temps est très difficile). Conseil pratique : lire d’abord une vingtaine de pages d’introduction (préfaces GF Flammarion, collections « Que sais-je ? »)."
+  ],
+  [
+   "Pédagogique",
+   "Dostoïevski et Kierkegaard ont des affinités : une foi arrachée au doute, l’individu contre le système, l’exploration des abîmes de l’âme, la souffrance comme chemin. Kierkegaard écrit sous pseudonymes, Dostoïevski par personnages. Attention : ils ne se sont pas lus, et Kierkegaard est luthérien : sa « suspension téléologique de l’éthique » (Abraham et Isaac) inquiète beaucoup de théologiens catholiques et orthodoxes, pour qui Dieu ne contredit jamais la loi morale."
+  ]
+ ],
+ "lim": "C’est un avis de lecture, pas un ordre. Chacun a son propre point de départ : un lecteur plus tourné vers l’histoire commencera par Augustin ou Boèce. Pour une base chrétienne, ajoute Augustin (Confessions), Pascal (Pensées) et un Père grec.",
+ "refs": "Kierkegaard, Crainte et tremblement ; Platon, Apologie de Socrate ; Nietzsche, Généalogie de la morale ; Dostoïevski, Les frères Karamazov.",
+ "avis": true
 }
   );
 })();
