@@ -1,5 +1,5 @@
 /* Service worker : fonctionnement hors ligne (réseau d'abord, cache en secours) + notifications */
-const VERSION = 'blagovest-v66';
+const VERSION = 'blagovest-v67';
 const DATA_CACHE = 'blagovest-data'; // écrit par js/notifications.js, à ne jamais purger
 const BIBLE_CACHE = 'blagovest-bible-1'; // textes bibliques (bible/*.json) : gardés d'une version à l'autre. Si un texte est corrigé un jour, passer à « -2 » : l'ancien cache sera supprimé.
 const ICON_CACHE = 'blagovest-icons'; // icônes des saints : mémorisées à la première vue, ou en bloc depuis les réglages
