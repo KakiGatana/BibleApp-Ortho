@@ -8,7 +8,7 @@
       icon: 'L’icône de la Résurrection montre la Descente aux enfers : le Christ, rayonnant, brise les portes de l’Hadès et saisit Adam et Ève par la main pour les relever.',
       meaning: [
         'Pâques est le cœur et la source de toute l’année liturgique. Le mot « pascha » signifie « passage » : passage de la mort à la vie, de la terre au ciel. Le Christ, en descendant volontairement dans la mort, la détruit de l’intérieur et ouvre à toute l’humanité la porte de la vie éternelle.',
-        'Contrairement à l’Occident, l’Église orthodoxe voit dans la Résurrection moins une « preuve » qu’une victoire cosmique : la création entière est renouvelée. C’est pourquoi toute la nuit pascale est lumière, chant, cloches et baisers de paix : « Jour de la Résurrection, resplendissons de joie ! »',
+        'L’Église orthodoxe insiste moins sur la Résurrection comme « preuve » que sur la victoire cosmique du Christ : la création entière est renouvelée. C’est pourquoi toute la nuit pascale est lumière, chant, cloches et baisers de paix : « Jour de la Résurrection, resplendissons de joie ! »',
         'La date de Pâques suit la règle du premier concile de Nicée (325) : le dimanche après la première pleine lune de printemps, et toujours après la Pâque juive. Les Églises orthodoxes calculent d’après le calendrier julien, d’où le décalage fréquent avec la fête occidentale.'
       ],
       troparion: { tone: 5, fr: 'Christ est ressuscité des morts, par la mort il a vaincu la mort, et à ceux qui gisent dans les tombeaux il a donné la vie.', cs: 'Христо́съ воскре́се изъ ме́ртвыхъ, сме́ртію сме́рть попра́въ, и су́щымъ во гро́бѣхъ животъ даро́вавъ.' },
@@ -31,7 +31,7 @@
     },
     {
       id: 'exaltation-croix', md: '09-14', rank: 5, kind: 'seigneur', name: 'Exaltation de la Sainte Croix', cs: 'Воздвиженіе Честнаго и Животворящаго Креста',
-      sub: 'Jour de jeûne strict',
+      sub: 'Jour de jeûne',
       icon: 'Le patriarche élève la Croix sur l’ambon devant la foule qui chante « Kyrie eleison » ; à ses côtés, l’empereur Constantin et Hélène.',
       meaning: [
         'Cette fête commémore la découverte de la Croix du Christ par sainte Hélène (vers 326) et son élévation solennelle à Jérusalem. Le bois de l’humiliation devient l’étendard de la victoire : « Ta Croix, Seigneur, nous l’adorons, et ta sainte Résurrection nous la glorifions. »',
@@ -126,7 +126,7 @@
       sub: 'Hosanna au Fils de David',
       icon: 'Le Christ, assis sur un ânon, entre à Jérusalem ; la foule étend ses vêtements et agite des palmes ou des branches d’olivier.',
       meaning: [
-        'Six jours avant Pâques, le Christ entre à Jérusalem acclamé comme roi. Il vient pourtant sur un ânon, humble, « doux », vers sa Passion. La veille, Lazare avait été ressuscité : l’entrée dit déjà la victoire sur la mort.',
+        'Une semaine avant Pâques, le Christ entre à Jérusalem acclamé comme roi. Il vient pourtant sur un ânon, humble, « doux », vers sa Passion. La veille, Lazare avait été ressuscité : l’entrée dit déjà la victoire sur la mort.',
         'La fête ouvre la Semaine sainte et rappelle que chacun est invité à accueillir le Roi de gloire dans son cœur, non à l’attendre dans l’apparat.'
       ],
       troparion: { tone: 1, fr: 'Pour nous donner l’assurance de la résurrection universelle avant ta Passion, tu as ressuscité Lazare d’entre les morts, Christ Dieu. C’est pourquoi nous aussi, comme les enfants, portant les signes de la victoire, nous te crions, vainqueur de la mort : Hosanna au plus haut des cieux ! Béni soit celui qui vient au nom du Seigneur !', cs: 'Обще́е воскресе́ніе прежде Твоея́ страсти увѣря́я, изъ ме́ртвыхъ воздви́гль еси́ Ла́заря, Христе́ Бо́же: тѣ́мже и мы́, я́ко отро́цы побѣ́ды зна́менія нося́ще, Тебѣ́ побѣди́телю сме́рти вопіе́мъ: оса́нна въ вы́шнихъ, благослове́нъ гряды́й во и́мя Госпо́дне.' },
@@ -240,15 +240,15 @@
     },
     {
       id: 'decollation-jean', md: '08-29', rank: 4, kind: 'saint', name: 'Décollation de saint Jean-Baptiste', cs: 'Усѣкновеніе главы честнаго славнаго Пророка, Предтечи и Крестителя Господня Иоанна',
-      sub: 'Jour de jeûne strict',
+      sub: 'Jour de jeûne',
       icon: 'Jean, décapité par le bourreau, sa tête sur un plat ; un ange recueille son âme.',
       meaning: [
-        'Jean reproche à Hérode son union illégitime ; arrêté, il est décapité à la demande d’Hérodiade. Il est le dernier prophète et le premier martyr du Christ, qui descend aux enfers lui annoncer la venue du Messie.',
-        'Le jeûne strict et la sobriété (traditionnellement on ne mange pas de plat rond ni de couteau) expriment le deuil devant le sang du Juste.'
+        'Jean reproche à Hérode son union illégitime ; arrêté, il est décapité à la demande d’Hérodiade. Il est le dernier prophète de l’Ancienne Alliance, mort pour la vérité ; selon la tradition, il annonce aux justes des enfers la venue du Messie.',
+        'Le jeûne et la sobriété (traditionnellement on ne mange pas de plat rond ni de couteau) expriment le deuil devant le sang du Juste.'
       ],
       troparion: { tone: 2, fr: 'La mémoire du juste est célébrée par des louanges ; pour toi, Précurseur, le témoignage du Seigneur suffit. Tu as été en effet reconnu comme le plus vénérable des prophètes, puisque tu as été jugé digne de baptiser dans les flots celui qu’ils annonçaient. Après avoir souffert pour la vérité avec joie, tu as annoncé aussi à ceux qui étaient aux enfers le Dieu manifesté dans la chair, qui enlève le péché du monde et nous accorde la grande miséricorde.', cs: '' },
       reading: { epistle: 'Ac 13:25-32', gospel: 'Mc 6:14-30' },
-      traditions: 'Jeûne strict toute l’année.',
+      traditions: 'Jour de jeûne toute l’année.',
       verse: ['Mc 6:20', 'Hérode craignait Jean, le sachant homme juste et saint ; il le protégeait, et l’écoutait avec plaisir.', 'Ирудъ бо боящеся Иоанна, вѣдый его мужа праведна и свята.']
     },
     {

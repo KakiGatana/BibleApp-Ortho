@@ -147,8 +147,8 @@
 
     // Jours de jeûne strict fixes
     if (md === '01-05') return weekend ? mk(3, 'Veille de l’Épiphanie', 'Veille de la Théophanie.') : mk(4, 'Veille de l’Épiphanie', 'Jeûne strict de la veille de la Théophanie.');
-    if (md === '08-29') return mk(weekend ? 3 : 4, 'Décollation de saint Jean-Baptiste', 'Jour de jeûne strict toute l’année, même hors saison de jeûne.');
-    if (md === '09-14') return mk(weekend ? 3 : 4, 'Exaltation de la Croix', 'Jour de jeûne strict toute l’année, même hors saison de jeûne.');
+    if (md === '08-29') return mk(3, 'Décollation de saint Jean-Baptiste', 'Jour de jeûne toute l’année (ni viande, ni laitages, ni œufs, ni poisson ; huile et vin permis selon le typikon, certains observent plus strictement).');
+    if (md === '09-14') return mk(3, 'Exaltation de la Croix', 'Jour de jeûne toute l’année (ni viande, ni laitages, ni œufs, ni poisson ; huile et vin permis selon le typikon, certains observent plus strictement).');
 
     // Carême des Apôtres
     if (rel >= 57 && (m < 6 || (m === 6 && d <= 28))) {

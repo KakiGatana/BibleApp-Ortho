@@ -65,7 +65,7 @@
     Q('culture', 'Où se trouve le mont Athos, la « Sainte Montagne » des moines ?', ['En Grèce, au nord de la mer Égée', 'En Russie', 'En Géorgie', 'En Égypte'], 0, 'Dans la presqu’île de Chalcidique, en Grèce. Une vingtaine de monastères y vivent depuis plus de mille ans.'),
     Q('culture', 'Comment fait-on le signe de la croix à l’orthodoxe ?', ['De la droite vers la gauche, avec trois doigts réunis', 'De la gauche vers la droite, main ouverte', 'Du front au cœur seulement', 'Avec deux doigts'], 0, 'Pouce, index et majeur réunis (la Trinité), les deux autres repliés (les deux natures du Christ) : front, poitrine, épaule droite puis gauche.'),
     Q('culture', 'Que veut dire « Благовѣстъ » (Blagovest) ?', ['Bonne nouvelle, et aussi le carillon des cloches', 'Paix du soir', 'Fête du saint', 'Veillée de nuit'], 0, 'Un mot slavon à double sens : l’annonce de la bonne nouvelle et le son des cloches qui appelle à la prière.'),
-    Q('culture', 'Que signifie « Слава Богу за вся » ?', ['Gloire à Dieu pour toutes choses', 'Dieu est avec nous', 'Seigneur, aie pitié', 'Christ est ressuscité'], 0, 'Une expression chère aux Orthodoxes, attribuée à saint Jean Chrysostome sur son lit d’exil.')
+    Q('culture', 'Que signifie « Слава Богу за вся » ?', ['Gloire à Dieu pour toutes choses', 'Dieu est avec nous', 'Seigneur, aie pitié', 'Christ est ressuscité'], 0, 'Une expression chère aux Orthodoxes, attribuée, selon la tradition, à saint Jean Chrysostome sur le chemin de l’exil.')
   );
 
   // catégories : celles des nouvelles questions sont explicites ; les anciennes sont déduites des mots-clés

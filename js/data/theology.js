@@ -73,7 +73,7 @@
         { h: 'Dormition et intercession' },
         { p: 'La Tradition enseigne que Marie s’est endormie dans le Seigneur (Dormition), et que le Christ a pris son âme dans ses bras. Son corps, dit-on, a été transporté au ciel. Elle est la première à avoir vécu la résurrection promise à tous.' },
         { h: 'Pas d’Immaculée Conception' },
-        { p: 'L’Orthodoxie n’a pas défini l’« Immaculée Conception » : elle croit Marie sainte et pure, mais pas exemptée du péché ancestral commun. Son rôle est d’abord celui de « porte » par laquelle le Christ entre dans le monde.' }
+        { p: 'L’Orthodoxie n’a pas défini l’« Immaculée Conception » : elle croit Marie très sainte et exempte de tout péché personnel, mais ne dit pas qu’elle ait été préservée dès sa conception de la condition humaine blessée par le péché ancestral. Son rôle est d’abord celui de « porte » par laquelle le Christ entre dans le monde.' }
       ],
       quote: { t: 'Plus vénérable que les chérubins et incomparablement plus glorieuse que les séraphins, toi qui as enfanté Dieu le Verbe sans corruption, vraie Mère de Dieu, nous te magnifions.', a: 'Hymne « Il est digne », Liturgie' }
     },
@@ -133,7 +133,7 @@
         { h: 'Les reliques' },
         { p: 'Le corps d’un saint, temple de l’Esprit, garde une grâce même après la mort. C’est pourquoi l’Église vénère les reliques, sans dévotion magique, comme un signe de la sanctification de la chair.' },
         { h: 'Les anges' },
-        { p: 'Les anges sont des créatures spirituelles, messagers et serviteurs de Dieu. Les Pères en comptent neuf chœurs (Denys l’Aréopagite). Chaque baptisé a un <b>ange gardien</b> auquel on adresse une prière chaque soir.' }
+        { p: 'Les anges sont des créatures spirituelles, messagers et serviteurs de Dieu. La tradition en compte neuf chœurs (d’après le Pseudo-Denys l’Aréopagite, auteur du VIe siècle). Chaque baptisé a un <b>ange gardien</b> auquel on adresse une prière chaque soir.' }
       ],
       quote: { t: 'Dieu est admirable dans ses saints.', a: 'Ps 67:36 (LXX)' }
     },
@@ -152,7 +152,7 @@
       id: 'dernieres-fins', title: 'Mort, jugement et résurrection', sub: 'Ce que l’Église attend', icon: 'door',
       lead: 'L’Église orthodoxe n’a pas de doctrine du purgatoire mais prie pour les défunts avec confiance : la mort n’est pas un mur, mais un passage.',
       blocks: [
-        { p: 'À la mort, l’âme est séparée du corps et rencontre Dieu. Les Pères parlent de « péages aériens » — une image du jugement intérieur — mais insistent surtout sur la confiance en la miséricorde. L’Église prie pour les défunts : panikhides, litiyas, Liturgies de commémoration, samedis des âmes.' },
+        { p: 'À la mort, l’âme est séparée du corps et rencontre Dieu. Certains textes parlent de « péages aériens » — une image du jugement intérieur, qui n’est pas un dogme — mais l’essentiel est la confiance en la miséricorde. L’Église prie pour les défunts : panikhides, litiyas, Liturgies de commémoration, samedis des âmes.' },
         { h: 'Le jugement dernier' },
         { p: 'À la fin des temps, le Christ reviendra dans la gloire. Tous ressusciteront dans leur corps glorieux. Le jugement n’est pas un tribunal extérieur : c’est la rencontre avec l’Amour de Dieu, éprouvée comme lumière ou comme feu selon l’état du cœur.' },
         { h: 'L’espérance' },
@@ -168,7 +168,7 @@
         { h: 'Numérotation des Psaumes' },
         { p: 'Les psaumes sont numérotés différemment dans la LXX et dans le texte hébreu : le Psaume 22 « Le Seigneur est mon berger » est le <b>Ps 23</b> dans la Bible hébraïque. En gros, de 9 à 146, le chiffre LXX = chiffre hébreu − 1. Dans cette appli, on indique la numérotation de la LXX, suivie de l’hébreu entre parenthèses.' },
         { h: 'Un seul livre, plusieurs traductions' },
-        { p: 'L’Église n’a pas de « traduction officielle » : le slavon traduit directement la LXX et le grec du NT ; les traductions françaises usuelles (Louis Segond, Jérusalem, TOB, AELF…) suivent l’hébreu pour l’Ancien Testament. Les paroisses orthodoxes francophones utilisent souvent des traductions liturgiques maison.' }
+        { p: 'L’Église n’a pas de « traduction officielle » : le slavon traduit directement la LXX et le grec du NT ; les traductions françaises usuelles (Louis Segond, Jérusalem, TOB, AELF…) suivent l’hébreu pour les livres communs de l’Ancien Testament (les livres deutérocanoniques y sont traduits du grec). Les paroisses orthodoxes francophones utilisent souvent des traductions liturgiques maison.' }
       ]
     },
     {

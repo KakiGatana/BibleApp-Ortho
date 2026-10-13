@@ -70,7 +70,7 @@
           ['о / ѡ', 'o', 'Богъ', 'Bog'],
           ['ъ / ь', 'muet', 'Господь', 'Gospod’'],
           ['щ', 'chtch', 'щедроты', 'chtchedroty'],
-          ['г', 'g (parfois v dans « -аго »)', 'Святаго', 'Sviatago']
+          ['г', 'g (aussi dans « -аго »)', 'Святаго', 'Sviatago']
         ] } },
         { tip: 'Astuce : l’accent tonique n’est pas toujours marqué dans les textes imprimés. Dans les livres liturgiques, il l’est : <b>Госпо́дь</b>, <b>Іису́съ</b>, <b>Богоро́дица</b>.' },
         { h: 'Le signe titlo' },
@@ -152,7 +152,7 @@
         { table: { head: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'], rows: [['а' + T, 'в' + T, 'г' + T, 'д' + T, 'є' + T, 'ѕ' + T, 'з' + T, 'и' + T, 'ѳ' + T, 'і' + T]] } },
         { table: { head: ['20', '30', '40', '50', '60', '70', '80', '90', '100', '200'], rows: [['к' + T, 'л' + T, 'м' + T, 'н' + T, 'ѯ' + T, 'о' + T, 'п' + T, 'ч' + T, 'р' + T, 'с' + T]] } },
         { tip: 'Pour 11 à 19, on écrit l’unité <i>avant</i> la dizaine : 11 = <b>а' + T + 'і</b>, 12 = <b>в' + T + 'і</b>…' },
-        { p: 'On voit encore ces chiffres en tête des psaumes dans le Psautier (« Псалом г' + T + ' » = Psaume 3) et dans les années liturgiques (calcul « depuis la création du monde » : 7535 en 2026).' }
+        { p: 'On voit encore ces chiffres en tête des psaumes dans le Psautier (« Псалом г' + T + ' » = Psaume 3) et dans les années liturgiques (calcul « depuis la création du monde » : 7534 de janvier à août 2026, 7535 à partir du 1er septembre).' }
       ]
     },
     {
@@ -168,7 +168,7 @@
           ['нынѣ', 'maintenant', 'maintenant'],
           ['паки', '—', 'de nouveau, encore']
         ] } },
-        { tip: 'Avant 1918, le russe distinguait <b>миръ</b> (paix) de <b>міръ</b> (monde). Le slavon garde cette nuance : « Миръ всѣмъ » (La paix soit avec tous) ; « Христосъ воскресе, міръ просвѣщаетъ… ».' },
+        { tip: 'Avant 1918, le russe distinguait <b>миръ</b> (paix) de <b>міръ</b> (monde). Le slavon garde cette nuance : « Миръ всѣмъ » (La paix soit avec tous) ; « О мирѣ всего міра » (Pour la paix du monde entier).' },
         { h: 'Dix mots pour entrer dans la liturgie' },
         { ex: [
           ['Господи, помилуй', 'Gospodi, pomilouï', 'Seigneur, aie pitié (Kyrie eleison)'],

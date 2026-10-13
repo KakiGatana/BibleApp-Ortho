@@ -66,7 +66,7 @@
     ], lim: `Dire que le christianisme est vrai ne dispense pas de respecter chacun et d’écouter les autres traditions.`, lire: `Saint Justin, Apologies ; Olivier Clément, Dialogues avec le patriarche Athénagoras.` },
 
     { id: 'violences', cat: 'foi', q: `« Les croisades, l’Inquisition, les guerres de religion : l’histoire du christianisme est violente. »`, pts: [
-      ['Historique', `Les croisades et l’Inquisition sont des histoires de l’Occident latin. Les croisés ont même mis à sac Constantinople, capitale orthodoxe, en 1204. L’Orthodoxie n’a ni inquisition ni croisade.`],
+      ['Historique', `Les croisades et l’Inquisition sont des histoires de l’Occident latin. Les croisés ont même mis à sac Constantinople, capitale orthodoxe, en 1204. L’Orthodoxie n’a pas connu d’inquisition institutionnelle ni de croisade au sens occidental, mais elle a eu ses propres persécutions (hérétiques à Byzance, vieux-croyants en Russie).`],
       ['Théologique', `Les péchés des chrétiens ne réfutent pas l’Évangile, ils le jugent : le Christ dit « aimez vos ennemis ». Un enseignement se juge à son contenu, pas seulement aux fautes de ceux qui s’en réclament.`],
       ['Historique', `La violence du XXᵉ siècle est en grande partie athée (régimes communistes, qui ont persécuté des millions de chrétiens et fait des « nouveaux martyrs » orthodoxes). Cela ne prouve rien dans un sens ou l’autre : toute idéologie peut être violente.`]
     ], lim: `Il faut aussi le reconnaître : des Églises orthodoxes ont soutenu des pouvoirs injustes ou des guerres, et cela continue. L’Église est sainte, mais composée de pécheurs.`, lire: `Jean-Claude Larchet ; Mgr Hilarion Alfeyev, ouvrages sur les nouveaux martyrs.` },

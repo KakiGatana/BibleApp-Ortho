@@ -6,7 +6,7 @@
   O.DECOUVRIR = [
     { t: `Qu’est-ce que l’Église orthodoxe ?`, intro: `C’est l’une des plus anciennes Églises chrétiennes. Elle se reconnaît dans l’Église des apôtres, et elle a gardé la même foi, les mêmes sacrements et la même liturgie depuis les premiers siècles.`, pts: [
       `Le mot « orthodoxe » vient du grec : « juste louange » et « juste foi ». Il dit à la fois comment on prie et ce qu’on croit.`,
-      `Elle réunit plusieurs centaines de millions de fidèles, dans des Églises locales : grecque, russe, serbe, roumaine, bulgare, géorgienne, d’Antioche, et d’autres.`,
+      `Elle réunit plus de 200 millions de fidèles, dans des Églises locales : grecque, russe, serbe, roumaine, bulgare, géorgienne, d’Antioche, et d’autres.`,
       `Il n’y a pas de chef unique comme le pape : chaque Église est dirigée par un évêque ou un patriarche, et toutes sont unies par la même foi et les mêmes sacrements. Les grandes décisions se prennent en conciles.`,
       `Elle s’est séparée de l’Église de Rome au fil des siècles (rupture souvent datée de 1054), pour des raisons à la fois de doctrine et d’histoire.`
     ], ret: `Une foi reçue des apôtres, une prière commune, des évêques unis dans la même foi, sans pape.`, liens: [['#/councils', 'Les conciles et les hérésies']] },

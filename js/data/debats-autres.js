@@ -2859,7 +2859,7 @@
  "pts": [
   [
    "Historique",
-   "Il faut classer par solidité : Jacques frère de Jésus (lapidé vers 62, Josèphe) et Jacques fils de Zébédée (exécuté vers 44, Ac 12, 2) sont les mieux attestés. Pierre et Paul : martyre à Rome sous Néron, attesté par 1 Clément 5-6 (vers 96), Ignace (Aux Romains 4, 3), Denys de Corinthe (vers 170), Gaïus de Rome (vers 200, qui mentionne leurs « trophées »). Pour les autres apôtres, les traditions (André, Philippe, Thomas, Barthélemy, Matthieu…) viennent d’écrits tardifs, souvent légendaires (Actes apocryphes, IIIe siècle et après). Jean, selon Irénée, est mort à Éphèse de mort naturelle : tous ne sont donc pas martyrs."
+   "Il faut classer par solidité : Jacques frère de Jésus (lapidé vers 62, Josèphe) et Jacques fils de Zébédée (exécuté vers 44, Ac 12, 2) sont les mieux attestés. Pierre et Paul : martyre à Rome sous Néron, attesté par 1 Clément 5-6 (vers 96), Ignace (Aux Romains 4, 3), Denys de Corinthe (vers 170), Gaïus de Rome (vers 200, qui mentionne leurs « trophées »). Pour les autres apôtres, les traditions (André, Philippe, Thomas, Barthélemy, Matthieu…) viennent d’écrits tardifs, souvent légendaires (Actes apocryphes, IIIe siècle et après). Ne pas confondre Philippe l’apôtre, l’un des Douze, avec Philippe l’évangéliste, l’un des sept diacres (Ac 6, 5 ; 21, 8) : les sources anciennes ont parfois mêlé les deux, notamment à propos d’Hiérapolis. Jean, selon Irénée, est mort à Éphèse de mort naturelle : tous ne sont donc pas martyrs."
   ],
   [
    "Archéologique",

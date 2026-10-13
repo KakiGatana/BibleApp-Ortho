@@ -11,6 +11,7 @@
       ${U.pageHead('Дѣти', 'Pour les enfants', 'Un coin simple pour découvrir les saints, apprendre le signe de la croix et dire ses premières prières.')}
       <article class="card"><div class="card-k">Le saint du jour</div>
         ${saints.length ? `<ul class="kid-saints">${saints.map((s) => `<li><b>${esc(s.name)}</b><button class="btn small" data-act="kids-ask" data-name="${esc(s.name)}">Raconter simplement</button></li>`).join('')}</ul>` : '<p class="muted">Pas de saint particulier aujourd’hui.</p>'}
+        ${info.life ? `<div class="life"><span class="med-k">Un peu d’histoire</span><p>${info.life}</p></div>` : ''}
         <p class="muted xs">Le récit est écrit par l’assistant IA, avec des mots d’enfant. Il peut se tromper : un adulte peut le relire avec l’enfant.</p></article>
       <article class="card"><div class="card-k">Le signe de la croix</div>
         <ol class="kid-steps">

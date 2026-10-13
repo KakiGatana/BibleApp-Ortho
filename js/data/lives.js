@@ -125,7 +125,7 @@
     '08-26': ['<b>Adrien et Nathalie</b>, couple de Nicomédie : Adrien, officier païen, confesse le Christ en voyant le courage des martyrs et meurt en 304 ; Nathalie, déjà chrétienne, l’encourage.'],
     '08-27': ['<b>Pimène le Grand</b> (IVe-Ve siècle), moine de Scété ; ses nombreuses paroles sont conservées dans les Apophtegmes des Pères.'],
     '08-28': ['<b>Moïse l’Éthiopien</b> (330-405), ancien esclave et brigand devenu moine à Scété : sa conversion est donnée en exemple de pénitence.'],
-    '08-29': ['<b>Décollation de Jean le Précurseur.</b> Hérode Antipas, pressé par Hérodiade et sa fille, fait décapiter Jean qui l’avait repris (Mc 6, 14-29). Jour de jeûne strict.'],
+    '08-29': ['<b>Décollation de Jean le Précurseur.</b> Hérode Antipas, pressé par Hérodiade et sa fille, fait décapiter Jean qui l’avait repris (Mc 6, 14-29). Jour de jeûne.'],
 
     '09-01': ['<b>Début de l’année ecclésiastique.</b> L’Église commence l’année avec Jésus qui lit à Nazareth : « L’Esprit du Seigneur est sur moi… pour proclamer une année de grâce » (Lc 4, 16-22). <b>Syméon le Stylite</b> (vers 390-459) vécut trente-sept ans sur une colonne près d’Antioche.'],
     '09-02': ['<b>Mamas</b>, berger de Cappadoce, martyr au IIIe siècle, protecteur des troupeaux.'],
