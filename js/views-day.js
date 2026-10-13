@@ -146,7 +146,7 @@
         <div class="card-k">${info.saints.length > 1 ? 'Saints et mémoires du jour' : 'Saint du jour'}</div>
         ${info.items.length ? `<ul class="saint-list">${info.items.sort((a, b) => b.rank - a.rank).map((i) => `<li class="rank-${i.rank}"><span class="dot"></span><div><b>${esc(i.name)}</b>${i.cs ? `<div class="cs small">${esc(i.cs)}</div>` : ''}${i.feastId ? ` <a class="mini" href="#/feast/${i.feastId}">en savoir plus</a>` : ''}</div></li>`).join('')}</ul>` : ''}
         <ul class="saint-list">${info.saints.map((s, ix) => `<li class="rank-${s.rank}"><span class="dot"></span><div><b>${esc(s.name)}</b></div>${O.iconThumb ? O.iconThumb('entry:' + info.nominal.md + ':' + ix, s.name) : ''}${U.favBtn('s:' + info.nominal.md + ':' + s.name)}</li>`).join('') || '<li class="muted">Mémoire des saints du jour.</li>'}</ul>
-        ${info.life ? `<div class="life"><span class="med-k">Un peu d’histoire</span><p>${info.life}</p></div>` : ''}
+        ${info.life ? `<div class="life"><span class="med-k">Un peu d’histoire</span><p>${info.life}</p><p class="muted xs">Résumés brefs d’après la tradition et l’histoire ; les récits légendaires sont signalés. Pour les détails, voir le synaxaire.</p></div>` : ''}
       </article>
 
       ${O.peresCard ? O.peresCard(date) : ''}

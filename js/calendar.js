@@ -255,7 +255,7 @@
       date: dt, iso: isoKey(dt), wd, rel, year: y, pascha: pas, style,
       nominal: { m: nom.m, d: nom.d, md, date: nom.date },
       items, saints, fast, tone, rank, title,
-      life: sr || null,
+      life: sr ? (Array.isArray(sr) ? sr.join('</p><p>') : sr) : null,
       season: seasonOf(rel, nom.m, nom.d)
     };
   }

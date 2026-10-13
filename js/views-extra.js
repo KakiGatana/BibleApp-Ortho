@@ -45,7 +45,7 @@
       const [mm, dd] = md.split('-').map(Number);
       let href = '#/saints';
       try { href = '#/day/' + C.isoKey(C.civilFromNominal(y, mm, dd, style)); } catch (e) { /* on garde la liste des saints */ }
-      O.SAINTS[md].forEach((raw) => { const n = C.parseSaint(raw).name; add('Saint', n, dd + '/' + mm, href); });
+      const lv = ((O.SAINT_LIVES || {})[md] || []).join(' ').replace(/<[^>]+>/g, ''); O.SAINTS[md].forEach((raw) => { const n = C.parseSaint(raw).name; add('Saint', n, dd + '/' + mm, href, lv); });
     });
     return rows;
   }

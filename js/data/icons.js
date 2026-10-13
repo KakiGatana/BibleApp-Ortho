@@ -1099,7 +1099,7 @@
  },
  "entry:10-11:0": {
   "f": "entry-10-11-0.jpg",
-  "n": "Apôtre Philippe, l’un des sept diacres",
+  "n": "Philippe l’évangéliste, l’un des sept diacres",
   "t": "Icon of St. Philip the Diacon (16th c., Moscow).jpg",
   "a": "AnonymousUnknown author",
   "l": "Public domain",
@@ -1235,7 +1235,7 @@
  },
  "entry:11-14:0": {
   "f": "entry-11-14-0.jpg",
-  "n": "Apôtre Philippe",
+  "n": "Apôtre Philippe, l’un des Douze",
   "t": "Philip the Apostle icon.jpeg",
   "a": "Unknown Russian Orthodox icon painter",
   "l": "Public domain",
