@@ -357,7 +357,7 @@
     '12-06': ['**Saint Nicolas, archevêque de Myre en Lycie'],
     '12-07': ['*Saint Ambroise de Milan'],
     '12-08': ['Saint Patapios'],
-    '12-09': ['Conception de sainte Anne'],
+    '12-09': ['Conception de la Mère de Dieu par sainte Anne'],
     '12-10': ['Saints Ménas, Hermogène et Eugraphe'],
     '12-11': ['*Saint Daniel le Stylite'],
     '12-12': ['**Saint Spyridon de Trimythonte'],
