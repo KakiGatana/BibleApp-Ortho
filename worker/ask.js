@@ -110,9 +110,10 @@ Language: the user's interface is in ${LANGNAMES[body.lang]}. Answer in ${LANGNA
     // on rend la question non décomptée si l'IA n'a pas répondu
     MEM.set(ipKey, used); await safePut(env, gKey, String(total), { expirationTtl: 3456000 });
     const code = e && e.status;
+    console.error('ask upstream error', code, String((e && e.message) || e).slice(0, 300));
     if (code === 401 || code === 403) return json(cors, 502, { error: 'auth', message: 'L’assistant est mal configuré (clé refusée).' });
     if (code === 402 || (e && /credit|billing/i.test(String(e.message)))) return json(cors, 503, { error: 'credits', message: 'Les crédits de l’assistant sont épuisés pour le moment.' });
     if (code === 429 || code === 529) return json(cors, 503, { error: 'busy', message: 'L’assistant est très sollicité, réessaie dans un instant.' });
-    return json(cors, 502, { error: 'upstream', message: 'L’assistant n’a pas pu répondre. Réessaie dans un instant.' });
+    return json(cors, 502, { error: 'upstream', message: 'L’assistant n’a pas pu répondre. Réessaie dans un instant.' + (code ? ' (code ' + code + ')' : '') });
   }
 }
