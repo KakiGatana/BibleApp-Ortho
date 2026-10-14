@@ -115,10 +115,16 @@
       note: 'Le « Mégalynaire » de la Mère de Dieu, chanté à la Liturgie après la consécration des Saints Dons.'
     },
     {
-      id: 'repas', title: 'Bénédiction du repas', titleCs: 'Очи всѣхъ на Тя, Господи, уповаютъ', cat: 'Prières de base', when: 'Avant chaque repas',
-      fr: 'Les yeux de tous espèrent en toi, Seigneur,\net toi, tu leur donnes la nourriture en son temps ;\ntu ouvres ta main généreuse\net tu rassasies tout vivant de ta bienveillance.',
-      cs: 'Очи всѣхъ на Тя, Господи, уповаютъ,\nи Ты даеши имъ пищу во благовременіи,\nотверзаеши Ты щедрую руку Твою\nи исполняеши всяко животно благоволенія.',
-      note: 'Prière avant le repas, tirée du Psaume 144:15-16, suivie du Notre Père et de la bénédiction des mets.'
+      id: 'repas', title: 'Bénédicité (avant le repas)', titleCs: 'Молитва предъ ястіемъ', cat: 'Prières de base', when: 'Avant chaque repas, après le Notre Père',
+      fr: 'Les yeux de tous espèrent en toi, Seigneur,\net toi, tu leur donnes la nourriture en son temps ;\ntu ouvres ta main généreuse\net tu rassasies tout vivant de ta bienveillance.\nSeigneur Jésus-Christ, notre Dieu, bénis le manger et le boire de tes serviteurs,\ncar tu es saint, toujours, maintenant et toujours et dans les siècles des siècles. Amen.',
+      cs: 'Очи всѣхъ на Тя, Господи, уповаютъ,\nи Ты даеши имъ пищу во благовременіи,\nотверзаеши Ты щедрую руку Твою\nи исполняеши всяко животно благоволенія.\nГосподи Іисусе Христе Боже нашъ, благослови ястіе и питіе рабовъ Твоихъ,\nяко святъ еси всегда, нынѣ и присно и во вѣки вѣковъ. Аминь.',
+      note: 'La prière avant le repas : on dit d’abord le Notre Père, puis ces paroles tirées du Psaume 144, 15-16, et la bénédiction du manger et du boire. On se signe sur la table. Le texte peut varier un peu selon les Églises et les familles.'
+    },
+    {
+      id: 'repas-apres', title: 'Action de grâces (après le repas)', titleCs: 'Благодаримъ Тя, Христе Боже нашъ', cat: 'Prières de base', when: 'À la fin de chaque repas',
+      fr: 'Nous te rendons grâce, Christ notre Dieu,\ncar tu nous as rassasiés de tes biens terrestres ;\nne nous prive pas non plus de ton Royaume céleste,\nmais, comme tu es venu au milieu de tes disciples, Sauveur,\net leur as donné la paix, viens aussi au milieu de nous et sauve-nous.',
+      cs: 'Благодаримъ Тя, Христе Боже нашъ,\nяко насытилъ еси насъ земныхъ Твоихъ благъ;\nне лиши насъ и небеснаго Твоего Царствія,\nно яко посредѣ учениковъ Твоихъ пришелъ еси, Спасе, миръ даяй имъ,\nпріиди и къ намъ и спаси насъ.',
+      note: 'La prière de reconnaissance à la fin du repas : après la nourriture de la terre, on demande celle du Royaume. Elle rappelle l’apparition du Ressuscité au milieu de ses disciples (Jn 20, 19). On se signe en terminant.'
     },
     {
       id: 'venez-adorons', title: 'Venez, adorons', titleCs: 'Приидите, поклонимся', cat: 'Prières de base', when: 'Début des offices',
