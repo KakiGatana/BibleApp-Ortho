@@ -82,7 +82,7 @@
     let answer, err;
     try {
       // le serveur attend une alternance user / assistant qui commence et finit par « user »
-      let hist = S.ask.slice(-SEND);
+      let hist = S.ask.slice(-SEND).map((m) => (m.role === 'assistant' ? { role: m.role, content: String(m.content).slice(0, 2500) } : m));
       while (hist.length && hist[0].role !== 'user') hist = hist.slice(1);
       const payload = { messages: hist };
       if (S.askCtx) payload.context = { title: S.askCtx.title, text: S.askCtx.text };
