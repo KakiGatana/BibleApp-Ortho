@@ -251,6 +251,9 @@
   }
   let quiz = null;
   function quizView(type) {
+    // le type vient de l'adresse : on n'accepte que les valeurs connues (sinon injection de HTML par un lien piégé)
+    const OK = ['alphabet', 'vocab', 'daily', 'culture', ...Object.keys(O.QUIZ_CATS || {})];
+    if (!OK.includes(type)) type = 'culture';
     quiz = { type, qs: makeQuiz(type), i: 0, score: 0, answered: -1, wrong: [] };
     const titles = Object.assign({ alphabet: 'Quiz : les lettres', vocab: 'Quiz : vocabulaire', culture: 'Quiz : culture orthodoxe', daily: 'Défi du jour' }, Object.fromEntries(Object.entries(O.QUIZ_CATS || {}).map(([k, v]) => [k, 'Quiz : ' + v])));
     return { html: `<section class="page">${U.back('#/slavonic/quiz', 'Quiz')}${U.pageHead('', titles[type] || 'Quiz')}<div id="quizArea"></div></section>`, title: 'Quiz', nav: 'slavonic', after: renderQuiz };
