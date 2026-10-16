@@ -1,7 +1,8 @@
 /* Service worker : fonctionnement hors ligne (réseau d'abord, cache en secours) + notifications */
-const VERSION = 'blagovest-v72';
+const VERSION = 'blagovest-v74';
 const DATA_CACHE = 'blagovest-data'; // écrit par js/notifications.js, à ne jamais purger
 const BIBLE_CACHE = 'blagovest-bible-1'; // textes bibliques (bible/*.json) : gardés d'une version à l'autre. Si un texte est corrigé un jour, passer à « -2 » : l'ancien cache sera supprimé.
+const ASK_CACHE = 'blagovest-ask'; // réponses de l'assistant arrivées pendant que l'appli était fermée (nettoyées après usage)
 const ICON_CACHE = 'blagovest-icons'; // icônes des saints : mémorisées à la première vue, ou en bloc depuis les réglages
 const CORE = [
   './', 'index.html', 'manifest.webmanifest', 'css/style.css',
@@ -16,7 +17,7 @@ self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(VERSION).then((c) => Promise.all(CORE.map((u) => c.add(new Request(u, { cache: 'reload' }))))).then(() => self.skipWaiting()));
 });
 self.addEventListener('activate', (e) => {
-  e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== VERSION && k !== DATA_CACHE && k !== ICON_CACHE && k !== BIBLE_CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim()));
+  e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== VERSION && k !== DATA_CACHE && k !== ICON_CACHE && k !== BIBLE_CACHE && k !== ASK_CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim()));
 });
 self.addEventListener('fetch', (e) => {
   const req = e.request;
@@ -97,6 +98,32 @@ self.addEventListener('push', (e) => {
     await self.registration.showNotification(title, { body, tag: kind, icon: 'icons/icon-192.png', badge: 'icons/icon-192.png', data: { url } });
   })());
 });
+
+/* ---------- Assistant : la question continue même si l'appli est fermée ---------- */
+self.addEventListener('message', (e) => {
+  const d = e.data || {};
+  if (d.type === 'ask' && d.id && d.url && d.payload) e.waitUntil(runAsk(d));
+});
+async function runAsk(d) {
+  let res;
+  try {
+    const r = await fetch(d.url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(d.payload) });
+    const j = await r.json().catch(() => ({}));
+    res = r.ok && j.answer ? { answer: j.answer } : { err: j.message || 'L’assistant n’a pas pu répondre. Réessaie dans un instant.' };
+  } catch (err) { res = { err: 'Pas de connexion. L’assistant a besoin d’Internet.', detail: String(err) }; }
+  try {
+    const c = await caches.open(ASK_CACHE);
+    await c.put(new URL('./__ask/' + d.id, self.registration.scope).href, new Response(JSON.stringify(res), { headers: { 'Content-Type': 'application/json' } }));
+    // on ne garde que les dernières réponses
+    const ks = await c.keys(); for (const k of ks.slice(0, Math.max(0, ks.length - 5))) await c.delete(k);
+  } catch (err) { /* sans cache : la réponse part quand même vers l'appli si elle est ouverte */ }
+  const cs = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
+  cs.forEach((c) => c.postMessage({ type: 'ask-done', id: d.id, res }));
+  const seen = cs.some((c) => c.visibilityState === 'visible');
+  if (!seen && res.answer && self.Notification && Notification.permission === 'granted') {
+    await self.registration.showNotification('Blagovest', { body: 'La réponse de l’assistant est prête.', tag: 'ask', icon: 'icons/icon-192.png', data: { url: './#/ask' } });
+  }
+}
 
 self.addEventListener('notificationclick', (e) => {
   e.notification.close();
