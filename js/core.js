@@ -94,10 +94,15 @@
       .replace(/ѯ/g, 'кс').replace(/ѱ/g, 'пс').replace(/ꙋ/g, 'у').replace(/є/g, 'е').replace(/ѿ/g, 'от').replace(/ѕ/g, 'дз')
       .replace(/(^|[^а-яё])мiр/gi, '$1мир');
   }
+  let speakingText = null;
   function speak(text) {
     if (!('speechSynthesis' in window)) { toast('La synthèse vocale n’est pas disponible sur cet appareil.'); return; }
+    // un second clic sur le même texte coupe le son
+    if ((speechSynthesis.speaking || speechSynthesis.pending) && speakingText === text) { speechSynthesis.cancel(); speakingText = null; return; }
     speechSynthesis.cancel();
+    speakingText = text;
     const u = new SpeechSynthesisUtterance(modernize(text));
+    u.onend = u.onerror = () => { if (speakingText === text) speakingText = null; };
     u.lang = 'ru-RU'; u.rate = 0.82;
     const v = speechSynthesis.getVoices().find((x) => /^ru/i.test(x.lang));
     if (v) u.voice = v; else toast('Aucune voix russe installée : la lecture peut être approximative.');

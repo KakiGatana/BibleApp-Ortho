@@ -1,5 +1,5 @@
 /* Service worker : fonctionnement hors ligne (réseau d'abord, cache en secours) + notifications */
-const VERSION = 'blagovest-v74';
+const VERSION = 'blagovest-v75';
 const DATA_CACHE = 'blagovest-data'; // écrit par js/notifications.js, à ne jamais purger
 const BIBLE_CACHE = 'blagovest-bible-1'; // textes bibliques (bible/*.json) : gardés d'une version à l'autre. Si un texte est corrigé un jour, passer à « -2 » : l'ancien cache sera supprimé.
 const ASK_CACHE = 'blagovest-ask'; // réponses de l'assistant arrivées pendant que l'appli était fermée (nettoyées après usage)
