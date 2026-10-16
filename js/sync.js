@@ -20,8 +20,32 @@
   async function post(path, body) {
     const r = await fetch(url(path), { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
     const j = await r.json().catch(() => ({}));
-    if (!r.ok) throw new Error(j.message || 'Erreur ' + r.status);
+    if (!r.ok) { const e = new Error(j.message || 'Erreur ' + r.status); e.status = r.status; throw e; }
     return j;
+  }
+
+  /* Chiffrement : le serveur ne reçoit ni le code ni tes données en clair.
+     Du code on dérive (PBKDF2) un jeton d'identification et une clé AES-GCM qui reste sur l'appareil. */
+  const te = new TextEncoder();
+  const hex = (u8) => Array.from(u8, (b) => b.toString(16).padStart(2, '0')).join('');
+  const b64 = (u8) => btoa(String.fromCharCode(...u8));
+  const unb64 = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
+  async function derive(code) {
+    const raw = (normCode(code) || []).join('');
+    const base = await crypto.subtle.importKey('raw', te.encode('blagovest|' + raw), 'PBKDF2', false, ['deriveBits']);
+    const bits = new Uint8Array(await crypto.subtle.deriveBits({ name: 'PBKDF2', hash: 'SHA-256', salt: te.encode('blagovest-sync-v2'), iterations: 200000 }, base, 512));
+    return { token: hex(bits.slice(0, 32)), aes: await crypto.subtle.importKey('raw', bits.slice(32, 64), 'AES-GCM', false, ['encrypt', 'decrypt']) };
+  }
+  async function seal(code, plain) {
+    const { token, aes } = await derive(code), iv = crypto.getRandomValues(new Uint8Array(12));
+    const ct = new Uint8Array(await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, aes, te.encode(plain)));
+    return { token, data: JSON.stringify({ v: 2, iv: b64(iv), ct: b64(ct) }) };
+  }
+  async function open(code, data) {
+    const j = K.safeJSON(data);
+    if (!j || j.v !== 2) return data; // ancien format : texte en clair
+    const { aes } = await derive(code);
+    return new TextDecoder().decode(await crypto.subtle.decrypt({ name: 'AES-GCM', iv: unb64(j.iv) }, aes, unb64(j.ct)));
   }
 
   const snapshot = () => { const d = {}; FIELDS.forEach((k) => { d[k] = S[k]; }); d.style = S.settings.style; d.t = Date.now(); return d; };
@@ -29,7 +53,8 @@
   async function upload(quiet) {
     if (!S.sync.code) return;
     try {
-      await post('/backup/put', { code: S.sync.code, data: JSON.stringify(snapshot()) });
+      const sl = await seal(S.sync.code, JSON.stringify(snapshot()));
+      await post('/backup/put', { code: sl.token, data: sl.data });
       S.sync.last = new Date().toISOString(); K.save();
       if (!quiet) K.toast('Sauvegarde envoyée');
     } catch (e) { if (!quiet) K.toast(e.message || 'Sauvegarde impossible'); }
@@ -63,8 +88,14 @@
   }
 
   async function download(code) {
-    const r = await post('/backup/get', { code });
-    const remote = JSON.parse(r.data);
+    let r;
+    try { r = await post('/backup/get', { code: (await derive(code)).token }); } catch (e) {
+      if (e.status !== 404) throw e;
+      r = await post('/backup/get', { code }); // sauvegarde faite avec l'ancien format (sans chiffrement)
+    }
+    let plain; try { plain = await open(code, r.data); } catch (e) { throw new Error('Impossible de lire la sauvegarde (mauvais code ?).'); }
+    const remote = K.safeJSON(plain);
+    if (!remote || typeof remote !== 'object') throw new Error('Sauvegarde invalide.');
     merge(remote); K.save();
     return r.t;
   }

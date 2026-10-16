@@ -3,6 +3,8 @@
   const O = window.ORTHO, K = O.core, U = K.U;
   const { S, esc, route } = K;
   S.chants = Object.assign({ lists: [] }, S.chants || {});
+  // une liste reçue d'une sauvegarde ou d'un fichier peut contenir n'importe quoi : on la reconstruit à partir de l'adresse d'ouverture
+  S.chants.lists = (Array.isArray(S.chants.lists) ? S.chants.lists : []).map((c) => { const p = c && typeof c.open === 'string' ? parse(c.open) : null; return p ? { t: String((c && c.t) || p.kind).slice(0, 60), kind: p.kind, open: p.open, embed: p.embed, h: p.h } : null; }).filter(Boolean);
   const LISTS = () => S.chants.lists;
 
   /* Reconnaît un lien Spotify ou YouTube et en tire une adresse d'intégration sûre (jamais d'adresse libre). */
@@ -56,7 +58,7 @@
   function card(c, i) {
     return `<article class="card ch-card" data-i="${i}"><div class="ch-top"><div><b>${esc(c.t)}</b><span class="muted small"> · ${esc(c.kind)}</span></div>
       <button class="icon-btn" data-act="chant-del" data-i="${i}" aria-label="Retirer cette playlist">✕</button></div>
-      <div class="ch-player" id="chP${i}"><div class="row"><button class="btn small ${c.kind === 'Spotify' ? 'ghost' : ''}" data-act="chant-play" data-i="${i}">Écouter ici</button><a class="btn small ${c.kind === 'Spotify' ? '' : 'ghost'}" href="${esc(c.open)}" target="_blank" rel="noopener">Ouvrir dans ${esc(c.kind)}</a></div></div>
+      <div class="ch-player" id="chP${i}"><div class="row"><button class="btn small ${c.kind === 'Spotify' ? 'ghost' : ''}" data-act="chant-play" data-i="${i}">Écouter ici</button><a class="btn small ${c.kind === 'Spotify' ? '' : 'ghost'}" href="${esc((parse(c.open) || {}).open || '#')}" target="_blank" rel="noopener">Ouvrir dans ${esc(c.kind)}</a></div></div>
       ${c.kind === 'Spotify' ? '<p class="muted xs">Ici, Spotify ne joue que des extraits de 30 secondes si tu n’es pas connecté à Spotify dans ce navigateur. Pour écouter en entier, « Ouvrir dans Spotify ».</p>' : ''}</article>`;
   }
   K.act['chant-play'] = (el) => {

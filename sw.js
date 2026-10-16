@@ -1,5 +1,5 @@
 /* Service worker : fonctionnement hors ligne (réseau d'abord, cache en secours) + notifications */
-const VERSION = 'blagovest-v75';
+const VERSION = 'blagovest-v76';
 const DATA_CACHE = 'blagovest-data'; // écrit par js/notifications.js, à ne jamais purger
 const BIBLE_CACHE = 'blagovest-bible-1'; // textes bibliques (bible/*.json) : gardés d'une version à l'autre. Si un texte est corrigé un jour, passer à « -2 » : l'ancien cache sera supprimé.
 const ASK_CACHE = 'blagovest-ask'; // réponses de l'assistant arrivées pendant que l'appli était fermée (nettoyées après usage)
@@ -7,7 +7,7 @@ const ICON_CACHE = 'blagovest-icons'; // icônes des saints : mémorisées à la
 const CORE = [
   './', 'index.html', 'manifest.webmanifest', 'css/style.css',
   'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable-512.png',
-  'js/calendar.js', 'js/core.js', 'js/push-config.js', 'js/notifications.js', 'js/sync.js', 'js/share.js',
+  'js/theme-init.js', 'js/calendar.js', 'js/core.js', 'js/push-config.js', 'js/notifications.js', 'js/sync.js', 'js/share.js',
   'js/views-day.js', 'js/views-bible.js', 'js/views-slavonic.js', 'js/views-more.js', 'js/views-extra.js', 'js/views-ask.js', 'js/views-icons.js', 'js/views-jesus.js', 'js/i18n.js', 'js/data/i18n-static.js', 'js/data/icons.js', 'js/data/verses-cs.js', 'js/boot.js',
   'js/data/feasts.js', 'js/data/saints.js', 'js/data/lives.js', 'js/data/lives2.js', 'js/data/verses1.js', 'js/data/verses2.js', 'js/data/verses3.js', 'js/data/verses4.js',
   'js/data/prayers.js', 'js/data/readings.js', 'js/data/slavonic.js', 'js/data/theology.js', 'js/data/canon.js', 'js/data/quiz2.js', 'js/views-read.js', 'js/data/apolo.js', 'js/views-apolo.js', 'js/swipe.js', 'js/data/peres.js', 'js/views-peres.js', 'js/views-psalter.js', 'js/views-kids.js', 'js/views-liturgy.js', 'js/views-parishes.js', 'js/data/learn.js', 'js/data/theo2.js', 'js/views-learn.js', 'js/views-hubs.js', 'js/data/debats.js', 'js/data/debats-cath.js', 'js/data/debats-dieu.js', 'js/data/debats-bible.js', 'js/data/debats-autres.js', 'js/views-debats.js', 'js/views-chants.js', 'js/ambient.js'
@@ -102,7 +102,7 @@ self.addEventListener('push', (e) => {
 /* ---------- Assistant : la question continue même si l'appli est fermée ---------- */
 self.addEventListener('message', (e) => {
   const d = e.data || {};
-  if (d.type === 'ask' && d.id && d.url && d.payload) e.waitUntil(runAsk(d));
+  if (d.type === 'ask' && typeof d.id === 'string' && /^https:\/\/blagovest-push\.[a-z0-9-]+\.workers\.dev\/ask$/.test(String(d.url)) && d.payload && typeof d.payload === 'object') e.waitUntil(runAsk(d));
 });
 async function runAsk(d) {
   let res;

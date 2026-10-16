@@ -95,6 +95,8 @@
       .replace(/(^|[^а-яё])мiр/gi, '$1мир');
   }
   let speakingText = null;
+  /* JSON venant de l'extérieur (fichier importé, sauvegarde) : on retire les clés qui visent le prototype des objets */
+  const safeJSON = (t) => JSON.parse(t, (k, v) => (k === '__proto__' || k === 'constructor' || k === 'prototype' ? undefined : v));
   function speak(text) {
     if (!('speechSynthesis' in window)) { toast('La synthèse vocale n’est pas disponible sur cet appareil.'); return; }
     // un second clic sur le même texte coupe le son
@@ -320,5 +322,5 @@
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !sheet().hidden) closeSheet(); });
   document.addEventListener('click', (e) => { if (e.target.id === 'sheetBack') closeSheet(); });
 
-  O.core = { S, save, esc, ic, $, $$, clamp, route, go, render, applySettings, effectiveTheme, markVisit, streak, openSheet, closeSheet, toast, speak, modernize, buildNav, isFav, toggleFav, noteSheet, act, U };
+  O.core = { S, save, esc, ic, $, $$, clamp, route, go, render, applySettings, effectiveTheme, markVisit, streak, openSheet, closeSheet, toast, speak, safeJSON, modernize, buildNav, isFav, toggleFav, noteSheet, act, U };
 })();

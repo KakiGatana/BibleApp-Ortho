@@ -64,7 +64,7 @@
       const j = await r.json();
       const list = (j.elements || []).map((e) => {
         const c = e.center || { lat: e.lat, lon: e.lon }, t = e.tags || {};
-        return { name: t.name || 'Lieu de culte orthodoxe (sans nom)', den: DENOM[t.denomination] || t.denomination || 'Orthodoxe', d: km(lat, lon, c.lat, c.lon), lat: c.lat, lon: c.lon, t };
+        return { name: t.name || 'Lieu de culte orthodoxe (sans nom)', den: DENOM[t.denomination] || t.denomination || 'Orthodoxe', d: km(lat, lon, c.lat, c.lon), lat: +c.lat || 0, lon: +c.lon || 0, t };
       }).sort((a, b) => a.d - b.d).slice(0, 30);
       if (!list.length) { msg('Aucune paroisse trouvée dans ce rayon dans OpenStreetMap. Élargis le rayon, ou cherche sur le site de ta juridiction.'); busy = false; return; }
       out(`${label ? `<p class="muted small">Autour de : ${esc(label.split(',').slice(0, 2).join(','))}</p>` : ''}<p class="muted small">${list.length} résultat${list.length > 1 ? 's' : ''}, du plus proche au plus lointain.</p>` + list.map((p) => {

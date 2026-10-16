@@ -29,7 +29,7 @@ function makeEnv(failPut) {
 }
 let ipN = 100;
 const call = async (env, path, body, ip = '9.9.9.' + (ipN++), extra = {}) => {
-  const req = new Request('https://w.example' + path, { method: 'POST', headers: { 'CF-Connecting-IP': ip, ...extra }, body: typeof body === 'string' ? body : JSON.stringify(body) });
+  const req = new Request('https://w.example' + path, { method: 'POST', headers: { 'CF-Connecting-IP': ip, Origin: 'https://x.example', ...extra }, body: typeof body === 'string' ? body : JSON.stringify(body) });
   const r = await worker.fetch(req, env);
   let j = null; try { j = await r.json(); } catch (e) { /* vide */ }
   return { s: r.status, j };
@@ -84,13 +84,29 @@ r = await call(env, '/backup/put', { code, data: 'pas json' }); ok('backup donn�
 // 7. sync + tâche planifiée avec un abonnement abîmé
 env = makeEnv(false);
 const kk = Object.fromEntries(['verse', 'saint', 'rulem', 'rulee', 'feast', 'cards', 'streak'].map((n) => [n, { on: true, h: 0 }]));
-r = await call(env, '/sync', { sub: { endpoint: 'https://push.example/abc', keys: { p256dh: 'x', auth: 'y' } }, tz: 'Europe/Paris', k: kk, last: '', n: 1 }); ok('sync valide -> 204', r.s === 204, String(r.s));
+r = await call(env, '/sync', { sub: { endpoint: 'https://fcm.googleapis.com/fcm/send/abc', keys: { p256dh: 'x', auth: 'y' } }, tz: 'Europe/Paris', k: kk, last: '', n: 1 }); ok('sync valide -> 204', r.s === 204, String(r.s));
 r = await call(env, '/sync', { sub: { endpoint: 'http://non-https' }, tz: 'Europe/Paris', k: kk, n: 1 }); ok('sync http -> 400', r.s === 400, String(r.s));
-r = await call(env, '/sync', { sub: { endpoint: 'https://push.example/abc' }, tz: 'Pas/Une/Zone', k: kk, n: 1 }); ok('sync fuseau invalide -> 400', r.s === 400, String(r.s));
-env._m.set('s:corrompu', JSON.stringify({ endpoint: 'https://p/x', tz: 'Zone/Invalide', k: kk, sent: {} }));
+r = await call(env, '/sync', { sub: { endpoint: 'https://fcm.googleapis.com/fcm/send/abc' }, tz: 'Pas/Une/Zone', k: kk, n: 1 }); ok('sync fuseau invalide -> 400', r.s === 400, String(r.s));
+env._m.set('s:corrompu', JSON.stringify({ endpoint: 'https://fcm.googleapis.com/x', tz: 'Zone/Invalide', k: kk, sent: {} }));
 env._m.set('s:jsoncasse', '{pas json');
 let threw = false; try { await worker.scheduled({}, env, { waitUntil: (p) => p.catch(() => { threw = true; }) }); await new Promise((r) => setTimeout(r, 300)); } catch (e) { threw = true; }
 ok('cron : abonnements abîmés ne font pas échouer la tâche', !threw);
+
+// 8. securite : origine, adresses de notification, limite de debit
+r = await call(env, '/ask', q, '5.5.5.5', { Origin: 'https://evil.example' }); ok('mauvaise origine -> 403', r.s === 403, String(r.s));
+const noOrigin = await worker.fetch(new Request('https://w.example/ask', { method: 'POST', headers: { 'CF-Connecting-IP': '6.6.6.6' }, body: JSON.stringify(q) }), env); ok('sans origine -> 403', noOrigin.status === 403, String(noOrigin.status));
+r = await call(env, '/sync', { sub: { endpoint: 'https://evil.example/hook' }, tz: 'Europe/Paris', k: kk, last: '', n: 1 }); ok('sync vers un service inconnu -> 400', r.s === 400, String(r.s));
+r = await call(env, '/sync', { sub: { endpoint: 'https://fcm.googleapis.com.evil.example/x' }, tz: 'Europe/Paris', k: kk, last: '', n: 1 }); ok('sync nom de domaine piege -> 400', r.s === 400, String(r.s));
+r = await call(env, '/sync', { sub: { endpoint: 'https://fcm.googleapis.com/x', keys: { p256dh: '<script>', auth: 'y' } }, tz: 'Europe/Paris', k: kk, last: '', n: 1 }); ok('sync cles invalides ignorees (204)', r.s === 204, String(r.s));
+env._m.set('s:evil', JSON.stringify({ endpoint: 'https://evil.example/x', tz: 'Europe/Paris', k: kk, sent: {} }));
+await worker.scheduled({}, env, { waitUntil: (p) => p }); await new Promise((r) => setTimeout(r, 300));
+ok('cron supprime un abonnement vers un service inconnu', !env._m.has('s:evil'));
+env.RL = { limit: async () => ({ success: false }) };
+r = await call(env, '/ask', q, '7.7.7.7'); ok('limite de debit -> 429', r.s === 429 && r.j.error === 'rate', JSON.stringify(r));
+const h = (await worker.fetch(new Request('https://w.example/ask', { method: 'OPTIONS', headers: { Origin: 'https://x.example' } }), env)).headers;
+ok('en-tetes de securite', h.get('X-Content-Type-Options') === 'nosniff' && h.get('Cache-Control') === 'no-store' && h.get('Vary') === 'Origin');
+env = makeEnv(false);
+r = await call(env, '/backup/put', { code: 'a'.repeat(64), data: '{}' }); ok('backup avec jeton de 64 caracteres -> 200', r.s === 200, String(r.s));
 
 console.log(res.join('\n'));
 console.log(res.filter((x) => x.startsWith('ECHEC')).length + ' échec(s) sur ' + res.length);

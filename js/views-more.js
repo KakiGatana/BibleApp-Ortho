@@ -107,7 +107,7 @@
       root.querySelector('#imp').addEventListener('change', (e) => {
         const f = e.target.files[0]; if (!f) return;
         const rd = new FileReader();
-        rd.onload = () => { try { const d = JSON.parse(rd.result); if (typeof d !== 'object') throw 0; Object.assign(S, d); K.save(); K.applySettings(); K.toast('Données importées'); K.render(); } catch (err) { K.toast('Fichier invalide'); } };
+        rd.onload = () => { try { const d = K.safeJSON(rd.result); if (!d || typeof d !== 'object' || Array.isArray(d)) throw 0; Object.keys(d).forEach((k) => { if (k in S && k !== 'sync' && k !== 'askPending' && k !== 'askErr') S[k] = d[k]; }); K.save(); K.applySettings(); K.toast('Données importées'); K.render(); } catch (err) { K.toast('Fichier invalide'); } };
         rd.readAsText(f);
       });
     };

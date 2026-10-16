@@ -81,7 +81,24 @@ const isHour = (n) => Number.isInteger(n) && n >= 0 && n <= 23;
 const isIso = (s) => s === '' || (typeof s === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(s));
 
 /* ---------- HTTP ---------- */
-const cors = (env) => ({ 'Access-Control-Allow-Origin': env.ALLOWED_ORIGIN || '*', 'Access-Control-Allow-Methods': 'POST, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type', 'Access-Control-Max-Age': '86400' });
+const cors = (env) => ({
+  'Access-Control-Allow-Origin': env.ALLOWED_ORIGIN || '*', 'Access-Control-Allow-Methods': 'POST, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type', 'Access-Control-Max-Age': '86400',
+  Vary: 'Origin', 'X-Content-Type-Options': 'nosniff', 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer'
+});
+
+/* Sécurité : les appels viennent du site (en-tête Origin), pas d'un script anonyme. Ce n'est pas une authentification
+   (un attaquant peut écrire cet en-tête hors navigateur), mais cela écarte les robots les plus simples. */
+const originOk = (req, env) => { const o = env.ALLOWED_ORIGIN; return !o || o === '*' || req.headers.get('Origin') === o; };
+
+/* Services de notification connus : on refuse tout autre adresse (sinon le serveur enverrait des requêtes où l'on veut). */
+const PUSH_HOST = /^https:\/\/(fcm\.googleapis\.com|android\.googleapis\.com|updates\.push\.services\.mozilla\.com|web\.push\.apple\.com|[a-z0-9-]+\.push\.apple\.com|[a-z0-9.-]+\.notify\.windows\.com)\//;
+const B64U = /^[A-Za-z0-9_-]+={0,2}$/;
+
+/* Limite de débit Cloudflare (liaison RL, facultative) : 60 appels par minute et par IP et par type de service. */
+async function throttled(env, req, bucket) {
+  if (!env.RL) return false;
+  try { const { success } = await env.RL.limit({ key: bucket + ':' + (req.headers.get('CF-Connecting-IP') || 'inconnu') }); return !success; } catch (e) { return false; }
+}
 const reply = (env, status, body) => new Response(body || null, { status, headers: cors(env) });
 const json = (env, status, obj) => new Response(JSON.stringify(obj), { status, headers: { ...cors(env), 'Content-Type': 'application/json' } });
 
@@ -90,8 +107,8 @@ const safePut = async (env, k, v, o) => { try { await env.SUBS.put(k, v, o); ret
 
 async function handleSync(env, b) {
   const sub = b.sub;
-  if (!sub || typeof sub.endpoint !== 'string' || !/^https:\/\//.test(sub.endpoint) || sub.endpoint.length > 1000) return reply(env, 400);
-  const keys = sub.keys && typeof sub.keys.p256dh === 'string' && typeof sub.keys.auth === 'string' && sub.keys.p256dh.length < 200 && sub.keys.auth.length < 60 ? { p256dh: sub.keys.p256dh, auth: sub.keys.auth } : null;
+  if (!sub || typeof sub.endpoint !== 'string' || sub.endpoint.length > 1000 || !PUSH_HOST.test(sub.endpoint)) return reply(env, 400);
+  const keys = sub.keys && typeof sub.keys.p256dh === 'string' && typeof sub.keys.auth === 'string' && sub.keys.p256dh.length < 200 && sub.keys.auth.length < 60 && B64U.test(sub.keys.p256dh) && B64U.test(sub.keys.auth) ? { p256dh: sub.keys.p256dh, auth: sub.keys.auth } : null;
   if (!validTz(b.tz) || !isIso(b.last || '') || !Number.isInteger(b.n)) return reply(env, 400);
   const k = {};
   for (const name of KINDS) {
@@ -110,7 +127,7 @@ async function handleSync(env, b) {
   return reply(env, 204);
 }
 
-const CODE_RE = /^[A-Za-z0-9-]{16,48}$/;
+const CODE_RE = /^[A-Za-z0-9-]{16,64}$/; // 64 = jeton dérivé du code (sauvegarde chiffrée), 16-48 = ancien format
 async function handleBackup(req, env, path, b) {
   if (typeof b.code !== 'string' || !CODE_RE.test(b.code)) return reply(env, 400);
   const day = new Date().toISOString().slice(0, 10), ip = req.headers.get('CF-Connecting-IP') || 'inconnu';
@@ -132,6 +149,7 @@ async function handleBackup(req, env, path, b) {
 async function handle(req, env) {
   if (req.method === 'OPTIONS') return reply(env, 204);
   if (req.method !== 'POST') return reply(env, 405);
+  if (!originOk(req, env)) return reply(env, 403);
   const path = new URL(req.url).pathname;
   let b;
   const len = +req.headers.get('content-length') || 0;
@@ -139,6 +157,7 @@ async function handle(req, env) {
   try { const txt = await req.text(); if (txt.length > 500000) return reply(env, 413); b = JSON.parse(txt); } catch (e) { return reply(env, 400); }
   if (!b || typeof b !== 'object') return reply(env, 400);
 
+  if (await throttled(env, req, path.split('/')[1] || 'x')) return json(env, 429, { error: 'rate', message: 'Trop de demandes, réessaie dans une minute.' });
   if (path === '/ask') return handleAsk(req, env, b, cors(env));
   if (path === '/translate') return handleTranslate(req, env, b, cors(env));
   if (path === '/backup/put' || path === '/backup/get') return handleBackup(req, env, path, b);
@@ -179,6 +198,7 @@ async function tick(env) {
     for (const { name } of page.keys) {
       let s; try { s = JSON.parse((await env.SUBS.get(name)) || 'null'); } catch (e) { continue; } if (!s) continue;
       let t, prefs; try { t = localParts(s.tz, now); prefs = prefsOf(s); } catch (e) { console.error('abonnement ignoré', name, e && e.message); continue; } // un abonnement abîmé ne bloque pas les autres
+      if (typeof s.endpoint !== 'string' || !PUSH_HOST.test(s.endpoint)) { await env.SUBS.delete(name); continue; }
       s.sent = s.sent || {};
       let changed = false, gone = false;
       for (const kind of KINDS) {

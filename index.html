@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; media-src 'self' blob: data:; connect-src 'self' https://blagovest-push.ilann-jakubas.workers.dev https://overpass-api.de https://nominatim.openstreetmap.org; frame-src https://open.spotify.com https://www.youtube-nocookie.com; object-src 'none'; base-uri 'none'; form-action 'self'; worker-src 'self'; manifest-src 'self'">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Blagovest — Bible, calendrier et slavon orthodoxes</title>
 <meta property="og:title" content="Blagovest · Bible, calendrier, prières et slavon orthodoxes">
@@ -18,12 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<script>
-  // Applique le thème avant le premier rendu (évite le flash)
-  try { var s = JSON.parse(localStorage.getItem('blagovest:v1') || '{}').settings || {};
-    if (s.theme === 'light' || s.theme === 'dark') document.documentElement.setAttribute('data-theme', s.theme);
-    document.documentElement.setAttribute('data-lang', s.lang || 'both'); } catch (e) {}
-</script>
+<script src="js/theme-init.js"></script>
 </head>
 <body>
 <div id="splash" aria-hidden="true">

@@ -24,3 +24,11 @@ VAPID_SUBJECT = "mailto:contact@example.com"
 [[kv_namespaces]]
 binding = "SUBS"
 id = "57425c30950a484dab186198087c6fac"
+
+# Limite de débit par IP (60 appels par minute et par type de service) : freine les robots et les abus de coût
+[[ratelimits]]
+name = "RL"
+namespace_id = "1001"
+  [ratelimits.simple]
+  limit = 60
+  period = 60
