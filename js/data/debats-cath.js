@@ -1554,6 +1554,100 @@
  ],
  "lim": "Il s’agit d’une question que l’Écriture ne tranche pas explicitement : chacun l’interprète à partir de son principe d’autorité (Écriture seule ou Écriture et Tradition). Une discussion avec une IA l’a vu changer d’avis selon l’interlocuteur : ne lui demande pas de trancher. Les orthodoxes distinguent vénération (doulia) et adoration (latrie).",
  "refs": "1 Timothée 2, 5 ; Hébreux 12, 1 ; Apocalypse 5, 8 ; 6, 9-10 ; Jacques 5, 16 ; Origène, De oratione 11 ; Jean Damascène, Sur les images."
+},
+{
+ "id": "icones-et-saints-reponse-fil-protestant",
+ "th": "Saints, Marie et icônes",
+ "who": [
+  "prot"
+ ],
+ "q": "Un fil protestant dit : « une image faite de main d’homme n’a aucun sens spirituel ; pour honorer les saints, honore le Christ ; les morts en Christ… » : comment répondre ?",
+ "pts": [
+  [
+   "Biblique",
+   "Dieu lui-même commande des images faites de main d’homme : chérubins d’or sur l’Arche (Ex 25, 18-22), chérubins brodés sur les rideaux du Tabernacle (Ex 26, 1), sculptés dans le Temple (1 R 6, 23-35). Le serpent d’airain guérit ceux qui le regardent (Nb 21, 8-9) ; il n’est détruit que lorsqu’on lui offre de l’encens (2 R 18, 4) : la Bible distingue l’usage légitime et l’idolâtrie. La matière peut porter la grâce : les os d’Élisée ressuscitent un mort (2 R 13, 21), la frange du vêtement de Jésus guérit (Mt 9, 20), les mouchoirs de Paul aussi (Ac 19, 12)."
+  ],
+  [
+   "Théologique",
+   "L’argument décisif est l’Incarnation : le Christ est « l’image (eikôn) du Dieu invisible » (Col 1, 15). On ne représentait pas Dieu parce qu’il était invisible ; il s’est rendu visible. L’honneur rendu à l’image remonte au modèle (Basile, Sur le Saint-Esprit 18, 45). Nicée II (787) distingue la vénération (proskynèse) de l’adoration (latrie) : se prosterner devant quelqu’un n’est pas l’adorer (Jacob devant Ésaü, Gn 33, 3). Jean Damascène : « Je ne vénère pas la matière, je vénère le Créateur de la matière, qui s’est fait matière pour moi. »"
+  ],
+  [
+   "Biblique",
+   "Si les morts sont « en Christ », ils sont vivants et membres du même Corps : Dieu « n’est pas le Dieu des morts mais des vivants, car tous vivent pour lui » (Lc 20, 38) ; « partir et être avec le Christ » (Ph 1, 23) ; Moïse et Élie parlent avec Jésus (Mt 17, 3) ; nous sommes entourés d’une « nuée de témoins » (He 12, 1) et des « esprits des justes parvenus à la perfection » (He 12, 23) ; les anciens présentent à Dieu les prières des saints (Ap 5, 8), les âmes sous l’autel prient (Ap 6, 9-10). Rien ne nous sépare de l’amour du Christ, pas même la mort (Rm 8, 38-39)."
+  ],
+  [
+   "Théologique",
+   "« Pour honorer les saints, honore le Christ » : les orthodoxes sont d’accord. « Dieu est admirable dans ses saints » (Ps 67, 36 LXX) ; le Christ vient « pour être glorifié dans ses saints » (2 Th 1, 10). Honorer un saint, c’est honorer ce que le Christ a fait en lui, comme on admire un peintre en regardant son tableau. He 13, 7, souvent cité contre eux, décrit la pratique : « souvenez-vous de vos conducteurs… imitez leur foi » : c’est la fonction d’une icône et d’une fête de saint. Jn 4, 23-24 (« en esprit et en vérité ») répond à la question du lieu du culte, pas aux images : le même Jésus guérit avec de la boue (Jn 9) et donne son corps sous forme de pain."
+  ],
+  [
+   "Pratique",
+   "Réponse courte en anglais, en fil, à adapter : 1/ God commanded man-made images: cherubim on the Ark (Ex 25:18) and in the Temple (1 Kgs 6). The bronze serpent healed those who looked at it (Num 21:9). Matter can carry grace: Elisha’s bones (2 Kgs 13:21), Paul’s handkerchiefs (Acts 19:12). 2/ The “dead in Christ” are alive: “He is not the God of the dead but of the living” (Lk 20:38). Moses and Elijah spoke with Jesus (Mt 17:3). The elders offer “the prayers of the saints” (Rev 5:8). 3/ Heb 13:7: “remember your leaders… imitate their faith.” That is what icons and saints’ feasts do. We honor Christ in His saints (2 Thess 1:10). Not either/or."
+  ]
+ ],
+ "lim": "Les protestants répondent avec Ex 20, 4-5 (pas d’images pour les adorer) et 1 Tm 2, 5 (un seul médiateur), et font remarquer qu’aucun texte du Nouveau Testament ne montre quelqu’un priant un saint défunt : prouver que les morts vivent ne prouve pas qu’on doive leur adresser des prières. Les arguments ci-dessus sont des indices solides, non une démonstration ; l’analogie de la photo de sa mère est parlante mais n’est pas un argument biblique. Un conseil : réponds une fois proprement, et ne te laisse pas entraîner dans un fil interminable. Voir aussi les fiches sur l’intercession et sur le serpent d’airain.",
+ "refs": "Exode 25, 18-22 ; Nombres 21, 8-9 ; 2 Rois 18, 4 ; Colossiens 1, 15 ; Luc 20, 38 ; Hébreux 12, 1 ; 13, 7 ; Basile, Sur le Saint-Esprit 18 ; Jean Damascène, Sur les images I."
+},
+{
+ "id": "nicee-osius-constantin-pape",
+ "th": "Papauté et unité",
+ "who": [
+  "cath"
+ ],
+ "q": "Une vidéo dit : le pape a demandé le concile de Nicée, Osius présidait en son nom, et Constantin était arien. Qu’en est-il ?",
+ "pts": [
+  [
+   "Historique",
+   "1. La convocation : aucune source de l’époque ne dit que le pape l’ait demandée. Eusèbe de Césarée, présent, présente la convocation comme une initiative de Constantin, qui écrit lui-même aux évêques et paie leur voyage (Vie de Constantin III, 6-7). Un texte bien plus tardif, les actes du concile de Constantinople III (680-681), parle de Nicée réuni par « Constantin et Sylvestre » : c’est plus de 350 ans après, utile pour la tradition, pas pour l’histoire de 325 (je n’ai pas relu cette citation dans les actes)."
+  ],
+  [
+   "Historique",
+   "2. Osius et les légats : Sylvestre n’est pas venu ; il a envoyé deux prêtres romains, Vitus et Vincent, qui signent après Osius de Cordoue en tête des listes. L’idée qu’Osius présidait en légat du pape vient de Gélase de Cyzique, vers 475, soit cent cinquante ans après ; ni Eusèbe, ni Athanase, ni Socrate, Sozomène ou Théodoret ne le disent. Osius était sans doute le conseiller ecclésiastique de Constantin, envoyé par lui à Alexandrie en 324 pour apaiser l’affaire d’Arius. La présidence est discutée : selon les sources, Osius, Eustathe d’Antioche ou Alexandre d’Alexandrie ; Constantin présidait les séances solennelles. Des historiens catholiques (Hefele, XIXe siècle) ont défendu l’idée d’un Osius légat : « tous les historiens le disent » est donc faux."
+  ],
+  [
+   "Historique",
+   "3. Constantin et les ariens : en 325, c’est Constantin qui, selon la lettre d’Eusèbe à son Église, propose le mot homoousios (« consubstantiel ») ; Arius est condamné puis exilé. La suite est plus trouble : Constantin rappelle Arius, fait exiler Athanase en 335 (concile de Tyr) et est baptisé en 337 par Eusèbe de Nicomédie, de tendance arienne. Eusèbe de Césarée, favorable à Arius, signe pourtant le Symbole. La vidéo plaque la fin du règne sur l’année 325."
+  ],
+  [
+   "Canonique",
+   "4. Même des légats qui auraient présidé ne prouveraient pas la juridiction du pape : présider est une primauté d’honneur, que l’Orthodoxie reconnaît à Rome avant le schisme. Le canon 6 de Nicée confirme l’autorité d’Alexandrie sur l’Égypte, la Libye et la Pentapole « puisque c’est aussi la coutume pour l’évêque de Rome » : Rome est citée comme exemple d’autorité régionale. Les légats romains ont présidé Chalcédoine (451), et le concile a voté le canon 28 malgré leur protestation."
+  ]
+ ],
+ "table": {
+  "head": [
+   "Affirmation",
+   "Verdict",
+   "Pourquoi"
+  ],
+  "rows": [
+   [
+    "Le pape a sollicité la convocation",
+    "Non attesté",
+    "Aucune source de l’époque ; mention tardive en 681"
+   ],
+   [
+    "Rome a envoyé deux légats, Vitus et Vincent",
+    "Vrai",
+    "Ils signent après Osius"
+   ],
+   [
+    "Osius présidait au nom du pape",
+    "Douteux",
+    "Seul Gélase de Cyzique (vers 475) le dit"
+   ],
+   [
+    "Constantin était arien à Nicée",
+    "Faux",
+    "Il soutient l’homoousios en 325"
+   ],
+   [
+    "La présidence prouve la juridiction papale",
+    "Non",
+    "Primauté d’honneur ; canon 6"
+   ]
+  ]
+ },
+ "lim": "Les catholiques répondent que la présence de légats et la confirmation romaine des conciles sont des signes de la primauté, et que l’absence d’une source ne prouve pas l’absence d’une demande : l’argument du silence a ses limites. Je n’ai pas vérifié chaque citation dans les textes originaux : relis Eusèbe, Gélase de Cyzique et les actes de Constantinople III avant de citer.",
+ "refs": "Eusèbe de Césarée, Vie de Constantin III, 6-7 ; Lettre d’Eusèbe à son Église ; Gélase de Cyzique, Histoire ecclésiastique II ; Théodoret, Histoire ecclésiastique I, 7 ; Nicée, canon 6 ; Chalcédoine, canon 28."
 }
   );
 })();

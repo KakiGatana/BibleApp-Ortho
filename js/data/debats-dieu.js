@@ -2162,6 +2162,132 @@
  ],
  "lim": "L’effondrement est certain ; le détail du cheval reste une tradition. La cause de sa maladie est discutée (syphilis tertiaire, tumeur cérébrale, autres hypothèses). Ne tire pas de cette anecdote une interprétation de la philosophie de Nietzsche.",
  "refs": "Anacleto Verrecchia, La catastrofe di Nietzsche a Torino ; lettres de Nietzsche à Overbeck (janvier 1889)."
+},
+{
+ "id": "mal-naturel-chute-cosmique",
+ "th": "Mal et souffrance",
+ "who": [
+  "athee",
+  "tous"
+ ],
+ "q": "Pourquoi le mal naturel (séismes, accidents, maladies) ? Est-ce à cause de la chute de l’homme et des anges ?",
+ "pts": [
+  [
+   "Théologique",
+   "Réponse orthodoxe de fond : le monde actuel n’est pas le monde tel que Dieu le voulait, mais un monde « désaccordé », comme un instrument faussé. L’homme était appelé à être le prêtre de la création, le lien entre le monde et Dieu (Maxime le Confesseur, Mystagogie et Ambigua 41). En se coupant de Dieu, il a entraîné la création avec lui : Rm 8, 20-21 dit qu’elle a été « soumise à la vanité » et qu’elle sera « libérée de la servitude de la corruption »."
+  ],
+  [
+   "Théologique",
+   "La chute angélique : beaucoup de Pères pensent que la révolte de certains anges a précédé celle de l’homme et pèse sur le monde. Satan est appelé « prince de ce monde » (Jn 12, 31 ; 14, 30), Paul parle de puissances qui dominent (Ép 6, 12), et Jésus attribue la maladie d’une femme à Satan « qui la tenait liée depuis dix-huit ans » (Lc 13, 16). La piste est ancienne, mais les Pères n’en font pas un dogme pour chaque phénomène naturel."
+  ],
+  [
+   "Philosophique",
+   "Trois nuances. (1) La chute explique l’état général du monde, non chaque événement : on ne lit pas un accident ou une maladie précise comme la sanction d’un péché (Lc 13, 1-5 ; Jn 9, 3). (2) Les lois de la nature sont bonnes en elles-mêmes : sans gravité, feu ou plaques tectoniques, pas de monde vivable ; c’est notre rapport à elles qui est blessé. Les vies de saints en donnent une image (Séraphin de Sarov nourrissant un ours, Daniel parmi les lions), mais ce sont des images, pas une preuve. (3) Un monde où Dieu suspendrait les lois à chaque instant ne serait plus stable, et la liberté et la responsabilité n’y auraient plus de sens."
+  ],
+  [
+   "Théologique",
+   "Dieu ne veut pas ce mal et ne le supprime pas encore : il l’a pris sur lui dans le Christ, qui souffre, pleure à la tombe de Lazare et meurt, et il le supprimera à la fin, quand la création sera libérée (Rm 8, 21 ; Ap 21, 4). La mort est « le dernier ennemi » (1 Co 15, 26), non une volonté de Dieu."
+  ]
+ ],
+ "lim": "Le point le plus fragile est la souffrance animale et les catastrophes naturelles antérieures à l’homme (prédation, extinctions, séismes sur des millions d’années). Dire que la chute humaine a désaccordé un monde où des êtres souffraient avant l’homme demande des outils : l’idée de Maxime (la chute, connue d’avance, marque toute la création et pas seulement ce qui vient après elle dans le temps), la chute angélique, ou une lecture non littérale des premiers chapitres. Aucune de ces pistes n’est dogme ni ne satisfait tout le monde. Voir aussi les fiches sur l’évolution et sur le mal comme privation.",
+ "refs": "Romains 8, 19-22 ; Jean 12, 31 ; Luc 13, 1-5 et 16 ; Maxime le Confesseur, Ambigua 41 ; 1 Corinthiens 15, 26."
+},
+{
+ "id": "mal-naturel-tableau-reponses",
+ "th": "Mal et souffrance",
+ "who": [
+  "athee",
+  "tous"
+ ],
+ "q": "Le mal naturel est-il la question la plus dure pour un croyant ? Tableau des principales réponses et de leurs limites.",
+ "pts": [
+  [
+   "Philosophique",
+   "Pour le mal moral (crimes, guerres), on peut invoquer la liberté humaine. Pour le mal naturel (séisme, cancer, enfant mort d’un accident), il n’y a pas de coupable humain à désigner : c’est pourquoi beaucoup de croyants et de philosophes le jugent plus difficile. L’objection se renforce quand on y ajoute la souffrance animale d’avant l’homme (l’exemple du faon brûlé dans une forêt, personne ne le sachant, est une illustration de William Rowe, 1979)."
+  ],
+  [
+   "Théologique",
+   "Ce que les croyants partagent malgré leurs désaccords : Dieu ne justifie pas la souffrance comme un plan (le livre de Job rejette les explications faciles) ; il y entre en personne (Incarnation, Croix) ; et il promet de la vaincre (Rm 8, 18-21 ; Ap 21, 4). La réponse chrétienne n’est pas d’abord un argument, mais un Dieu qui souffre avec nous."
+  ]
+ ],
+ "table": {
+  "head": [
+   "Réponse",
+   "Idée",
+   "Force",
+   "Limite"
+  ],
+  "rows": [
+   [
+    "Chute cosmique (Orthodoxie, Maxime)",
+    "L’homme, prêtre de la création, l’a entraînée dans la corruption",
+    "S’accorde avec Rm 8 et avec l’Incarnation",
+    "Souffrance antérieure à l’homme"
+   ],
+   [
+    "Chute angélique (tradition ; Plantinga, C. S. Lewis)",
+    "Des puissances mauvaises agissent dans la nature",
+    "Met la liberté de créatures à l’origine du mal naturel",
+    "Peu de textes ; impossible à tester"
+   ],
+   [
+    "Lois stables (Swinburne)",
+    "Des lois régulières sont nécessaires pour connaître le monde et agir",
+    "Explique que Dieu n’interrompe pas la nature",
+    "Ne justifie pas l’ampleur (enfants, animaux)"
+   ],
+   [
+    "Création en croissance (Irénée, Hick)",
+    "Un monde où l’on grandit, non un paradis fini",
+    "Donne un rôle à la liberté et au progrès",
+    "Les souffrances excessives restent sans sens"
+   ],
+   [
+    "Privation et ordre (Augustin, Thomas d’Aquin)",
+    "Le mal est privation de bien ; certains maux font partie de l’ordre d’un tout",
+    "Cohérent avec la bonté de l’être",
+    "Ne répond pas à la douleur individuelle"
+   ],
+   [
+    "Objection athée (Hume, Rowe, Draper)",
+    "Une souffrance inutile et antérieure à l’homme rend improbable un Dieu bon",
+    "Argument sérieux, souvent probabiliste",
+    "Ne prouve pas que Dieu n’existe pas"
+   ]
+  ]
+ },
+ "lim": "Je n’arbitre pas : chaque réponse a ses défenseurs et ses limites, et celle de l’Orthodoxie est plus à l’aise avec le mal moral qu’avec la souffrance d’avant l’homme. Irénée (l’homme créé enfant, appelé à grandir) et Hick (le monde comme lieu de formation des âmes) ne disent pas la même chose, même s’ils sont rapprochés. Un chrétien peut garder la question ouverte sans perdre sa foi, comme beaucoup de saints.",
+ "refs": "Augustin, Enchiridion 11 ; Thomas d’Aquin, Somme I, q. 48-49 ; Rowe, The Problem of Evil and Some Varieties of Atheism (1979) ; Plantinga, God, Freedom and Evil ; Lewis, The Problem of Pain ; Swinburne, Providence and the Problem of Evil."
+},
+{
+ "id": "crucifix-siloe-accident",
+ "th": "Mal et souffrance",
+ "who": [
+  "athee",
+  "tous"
+ ],
+ "avis": true,
+ "q": "Un prêtre tué par la chute d’un crucifix pendant la messe : comment le lire chrétiennement ?",
+ "pts": [
+  [
+   "Historique",
+   "D’abord, vérifier. Les vidéos de ce genre circulent beaucoup et sont souvent montées, sorties de leur contexte ou mal légendées : ne les relaie pas sans source claire (agence de presse, diocèse). Cette fiche répond à la question de fond, pas à une vidéo précise que je n’ai pas vue."
+  ],
+  [
+   "Biblique",
+   "Jésus a répondu à ce type d’événement : « ces dix-huit personnes sur qui est tombée la tour de Siloé, pensez-vous qu’elles étaient plus coupables que tous les habitants de Jérusalem ? Non, je vous le dis » (Lc 13, 4-5), après le massacre de Galiléens (Lc 13, 1-3). Et pour l’aveugle-né : « ni lui ni ses parents n’ont péché » (Jn 9, 3). On ne lit donc pas un accident comme une sanction."
+  ],
+  [
+   "Philosophique",
+   "Deux tentations à éviter : (1) y voir un signe de Dieu contre ce prêtre, cette confession ou ces fidèles ; (2) y voir une preuve que Dieu n’existe pas. Un objet lourd mal fixé tombe à cause de la gravité, qu’il soit sacré ou non : Dieu ne suspend pas les lois naturelles dans les églises. Jésus ajoute : « si vous ne vous repentez pas, vous périrez tous de même » (Lc 13, 5). La question n’est pas « pourquoi lui ? » mais « suis-je prêt ? »."
+  ],
+  [
+   "Pastoral",
+   "Beaucoup de croyants verraient dans une mort à l’autel, en célébrant, une fin enviable : c’est une consolation, pas un argument. Reste la souffrance de la famille et des fidèles, qu’on ne console pas avec des théories : on prie et on est présent."
+  ]
+ ],
+ "lim": "Ne dis pas « c’est la chute » à quelqu’un qui pleure un proche : la réponse de fond (voir la fiche sur le mal naturel) s’adresse à la question intellectuelle, pas au deuil. La réponse de Jésus à Siloé exclut la sanction individuelle, mais ne dit pas pourquoi le monde est ainsi.",
+ "refs": "Luc 13, 1-5 ; Jean 9, 1-3 ; Livre de Job."
 }
   );
 })();

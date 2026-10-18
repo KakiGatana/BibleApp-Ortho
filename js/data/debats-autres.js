@@ -3114,6 +3114,43 @@
  ],
  "lim": "Aucun camp ne l’emporte par un seul argument. Le critère « l’Église ne peut se tromper » est circulaire contre quelqu’un qui le conteste, et le critère « tout doit être écrit » ne se prouve pas par l’Écriture. Il faut dire aux protestants que leur position est plus nuancée que sa caricature.",
  "refs": "2 Thessaloniciens 2, 15 ; 2 Timothée 3, 16 ; Matthieu 28, 19 ; Athanase, Lettre festale 39 (367) ; Concile de Carthage (397) ; Didachè 14."
+},
+{
+ "id": "steiner-initiation-prelest",
+ "th": "Sectes et nouvelles religions",
+ "who": [
+  "tous"
+ ],
+ "avis": true,
+ "q": "L’Initiation de Rudolf Steiner (« Comment acquérir des connaissances sur les mondes supérieurs ») : un chrétien orthodoxe peut-il en pratiquer les exercices ?",
+ "pts": [
+  [
+   "Historique",
+   "Le livre (Wie erlangt man Erkenntnisse der höheren Welten ?, paru en articles en 1904-1905 puis en volume en 1909) est un texte fondateur de l’anthroposophie de Rudolf Steiner (1861-1925). Il propose un chemin d’« initiation » par des exercices de méditation et de concentration, pour développer des « organes spirituels » (les « fleurs de lotus », un emprunt aux chakras de la tradition indienne) qui permettraient de percevoir les « mondes supérieurs » : corps astral, auras, êtres spirituels."
+  ],
+  [
+   "Théologique",
+   "Du point de vue orthodoxe, c’est le domaine de la prélest, l’illusion spirituelle. Les Pères (la Philocalie, Grégoire le Sinaïte, Ignace Briantchaninov sur la prélest) répètent : ne cherche pas les visions et rejette même celles qui viennent, car le démon peut se déguiser en « ange de lumière » (2 Co 11, 14). Désirer voir le monde invisible est la porte d’entrée de l’illusion."
+  ],
+  [
+   "Théologique",
+   "Technique contre grâce : chez Steiner, la connaissance spirituelle s’obtient par un entraînement ; pour l’Orthodoxie, la connaissance de Dieu est un don reçu par la repentance, l’humilité et les sacrements : on ne monte pas vers Dieu par ses forces, c’est lui qui descend. Le but n’est pas le même : la communion avec une Personne, le Christ, non l’accès à des connaissances cachées, ce qui ressemble à une forme moderne de gnose que des Pères comme Irénée combattent dès le IIe siècle."
+  ],
+  [
+   "Théologique",
+   "La doctrine qui accompagne les exercices n’est pas chrétienne, même quand Steiner parle beaucoup du Christ : réincarnation et karma, le Christ comme « être solaire », deux enfants Jésus distincts, Lucifer et Ahriman comme forces cosmiques à équilibrer. On est loin du Credo."
+  ],
+  [
+   "Pratique",
+   "À reconnaître : des vertus recommandées au début (vénération, calme intérieur, patience, gratitude, ne pas juger) sont bonnes en soi, et Steiner était un intellectuel sérieux, spécialiste de Goethe. Ses fruits pratiques sont discutés : l’école Steiner-Waldorf a des aspects appréciés et des critiques sérieuses ; l’agriculture biodynamique repose sur des préparations rituelles sans fondement scientifique (corne de vache remplie de bouse, enterrée) ; la médecine anthroposophique a parfois été liée à des positions hostiles à la vaccination."
+  ],
+  [
+   "Pastoral",
+   "Conseil : le lire comme curiosité intellectuelle (comprendre l’ésotérisme du XXe siècle) avec un regard critique, sans pratiquer les exercices comme méthode spirituelle. Le chemin éprouvé depuis plus de quinze siècles est la prière de Jésus avec le tchotki, la Philocalie et les sacrements, sous la conduite d’un père spirituel : c’est le garde-fou contre l’illusion. Pour la même soif de profondeur : les Récits d’un pèlerin russe, ou Vladimir Lossky, Essai sur la théologie mystique de l’Église d’Orient."
+  ]
+ ],
+ "lim": "C’est un avis fondé sur la tradition orthodoxe, tranché mais pas méprisant. Les anthroposophes se disent chrétiens (la Communauté des chrétiens, fondée en 1922 avec l’aide de Steiner) ; d’autres confessions peuvent juger autrement. Les critiques de la pédagogie Waldorf ou de la biodynamie sont débattues et varient selon les écoles et les pays. Ne juge pas les personnes.",
+ "refs": "Steiner, L’Initiation ; 2 Corinthiens 11, 14 ; Ignace Briantchaninov, Sur la prélest ; Philocalie ; Irénée, Contre les hérésies."
 }
   );
 })();
