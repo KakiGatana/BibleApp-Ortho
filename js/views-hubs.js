@@ -8,7 +8,7 @@
   const HUBS = {
     theo: { cs: 'Богословіе', t: 'Théologie', sub: 'Comprendre la foi : repères, Pères, conciles, objections.', nav: 'theology', rows: [
       ['#/theology', 'Théologie', 'theo', 'Les grands thèmes de la foi, avec les Pères'],
-      ['#/learn', 'Découvrir l’Orthodoxie', 'book', 'Onze fiches simples : la foi, l’église, la prière'],
+      ['#/learn', 'Découvrir l’Orthodoxie', 'book', 'Douze fiches simples : la foi, l’église et ses parties, la prière'],
       ['#/distinctions', 'Distinctions théologiques', 'theo', 'Essence et énergies, théosis, synergie…'],
       ['#/councils', 'Conciles et hérésies', 'theo', 'Qui a dit quoi, quelle réponse de l’Église'],
       ['#/apolo', 'Objections et réponses', 'chat', 'Arguments contre la foi et l’Orthodoxie'],

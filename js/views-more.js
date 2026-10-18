@@ -2,7 +2,7 @@
 (function () {
   const O = window.ORTHO, K = O.core, C = O.cal, U = K.U;
   const { S, esc, ic, route } = K;
-  const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI'];
+  const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII'];
 
   /* ---------- théologie ---------- */
   function theologyView() {
@@ -136,8 +136,8 @@
           <li><b>Écritures</b> en parallèle français / slavon d’Église (psaumes, Béatitudes, Magnificat, Prologue de Jean…).</li>
           <li><b>Prières</b> avec lecture mot à mot, prononciation et écoute.</li>
           <li><b>Slavon</b> : alphabet, leçons, vocabulaire, cartes à répétition espacée, quiz.</li>
-          <li><b>Théologie</b> : quinze articles, des distinctions théologiques, les conciles et les hérésies, des objections courantes contre la foi et l’Orthodoxie avec des pistes de réponse, un glossaire.</li>
-          <li><b>Découvrir l’Orthodoxie</b> : onze fiches simples ; <b>La Divine Liturgie</b> pas à pas ; <b>Pour les enfants</b>.</li>
+          <li><b>Théologie</b> : dix-sept articles (dont les huit tons et le classement de la Bible), des distinctions théologiques, les conciles et les hérésies, des objections courantes contre la foi et l’Orthodoxie avec des pistes de réponse, un glossaire.</li>
+          <li><b>Découvrir l’Orthodoxie</b> : douze fiches simples (dont les parties de l’église) ; <b>La Divine Liturgie</b> pas à pas ; <b>Pour les enfants</b>.</li>
           <li><b>Prier</b> : Prière de Jésus avec corde à billes, prières du matin et du soir, <b>psautier</b> en 20 kathismes, lecture du chapitre du jour (Nouveau Testament et psaumes), <b>chants</b> (tes playlists), son d’ambiance facultatif.</li>
           <li><b>Paroisses près de moi</b> (données libres d’OpenStreetMap), un <b>assistant IA</b> et le <b>quiz</b>.</li>
         </ul>

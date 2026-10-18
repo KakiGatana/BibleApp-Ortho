@@ -1054,3 +1054,6 @@ html[data-reading="1"] .main { max-width: 760px; }
 .deb-table tbody th { font-weight: 700; width: 28%; }
 .deb-table tr:last-child th, .deb-table tr:last-child td { border-bottom: 0; }
 .apo-b.k-avis { background: var(--gold); color: var(--on-accent); }
+
+/* petits écrans : l’en-tête de l’accueil ne doit pas déborder (nom + trois boutons) */
+@media (max-width: 400px) { .brand-sm .brand-text small { display: none; } .brand-sm .brand-text b { letter-spacing: .08em; } .brand-sm { gap: .45rem; } }

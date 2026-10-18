@@ -13,7 +13,7 @@ Application orthodoxe (PWA, hors ligne) : Écriture en français et slavon d'Ég
 - **Prière de Jésus** : chapelet avec compteur, vibration, objectif et série de jours.
 - **Slavon** : alphabet, leçons, vocabulaire, cartes à répétition espacée.
 - **Quiz** : 80 questions de culture orthodoxe (histoire, Bible, liturgie, foi, saints, culture), défi du jour, et quiz de slavon.
-- **Théologie** : 15 articles, 7 conciles, fêtes avec tropaires FR / slavon.
+- **Théologie** : 17 articles, 7 conciles, fêtes avec tropaires FR / slavon.
 - **Assistant IA** (Claude) pour la théologie et l'histoire de l'Église, avec bouton « Demander à l'assistant » sur chaque passage, prière, fête et article.
 - **Notifications** (facultatif) : verset du jour, saint du jour, prière du matin et du soir, fête du lendemain, cartes à réviser, série en danger, voir [NOTIFICATIONS.md](NOTIFICATIONS.md).
 - **Partage d'un verset en image**, mode lecture, jalons de série, sauvegarde et synchronisation entre appareils par code secret, page d'installation.

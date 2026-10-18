@@ -285,7 +285,7 @@
         ${MEALS[f.level] ? `<details class="fast-ideas"><summary>Idées de repas pour aujourd’hui</summary><ul>${MEALS[f.level].map((m) => `<li>${esc(m)}</li>`).join('')}</ul><p class="muted xs">Simples suggestions. Le jeûne se vit selon ta santé et les conseils de ton père spirituel.</p></details>` : ''}`}
       </section>`;
     },
-    toneBadge(t) { return t ? `<span class="chip tone" title="Ton de l’Octoèque">Ton ${t}</span>` : ''; },
+    toneBadge(t) { return t ? `<a class="chip tone" href="#/theo/tons" title="Ton de l’Octoèque : pourquoi huit tons ?">Ton ${t}</a>` : ''; },
     ordinal: C.ORD
   };
 

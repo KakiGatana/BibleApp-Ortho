@@ -149,6 +149,25 @@
       ]
     },
     {
+      id: 'tons', title: 'Les huit tons : pourquoi chanter ainsi ?', sub: 'L’Octoèque et la musique de l’Église', icon: 'harp',
+      lead: 'Chaque dimanche, l’Église chante la Résurrection sur une mélodie différente, qui revient toutes les huit semaines : ce sont les huit tons.',
+      blocks: [
+        { p: 'Le mot grec <i>êchos</i> veut dire « son » ou « mode ». Un <b>ton</b> n’est pas une note : c’est une manière de chanter, un ensemble de formules mélodiques, de notes de repos et de couleurs qui donnent à l’hymne son caractère. <b>Octoèque</b> vient de <i>okto</i> (huit) et <i>êchos</i> : le livre des huit tons.' },
+        { h: 'Pourquoi huit ?' },
+        { p: 'Parce que le dimanche est le « huitième jour ». La semaine a sept jours, dont le septième, le sabbat, ferme l’ancienne création. Le Christ ressuscite le lendemain du sabbat : c’est à la fois le premier jour de la semaine et un « huitième » jour, celui de la création nouvelle et du siècle à venir. Les Pères en parlent (la lettre de Barnabé, 15 ; Basile le Grand, <i>Sur le Saint-Esprit</i>, 27), et l’Évangile note que le Christ apparaît à Thomas « huit jours après » (Jn 20, 26). Les huit tons disent chaque semaine ce huitième jour.' },
+        { h: 'Comment cela fonctionne' },
+        { p: 'Chaque dimanche est associé à un ton (de 1 à 8), dans lequel on chante les hymnes de la Résurrection : tropaires, kondakia, stichères. Le cycle commence au dimanche de Thomas (ton 1) et monte jusqu’au dimanche de Tous les saints (ton 8). Il recommence ensuite le dimanche suivant, et se répète toute l’année, avec huit semaines par tour. Le ton du dimanche apparaît dans la page « Aujourd’hui » de l’appli. Les autres jours de la semaine reprennent les mêmes tons pour d’autres thèmes (anges, Précurseur, Croix, apôtres, saints).' },
+        { h: 'Quatre et quatre' },
+        { p: 'Les tons 1 à 4 sont dits <b>authentiques</b> et les tons 5 à 8 <b>plagaux</b> (« obliques »), qui sont leurs dérivés : le ton 5 est le plagal du ton 1, le 6 du 2, le 7 du 3 et le 8 du 4. Chacun a sa couleur : certains sont graves ou solennels, d’autres lumineux ou joyeux. Le tropaire de Pâques, par exemple, est au ton 5.' },
+        { h: 'D’où vient ce système ?' },
+        { p: 'La tradition l’attribue à saint <b>Jean Damascène</b> (VIIIe siècle), qui aurait organisé les hymnes en huit tons au monastère de Mar Saba, en Palestine. Les historiens pensent que le système s’est formé progressivement : l’<i>Octoèque</i> existait déjà au VIe siècle autour de Sévère, patriarche d’Antioche, et s’est enrichi à Jérusalem et à Constantinople. On ne connaît pas le détail exact de sa naissance.' },
+        { h: 'Pourquoi un chant sans instrument ?' },
+        { p: 'Dans la tradition byzantine, le chant est une prière : le texte compte plus que la mélodie, qui doit le servir sans le recouvrir. On chante à l’unisson, parfois avec un bourdon (<i>ison</i>), sans orgue ni instrument : la voix humaine est l’instrument de la louange (Col 3, 16 ; Ép 5, 19). Basile le Grand et Jean Chrysostome recommandent le chant des psaumes comme un remède pour l’âme. Les tons donnent aussi à l’assemblée une langue commune : même quand le texte change, on reconnaît le mode.' },
+        { tip: 'Pour entendre la différence : cherche un enregistrement du tropaire de la Résurrection au ton 1, puis au ton 5 (comme celui de Pâques). Les mêmes paroles ne « sonnent » pas pareil.' }
+      ],
+      quote: { t: 'Chantez à Dieu de tout votre cœur, avec reconnaissance, par des psaumes, des hymnes et des cantiques spirituels.', a: 'Colossiens 3, 16 (d’après la traduction usuelle)' }
+    },
+    {
       id: 'dernieres-fins', title: 'Mort, jugement et résurrection', sub: 'Ce que l’Église attend', icon: 'door',
       lead: 'L’Église orthodoxe n’a pas de doctrine du purgatoire mais prie pour les défunts avec confiance : la mort n’est pas un mur, mais un passage.',
       blocks: [
@@ -170,6 +189,36 @@
         { h: 'Un seul livre, plusieurs traductions' },
         { p: 'L’Église n’a pas de « traduction officielle » : le slavon traduit directement la LXX et le grec du NT ; les traductions françaises usuelles (Louis Segond, Jérusalem, TOB, AELF…) suivent l’hébreu pour les livres communs de l’Ancien Testament (les livres deutérocanoniques y sont traduits du grec). Les paroisses orthodoxes francophones utilisent souvent des traductions liturgiques maison.' }
       ]
+    },
+    {
+      id: 'organisation-bible', title: 'Pourquoi la Bible est rangée ainsi', sub: 'Torah, Prophètes, Écrits… Évangiles, Actes, Épîtres, Apocalypse', icon: 'scroll',
+      lead: 'La Bible est une bibliothèque, pas un seul livre. Ses livres sont rangés par familles, et ce classement dit déjà comment les lire.',
+      blocks: [
+        { h: 'Dans la Bible hébraïque : Torah, Prophètes, Écrits' },
+        { p: 'Les Juifs appellent leur Bible le <b>Tanakh</b>, mot formé des trois initiales T-N-K : <b>Torah</b> (la Loi), <b>Nevi’im</b> (les Prophètes), <b>Ketouvim</b> (les Écrits).' },
+        { table: { head: ['Partie', 'Livres', 'Pourquoi ensemble'], rows: [
+          ['Torah', 'Genèse, Exode, Lévitique, Nombres, Deutéronome', 'Les cinq livres attribués à Moïse : le fondement, la Loi donnée à Israël.'],
+          ['Prophètes antérieurs', 'Josué, Juges, Samuel, Rois', 'L’histoire d’Israël racontée par des prophètes, jugée à la lumière de la Loi.'],
+          ['Prophètes postérieurs', 'Isaïe, Jérémie, Ézéchiel, les Douze petits prophètes', 'Les paroles des prophètes eux-mêmes.'],
+          ['Écrits', 'Psaumes, Proverbes, Job, Cantique, Ruth, Lamentations, Qohélet, Esther, Daniel, Esdras-Néhémie, Chroniques', 'Prières, sagesse et récits d’époques tardives, que la tradition juive ne range pas parmi les livres de prophètes.']
+        ] } },
+        { p: 'Cette division est née avec la Bible elle-même : la Torah a été reçue d’abord, comme autorité suprême ; les Prophètes ont suivi ; les « autres écrits » sont restés ouverts plus longtemps. Vers 130 av. J.-C., le prologue du Siracide parle déjà de « la Loi, les Prophètes et les autres livres », et Jésus dit lui-même : « la Loi de Moïse, les Prophètes et les Psaumes » (Lc 24, 44). La Bible hébraïque se termine par Chroniques, qui finit sur un appel à remonter à Jérusalem (2 Ch 36, 23).' },
+        { h: 'Dans l’Ancien Testament chrétien : quatre familles' },
+        { p: 'Les premiers chrétiens lisaient surtout la traduction grecque, la Septante, où les mêmes livres sont rangés par <b>genre</b> et par <b>temps</b> : la Loi (le Pentateuque), les livres historiques (le passé), les livres poétiques et de sagesse (le présent, la vie avec Dieu), les prophètes (l’avenir, ce qui est annoncé). Ruth se place après les Juges, parce que son histoire se passe à cette époque ; Daniel, appelé « le prophète » par Jésus (Mt 24, 15), figure avec les prophètes. Le dernier prophète, Malachie, annonce l’envoyé qui prépare la route : de là on passe directement à l’Évangile et à Jean-Baptiste.' },
+        { tip: 'Le contenu change aussi : la Septante contient des livres absents de la Bible hébraïque (Tobie, Judith, Sagesse, Siracide, Baruch, Maccabées…). Voir l’article sur le canon.' },
+        { h: 'Dans le Nouveau Testament : quatre familles' },
+        { table: { head: ['Famille', 'Livres', 'Rôle'], rows: [
+          ['Évangiles', 'Matthieu, Marc, Luc, Jean', 'La vie, la mort et la résurrection de Jésus : « quatre portraits » d’un seul Christ.'],
+          ['Actes', 'Actes des Apôtres', 'La suite de l’Évangile de Luc : la naissance de l’Église, de Jérusalem à Rome. C’est le pont entre les Évangiles et les lettres.'],
+          ['Épîtres', 'Lettres de Paul (de Romains à Hébreux, selon les éditions) ; épîtres « catholiques » : Jacques, 1-2 Pierre, 1-3 Jean, Jude', 'Lettres aux Églises et aux personnes : l’enseignement et la vie chrétienne.'],
+          ['Apocalypse', 'Apocalypse de Jean', 'La vision de la fin des temps et de la victoire du Christ : le dernier livre.']
+        ] } },
+        { p: 'Cet ordre suit une logique, pas une chronologie : <b>Jésus</b> (les Évangiles), puis <b>l’Église</b> (les Actes), puis <b>l’enseignement</b> (les lettres), puis <b>l’achèvement</b> (l’Apocalypse). Les lettres de Paul (années 50) sont plus anciennes que les Évangiles ; Marc est probablement le plus ancien des Évangiles, mais Matthieu est placé en premier, car il rattache Jésus à l’Ancien Testament (« livre de la genèse de Jésus-Christ »). Les lettres de Paul sont rangées en gros de la plus longue à la plus courte, d’abord celles aux Églises, puis celles aux personnes.' },
+        { p: 'Les orthodoxes mettent les épîtres catholiques <b>avant</b> celles de Paul, comme dans les manuscrits grecs et les livres liturgiques ; la Bible latine fait l’inverse. L’Apocalypse n’est pas lue dans le cycle ordinaire des offices orthodoxes.' },
+        { h: 'Pourquoi cela compte' },
+        { p: 'Le classement indique le genre d’un texte, et le genre indique comment le lire : on ne lit pas une loi comme un poème, ni une prophétie comme un récit. Il dit aussi comment l’Église lit : l’Ancien Testament à la lumière du Christ, et tout le Nouveau Testament comme son accomplissement.' }
+      ],
+      quote: { t: 'Il fallait que s’accomplisse tout ce qui est écrit de moi dans la Loi de Moïse, les Prophètes et les Psaumes.', a: 'Luc 24, 44' }
     },
     {
       id: 'psautier', title: 'Le Psautier, prière de l’Église', sub: '150 psaumes répartis en 20 kathismes', icon: 'harp',

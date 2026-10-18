@@ -70,6 +70,7 @@
       ${tabs('canon')}
       ${Object.keys(groups).map((g) => `<div class="pgroup"><h3 class="group-h">${g}</h3>
         <ul class="books">${groups[g].map(([fr, cs, ab, n]) => `<li><a href="https://www.aelf.org/bible/${ab}/1" target="_blank" rel="noopener"><span class="b-fr">${esc(fr)}</span><span class="b-cs cs">${esc(cs)}</span><span class="b-n">${n} ch.</span>${ic('ext', 'ic xs')}</a></li>`).join('')}</ul></div>`).join('')}
+      <aside class="tip">${ic('flame')}<div>Pourquoi les livres sont-ils rangés ainsi ? Voir <a href="#/theo/organisation-bible">Pourquoi la Bible est rangée ainsi</a>.</div></aside>
       <aside class="tip">${ic('flame')}<div>Les liens ouvrent le site AELF (traduction liturgique catholique). Pour la Septante complète en français, voir la <i>Bible d’Alexandrie</i>. Les passages de cette appli sont ceux utilisés dans les offices.</div></aside>
     </section>`;
     return { html, title: 'Canon orthodoxe', nav: 'bible' };

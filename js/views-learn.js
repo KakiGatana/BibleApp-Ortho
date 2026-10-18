@@ -5,12 +5,14 @@
   S.learn = Object.assign({ done: {} }, S.learn || {});
   const norm = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
   const L = () => S.learn;
+  // une fiche a été insérée en 4e position : on décale les fiches déjà lues qui la suivent
+  if (!S.learn.mig4) { const d = {}; Object.keys(S.learn.done || {}).forEach((k) => { d[+k >= 4 ? +k + 1 : +k] = S.learn.done[k]; }); S.learn.done = d; S.learn.mig4 = 1; }
 
   /* ---------- Découvrir l'Orthodoxie ---------- */
   function hub() {
     const F = O.DECOUVRIR, n = F.filter((_, i) => L().done[i]).length;
     const html = `<section class="page learn">
-      ${U.pageHead('Начало', 'Découvrir l’Orthodoxie', 'Onze fiches courtes, en langage simple, pour comprendre l’essentiel : la foi, l’église, la prière, les sacrements.')}
+      ${U.pageHead('Начало', 'Découvrir l’Orthodoxie', 'Douze fiches courtes, en langage simple, pour comprendre l’essentiel : la foi, l’église, la prière, les sacrements.')}
       <article class="card"><p>Une fiche tient sur un écran. Tu peux les lire dans l’ordre ou au hasard. Les mots difficiles sont expliqués dans le <a href="#/glossary">glossaire</a>.</p>
         <div class="progress"><i style="width:${Math.round((n / F.length) * 100)}%"></i></div>
         <p class="muted small">${n} fiche${n > 1 ? 's' : ''} lue${n > 1 ? 's' : ''} sur ${F.length}.</p></article>
