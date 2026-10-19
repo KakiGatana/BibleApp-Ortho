@@ -108,7 +108,7 @@
     const html = `<section class="page">
       ${U.pageHead('Livre de prières', 'Prières', 'Les prières fondamentales de l’Église, en français et en slavon, avec lecture mot à mot pour apprendre le sens de chaque terme.')}
       ${U.sectionTitle('Prière du matin et du soir')}${O.ruleTiles ? O.ruleTiles() : ''}
-      ${Object.keys(cats).map((c) => `<div class="pgroup"><h3 class="group-h">${c}</h3><div class="cards">${cats[c].map((p) => `<a class="card p-card" href="#/prayer/${p.id}"><div class="pc-top"><span class="pc-ref cs">${esc(p.titleCs)}</span>${p.inter ? '<span class="badge">mot à mot</span>' : ''}</div><h3>${esc(p.title)}</h3><p class="muted small clamp">${esc(p.when)}</p></a>`).join('')}</div></div>`).join('')}
+      ${Object.keys(cats).map((c) => `<div class="pgroup"><h3 class="group-h">${c}</h3><div class="cards">${cats[c].map((p) => `<a class="card p-card" href="#/prayer/${p.id}"><div class="pc-top">${p.titleCs ? `<span class="pc-ref cs">${esc(p.titleCs)}</span>` : ''}${p.inter ? '<span class="badge">mot à mot</span>' : ''}</div><h3>${esc(p.title)}</h3><p class="muted small clamp">${esc(p.when)}</p></a>`).join('')}</div></div>`).join('')}
     </section>`;
     return { html, title: 'Prières', nav: 'prayers' };
   }
@@ -120,18 +120,19 @@
     if (!p) return { html: '<section class="page"><p>Prière introuvable.</p></section>', nav: 'prayers' };
     const m = mode || (p.inter && prayerMode === 'inter' ? 'inter' : 'parallel');
     const idx = O.PRAYERS.indexOf(p), prev = O.PRAYERS[idx - 1], next = O.PRAYERS[idx + 1];
-    const frL = p.fr.split('\n'), csL = p.cs.split('\n');
+    const frL = p.fr.split('\n'), csL = (p.cs || '').split('\n');
+    const noCs = !p.cs;
     const body = m === 'inter' && p.inter
       ? `<div class="inter">${p.inter.map(([cs, tr, fr]) => `<button class="tok" data-act="speak" data-text="${esc(cs)}"><span class="cs">${esc(cs)}</span>${S.settings.translit ? `<em class="tr">${esc(tr)}</em>` : ''}<span class="fr">${esc(fr)}</span></button>`).join('')}</div>`
-      : U.pairs(frL, csL, 1).replace('<div class="pairs">', '<div class="pairs novn">');
+      : noCs ? `<div class="pairs novn">${frL.map((l) => `<div class="pair solo"><p class="fr">${esc(l)}</p></div>`).join('')}</div>` : U.pairs(frL, csL, 1).replace('<div class="pairs">', '<div class="pairs novn">');
     const html = `<section class="page prayer">
       ${U.back('#/prayers', 'Prières')}
-      ${U.pageHead(esc(p.cat), esc(p.title), `<span class="cs big">${esc(p.titleCs)}</span>`)}
+      ${U.pageHead(esc(p.cat), esc(p.title), p.titleCs ? `<span class="cs big">${esc(p.titleCs)}</span>` : '')}
       <div class="reader-bar">
         ${p.inter ? U.seg([['parallel', 'Parallèle'], ['inter', 'Mot à mot']], m, 'prayer-mode', `data-id="${p.id}"`) : '<span></span>'}
-        ${U.tools({ id: 'prayer:' + p.id, text: p.fr + '\n\n' + p.cs, cs: p.cs.replace(/\n/g, ' '), noteKey: 'prayer:' + p.id, noteLabel: p.title })}
+        ${U.tools({ id: 'prayer:' + p.id, text: p.fr + (p.cs ? '\n\n' + p.cs : ''), cs: (p.cs || '').replace(/\n/g, ' '), noteKey: 'prayer:' + p.id, noteLabel: p.title })}
       </div>
-      ${m === 'inter' ? `<div class="row between"><button class="chip-btn ${S.settings.translit ? 'on' : ''}" data-act="toggle-translit">Prononciation</button>${U.seg([['fr', 'FR'], ['both', 'FR+СЛ'], ['cs', 'СЛ']], S.settings.lang, 'set-lang')}</div>` : U.seg([['fr', 'Français'], ['both', 'Parallèle'], ['cs', 'Слав.']], S.settings.lang, 'set-lang')}
+      ${m === 'inter' ? `<div class="row between"><button class="chip-btn ${S.settings.translit ? 'on' : ''}" data-act="toggle-translit">Prononciation</button>${U.seg([['fr', 'FR'], ['both', 'FR+СЛ'], ['cs', 'СЛ']], S.settings.lang, 'set-lang')}</div>` : (noCs ? '' : U.seg([['fr', 'Français'], ['both', 'Parallèle'], ['cs', 'Слав.']], S.settings.lang, 'set-lang'))}
       <article class="card reader">${body}</article>
       <div class="grid2">
         <article class="card"><div class="card-k">Quand la prier ?</div><p>${esc(p.when)}</p></article>

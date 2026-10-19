@@ -92,11 +92,11 @@
   const RULES = {
     morning: {
       title: 'Prière du matin', cs: 'Правило утреннее', sub: 'Pour commencer la journée devant Dieu.',
-      ids: ['roi-celeste', 'trisagion', 'pater', 'venez-adorons', 'symbole', 'jesus', 'bogoroditse', 'doxologie']
+      ids: ['debut-priere', 'gloire-a-toi', 'roi-celeste', 'trisagion', 'trinite-toute-sainte', 'pater', 'tropaires-lever', 'priere-reveil', 'venez-adorons', 'psaume-50', 'symbole', 'macaire-matin-1', 'macaire-matin-2']
     },
     evening: {
       title: 'Prière du soir', cs: 'Правило вечернее', sub: 'Pour rendre grâce et confier la nuit au Seigneur.',
-      ids: ['roi-celeste', 'trisagion', 'pater', 'venez-adorons', 'symbole', 'phos-hilaron', 'jesus', 'dostoino', 'doxologie']
+      ids: ['debut-priere', 'gloire-a-toi', 'roi-celeste', 'trisagion', 'trinite-toute-sainte', 'pater', 'tropaires-soir', 'macaire-soir-1', 'antiochus-soir', 'esprit-soir', 'macaire-soir-2', 'prieres-nuit']
     }
   };
   O.RULES = RULES;
@@ -133,9 +133,9 @@
       <div class="rule-bar"><b id="rprog">${done.size} / ${list.length}</b><div class="rule-track"><i id="rfill" style="width:${list.length ? (done.size / list.length) * 100 : 0}%"></i></div></div>
       ${U.seg([['fr', 'Français'], ['both', 'Parallèle'], ['cs', 'Слав.']], S.settings.lang, 'set-lang')}
       ${list.map((p, i) => `<article class="card rule-item ${done.has(p.id) ? 'done' : ''}" data-id="${p.id}">
-        <div class="row between"><div><span class="muted small">${i + 1}.</span> <b>${esc(p.title)}</b> <span class="cs small">${esc(p.titleCs)}</span></div>
+        <div class="row between"><div><span class="muted small">${i + 1}.</span> <b>${esc(p.title)}</b> ${p.titleCs ? `<span class="cs small">${esc(p.titleCs)}</span>` : ''}</div>
         <button class="btn small ${done.has(p.id) ? '' : 'ghost'}" data-act="rule-toggle" data-kind="${kind}" data-id="${p.id}" aria-pressed="${done.has(p.id)}">${done.has(p.id) ? 'Faite ✓' : 'Faite ?'}</button></div>
-        ${U.pairs(p.fr.split('\n'), p.cs.split('\n'), 1).replace('<div class="pairs">', '<div class="pairs novn">')}
+        ${p.cs ? U.pairs(p.fr.split('\n'), p.cs.split('\n'), 1).replace('<div class="pairs">', '<div class="pairs novn">') : `<div class="pairs novn">${p.fr.split('\n').map((l) => `<div class="pair solo"><p class="fr">${esc(l)}</p></div>`).join('')}</div>`}
         <p class="muted xs"><a href="#/prayer/${p.id}">Lecture mot à mot et explications</a></p>
       </article>`).join('')}
       <p class="muted xs center">Prière indicative et abrégée, dans l’ordre habituel du livre de prières (Roi céleste, Trisagion, Notre Père, Venez adorons, Symbole, puis les prières propres au moment, la prière de Jésus, la Mère de Dieu et la doxologie) : adapte-la avec ton père spirituel. Pendant le Carême, ajoute la prière de saint Éphrem.</p>
