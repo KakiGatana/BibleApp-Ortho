@@ -123,7 +123,7 @@
    "Ce que cela ne veut pas dire : l’union n’est pas rétablie. Il n’y a pas de communion eucharistique. Les accords n’ont pas tous été reçus par les Églises avec toute l’autorité nécessaire, 1 500 ans de séparation ont créé des différences réelles, et il y a des résistances des deux côtés."
   ]
  ],
- "lim": "Une erreur à éviter : le texte d’origine évoquait une « déclaration commune de 1989 entre le patriarche Dimitrios Ier et le pape copte Shenouda III ». Les documents connus sont les accords de la Commission mixte de dialogue (Anba Bishoy, 1989, puis Chambésy, 1990), signés par des théologiens et des hiérarques de chaque famille ; il existe aussi la déclaration christologique commune de Paul VI et de Shenouda III (1973, catholiques et coptes). Vérifie avant de citer. Les orthodoxes byzantins ne sont pas tous d’accord sur la portée de ces accords.",
+ "lim": "Une confusion fréquente : il n’existe pas de « déclaration commune de 1989 entre le patriarche Dimitrios Ier et le pape copte Shenouda III ». Les documents connus sont les accords de la Commission mixte de dialogue (Anba Bishoy, 1989, puis Chambésy, 1990), signés par des théologiens et des hiérarques de chaque famille ; il existe aussi la déclaration christologique commune de Paul VI et de Shenouda III (1973, catholiques et coptes). Vérifie avant de citer. Les orthodoxes byzantins ne sont pas tous d’accord sur la portée de ces accords.",
  "refs": "Déclarations de la Commission mixte (Anba Bishoy 1989, Chambésy 1990) ; Jean Meyendorff."
 },
 {
@@ -197,7 +197,7 @@
    "Autres cas : les protestants trinitaires sont reçus selon les juridictions, par chrismation ou par baptême ; les non-trinitaires (Témoins de Jéhovah, mormons) sont baptisés, car leur baptême n’est pas trinitaire au sens orthodoxe."
   ]
  ],
- "lim": "La pratique varie vraiment entre juridictions et selon les époques (le Patriarcat de Constantinople a rebaptisé les Latins en 1755 par un décret, à vérifier dans le détail ; l’Église russe reçoit souvent les catholiques par chrismation, mais l’usage peut changer). La formule de Cyprien est une conviction de l’époque, non une règle universelle : à Rome, Étienne soutenait l’autre position. Pour ton cas particulier, la réponse est celle de ton évêque ou de ton prêtre. L’image de « sceau royal » attribuée à Basile est à vérifier.",
+ "lim": "La pratique varie vraiment entre juridictions et selon les époques (le Patriarcat de Constantinople a rebaptisé les Latins en 1755 par un décret, à vérifier dans le détail ; l’Église russe reçoit souvent les catholiques par chrismation, mais l’usage peut changer). La formule de Cyprien est une conviction de l’époque, non une règle universelle : à Rome, Étienne soutenait l’autre position. Pour ton cas particulier, la réponse est celle de ton évêque ou de ton prêtre.",
  "refs": "Cyprien, Lettres 69-75 ; Canon 95 du concile in Trullo (692) ; Étienne de Rome."
 },
 {
@@ -226,7 +226,7 @@
    "La Dormition (15 août) : Marie est morte, comme son Fils, et la Tradition croit que son corps a été glorifié. La fête est attestée à partir du VIᵉ siècle (les récits de la Dormition sont plus tardifs) ; elle n’est pas un dogme défini par un concile. Jean Damascène lui consacre trois homélies. L’Axion estin la proclame « plus vénérable que les chérubins »."
   ]
  ],
- "lim": "Aucun texte du Nouveau Testament ne décrit la mort ou l’assomption de Marie : il faut dire clairement que c’est une Tradition. Les récits de Dormition sont apocryphes (Pseudo-Jean, Pseudo-Méliton, Ve-VIe siècles). L’attribution à Grégoire de Tours et à Modeste est à vérifier : la tradition du tombeau vide est notamment rapportée par Jean Damascène citant Juvénal de Jérusalem. L’Orthodoxie refuse l’Immaculée Conception (1854) et la définition unilatérale de l’Assomption (1950) ; elle ne la rejette pas sur le fond (Dormition) mais sur la méthode. Réponse protestante : « solo Christo » ; sois précis sur ce que tu dis de la coopération de Marie.",
+ "lim": "Aucun texte du Nouveau Testament ne décrit la mort ou l’assomption de Marie : il faut dire clairement que c’est une Tradition. Les récits de Dormition sont apocryphes (Pseudo-Jean, Pseudo-Méliton, Ve-VIe siècles). En Occident, Grégoire de Tours (fin du VIᵉ siècle, Gloire des martyrs I, 4) rapporte déjà la tradition ; en Orient, Jean Damascène cite le récit de Juvénal de Jérusalem sur le tombeau trouvé vide. L’Orthodoxie refuse l’Immaculée Conception (1854) et la définition unilatérale de l’Assomption (1950) ; elle ne la rejette pas sur le fond (Dormition) mais sur la méthode. Réponse protestante : « solo Christo » ; sois précis sur ce que tu dis de la coopération de Marie.",
  "refs": "Éphèse 431 ; Irénée, Contre les hérésies III, 22 ; Jean Damascène, Homélies sur la Dormition."
 },
 {
@@ -283,7 +283,7 @@
    "Ordre d’autorité habituellement admis : Écriture, conciles œcuméniques, accord des Pères, puis ces confessions : respectées mais révisables. On peut critiquer Moghila ou Dosithée sur certains points sans quitter l’Orthodoxie."
   ]
  ],
- "lim": "La numérotation et le contenu précis des décrets de Dosithée sont à vérifier sur le texte : ne cite pas le résumé ci-dessus comme officiel (la répartition en 18 décrets suit un ordre que je ne peux pas confirmer). Dire que le texte est « panorthodoxe » est une simplification : il a été reçu largement, mais il reste un texte de synode local. Les orthodoxes contemporains discutent son recours à des termes latins (transsubstantiation) et à une pensée parfois scolastique (« captivité babylonienne » selon Florovsky). La réponse de Gennade est parfois présentée comme rédigée à la demande du sultan : les historiens nuancent.",
+ "lim": "La numérotation et le contenu précis des décrets de Dosithée sont à vérifier sur le texte : ne cite pas le résumé ci-dessus comme officiel. Dire que le texte est « panorthodoxe » est une simplification : il a été reçu largement, mais il reste un texte de synode local. Les orthodoxes contemporains discutent son recours à des termes latins (transsubstantiation) et à une pensée parfois scolastique (« captivité babylonienne » selon Florovsky). La réponse de Gennade est parfois présentée comme rédigée à la demande du sultan : les historiens nuancent.",
  "refs": "Jaroslav Pelikan et Valerie Hotchkiss, Creeds and Confessions of Faith, vol. 1 ; Philaret, Catéchisme ; Georges Florovsky, Les voies de la théologie russe."
 },
 {
@@ -376,7 +376,7 @@
    "Même en concédant que Pierre a reçu les clés, cela ne dit rien de la transmission à un successeur, du choix de Rome plutôt qu’Antioche, ni d’une juridiction universelle. Honorius, condamné en 681 : un concile a jugé un pape (voir la fiche sur la primauté de Pierre)."
   ]
  ],
- "lim": "Les catholiques soulignent que le singulier de Mt 16, 19 ( « je te donnerai ») et l’emploi d’Is 22 supposent une charge personnelle durable, et que le pouvoir d’Éliakim passe à ses successeurs. L’image de l’intendant peut donc se retourner. L’argument orthodoxe est plus fort contre le saut vers l’infaillibilité que contre l’existence d’un rôle propre de Pierre. Évite les métaphores de jeu vidéo : elles caricaturent l’adversaire.",
+ "lim": "Les catholiques soulignent que le singulier de Mt 16, 19 ( « je te donnerai ») et l’emploi d’Is 22 supposent une charge personnelle durable, et que le pouvoir d’Éliakim passe à ses successeurs. L’image de l’intendant peut donc se retourner. L’argument orthodoxe est plus fort contre le saut vers l’infaillibilité que contre l’existence d’un rôle propre de Pierre.",
  "refs": "Matthieu 16, 18-19 ; 18, 18 ; Isaïe 22, 20-25."
 },
 {
@@ -448,7 +448,7 @@
    "Filioque : le document du Conseil pontifical pour l’unité de 1995 (Les traditions grecque et latine concernant la procession du Saint-Esprit) reconnaît la monarchie du Père et distingue ekporeuesthai (du Père seul) du latin processio, plus large. Rome concède beaucoup ; mais ce texte est unilatéral et ne règle pas la question canonique de l’ajout au Credo. Une consultation nord-américaine a recommandé en 2003 de le retirer."
   ]
  ],
- "lim": "L’affirmation « les orthodoxes sont surtout des convertis anglophones » est fausse (Orthodoxie : quelque 200-250 millions de fidèles, essentiellement en Europe de l’Est, Grèce, Moyen-Orient) ; mais il ne faut pas triompher non plus : les chiffres de conversion varient selon les sources. Le Balamand a été critiqué par des orthodoxes et des catholiques. Le texte de 1995 n’est pas une déclaration commune. Ne retiens que ce qui est vérifiable.",
+ "lim": "Si l’on te dit que « les orthodoxes sont surtout des convertis anglophones », c’est faux (Orthodoxie : quelque 200-250 millions de fidèles, essentiellement en Europe de l’Est, Grèce, Moyen-Orient) ; mais il ne faut pas triompher non plus : les chiffres de conversion varient selon les sources. Le Balamand a été critiqué par des orthodoxes et des catholiques. Le texte de 1995 n’est pas une déclaration commune. Ne retiens que ce qui est vérifiable.",
  "refs": "Déclaration de Balamand (1993) ; Conseil pontifical pour l’unité, Les traditions grecque et latine… (1995) ; Consultation orthodoxe-catholique nord-américaine, The Filioque (2003)."
 },
 {
@@ -676,7 +676,7 @@
   ],
   [
    "Patristique",
-   "Nicée II (787) : l’honneur passe à celui qui est représenté, il ne s’arrête pas au bois ni aux couleurs (Basile un siècle plus tôt) ; l’icône est une fenêtre, non un contenant. Fondement : l’Incarnation (« le Verbe s’est fait chair ») ; Jean Damascène : je ne représente pas Dieu invisible, mais Dieu qui s’est fait chair. Le vrai désaccord est la sola scriptura et le statut de la Tradition."
+   "Nicée II (787) : l’honneur passe à celui qui est représenté, il ne s’arrête pas au bois ni aux couleurs (formule de Basile, Sur le Saint-Esprit 18, 45, au IVᵉ siècle) ; l’icône est une fenêtre, non un contenant. Fondement : l’Incarnation (« le Verbe s’est fait chair ») ; Jean Damascène : je ne représente pas Dieu invisible, mais Dieu qui s’est fait chair. Le vrai désaccord est la sola scriptura et le statut de la Tradition."
   ]
  ],
  "lim": "Les protestants répondent que le serpent d’airain montre au contraire la pente idolâtrique des objets sacrés ; les réformés lisent le deuxième commandement strictement. Les Églises luthériennes ont gardé des images. L’argument ne prouve pas la vénération des icônes, il réfute seulement qu’il soit de principe interdit de les faire.",
@@ -727,7 +727,7 @@
    "Jean place la dernière Cène avant la Pâque (Jn 13, 1 ; 18, 28), donc pas nécessairement des azymes ; les synoptiques donnent un repas pascal. 1 Co 5, 8 parle du levain de malice, métaphore morale, non argument rituel."
   ]
  ],
- "lim": "Le débat chronologique (Jean contre synoptiques) n’est pas tranché. Le texte du Patriarche Jean d’Antioche cité dans la vidéo est à vérifier. Ne fais pas des azymes la cause unique du schisme (le Filioque et la papauté comptent). Source apologétique catholique : lire avec son contradicteur.",
+ "lim": "Le débat chronologique (Jean contre synoptiques) n’est pas tranché. Les citations de Pierre d’Antioche (qui jugeait la querelle secondaire) sont à vérifier sur le texte. Ne fais pas des azymes la cause unique du schisme : le Filioque et la papauté comptent davantage.",
  "refs": "Michel Cérulaire, Lettre à Pierre d’Antioche ; Léon d’Ohrid ; Jean 13, 1 ; 1 Corinthiens 5, 8."
 },
 {
@@ -857,7 +857,7 @@
    "La référence à Josaphat Kuntsevych (archevêque uniate lynché à Vitebsk en 1623) renvoie à l’union de Brest, imposée sous pression politique polono-lituanienne, c’est-à-dire au modèle d’uniatisme que Rome et l’Orthodoxie ont désavoué ensemble au Balamand (1993). Les conversions vont dans les deux sens, plus nombreuses ces dernières années vers l’Orthodoxie, mais ni l’une ni l’autre ne prouve quoi que ce soit."
   ]
  ],
- "lim": "Les détails de ce cas particulier sont à vérifier (dates et nombre de paroisses), je n’ai pas pu les contrôler. Ne généralise pas à partir d’une anecdote. Un homme qui quitte un chaos juridictionnel pour une structure stable fait un choix compréhensible, qui ne dit rien sur le Filioque.",
+ "lim": "Les détails de ce cas particulier (dates, nombre de paroisses) sont à vérifier dans la presse religieuse avant de les citer. Ne généralise pas à partir d’une anecdote. Un homme qui quitte un chaos juridictionnel pour une structure stable fait un choix compréhensible, qui ne dit rien sur le Filioque.",
  "refs": "Déclaration de Balamand (1993) ; Tomos d’autocéphalie de l’Église orthodoxe d’Ukraine (2019)."
 },
 {
@@ -874,14 +874,14 @@
   ],
   [
    "Historique",
-   "Convenire ad : le sens « se rendre à » domine linguistiquement, mais Irénée justifie par le fait que Rome est le carrefour de l’Empire où confluent les fidèles de partout. Il donne aussi des listes de succession pour Smyrne et Éphèse dans le même passage : Rome sert d’exemple parce qu’elle est la plus commode. Contexte immédiat : Polycarpe corrigeant Anicet. Victor et la Pâque : Irénée conteste l’usage de l’excommunication, non le pouvoir ; Victor a reculé. Hikanos (« suffisant, capable ») : la lecture superlative est une extension."
+   "Convenire ad : le sens « se rendre à » domine linguistiquement, mais Irénée justifie par le fait que Rome est le carrefour de l’Empire où confluent les fidèles de partout. Il donne aussi des listes de succession pour Smyrne et Éphèse dans le même passage : Rome sert d’exemple parce qu’elle est la plus commode. Contexte immédiat : Polycarpe corrigeant Anicet. Victor et la Pâque : Irénée conteste l’usage de l’excommunication, non le pouvoir ; Victor a reculé."
   ],
   [
    "Philosophique",
    "Bilan : le dossier Irénée est un texte trop corrompu et trop bref pour trancher ; chaque camp le lit selon ce qu’il tient déjà par ailleurs. Autre argument : le canon 3 de Constantinople (« après Rome ») fonde la préséance de Constantinople sur son statut de Nouvelle Rome, donc sur un motif impérial."
   ]
  ],
- "lim": "Je n’ai connaissance de la polémique que par des transcriptions de vidéos : les arguments du camp copte sont reconstitués à partir de ce que l’adversaire en cite. Les spécialistes (Harnack, Quasten, Lampe, Brent) divergent. Aucune des deux lectures n’est tranchée.",
+ "lim": "Les spécialistes (Harnack, Quasten, Lampe, Brent) divergent sur ce passage, et chaque camp le cite à l’appui de ce qu’il tient déjà par ailleurs. Ne construis pas un argument décisif, dans un sens ou dans l’autre, sur un texte dont l’original grec est perdu.",
  "refs": "Irénée, Contre les hérésies III, 3, 2 ; Eusèbe, Histoire ecclésiastique V, 23-25 ; Constantinople I, canon 3."
 },
 {
@@ -968,7 +968,7 @@
    "Ce que Nicée II établit : Rome est le premier siège, traité avec honneur, dont l’avis pèse lourd."
   ]
  ],
- "lim": "L’Orthodoxie doit reconnaître qu’un évêque de Rome du Vᵉ siècle pensait cela. Les catholiques répondent que l’Orient a reçu ces lettres et acclamé Hadrien, et que les atténuations de traduction sont discutées. Le dossier n’est pas tranché ; la citation de la vidéo est à vérifier sur les actes.",
+ "lim": "L’Orthodoxie doit reconnaître qu’un évêque de Rome du Vᵉ siècle pensait cela. Les catholiques répondent que l’Orient a reçu ces lettres et acclamé Hadrien, et que les atténuations de traduction sont discutées. Le dossier n’est pas tranché ; vérifie les citations sur les actes du concile.",
  "refs": "Gélase Ier, Lettre 12 et Tractatus ; Actes de Nicée II, session 2 ; Lettre d’Hadrien Ier à Taraise."
 },
 {
@@ -1136,7 +1136,7 @@
  "pts": [
   [
    "Historique",
-   "Principe : chaque camp lit les mêmes faits avec son critère d’autorité. Le dossier catholique le plus solide : Sardique, les appels effectifs (Athanase, Chrysostome, Théodoret), Gélase, Théodore Studite, Léon : une primauté romaine forte, plus qu’une politesse. Le point fort de l’Orthodoxie : le critère de réception est rétrospectif et ne tranche pas une crise en cours. Pour clôre : ce dossier ne clôt pas le débat, il clôt l’instruction."
+   "Principe : chaque camp lit les mêmes faits avec son critère d’autorité. Le dossier catholique le plus solide : Sardique, les appels effectifs (Athanase, Chrysostome, Théodoret), Gélase, Théodore Studite, Léon : une primauté romaine forte, plus qu’une politesse. Le point fort de l’Orthodoxie : le critère de réception est rétrospectif et ne tranche pas une crise en cours. Pour finir : ce dossier ne clôt pas le débat, il clôt l’instruction."
   ]
  ],
  "table": {
@@ -1228,10 +1228,10 @@
   ],
   [
    "Historique",
-   "Nicée II : la lettre d’Hadrien à Taraise (contrairement à celle aux empereurs) n’est pas adoucie en grec (Price) ; Hadrien y affirme sa primauté. Mais Morrison décrit ce qu’Hadrien affirmait (Constantinople tiendrait son rang du consentement romain), historiquement faux (Rome a refusé le canon 28 jusqu’en 1215) ; Kartashev : les Grecs cherchaient alors l’union et se contentaient de formules diplomatiques ; Guettée voit en Hadrien le créateur de la papauté moderne (innovation) ; le concile ignore la demande de restitution de l’Illyricum."
+   "Nicée II : la lettre d’Hadrien à Taraise (contrairement à celle aux empereurs) n’est pas adoucie en grec (Price) ; Hadrien y affirme sa primauté. Mais ce qu’Hadrien y affirme (Constantinople tiendrait son rang du consentement romain) est historiquement faux : Rome a refusé le canon 28 jusqu’en 1215 ; Kartashev : les Grecs cherchaient alors l’union et se contentaient de formules diplomatiques ; Guettée voit en Hadrien le créateur de la papauté moderne (innovation) ; le concile ignore la demande de restitution de l’Illyricum."
   ]
  ],
- "lim": "J’ai nuancé ici ma réponse précédente sur les traductions de Nicée II (elle valait pour la lettre aux empereurs, non pour la lettre à Taraise). Le dossier de Jean Damascène est lui-même débattu (Siecienski). Les spécialistes (Siecienski, Papadakis, Bekkos) divergent. Ne présente pas ce dossier comme clos.",
+ "lim": "Nuance par rapport à la fiche sur Gélase et Nicée II : l’atténuation en grec vaut pour la lettre d’Hadrien aux empereurs, non pour sa lettre à Taraise (Price). Le dossier de Jean Damascène est lui-même débattu (Siecienski). Les spécialistes (Siecienski, Papadakis, Bekkos) divergent. Ne présente pas ce dossier comme clos.",
  "refs": "Jean Damascène, Foi orthodoxe I, 8 et 12 ; Actes de Nicée II ; Siecienski, The Filioque ; Richard Price, The Acts of the Second Council of Nicaea."
 },
 {
@@ -1271,7 +1271,7 @@
    "Ce qui ne tient pas : les Pères africains contredisent une suprématie occidentale incontestée : affaire Apiarius (418-424), où les évêques d’Afrique, Augustin compris, ont refusé les appels à Rome : le pape avait cité des canons de Sardique comme étant ceux de Nicée, les Africains ont vérifié et constaté qu’ils n’y étaient pas ; le « Rome a parlé, la cause est entendue » d’Augustin est déformé. Justinien « papiste » : c’est l’empereur qui a fait enlever le pape Vigile et tenu un concile malgré ses refus. Bekkos a été rejeté par l’Église byzantine et l’union de Lyon (1274) est tombée comme Florence. Sur 1054 : Léon IX était mort quand le cardinal Humbert a déposé la bulle, les excommunications visaient des personnes et ont été levées en 1965 ; la rupture s’est faite progressivement."
   ]
  ],
- "lim": "Léon le Grand a écrit que l’Esprit procède des deux (lettre à Turibius) mais je ne connais pas de texte où il demanderait à Constantinople d’accepter cette formule. La citation d’Augustin « Roma locuta est » est généralement considérée comme une paraphrase du sermon 131. Le ton du fil (« intellect de bête ») ne fait que nuire aux deux camps.",
+ "lim": "Léon le Grand a écrit que l’Esprit procède des deux (lettre à Turibius) mais je ne connais pas de texte où il demanderait à Constantinople d’accepter cette formule. La citation d’Augustin « Roma locuta est » est généralement considérée comme une paraphrase du sermon 131.",
  "refs": "Concile de Carthage (419) et affaire d’Apiarius ; Augustin, Sermon 131 ; Chieti (2016), Synodalité et primauté."
 },
 {
@@ -1403,7 +1403,7 @@
    "Lecture catholique : Thomas d’Aquin (Somme III, q. 45) : anticipation du corps glorieux, la gloire de l’âme du Christ rejaillissant sur son corps ; but : fortifier les apôtres avant la Passion et annoncer la résurrection ; la lumière est généralement tenue pour créée (position de Barlaam), la théologie moderne est plus ouverte sans adopter la distinction de Palamas. Fête étendue à toute l’Église latine en 1457 ; mystère lumineux du Rosaire depuis 2002. Accord sur le fait et une partie du sens ; divergence sur la nature de la lumière, encore le débat essence-énergies."
   ]
  ],
- "lim": "La caractérisation de la lumière « créée » chez les thomistes est discutée : Thomas parle de clarté du corps glorieux, non d’un simple éclat. Les théologiens catholiques contemporains (Bouyer, Congar) sont plus proches de l’Orient. Le lien du Thabor avec la montagne de la transfiguration est traditionnel, non établi historiquement. (Le « problème difficile » de la conscience, évoqué dans le même échange, est traité dans une autre fiche.)",
+ "lim": "La caractérisation de la lumière « créée » chez les thomistes est discutée : Thomas parle de clarté du corps glorieux, non d’un simple éclat. Les théologiens catholiques contemporains (Bouyer, Congar) sont plus proches de l’Orient. Le lien du Thabor avec la montagne de la transfiguration est traditionnel, non établi historiquement.",
  "refs": "Matthieu 17, 1-9 ; Thomas d’Aquin, Somme théologique III, q. 45 ; Grégoire Palamas, Triades III."
 },
 {
@@ -1447,7 +1447,7 @@
    "Constantinople III (681) écrit au pape Agathon comme évêque du premier siège et lui demande de confirmer, mais anathématise Honorius avec l’accord des légats romains. Théodore Studite : persécuté qui demande un concile. Les listes d’autorités sont composées pendant des crises où l’on avait besoin de Rome ; on peut dresser une liste aussi longue dans l’autre sens (Cyprien et Firmilien, Mélèce, Apiarius, Grégoire le Grand, Honorius, schisme acacien, 879-880). Conclusion constante : primauté romaine forte et réelle ; juridiction universelle non montrée par les actes."
   ]
  ],
- "lim": "Aucune pièce nouvelle ici : c’est l’accumulation qui fait effet. Les catholiques répondent que la déférence orientale en crise montre précisément ce que l’on attendait de Rome et que la pratique de la ratification papale est constante. Je n’ai pas vérifié chaque citation : relis les actes.",
+ "lim": "Aucune pièce nouvelle ici : c’est l’accumulation qui fait effet. Les catholiques répondent que la déférence orientale en crise montre précisément ce que l’on attendait de Rome et que la pratique de la ratification papale est constante. Vérifie chaque citation dans les actes des conciles avant de l’utiliser.",
  "refs": "Actes de Chalcédoine ; Actes d’Éphèse ; Formule d’Hormisdas (519) ; Constantinople III, lettre à Agathon."
 },
 {
@@ -1503,14 +1503,14 @@
  "pts": [
   [
    "Historique",
-   "Repères : Clément (vers 96), Victor (années 190, querelle de Pâques), Étienne (années 250, contre Cyprien). Damase (366-384) parle de « siège apostolique » et fonde son autorité sur Pierre. Léon le Grand (440-461) : Pierre « vit et préside dans son siège » (formule du légat Philippe à Éphèse, 431) ; son Tome est reçu à Chalcédoine (451) ; il rejette le canon 28. Gélase (492-496) : la lettre « Duo sunt » distingue deux pouvoirs, sacerdotal et royal. Attention : le titre « vicaire du Christ » est donné à plusieurs (empereurs, évêques) et ne devient propre au pape qu’avec Innocent III (1198)."
+   "Repères : Clément (vers 96), Victor (années 190, querelle de Pâques), Étienne (années 250, contre Cyprien). Damase (366-384) parle de « siège apostolique » et fonde son autorité sur Pierre. Célestin Ier (422-432) : à Éphèse (431), son légat Philippe déclare que Pierre « vit et juge dans ses successeurs ». Léon le Grand (440-461) : son Tome est reçu à Chalcédoine (451) ; il rejette le canon 28. Gélase (492-496) : la lettre « Duo sunt » distingue deux pouvoirs, sacerdotal et royal. Attention : le titre « vicaire du Christ » est donné à plusieurs (empereurs, évêques) et ne devient propre au pape qu’avec Innocent III (1198)."
   ],
   [
    "Historique",
    "Grégoire VII, Dictatus Papae (1075) : 27 propositions (le pape peut déposer des empereurs, nul ne peut le juger, etc.). Innocent III (1198-1216) et le IVe Latran (1215). Vatican I (1870), Pastor aeternus : primauté de juridiction universelle et infaillibilité ex cathedra. Position orthodoxe : primauté d’honneur et de service (le « premier parmi égaux », dans la Pentarchie) ; aucun des sept conciles œcuméniques ne proclame une juridiction universelle. Position catholique : un développement doctrinal du ministère de Pierre (Mt 16, 18 ; Lc 22, 32 ; Jn 21, 15-17)."
   ]
  ],
- "lim": "Il est vrai que le pape médiéval n’a pas d’équivalent au premier millénaire ; il est vrai aussi que Rome a été sollicitée comme arbitre (Sardique, Chalcédoine). Que quatre patriarcats anciens sur cinq ne soient pas en communion avec Rome ne prouve pas que Rome ait tort : c’est un argument historique, non théologique. Attention : Pierre « premier évêque d’Antioche » est une tradition tardive (Origène, Eusèbe).",
+ "lim": "Il est vrai que le pape médiéval n’a pas d’équivalent au premier millénaire ; il est vrai aussi que Rome a été sollicitée comme arbitre (Sardique, Chalcédoine). Que quatre patriarcats anciens sur cinq ne soient pas en communion avec Rome ne prouve pas que Rome ait tort : c’est un argument historique, non théologique. Attention : Pierre « premier évêque d’Antioche » est une tradition du IIIᵉ siècle (Origène, Eusèbe), absente du Nouveau Testament.",
  "refs": "Léon Ier, Sermon 3 ; Gélase, Lettre à Anastase ; Grégoire VII, Dictatus Papae ; Vatican I, Pastor aeternus ; Francis Dvornik, Byzance et la primauté romaine."
 },
 {
@@ -1552,7 +1552,7 @@
    "Logique de la pratique : demander à un frère vivant en Christ de prier pour soi n’est pas remplacer le Christ ; 1 Tm 2, 5 parle de la médiation rédemptrice, exclusive, non de la prière d’intercession entre fidèles (Paul demande des prières, Rm 15, 30). Ancienneté : le papyrus Rylands 470 contenant le « Sub tuum praesidium » (vers 250) est l’une des plus anciennes invocations à Marie ; les graffitis de San Sebastiano à Rome (IIIe siècle) invoquent Pierre et Paul ; Origène (De oratione 11) parle de l’intercession des saints. Le IIe siècle n’offre pas de preuve directe de l’invocation : « les catacombes du IIe siècle » est un raccourci inexact."
   ]
  ],
- "lim": "Il s’agit d’une question que l’Écriture ne tranche pas explicitement : chacun l’interprète à partir de son principe d’autorité (Écriture seule ou Écriture et Tradition). Une discussion avec une IA l’a vu changer d’avis selon l’interlocuteur : ne lui demande pas de trancher. Les orthodoxes distinguent vénération (doulia) et adoration (latrie).",
+ "lim": "Il s’agit d’une question que l’Écriture ne tranche pas explicitement : chacun l’interprète à partir de son principe d’autorité (Écriture seule ou Écriture et Tradition). Une IA interrogée là-dessus change d’avis selon la façon dont on lui pose la question : ne lui demande pas de trancher. Les orthodoxes distinguent vénération (doulia) et adoration (latrie).",
  "refs": "1 Timothée 2, 5 ; Hébreux 12, 1 ; Apocalypse 5, 8 ; 6, 9-10 ; Jacques 5, 16 ; Origène, De oratione 11 ; Jean Damascène, Sur les images."
 },
 {
@@ -1601,7 +1601,7 @@
   ],
   [
    "Historique",
-   "2. Osius et les légats : Sylvestre n’est pas venu ; il a envoyé deux prêtres romains, Vitus et Vincent, qui signent après Osius de Cordoue en tête des listes. L’idée qu’Osius présidait en légat du pape vient de Gélase de Cyzique, vers 475, soit cent cinquante ans après ; ni Eusèbe, ni Athanase, ni Socrate, Sozomène ou Théodoret ne le disent. Osius était sans doute le conseiller ecclésiastique de Constantin, envoyé par lui à Alexandrie en 324 pour apaiser l’affaire d’Arius. La présidence est discutée : selon les sources, Osius, Eustathe d’Antioche ou Alexandre d’Alexandrie ; Constantin présidait les séances solennelles. Des historiens catholiques (Hefele, XIXe siècle) ont défendu l’idée d’un Osius légat : « tous les historiens le disent » est donc faux."
+   "2. Osius et les légats : Sylvestre n’est pas venu ; il a envoyé deux prêtres romains, Vitus et Vincent, qui signent après Osius de Cordoue en tête des listes. L’idée qu’Osius présidait en légat du pape vient de Gélase de Cyzique, vers 475, soit cent cinquante ans après ; ni Eusèbe, ni Athanase, ni Socrate, Sozomène ou Théodoret ne le disent. Osius était sans doute le conseiller ecclésiastique de Constantin, envoyé par lui à Alexandrie en 324 pour apaiser l’affaire d’Arius. La présidence est discutée : selon les sources, Osius, Eustathe d’Antioche ou Alexandre d’Alexandrie ; Constantin présidait les séances solennelles. Seuls certains historiens catholiques (Hefele, au XIXᵉ siècle) ont défendu l’idée d’un Osius légat ; « tous les historiens le disent » est donc faux."
   ],
   [
    "Historique",
@@ -1646,7 +1646,7 @@
    ]
   ]
  },
- "lim": "Les catholiques répondent que la présence de légats et la confirmation romaine des conciles sont des signes de la primauté, et que l’absence d’une source ne prouve pas l’absence d’une demande : l’argument du silence a ses limites. Je n’ai pas vérifié chaque citation dans les textes originaux : relis Eusèbe, Gélase de Cyzique et les actes de Constantinople III avant de citer.",
+ "lim": "Les catholiques répondent que la présence de légats et la confirmation romaine des conciles sont des signes de la primauté, et que l’absence d’une source ne prouve pas l’absence d’une demande : l’argument du silence a ses limites. Vérifie chaque citation dans les textes originaux : relis Eusèbe, Gélase de Cyzique et les actes de Constantinople III avant de citer.",
  "refs": "Eusèbe de Césarée, Vie de Constantin III, 6-7 ; Lettre d’Eusèbe à son Église ; Gélase de Cyzique, Histoire ecclésiastique II ; Théodoret, Histoire ecclésiastique I, 7 ; Nicée, canon 6 ; Chalcédoine, canon 28."
 }
   );

@@ -447,7 +447,7 @@
    "Image patristique : le diable ignore la divinité cachée sous la chair et « mord à l’hameçon » (Grégoire de Nysse, Grande Catéchèse 24 ; reprise par plusieurs Pères)."
   ]
  ],
- "lim": "L’image de la flamme qu’on essaierait d’éteindre est une comparaison pédagogique sans source précise. La formule de l’hameçon est de Grégoire de Nysse, et d’autres Pères la reprennent : ne l’attribue pas uniquement à Chrysostome. Certains protestants et catholiques défendent la « peccabilité » (le Christ aurait pu pécher mais n’a pas péché) : le débat est réel ; les définitions de 681 écartent seulement l’idée d’une volonté humaine absente. Avertissement : l’explication est un effort pour penser un mystère.",
+ "lim": "La formule de l’hameçon est de Grégoire de Nysse, et d’autres Pères la reprennent : ne l’attribue pas uniquement à Chrysostome. Certains protestants et catholiques défendent la « peccabilité » (le Christ aurait pu pécher mais n’a pas péché) : le débat est réel ; les définitions de 681 écartent seulement l’idée d’une volonté humaine absente. Avertissement : l’explication est un effort pour penser un mystère.",
  "refs": "Maxime le Confesseur, Disputes avec Pyrrhus ; Constantinople III (681) ; Hébreux 2 et 4."
 },
 {
@@ -472,7 +472,7 @@
    "Sens théologique de Gn 10 : unité du genre humain (une seule famille), diversité voulue (cf. Ac 17, 26 : « d’un seul il a fait tout le genre humain »). Elle n’est pas une ethnographie scientifique."
   ]
  ],
- "lim": "L’identification Japhet = Européens et Asiatiques est une spéculation médiévale. Ne l’utilise pas pour classer des « races ». La question de la datation de Gn 10 et des liens avec les noms de peuples de l’Antiquité reste ouverte. Je n’ai pas pu confirmer la phrase sur les « six apôtres » : elle ne figure pas dans l’enseignement orthodoxe standard ; ne la reprends pas sans source.",
+ "lim": "L’identification Japhet = Européens et Asiatiques est une spéculation médiévale. Ne l’utilise pas pour classer des « races ». La question de la datation de Gn 10 et des liens avec les noms de peuples de l’Antiquité reste ouverte.",
  "refs": "Genèse 9-10 ; Josèphe, Antiquités juives I, 6 ; Actes 17, 26 ; Grégoire de Nysse, Homélie 4 sur l’Ecclésiaste."
 },
 {
@@ -501,7 +501,7 @@
    "Canon : la LXX contient les « deutérocanoniques » (Tobie, Judith, Sagesse, Siracide, Baruch, 1-2 Maccabées) que l’Orthodoxie et le catholicisme reçoivent ; les protestants suivent le canon hébreu. Ce canon s’est fixé progressivement dans le judaïsme, et l’idée d’un « concile de Yavné » qui l’aurait clos est abandonnée par la plupart des historiens."
   ]
  ],
- "lim": "Plusieurs affirmations courantes sont trop fortes : (1) « le NT cite presque toujours la LXX » est vrai en gros, mais il existe des citations proches de l’hébreu ou libres ; (2) « la LXX est plus ancienne que le TM » concerne la traduction, non toujours le texte hébreu sous-jacent, qui varie selon les livres ; (3) Ps 96, 10 « le Seigneur a régné depuis le bois » : l’addition est citée par Justin et Tertullien mais ne figure pas dans les grands manuscrits de la LXX, c’est probablement un ajout chrétien, donc n’en fais pas un argument ; (4) l’ironie envers les protestants (« canon défini par des rabbins ») est rhétorique : Luther suit Jérôme et le canon hébreu, et plusieurs Pères aussi (Athanase, Cyrille de Jérusalem, Jérôme, l’Église de Mélitone). Le sujet est un vrai débat de spécialistes ; ne conclus pas trop vite.",
+ "lim": "Plusieurs affirmations courantes sont trop fortes : (1) « le NT cite presque toujours la LXX » est vrai en gros, mais il existe des citations proches de l’hébreu ou libres ; (2) « la LXX est plus ancienne que le TM » concerne la traduction, non toujours le texte hébreu sous-jacent, qui varie selon les livres ; (3) Ps 96, 10 « le Seigneur a régné depuis le bois » : l’addition est citée par Justin et Tertullien mais ne figure pas dans les grands manuscrits de la LXX, c’est probablement un ajout chrétien, donc n’en fais pas un argument ; (4) l’ironie envers les protestants (« canon défini par des rabbins ») est rhétorique : Luther suit Jérôme et le canon hébreu, et plusieurs Pères donnent des listes proches du canon hébreu (Méliton de Sardes, Athanase, Cyrille de Jérusalem, Jérôme). Le sujet est un vrai débat de spécialistes ; ne conclus pas trop vite.",
  "refs": "Emanuel Tov, Textual Criticism of the Hebrew Bible ; Justin, Dialogue avec Tryphon 71-73 ; Mt 1, 23 ; Is 7, 14."
 },
 {
@@ -630,7 +630,7 @@
    "Is 45, 7 : « je forme la lumière et je crée les ténèbres, je fais la paix (shalom) et je crée le malheur (ra’) ». Le parallélisme oppose shalom à ra’ : ra’ désigne ici le malheur, la calamité, non nécessairement le mal moral (le mot a les deux sens). Le contexte est un oracle adressé à Cyrus : Dieu se dit seul souverain, ce qui est lu comme une polémique contre un dualisme (perse). Il ne s’ensuit pas que Dieu crée le péché (Sg 1, 13 ; Jc 1, 13)."
   ]
  ],
- "lim": "La lecture « contre le dualisme zoroastrien » est une hypothèse répandue mais pas unanime : elle repose sur la date de l’oracle et sur la connaissance du zoroastrisme par l’auteur. Ra’ peut être rendu par « mal » dans plusieurs bonnes traductions : le débat est réel, et Dieu y est bien présenté comme l’origine de la calamité, ce qui garde une difficulté (voir la théologie du jugement). Les datations de l’histoire de YHWH sont conjecturales. Ne réduis pas une vidéo à ce seul verset.",
+ "lim": "La lecture « contre le dualisme zoroastrien » est une hypothèse répandue mais pas unanime : elle repose sur la date de l’oracle et sur la connaissance du zoroastrisme par l’auteur. Ra’ peut être rendu par « mal » dans plusieurs bonnes traductions : le débat est réel, et Dieu y est bien présenté comme l’origine de la calamité, ce qui garde une difficulté (voir la théologie du jugement). Les datations de l’histoire de YHWH sont conjecturales. Ne réduis pas la discussion à ce seul verset.",
  "refs": "Isaïe 45 ; Deutéronome 32 ; Psaume 82 ; Sagesse 1, 13 ; Jacques 1, 13."
 },
 {
@@ -808,7 +808,7 @@
   ]
  ],
  "lim": "Le statut exact des Meqabyan éthiopiens est complexe (textes en guèze apparentés à la littérature du Second Temple) ; ne les réduis pas à une « simple coïncidence de titre ». Le Kebra Nagast est un texte médiéval (XIVᵉ siècle) : sa valeur historique est discutée. Les Églises orientales non chalcédoniennes ont leurs propres canons ; il n’y a pas de canon œcuménique unique de l’Ancien Testament.",
- "refs": "2 Maccabées 2, 4-8 ; Kebra Nagast ; Daniel Assefa, Les Meqabyan."
+ "refs": "2 Maccabées 2, 4-8 ; Kebra Nagast ; R. W. Cowley, The Biblical Canon of the Ethiopian Orthodox Church Today (1974)."
 },
 {
  "id": "diable-et-nom-de-jesus",
@@ -1003,7 +1003,7 @@
   ]
  ],
  "lim": "Cet argument établit un principe, non une conclusion pour Amalek : personne n’a réécrit 1 Samuel 15 comme 2 Samuel 24. Un inerrantiste répondra que les deux sont vrais à la fois (Dieu permet, Satan agit) ; cette lecture suppose la distinction agir/permettre que le Chroniste introduit. La date des Chroniques (IVᵉ siècle av. J.-C.) est approximative. Ne présente pas cela comme une preuve que l’Écriture se contredit : c’est un déplacement de la charge.",
- "refs": "2 Samuel 24 ; 1 Chroniques 21 ; Jean Chrysostome, Homélies sur 2 Samuel."
+ "refs": "2 Samuel 24 ; 1 Chroniques 21 ; Jean Chrysostome, Homélies sur David et Saül."
 },
 {
  "id": "david-genealogies-levirat",
@@ -1187,11 +1187,11 @@
  "pts": [
   [
    "Historique",
-   "Ces livres sont les deutérocanoniques : ils ne sont pas supprimés mais figurent dans la Bible orthodoxe et catholique ; la liturgie les cite. Ce que le vidéaste décrit est la Réforme : Luther, appliquant la sola scriptura, a retenu le canon hébraïque (massorétique) plutôt que la Septante et a placé ces livres en appendice ; c’est écrit dans toutes les histoires du canon, et les éditions protestantes le disent. Il n’y a pas de complot, mais un désaccord confessionnel de cinq siècles. En disant « la Bible a été altérée », on découvre que sa Bible est plus courte : argument contre le protestantisme, non contre le christianisme."
+   "Ces livres sont les deutérocanoniques : ils ne sont pas supprimés mais figurent dans la Bible orthodoxe et catholique ; la liturgie les cite. Ce que ces vidéos décrivent sans le savoir est la Réforme : Luther, appliquant la sola scriptura, a retenu le canon hébraïque (massorétique) plutôt que la Septante et a placé ces livres en appendice ; c’est écrit dans toutes les histoires du canon, et les éditions protestantes le disent. Il n’y a pas de complot, mais un désaccord confessionnel de cinq siècles. En disant « la Bible a été altérée », on découvre que sa Bible est plus courte : argument contre le protestantisme, non contre le christianisme."
   ],
   [
    "Philosophique",
-   "Le reste du montage : des livres d’occultisme de la fin du XIXᵉ siècle (publiés par des maisons maçonniques) sont obscurs parce qu’ils étaient sans intérêt, non parce qu’on les aurait effacés. Structure habituelle : faits vrais ou vérifiables mis bout à bout avec des affirmations invérifiables ; formule finale infalsifiable (« si nous disparaissons, c’est le gouvernement »). Le canon est une vraie question, sérieuse, avec une vraie réponse qui n’a rien de secret."
+   "Ces vidéos ajoutent souvent des livres d’occultisme de la fin du XIXᵉ siècle, obscurs parce qu’ils étaient sans intérêt, non parce qu’on les aurait effacés. Structure habituelle : faits vrais ou vérifiables mis bout à bout avec des affirmations invérifiables ; formule finale infalsifiable (« si nous disparaissons, c’est le gouvernement »). Le canon est une vraie question, sérieuse, avec une vraie réponse qui n’a rien de secret."
   ]
  ],
  "lim": "Il existe des textes anciens réellement exclus du canon (apocryphes, pseudépigraphes) que les chrétiens ont connus et parfois lus : ils ne sont pas cachés. Certaines théories d’édition (Nicée n’a pas fixé le canon) sont à manier avec précision. Ne qualifie pas ceux qui posent la question de conspirationnistes.",
@@ -1235,7 +1235,7 @@
   ],
   [
    "Patristique",
-   "Où il glisse : le désaccord n’est pas substitution contre pas de substitution. Le mot orthodoxe est plutôt échange (le Christ prend ce qui est nôtre pour nous donner ce qui est sien). La différence porte sur ce qui exige la Croix : dans la substitution pénale, la justice divine réclame un châtiment que le Fils absorbe (problème du côté de Dieu) ; dans la vision orientale, le problème est du côté de l’homme (mort, corruption) et Dieu y entre pour la détruire (Hé 2, 14). Augustin est la ligne latine qui aboutit à Anselme puis à Calvin. La substitution pénale au sens strict se systématise avec Anselme (XIᵉ siècle) puis se durcit à la Réforme."
+   "Où il glisse : le désaccord n’est pas substitution contre pas de substitution. Le mot orthodoxe est plutôt échange (le Christ prend ce qui est nôtre pour nous donner ce qui est sien). La différence porte sur ce qui exige la Croix : dans la substitution pénale, la justice divine réclame un châtiment que le Fils absorbe (problème du côté de Dieu) ; dans la vision orientale, le problème est du côté de l’homme (mort, corruption) et Dieu y entre pour la détruire (Hé 2, 14). Augustin ouvre la ligne latine qui aboutit à Anselme puis à Calvin : la logique de satisfaction se systématise avec Anselme (XIᵉ siècle), et la substitution pénale proprement dite est formulée à la Réforme."
   ]
  ],
  "lim": "Anselme n’enseigne pas la substitution pénale (satisfaction ≠ punition) : voir la fiche. Plusieurs Pères (Athanase, Grégoire de Nazianze, Cyrille) emploient un langage de substitution et de dette. Ne nie pas la substitution : discute ce que la Croix règle. Ni les orthodoxes ni les protestants ne sont monolithiques.",
@@ -1449,7 +1449,7 @@
    "« Deux distinctions réelles = deux dieux » ne tient pas : une distinction n’est pas une division ; les énergies ne sont ni des personnes ni des substances, mais l’activité naturelle de l’unique essence. Vraie objection : si essence et énergies sont réellement distinctes, Dieu n’est-il pas composé ? Pour un thomiste, la simplicité divine exige que tout en Dieu soit identique à son essence. Palamas : distinction sans composition (comme les rayons du soleil) ; les orthodoxes renvoient l’objection : une simplicité absolue rend difficile de dire que Dieu aurait pu ne pas créer. Débat ouvert entre spécialistes ; voir David Bradshaw, Aristotle East and West."
   ]
  ],
- "lim": "Cette fiche est une orientation, non un arbitrage : le thomisme défend la simplicité par des distinctions de raison fondées in re. Des théologiens catholiques (Kallistos Ware, Hans Küng; dialogue) rapprochent les positions. Ne présente pas le catholicisme comme niant toute participation réelle à Dieu.",
+ "lim": "Cette fiche est une orientation, non un arbitrage : le thomisme défend la simplicité par des distinctions de raison fondées in re. Des théologiens des deux côtés rapprochent les positions (Kallistos Ware côté orthodoxe ; A. N. Williams, The Ground of Union, côté catholique). Ne présente pas le catholicisme comme niant toute participation réelle à Dieu.",
  "refs": "Grégoire Palamas, Triades ; Concile de Trente, session 6 ; David Bradshaw, Aristotle East and West."
 },
 {
@@ -1534,11 +1534,11 @@
  "pts": [
   [
    "Théologique",
-   "Ce qui tient : l’Orthodoxie n’a aucun dogme contre l’évolution ; Theodosius Dobzhansky, fondateur de la biologie évolutive moderne, était orthodoxe pratiquant (« rien n’a de sens en biologie si ce n’est à la lumière de l’évolution »). Le cœur de l’idée (le corps vient d’un long processus ; l’homme devient homme quand Dieu donne ce que l’évolution ne produit pas) est classique : Pie XII, Humani generis (1950) ; Gn 2, 7 (poussière, puis souffle). "
+   "Ce qui tient : l’Orthodoxie n’a aucun dogme contre l’évolution ; Theodosius Dobzhansky, fondateur de la biologie évolutive moderne, était orthodoxe pratiquant (« rien n’a de sens en biologie si ce n’est à la lumière de l’évolution »). Le cœur de l’idée (le corps vient d’un long processus ; l’homme devient homme quand Dieu donne ce que l’évolution ne produit pas) est classique : Pie XII, Humani generis (1950) ; Gn 2, 7 (poussière, puis souffle)."
   ],
   [
    "Théologique",
-   "Corrections : (1) Dieu agit à travers les causes secondes (dinosaures et bactéries viennent de Dieu même par l’évolution), sinon on retombe dans le Dieu bouche-trou ; (2) le souffle n’est pas une mise à jour du cerveau mais l’image de Dieu (âme raisonnable, libre, capable de communion) ; Irénée distingue le souffle de vie et l’Esprit Saint ; "
+   "Corrections : (1) Dieu agit à travers les causes secondes (dinosaures et bactéries viennent de Dieu même par l’évolution), sinon on retombe dans le Dieu bouche-trou ; (2) le souffle n’est pas une mise à jour du cerveau mais l’image de Dieu (âme raisonnable, libre, capable de communion) ; Irénée distingue le souffle de vie et l’Esprit Saint."
   ],
   [
    "Théologique",

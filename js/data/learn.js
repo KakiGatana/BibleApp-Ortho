@@ -115,7 +115,7 @@
     ['Autocéphale', `Se dit d’une Église qui élit son propre chef (patriarche ou métropolite), sans dépendre d’une autre.`],
     ['Autel (sainte table)', `La table au centre du sanctuaire, où se célèbre l’Eucharistie.`],
     ['Béma (sanctuaire)', `Partie de l’église derrière l’iconostase, où se trouve l’autel.`],
-    ['Canon', `Grand poème de hymnes, divisé en neuf odes, chanté aux matines.`],
+    ['Canon', `Grand poème d’hymnes, divisé en neuf odes (la deuxième n’est chantée qu’en Carême), chanté aux matines.`],
     ['Catéchumène', `Personne qui se prépare au baptême en apprenant la foi.`],
     ['Chrismation', `Sacrement qui suit le baptême : onction du saint chrême qui donne le sceau du Saint-Esprit.`],
     ['Chœur', `Groupe qui chante les offices. Le chant est presque toujours sans instrument.`],

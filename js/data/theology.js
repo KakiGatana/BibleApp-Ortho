@@ -15,7 +15,7 @@
         { h: 'Une lecture liturgique' },
         { p: 'Les offices sont tissés de citations bibliques : un fidèle qui assiste à toutes les célébrations de l’année entend la quasi-totalité du Psautier, des Évangiles et de grandes parties des Épîtres. La Parole est d’abord <i>proclamée</i> et <i>chantée</i> avant d’être étudiée.' }
       ],
-      quote: { t: 'Ce que le récit présente par la parole, la peinture le montre en silence.', a: 'Saint Basile le Grand, Homélie sur le martyr Barlaam (cité de mémoire)' }
+      quote: { t: 'Ce que le récit présente par la parole, la peinture le montre en silence.', a: 'Saint Basile le Grand, Homélie sur les quarante martyrs de Sébaste' }
     },
     {
       id: 'trinite', title: 'La Sainte Trinité', sub: 'Un seul Dieu en trois Personnes', icon: 'triangle',
@@ -177,7 +177,7 @@
         { h: 'L’espérance' },
         { p: 'Plusieurs Pères (Isaac le Syrien, Grégoire de Nysse) laissent ouverte la plus large espérance. L’Église ne définit pas le sort final, mais prie : « Souviens-toi, Seigneur, de tous ceux qui se sont endormis dans l’espérance de la résurrection. »' }
       ],
-      quote: { t: 'Qu’est-ce qu’un cœur miséricordieux ? C’est l’embrasement du cœur pour toute la création, pour les hommes, pour les oiseaux, pour les animaux, pour les démons.', a: 'Saint Isaac le Syrien, Homélie 71 (cité de mémoire)' }
+      quote: { t: 'Qu’est-ce qu’un cœur miséricordieux ? C’est l’embrasement du cœur pour toute la création, pour les hommes, pour les oiseaux, pour les animaux, pour les démons.', a: 'Saint Isaac le Syrien, Discours ascétiques (homélie 71 dans la numérotation syriaque, 81 dans la grecque)' }
     },
     {
       id: 'canon', title: 'Le canon et la Septante', sub: 'Pourquoi l’Ancien Testament orthodoxe est plus long', icon: 'scroll',
@@ -185,7 +185,7 @@
       blocks: [
         { p: 'La <b>Septante</b> (LXX) fut traduite à Alexandrie entre le IIIe et le IIe siècle avant J.-C. C’est le texte cité dans la plupart des citations de l’Ancien Testament dans le Nouveau. Elle contient des livres absents de la Bible hébraïque : Tobie, Judith, Sagesse, Siracide, Baruch, 1-3 Maccabées, et des suppléments à Esther et Daniel. L’Église orthodoxe les lit et les reçoit comme Écriture.' },
         { h: 'Numérotation des Psaumes' },
-        { p: 'Les psaumes sont numérotés différemment dans la LXX et dans le texte hébreu : le Psaume 22 « Le Seigneur est mon berger » est le <b>Ps 23</b> dans la Bible hébraïque. En gros, de 9 à 146, le chiffre LXX = chiffre hébreu − 1. Dans cette appli, on indique la numérotation de la LXX, suivie de l’hébreu entre parenthèses.' },
+        { p: 'Les psaumes sont numérotés différemment dans la LXX et dans le texte hébreu : le Psaume 22 « Le Seigneur est mon berger » est le <b>Ps 23</b> dans la Bible hébraïque. En gros, du Psaume 10 au Psaume 146 de la LXX, le chiffre LXX = chiffre hébreu − 1 (la LXX réunit les Psaumes 9 et 10 hébreux, et coupe en deux le Psaume 147). Dans cette appli, on indique la numérotation de la LXX, suivie de l’hébreu entre parenthèses.' },
         { h: 'Un seul livre, plusieurs traductions' },
         { p: 'L’Église n’a pas de « traduction officielle » : le slavon traduit directement la LXX et le grec du NT ; les traductions françaises usuelles (Louis Segond, Jérusalem, TOB, AELF…) suivent l’hébreu pour les livres communs de l’Ancien Testament (les livres deutérocanoniques y sont traduits du grec). Les paroisses orthodoxes francophones utilisent souvent des traductions liturgiques maison.' }
       ]

@@ -10,7 +10,7 @@
       ['Philosophique', `D’autres pistes : l’intelligibilité mathématique du monde, la conscience et la raison elles-mêmes, la réalité de valeurs morales qui s’imposent à nous. Aucune ne « démontre » à elle seule, mais ensemble elles rendent la foi raisonnable.`],
       ['Théologique', `La tradition orthodoxe est apophatique : Dieu n’est pas « un être parmi les êtres », un objet que l’on pourrait mettre dans un laboratoire (Denys l’Aréopagite, saint Grégoire Palamas). Demander une preuve d’un objet, c’est déjà mal poser la question.`],
       ['Théologique', `La foi n’est pas d’abord une conclusion mais une rencontre : « Viens et vois » (Jn 1, 46). La vie liturgique, la prière et la repentance sont la manière orthodoxe de « vérifier ».`]
-    ], lim: `Ces arguments mènent au mieux à un Dieu créateur ; ils ne prouvent pas à eux seuls que Jésus est ressuscité ni que l’Église est la bonne. Ce sont des ouvertures, pas des preuves contraignantes.`, lire: `Pères : Basile le Grand, Hexaéméron ; Vladimir Lossky, Théologie mystique de l’Église d’Orient.` },
+    ], lim: `Ces arguments mènent au mieux à un Dieu créateur ; ils ne prouvent pas à eux seuls que Jésus est ressuscité ni que l’Église est la bonne. Ce sont des ouvertures, pas des preuves contraignantes.`, lire: `Pères : Basile le Grand, Hexaéméron ; Vladimir Lossky, Essai sur la théologie mystique de l’Église d’Orient.` },
 
     { id: 'mal', cat: 'foi', q: `« Si Dieu est bon et tout-puissant, pourquoi le mal et la souffrance ? »`, pts: [
       ['Philosophique', `Le mal n’est pas une « chose » créée par Dieu, mais une privation, une blessure du bien (saint Basile, saint Maxime). Dieu a créé des êtres libres, et un amour imposé n’est plus de l’amour : la liberté rend le mal possible.`],
@@ -156,7 +156,7 @@
     { id: 'marie', cat: 'orth', q: `« Le culte de Marie n’est pas biblique ; on y prête une place qui revient au Christ seul. »`, pts: [
       ['Biblique', `Gabriel dit : « Réjouis-toi, pleine de grâce » (Lc 1, 28) ; Élisabeth l’appelle « mère de mon Seigneur » (Lc 1, 43) ; et Marie elle-même prophétise : « toutes les générations me diront bienheureuse » (Lc 1, 48).`],
       ['Historique', `Le titre de Théotokos (« Mère de Dieu ») a été défini à Éphèse (431), non pour exalter Marie mais pour protéger l’identité du Christ : si Marie n’est pas la mère de Dieu, Jésus n’est pas pleinement Dieu. C’est une affirmation sur le Christ.`],
-      ['Théologique', `L’Orthodoxie distingue vénération (douleia, avec un honneur particulier pour Marie) et adoration (latreia), qui n’est due qu’à Dieu. Marie est « le plus honorable des chérubins » mais une créature.`],
+      ['Théologique', `L’Orthodoxie distingue vénération (douleia, avec un honneur particulier pour Marie) et adoration (latreia), qui n’est due qu’à Dieu. Marie est « plus vénérable que les chérubins », mais elle reste une créature.`],
       ['Biblique', `À Cana, Marie présente un besoin à son Fils (« Ils n’ont plus de vin », Jn 2, 3) et il agit : c’est la forme de l’intercession.`]
     ], lim: `Les Orthodoxes ne reçoivent ni l’Immaculée Conception (1854) ni l’Assomption définie en dogme (1950). Ils fêtent la Dormition, selon la Tradition, sans la définir.`, lire: `Saint Jean Damascène, Homélies sur la Dormition ; Serge Boulgakov (à lire avec prudence).` },
 
@@ -174,7 +174,7 @@
     ], lim: `Cette pratique n’est pas explicitement commandée dans l’Écriture. Elle se fonde sur la communion des saints, et les Réformateurs y ont vu à raison un risque de dérive.`, lire: `Martyre de saint Polycarpe ; saint Jean Damascène.` },
 
     { id: 'ethnique', cat: 'orth', q: `« L’Orthodoxie est ethnique et nationaliste, divisée en juridictions rivales. »`, pts: [
-      ['Historique', `L’Église orthodoxe est une communion de Églises autocéphales (grecque, russe, serbe, roumaine, géorgienne…), unies par la même foi et les mêmes sacrements, non par un chef. Elle s’est inculturée dans chaque peuple (c’est ce que firent Cyrille et Méthode avec le slavon).`],
+      ['Historique', `L’Église orthodoxe est une communion d’Églises autocéphales (grecque, russe, serbe, roumaine, géorgienne…), unies par la même foi et les mêmes sacrements, non par un chef. Elle s’est inculturée dans chaque peuple (c’est ce que firent Cyrille et Méthode avec le slavon).`],
       ['Théologique', `Un concile à Constantinople en 1872 a condamné le « phylétisme » : l’idée d’une Église fondée sur l’ethnie est une hérésie, car « il n’y a ni Juif ni Grec » (Ga 3, 28).`],
       ['Historique', `Il y a de vrais problèmes : conflits de juridiction (Ukraine, Estonie, diaspora), liens avec le pouvoir politique, discours nationalistes de certains clercs. Le Concile de Crète (2016) s’est tenu sans quatre Églises, dont celle de Russie.`]
     ], lim: `Cette objection est en grande partie fondée dans les faits : l’Église ne le nie pas. C’est un péché, pas un principe de la foi.`, lire: `Mgr Kallistos Ware, L’Orthodoxie ; Jean-Claude Larchet.` },

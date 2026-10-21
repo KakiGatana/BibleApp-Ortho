@@ -90,7 +90,7 @@
    ]
   ]
  },
- "lim": "Prophéties : l’argument « probabilité astronomique » est le plus faible. Plusieurs textes ne sont pas des prédictions au départ (Za 11, 12 ; Ps 22 est une plainte de juste souffrant), et Ps 22, 17 (« ils ont percé mes mains et mes pieds ») repose sur un texte hébreu discuté (« comme un lion »). Les sceptiques répondent que les évangélistes ont écrit pour faire coïncider. Utilise-les avec prudence. De plus, « personne ne meurt pour un mensonge » est vrai de ceux qui le savent faux, pas de ceux qui se trompent de bonne foi : l’argument porte sur le fait que les disciples auraient su s’ils avaient vu ou non le Ressuscité. Rien de tout cela ne force la foi : le texte d’origine l’admet.",
+ "lim": "Prophéties : l’argument « probabilité astronomique » est le plus faible. Plusieurs textes ne sont pas des prédictions au départ (Za 11, 12 ; Ps 22 est une plainte de juste souffrant), et Ps 22, 17 (« ils ont percé mes mains et mes pieds ») repose sur un texte hébreu discuté (« comme un lion »). Les sceptiques répondent que les évangélistes ont écrit pour faire coïncider. Utilise-les avec prudence. De plus, « personne ne meurt pour un mensonge » est vrai de ceux qui le savent faux, pas de ceux qui se trompent de bonne foi : l’argument porte sur le fait que les disciples auraient su s’ils avaient vu ou non le Ressuscité. Rien de tout cela ne force la foi.",
  "refs": "Gary Habermas ; N. T. Wright ; 1 Co 15."
 },
 {
@@ -151,7 +151,7 @@
   ]
  ],
  "lim": "Plusieurs de ces arguments sont discutables. « La révélation d’un seul homme dans une grotte » contre « des témoins multiples et publics » : les apparitions du Ressuscité sont surtout rapportées à des croyants, et le chiffre de 500 vient d’un seul texte (1 Co 15, 6). L’argument de l’amour trinitaire est classique mais contesté (un musulman répond que l’amour est un nom éternel de Dieu, al-Wadud, qui n’a pas besoin d’un objet extérieur). Reconnais aussi que les autres traditions contiennent des intuitions vraies : le christianisme dit les accomplir, non les nier. Aucun argument ne force la foi.",
- "refs": "Pascal, Pensées ; Lossky, Théologie mystique."
+ "refs": "Pascal, Pensées ; Lossky, Essai sur la théologie mystique de l’Église d’Orient."
 },
 {
  "id": "christianisme-autres-religions",
@@ -293,7 +293,7 @@
  "pts": [
   [
    "Philosophique",
-   "Sergio Quinzio (Dieu en échec) n’est pas un athée classique : il connaît très bien la Bible, croit que Dieu existe et en souffre. Son objection part de l’intérieur de la foi : les promesses du Royaume ne sont pas accomplies, l’histoire est un charnier. C’est le cri de Job."
+   "Sergio Quinzio (La défaite de Dieu, 1992) n’est pas un athée classique : il connaît très bien la Bible, croit que Dieu existe et en souffre. Son objection part de l’intérieur de la foi : les promesses du Royaume ne sont pas accomplies, l’histoire est un charnier. C’est le cri de Job."
   ],
   [
    "Biblique",
@@ -305,7 +305,7 @@
   ]
  ],
  "lim": "Cette réponse n’épuise pas l’objection : la question « pourquoi tant de souffrance historique pendant l’attente ? » reste ouverte. Les premiers chrétiens attendaient un retour proche (1 Th 4, 15-17) : un sceptique y voit un échec de la prophétie, et on ne peut pas le balayer. Reconnais-le.",
- "refs": "Sergio Quinzio, La sconfitta di Dio (Dieu en échec) ; 2 Pierre 3."
+ "refs": "Sergio Quinzio, La sconfitta di Dio (trad. fr. La défaite de Dieu) ; 2 Pierre 3."
 },
 {
  "id": "theisme-ou-atheisme",
@@ -424,10 +424,10 @@
   ],
   [
    "Patristique",
-   "Trois positions chez les Pères : l’enfer éternel (Chrysostome, majorité) ; l’apocatastase (Origène, qu’on associe à Grégoire de Nysse, canonisé) ; l’espérance : l’enfer est réel, mais on espère qu’il est vide, sans l’affirmer (Isaac le Syrien ; Silouane qui priait pour tous : « tiens ton esprit en enfer et ne désespère pas »)."
+   "Trois positions chez les Pères : l’enfer éternel (Chrysostome, majorité) ; l’apocatastase (Origène, qu’on associe à Grégoire de Nysse, canonisé) ; l’espérance : l’enfer est réel, mais on prie pour que tous soient sauvés, sans l’affirmer (Isaac le Syrien ; plus près de nous, Silouane de l’Athos, qui priait pour tous : « tiens ton esprit en enfer et ne désespère pas »)."
   ]
  ],
- "lim": "Reconnais la tension : elle n’est pas résolue. La condamnation de 553 vise le système d’Origène et d’Évagre, et il est discuté que Grégoire de Nysse soutienne l’apocatastase au sens condamné. Dire que Hart « présuppose que la volonté ne peut pas se fixer dans le refus » est une lecture ; Hart lui-même soutient que personne ne peut vouloir librement l’enfer en connaissance de cause, ce qui est un argument sérieux. L’Orthodoxie n’a pas défini l’éternité de l’enfer comme dogme conciliaire : méfie-toi des affirmations trop nettes. « Ceux qui quittent l’Orthodoxie ne comprennent pas » est un mauvais argument : traite leurs arguments sur le fond. Isaac le Syrien est toutefois lu par certains comme universaliste (Homélie 27) : sois prudent sur ce qu’il dit exactement.",
+ "lim": "Reconnais la tension : elle n’est pas résolue. La condamnation de 553 vise le système d’Origène et d’Évagre, et il est discuté que Grégoire de Nysse soutienne l’apocatastase au sens condamné. Dire que Hart « présuppose que la volonté ne peut pas se fixer dans le refus » est une lecture ; Hart lui-même soutient que personne ne peut vouloir librement l’enfer en connaissance de cause, ce qui est un argument sérieux. L’Orthodoxie n’a pas défini l’éternité de l’enfer comme dogme conciliaire : méfie-toi des affirmations trop nettes. « Ceux qui quittent l’Orthodoxie ne comprennent pas » est un mauvais argument : traite leurs arguments sur le fond. Isaac le Syrien est lu par beaucoup comme universaliste, surtout d’après la « Deuxième partie » de ses homélies (39-40, retrouvée en 1983) : sois prudent sur ce qu’il dit exactement.",
  "refs": "Isaac le Syrien, Homélies ascétiques ; Kallistos Ware, Dare We Hope for the Salvation of All? ; David Bentley Hart, That All Shall Be Saved."
 },
 {
@@ -479,7 +479,7 @@
    "Nietzsche critique un christianisme de la peur et de la culpabilité. Ce portrait existe dans l’histoire, et il faut l’admettre ; mais la tradition patristique et hésychaste dit autre chose."
   ]
  ],
- "lim": "Nietzsche vise surtout une morale de ressentiment et la « pitié », pas seulement l’infantilisation. La citation attribuée à Nietzsche dans l’échange (« des hommes diminués, des éternels enfants ») est une paraphrase, pas une citation exacte. La métaphore du musicien est une image, pas un argument. L’objection reste forte contre un christianisme réduit à l’obéissance et à la crainte.",
+ "lim": "Nietzsche vise surtout une morale de ressentiment et la « pitié », pas seulement l’infantilisation. La phrase qu’on prête souvent à Nietzsche (« des hommes diminués, des éternels enfants ») est une paraphrase, pas une citation exacte. La métaphore du musicien est une image, pas un argument. L’objection reste forte contre un christianisme réduit à l’obéissance et à la crainte.",
  "refs": "Athanase, Sur l’incarnation 54 ; Grégoire de Nysse, Vie de Moïse ; Nietzsche, Généalogie de la morale."
 },
 {
@@ -504,7 +504,7 @@
    "Maxime le Confesseur distingue le choix délibératif (gnômè), qui hésite entre plusieurs possibles, et la volonté naturelle orientée vers le bien. Dans le Christ la volonté humaine n’hésite pas, sans que sa liberté soit moindre. C’est la fin de la liberté, non son contraire."
   ]
  ],
- "lim": "Cette réponse laisse un reste de mystère, et c’est honnête : pourquoi ce chemin avec tant de souffrance plutôt qu’un autre ? La comparaison avec les anges ne résout pas tout (les anges déchus ont chuté sans passer par la condition humaine). Maxime n’emploie pas exactement les termes autexousion / eleutheria comme dans l’échange : la distinction sur la gnômè est plus précise. Le péché dans le paradis est exclu par la fixation dans le bien, non par un décret extérieur.",
+ "lim": "Cette réponse laisse un reste de mystère, et c’est honnête : pourquoi ce chemin avec tant de souffrance plutôt qu’un autre ? La comparaison avec les anges ne résout pas tout (les anges déchus ont chuté sans passer par la condition humaine). Chez Maxime, la distinction décisive n’est pas entre autexousion et eleutheria, mais entre volonté naturelle et gnômè. Le péché dans le paradis est exclu par la fixation dans le bien, non par un décret extérieur.",
  "refs": "Maxime le Confesseur, Opuscules théologiques et polémiques ; Apocalypse 21-22 ; Romains 8."
 },
 {
@@ -574,7 +574,7 @@
   ],
   [
    "Patristique",
-   "Augustin (Cité de Dieu XX) a fixé la lecture amillénariste, et l’Orient a aussi retenu un millénium spirituel (André de Césarée, commentaire de l’Apocalypse, VIᵉ siècle). L’enchaînement de Satan signifie la limitation de son pouvoir de séduire les nations depuis la Croix (Jn 12, 31 ; Lc 10, 18). Son relâchement final révèle les cœurs avant le jugement."
+   "Augustin (Cité de Dieu XX) a fixé la lecture amillénariste, et l’Orient a aussi retenu un millénium spirituel (André de Césarée, commentaire de l’Apocalypse, vers 600). L’enchaînement de Satan signifie la limitation de son pouvoir de séduire les nations depuis la Croix (Jn 12, 31 ; Lc 10, 18). Son relâchement final révèle les cœurs avant le jugement."
   ],
   [
    "Biblique",
@@ -706,8 +706,8 @@
    "Points de contact : critique du matérialisme et de l’individualisme ; importance du sacré, de la transmission et de la dimension sacramentelle. Points de rupture : (1) toutes les religions ne sont pas équivalentes face à Jn 14, 6 et à l’Incarnation unique ; (2) la théosis est offerte à tous les baptisés, non à une élite initiée ; (3) la transmission est celle des sacrements dans la succession apostolique, pas une initiation secrète ; (4) le christianisme annonce une Personne historique plutôt qu’une doctrine métaphysique."
   ]
  ],
- "lim": "Cette fiche est une présentation d’orientation. Guénon est un auteur érudit et exigeant ; ne le résume pas à une caricature, ni à ses utilisations politiques (Evola le radicalise, Guénon n’était pas fasciste). Des orthodoxes contemporains l’ont lu avec intérêt (le père Séraphim Rose en a fait une critique) et des critiques plus nuancées existent. Ton jugement sur sa sincérité n’a pas de fondement : ne juge pas la personne. Certaines affirmations biographiques (consécration « Palingenius » par une lignée gnostique, rattachement exact au soufisme) sont discutées par les biographes.",
- "refs": "René Guénon, La Crise du monde moderne ; Seraphim Rose, Orthodoxy and the Religion of the Future (sur Guénon)."
+ "lim": "Cette fiche est une présentation d’orientation. Guénon est un auteur érudit et exigeant ; ne le résume pas à une caricature, ni à ses utilisations politiques (Evola le radicalise, Guénon n’était pas fasciste). Des orthodoxes contemporains l’ont lu : le père Séraphim Rose, avant sa conversion, est passé par Guénon puis s’en est détourné ; d’autres (Philip Sherrard, Jean Biès) sont restés plus proches de lui. Ton jugement sur sa sincérité n’a pas de fondement : ne juge pas la personne. Certaines affirmations biographiques (consécration « Palingenius » par une lignée gnostique, rattachement exact au soufisme) sont discutées par les biographes.",
+ "refs": "René Guénon, La Crise du monde moderne ; Damascene Christensen, Father Seraphim Rose: His Life and Works (sur sa lecture de Guénon) ; Marie-France James, Ésotérisme et christianisme autour de René Guénon."
 },
 {
  "id": "prescience-et-enfer",
@@ -1045,7 +1045,7 @@
    "Critique orthodoxe en retour : vouloir le Royaume sans Dieu, par la seule force humaine, est une tentation de Babel ; l’homme qui se prend pour Dieu devient un bourreau (Dostoïevski, Les Démons). L’espérance chrétienne sait que le Royaume est un don, ce qui protège de la terreur."
   ]
  ],
- "lim": "La thèse « eschatologie sécularisée » est une grille d’interprétation (Löwith, Bloch), non une preuve que le marxisme est faux. Marx fut baptisé enfant dans une famille juive devenue luthérienne (son père s’était converti) et ses deux grands-pères étaient rabbins. Tous les régimes se réclamant du marxisme n’ont pas été identiquement anti-religieux, et tous les marxistes ne sont pas totalitaires (théologie de la libération, marxisme humaniste). Distingue la critique sociale de Marx (en partie juste) de son matérialisme et de ses effets historiques. La citation « opium » est souvent tronquée.",
+ "lim": "La thèse « eschatologie sécularisée » est une grille d’interprétation (Löwith, Bloch), non une preuve que le marxisme est faux. Marx fut baptisé enfant (1824) dans une famille juive passée au protestantisme, son père s’étant converti ; il descendait de lignées rabbiniques des deux côtés. Tous les régimes se réclamant du marxisme n’ont pas été identiquement anti-religieux, et tous les marxistes ne sont pas totalitaires (théologie de la libération, marxisme humaniste). Distingue la critique sociale de Marx (en partie juste) de son matérialisme et de ses effets historiques. La citation « opium » est souvent tronquée.",
  "refs": "Marx, Contribution à la critique de la philosophie du droit de Hegel (1844) ; Berdiaev, Les sources et le sens du communisme russe ; Aron, L’opium des intellectuels."
 },
 {
@@ -1070,7 +1070,7 @@
    "Le trafic d’indulgences a déclenché les 95 thèses de Luther (1517). Rome a supprimé les indulgences monnayées dès Trente et réformé la pratique en 1967 (Paul VI, Indulgentiarum doctrina). Des hiérarques orthodoxes sous domination ottomane ont émis des « certificats d’absolution » d’inspiration latine aux XVIIᵉ-XVIIIᵉ siècles : une importation, jamais reçue comme doctrine."
   ]
  ],
- "lim": "La doctrine catholique est plus nuancée que sa caricature : l’indulgence ne remet pas la faute, elle suppose la conversion et ne s’achète pas. Les orthodoxes ne sont pas non plus étrangers à des pratiques de rémission (les pardons de Pâques, les prières à l’absolution) ; ne caricature pas. Les détails du certificat d’absolution orthodoxe (syngnomikon) sont débattus et leur ampleur doit être citée avec prudence.",
+ "lim": "La doctrine catholique est plus nuancée que sa caricature : l’indulgence ne remet pas la faute, elle suppose la conversion et ne s’achète pas. Les orthodoxes ne sont pas non plus étrangers à des pratiques de rémission (les pardons de Pâques, les prières à l’absolution) ; ne caricature pas. L’ampleur de ces certificats d’absolution orthodoxes (synchorochartia) est débattue : cite-les avec prudence.",
  "refs": "Paul VI, Indulgentiarum doctrina (1967) ; Catéchisme de l’Église catholique 1471-1479 ; Luther, 95 thèses."
 },
 {
@@ -1132,7 +1132,7 @@
  "pts": [
   [
    "Historique",
-   "Le schéma est dispensationaliste (Darby, 1830) : enlèvement de l’Église, jugement des croyants au bêma (2 Co 5, 10 ; Rm 14, 10) réservé aux récompenses, puis mille ans, puis Grand Trône Blanc (Ap 20, 11-15) pour les non-croyants. Une coquille fréquente dans les graphiques en ligne cite un mauvais verset."
+   "Le schéma est dispensationaliste (Darby, 1830) : enlèvement de l’Église, jugement des croyants au bêma (2 Co 5, 10 ; Rm 14, 10) réservé aux récompenses, puis mille ans, puis Grand Trône Blanc (Ap 20, 11-15) pour les non-croyants."
   ],
   [
    "Biblique",
@@ -1143,7 +1143,7 @@
    "Ce qui est vrai dans le schéma : les œuvres sont éprouvées (1 Co 3, 12-15). L’Orthodoxie le dit aussi, dans un seul jugement."
   ]
  ],
- "lim": "Tous les protestants ne sont pas dispensationalistes, et beaucoup de réformés tiennent un seul jugement. Le tribunal de 2 Co 5, 10 est universel pour les chrétiens (« tous ») : l’interprétation en deux temps est une exégèse particulière. L’Orthodoxie elle-même parle d’un sort des âmes avant le Jugement dernier. Vérifie la référence exacte avant de corriger une image.",
+ "lim": "Tous les protestants ne sont pas dispensationalistes, et beaucoup de réformés tiennent un seul jugement. Le tribunal de 2 Co 5, 10 est universel pour les chrétiens (« tous ») : l’interprétation en deux temps est une exégèse particulière. L’Orthodoxie elle-même parle d’un sort des âmes avant le Jugement dernier.",
  "refs": "2 Corinthiens 5, 10 ; Romains 14, 10 ; Matthieu 25, 31-46 ; Apocalypse 20, 11-15 ; 1 Corinthiens 3, 12-15."
 },
 {
@@ -1167,7 +1167,7 @@
    "Sur les remarques : « éleveurs de chèvres de l’âge du bronze » est un argument génétique ; « morale imposée par le ressenti d’un homme d’il y a 2000 ans » suppose que ce soit un ressenti et non une révélation, donc pose la conclusion comme prémisse. Restent Amalek et les premiers-nés d’Égypte : de vraies difficultés."
   ]
  ],
- "lim": "Cette défense par « encadrement » est contestée : beaucoup d’exégètes jugent que les lois sur l’esclavage et le viol restent choquantes même comparées à leur contexte. Dt 22, 28-29 est lu comme un viol ou une séduction selon le verbe hébreu (tapas, « saisir » en Dt 22, 28), ce qui change la portée de l’obligation. N’affirme pas que ces textes sont faciles ; ceux qui le prétendent perdent leur crédibilité. Les remarques sur des internautes ne sont pas à reproduire.",
+ "lim": "Cette défense par « encadrement » est contestée : beaucoup d’exégètes jugent que les lois sur l’esclavage et le viol restent choquantes même comparées à leur contexte. Dt 22, 28-29 est lu comme un viol ou une séduction selon le verbe hébreu (tapas, « saisir » en Dt 22, 28), ce qui change la portée de l’obligation. N’affirme pas que ces textes sont faciles ; ceux qui le prétendent perdent leur crédibilité.",
  "refs": "Exode 21, 20-21 ; Deutéronome 22, 28-29 ; Matthieu 19, 8 ; Derek Parfit, On What Matters ; Russ Shafer-Landau, Moral Realism."
 },
 {
@@ -1185,13 +1185,9 @@
   [
    "Théologique",
    "Point orthodoxe : la tradition croit aux miracles abondamment mais comme signes donnés dans une relation, non comme pièces à conviction d’un dossier. Il n’existe pas d’équivalent orthodoxe d’un bureau des constatations médicales."
-  ],
-  [
-   "Philosophique",
-   "Autres répliques : la morale par l’évolution explique comment nous avons des intuitions coopératives, non ce qui rend un jugement moral vrai ; « le culte est égocentrique » confond l’adoration (qui n’ajoute rien à Dieu) avec un besoin ; « on ne peut pas se forcer à croire » est vrai : la foi est un don (Mc 9, 24)."
   ]
  ],
- "lim": "La définition du miracle comme « inexplicable en principe par la physique » est fragile (dépend de la physique future), comme l’observent les sceptiques. Les cas de guérison ont été recensés surtout par l’Église catholique et reposent souvent sur des dossiers anciens sans imagerie moderne : mieux vaut peu de cas solides que beaucoup revendiqués. Les chiffres du type « 90 % des Nobel sont croyants » ou « 42 sources sur Jésus avant 180 » sont à éviter.",
+ "lim": "La définition du miracle comme « inexplicable en principe par la physique » est fragile (dépend de la physique future), comme l’observent les sceptiques. Les cas de guérison ont été recensés surtout par l’Église catholique et reposent souvent sur des dossiers anciens sans imagerie moderne : mieux vaut peu de cas solides que beaucoup revendiqués. Évite les chiffres invérifiables (« 90 % des prix Nobel sont croyants », etc.).",
  "refs": "Hume, Des miracles ; Marc 9, 24 ; Bureau médical de Lourdes (Comité médical international)."
 },
 {
@@ -1232,10 +1228,10 @@
   ],
   [
    "Philosophique",
-   "Harmonie nomologique : l’univers présente un accord entre lois et états (les lois appliquées aux états engendrent d’autres états), alors qu’il aurait pu être « mort-né ». Les auteurs rapprochent l’argument du réglage fin, avec l’avantage qu’il n’est pas vulnérable à l’objection du multivers. Le terme « harmonie psychonomique » n’est pas une catégorie établie dans ces textes à ma connaissance."
+   "Harmonie nomologique : l’univers présente un accord entre lois et états (les lois appliquées aux états engendrent d’autres états), alors qu’il aurait pu être « mort-né ». Les auteurs rapprochent l’argument du réglage fin, avec l’avantage qu’il n’est pas vulnérable à l’objection du multivers."
   ]
  ],
- "lim": "Argument récent et technique, qui présuppose des positions très contestées en philosophie de l’esprit : si le physicalisme de type A est vrai (les états phénoménaux ne sont rien de plus que des états fonctionnels), il n’y a pas d’harmonie à expliquer. Crummett reconnaît que l’argument est contre le naturalisme, non spécifiquement pour le Dieu chrétien (il peut soutenir l’axiarchisme ou une téléologie naturelle). Ne cite pas la formule « allait changer le monde » sans vérifier la source.",
+ "lim": "Argument récent et technique, qui présuppose des positions très contestées en philosophie de l’esprit : si le physicalisme de type A est vrai (les états phénoménaux ne sont rien de plus que des états fonctionnels), il n’y a pas d’harmonie à expliquer. Crummett reconnaît que l’argument est contre le naturalisme, non spécifiquement pour le Dieu chrétien (il peut soutenir l’axiarchisme ou une téléologie naturelle).",
  "refs": "Cutter et Crummett, Psychophysical Harmony (Oxford Studies in Philosophy of Religion) ; Brian Cutter, articles sur l’harmonie."
 },
 {
@@ -1394,7 +1390,7 @@
    "Régression infinie : ce n’est pas qu’une série infinie serait impossible en soi (les mathématiques manient l’infini). Distinguer une série en ordre (père, grand-père… : chaque cause a produit son effet puis disparu) et une série essentiellement ordonnée (chaque membre n’a de pouvoir qu’en le recevant maintenant d’un autre : la main, le bâton, la pierre). Un million de bâtons ne produisent aucun mouvement sans la main : cent wagons ne tirent pas un train sans locomotive. Reste l’objection : l’univers lui-même est la réalité non reçue."
   ]
  ],
- "lim": "La distinction entre série accidentellement et essentiellement ordonnée est scolastique (Thomas, Duns Scot) et contestée. Des orthodoxes créationnistes (Séraphim Rose) soutiennent une Genèse littérale ; d’autres rejettent l’évolution. L’argument ne prouve pas à lui seul que l’univers n’est pas le terme de la série. L’Église n’a pas défini l’âge de la terre.",
+ "lim": "La distinction entre série accidentellement et essentiellement ordonnée est scolastique (Thomas, Duns Scot) et contestée. Des orthodoxes créationnistes (Séraphim Rose, Genèse, création et homme des premiers âges) soutiennent une Genèse littérale ; d’autres acceptent l’évolution comme description du « comment ». L’argument ne prouve pas à lui seul que l’univers n’est pas le terme de la série. L’Église n’a pas défini l’âge de la terre.",
  "refs": "Basile, Hexaéméron ; Grégoire de Nysse, Sur la création de l’homme ; Maxime le Confesseur, Ambigua ; Thomas d’Aquin, Somme théologique I, q. 46."
 },
 {
@@ -1591,7 +1587,7 @@
    "Formule : « Tu sais comme moi que c’est mal. La question est ce qui le rend vrai. Si c’est une préférence humaine, il avait d’autres goûts. Si c’est une vérité, elle doit exister quelque part, dans un univers que tu dis purement matériel. »"
   ]
  ],
- "lim": "L’antiréalisme n’est pas incohérent ; le réalisme non théiste est un coût ontologique, pas une absurdité. Ne caricature pas l’interlocuteur : beaucoup d’athées admettent la difficulté. Ne réponds pas à des vidéos qui ne te demandent rien.",
+ "lim": "L’antiréalisme n’est pas incohérent ; le réalisme non théiste est un coût ontologique, pas une absurdité. Ne caricature pas l’interlocuteur : beaucoup d’athées admettent la difficulté.",
  "refs": "Romains 2, 14-15 ; Platon, Euthyphron ; Parfit, On What Matters ; J. L. Mackie, Ethics: Inventing Right and Wrong."
 },
 {
@@ -1628,7 +1624,7 @@
   ],
   [
    "Théologique",
-   "En théologie, « très bon » (Gn 1, 31) ne veut pas dire achevé : Irénée compare Adam à un enfant appelé à grandir ; Maxime décrit la création comme mouvement vers Dieu ; la perfection est au terme (transfiguration), non au commencement (âge d’or platonicien). Ne pas identifier l’entropie physique à la chute : la thermodynamique fonctionnait des milliards d’années avant l’homme ; la phthora des Pères est ontologique et spirituelle. Le deuxième point (l’horloger) est une variante de Paley ; le troisième (flèche du temps) est une lecture théologique du temps, pas un argument."
+   "En théologie, « très bon » (Gn 1, 31) ne veut pas dire achevé : Irénée compare Adam à un enfant appelé à grandir ; Maxime décrit la création comme mouvement vers Dieu ; la perfection est au terme (transfiguration), non au commencement (âge d’or platonicien). Ne pas identifier l’entropie physique à la chute : la thermodynamique fonctionnait des milliards d’années avant l’homme ; la phthora des Pères est ontologique et spirituelle. L’argument de l’horloger qu’on y ajoute parfois est une variante de Paley ; la « flèche du temps » comme signe d’un début est une lecture théologique, pas un argument physique."
   ]
  ],
  "lim": "L’interprétation de la basse entropie initiale est ouverte en cosmologie (Penrose, Carroll, Albert) ; certains y voient un fait brut, d’autres cherchent une explication (inflation, multivers). Un chiffre aussi précis demande prudence. L’argument ne mène qu’à un fondement, pas à un Dieu personnel. Voir aussi la fiche sur Paley.",
@@ -1649,7 +1645,7 @@
   ],
   [
    "Historique",
-   "Dossiers : Fatima (1917) est réel comme événement (milliers de témoins, dont un journaliste anticlérical), mais les récits divergent et certains n’ont rien vu. Padre Pio : des températures de plus de 50 °C sont incompatibles avec la survie ; l’historien Sergio Luzzatto a documenté des achats d’acide phénique ; les stigmates sont un phénomène exclusivement occidental depuis François d’Assise, et l’Orient les regarde avec réserve. Lanciano : l’analyse de 1971 (Linoli) conclut à du tissu cardiaque humain AB, non reproduite indépendamment ; la documentation date surtout du XVIᵉ siècle."
+   "Dossiers : Fatima (1917) est réel comme événement (milliers de témoins, dont un journaliste anticlérical), mais les récits divergent et certains n’ont rien vu. Padre Pio : les fièvres de 48 °C rapportées par ses hagiographes sont incompatibles avec la survie ; l’historien Sergio Luzzatto a documenté des achats d’acide phénique ; les stigmates sont un phénomène exclusivement occidental depuis François d’Assise, et l’Orient les regarde avec réserve. Lanciano : l’analyse de 1971 (Linoli) conclut à du tissu cardiaque humain AB, non reproduite indépendamment ; la documentation date surtout du XVIᵉ siècle."
   ]
  ],
  "lim": "Un chrétien n’a pas à tourner ces récits en dérision : Dieu agit où il veut. Mais ce sont des signes, non des preuves juridiques. Les chiffres précis (ombres à 28° ou 42°) sont à vérifier. Prudence sur les données médicales, que je ne peux pas contrôler.",
@@ -1705,58 +1701,25 @@
  "who": [
   "cath",
   "orient",
-  "prot",
-  "islam",
-  "juif"
+  "athee"
  ],
- "q": "L’Orthodoxie manque-t-elle de miracles « vindicatifs » (Lourdes) ? Zeitoun est-il plausible ? Quel est l’argument le plus fort de chaque camp ?",
+ "q": "L’Orthodoxie manque-t-elle de miracles « vindicatifs » comme Lourdes ? Les apparitions de Zeitoun sont-elles plausibles ?",
  "pts": [
   [
    "Historique",
-   "Un catholique a raison : l’Orthodoxie n’a pas d’équivalent de Lourdes (miracle étudié médicalement, documenté selon des procédures publiques, lié à une doctrine contre Rome). Mais son critère est fragile : il prouve trop (Zeitoun 1968 validerait les coptes) ; le signe ne valide pas chaque mot attaché à l’événement ; Dt 13 et Mt 12, 39 : le contenu juge le signe. Zeitoun (1968-1971, église copte du Caire) : phénomènes lumineux vus par des centaines de milliers de personnes, chrétiens et musulmans, reconnus par le patriarche copte Cyrille VI ; contexte (défaite de 1967, relais du gouvernement) ; photos floues ; observateurs sur place n’ayant vu que des lumières sans forme ; hypothèse naturelle (Derr et Persinger : lumières sismiques), contestée. Que ce soit la Vierge est une lecture de foi."
+   "Un catholique a raison sur un point : l’Orthodoxie n’a pas d’équivalent de Lourdes, c’est-à-dire des guérisons étudiées médicalement, documentées selon des procédures publiques (Bureau des constatations depuis 1883), et liées à une dévotion propre à Rome (l’Immaculée Conception, définie en 1854). L’Orthodoxie a ses signes (le Feu sacré à Jérusalem, les icônes qui exsudent de l’huile, les corps incorrompus), mais sans commission médicale."
+  ],
+  [
+   "Biblique",
+   "Mais le critère « ma confession a plus de miracles » est fragile. Il prouve trop : les apparitions de Zeitoun (1968) valideraient alors les coptes, qui ne sont ni catholiques ni orthodoxes chalcédoniens. Et l’Écriture juge le signe par son contenu, non l’inverse : Dt 13, 1-3 (un prodige qui pousse vers un autre dieu est à rejeter), Mt 12, 39 (« une génération mauvaise réclame un signe »), Mt 24, 24 (les faux prophètes feront de grands signes). Un miracle ne valide pas chaque mot attaché à l’événement."
+  ],
+  [
+   "Historique",
+   "Zeitoun (1968-1971, église copte de la Vierge, banlieue du Caire) : des phénomènes lumineux sur le toit, vus pendant des mois par des foules (chrétiens et musulmans), reconnus par le patriarche copte Cyrille VI, mentionnés par la presse égyptienne. Éléments de prudence : le contexte (lendemain de la défaite de 1967, un gouvernement qui avait intérêt à un signe d’unité nationale), des photos floues, des observateurs qui n’ont vu que des lumières sans forme, et une hypothèse naturelle (Derr et Persinger, 1989 : lumières liées à l’activité sismique), elle-même contestée. Que ce soit la Vierge est une lecture de foi, pas une conclusion forcée."
   ]
  ],
- "table": {
-  "head": [
-   "Camp",
-   "Argument le plus fort",
-   "Faiblesse principale"
-  ],
-  "rows": [
-   [
-    "Orthodoxes",
-    "Continuité : même Credo, structure conciliaire, rien d’ajouté depuis 787",
-    "Aucun mécanisme pour trancher une crise en temps réel"
-   ],
-   [
-    "Catholiques",
-    "Principe visible d’unité, primauté romaine attestée (Sardique, Léon, Théodore Studite)",
-    "Juridiction universelle de 1870 difficile à retrouver au premier millénaire (Honorius, Vigile, Florence)"
-   ],
-   [
-    "Coptes",
-    "« Une seule nature incarnée du Verbe » est de Cyrille ; Chalcédoine a réhabilité Ibas et Théodoret",
-    "Chalcédoine reçu par quatre patriarcats sur cinq ; christologie très proche"
-   ],
-   [
-    "Protestants",
-    "L’Écriture comme norme ; critique d’abus réels (indulgences)",
-    "Le canon fixé par l’Église ; évêques, présence réelle, baptême des enfants"
-   ],
-   [
-    "Musulmans",
-    "Monothéisme simple ; texte à tradition stable",
-    "Négation de la crucifixion contre le consensus historique ; renvoi à des Écritures qui le contredisent"
-   ],
-   [
-    "Juifs",
-    "Alliance d’origine ; signes messianiques non réalisés",
-    "Daniel 9, Isaïe 53, Temple détruit peu après le Christ"
-   ]
-  ]
- },
- "lim": "Aucun de ces arguments n’est décisif au sens où il contraindrait toute personne honnête et informée. Ce qui s’en approche le plus est la Résurrection, qui départage les chrétiens des autres (question historique) ; entre chrétiens, tout revient au critère d’autorité. Ce tableau est une orientation, non un arbitrage ; chaque camp contestera la formulation de sa « faiblesse ».",
- "refs": "Deutéronome 13, 1-3 ; Matthieu 12, 39 ; Derr et Persinger, Luminous phenomena and earthquakes (1989)."
+ "lim": "Ne retourne pas l’argument en disant que les miracles catholiques sont faux : un chrétien n’a pas à tourner en dérision ce que Dieu peut faire ailleurs. Un signe, même authentique, établit au mieux une action surnaturelle ; le lien avec une doctrine est ajouté par l’interprétation. Sur Zeitoun, je n’ai pas accès aux dossiers de première main : garde les détails au conditionnel.",
+ "refs": "Deutéronome 13, 1-3 ; Matthieu 12, 39 ; 24, 24 ; Derr et Persinger, Luminous phenomena and earthquakes (1989) ; Bureau des constatations médicales de Lourdes."
 },
 {
  "id": "enfer-absence-ou-amour",
@@ -1777,7 +1740,7 @@
   ]
  ],
  "lim": "Les critiques (Hart, Talbott, les protestants) trouvent que cette lecture rend l’enfer cohérent mais n’explique pas pourquoi Dieu laisserait un refus perdurer éternellement. Les Pères parlent aussi de feu, de ténèbres, de ver : l’image de l’amour brûlant est une interprétation parmi d’autres. Reste ouvert et prudent.",
- "refs": "Psaume 139 ; 1 Corinthiens 15, 28 ; Isaac le Syrien, Homélie 28 ; Basile, Sur l’Hexaéméron."
+ "refs": "Psaume 139 ; 1 Corinthiens 15, 28 ; Isaac le Syrien, Homélie 28."
 },
 {
  "id": "annihilationnisme",
@@ -1807,19 +1770,15 @@
   "cath",
   "orient"
  ],
- "q": "Quelle forme d’apocatastase a été condamnée ? Et quels Pères sont plus « catholiques » ou plus « orthodoxes » (affinités) ?",
+ "q": "Quelle forme d’apocatastase a été condamnée en 553 ? Grégoire de Nysse et Isaac le Syrien sont-ils visés ?",
  "pts": [
   [
    "Historique",
    "La forme condamnée est l’apocatastase origéniste : édit de Justinien (543) puis quinze anathèmes rattachés à Constantinople II (553), dont le statut conciliaire est discuté. C’est un système : préexistence des âmes (intelligences pures avant les corps), chute dans les corps comme punition, retour final nécessaire de toutes les intelligences, démons compris, avec disparition des corps. Le premier anathème condamne la préexistence « et la restauration monstrueuse qui en découle ». Ce n’est pas l’espérance du salut de tous qui est condamnée. Grégoire de Nysse, qui a espéré la restauration de tous, n’a jamais été condamné (Nicée II l’appelle « Père des Pères »). Isaac le Syrien non plus."
-  ],
-  [
-   "Historique",
-   "Affinités (spéculatives, avant 1054 c’est anachronique) : Augustin ↔ Cassien ; Léon le Grand ↔ Basile ; Gélase ↔ Vincent de Lérins (« partout, toujours, par tous ») ; Optat ↔ Firmilien ; Hadrien Ier ↔ Photius ; Théodore Studite (Oriental très « catholique » défendant la pentarchie) ; Grégoire le Grand (refuse « évêque universel », source du purgatoire dans les Dialogues). Moyen Âge : Anselme ↔ Syméon le Nouveau Théologien ; Thomas ↔ Palamas ; Barlaam ↔ Palamas (Barlaam a fini évêque catholique) ; Bonaventure ↔ Cabasilas ; Bekkos ↔ Grégoire de Chypre ; Bessarion ↔ Marc d’Éphèse. Moderne : Moghila ↔ Païssius Velitchkovsky (Nicodème l’Hagiorite a adapté le Combat spirituel de Scupoli) ; François d’Assise ↔ Séraphim de Sarov ; Newman ↔ Khomiakov ; de Lubac ↔ Lossky ; Ratzinger ↔ Zizioulas."
   ]
  ],
- "lim": "Les « duels » sont des repères pédagogiques, pas des étiquettes : au XXᵉ siècle, les meilleurs des deux côtés se sont souvent rapprochés. Les anathèmes de 553 ne sont pas tous attribués au concile par les historiens (Diekamp, Hefele). Évite d’attribuer à un auteur ancien une position confessionnelle moderne.",
- "refs": "Justinien, Édit contre Origène (543) ; Constantinople II (553) ; Grégoire de Nysse, De l’âme et de la résurrection."
+ "lim": "Les quinze anathèmes de 553 ne sont pas tous attribués au concile lui-même par les historiens (Diekamp, Hefele) ; leur autorité est débattue. Que Grégoire de Nysse n’ait pas été condamné ne signifie pas que l’Église ait approuvé sa position : elle l’a honorée comme Père sans retenir ce point. L’universalisme d’Isaac le Syrien est surtout dans la « Deuxième partie » de ses homélies (39-40), retrouvée en 1983 ; l’Orthodoxie n’a pas tranché son statut.",
+ "refs": "Justinien, Édit contre Origène (543) ; Constantinople II (553), anathèmes contre Origène ; Grégoire de Nysse, De l’âme et de la résurrection ; Isaac le Syrien, Deuxième partie, homélies 39-40."
 },
 {
  "id": "pourquoi-souffrir",
@@ -1881,10 +1840,10 @@
   ],
   [
    "Patristique",
-   "Le démon qui dit que Dieu a « triché » (film Nefarious, réplique non vérifiée) : image patristique de l’hameçon (Grégoire de Nysse) : la divinité cachée sous l’humanité comme un hameçon sous l’appât ; la mort a avalé un homme et s’est retrouvée prise par Dieu ; Dieu a pris la place de l’homme sans péché, la mort n’avait aucun droit sur lui. La ruse n’est pas du côté de Dieu : il s’est caché dans l’humilité."
+   "À l’idée, reprise par un film récent, que Dieu aurait « triché » avec le diable en s’incarnant, répond l’image patristique de l’hameçon (Grégoire de Nysse) : la divinité cachée sous l’humanité comme un hameçon sous l’appât ; la mort a avalé un homme et s’est retrouvée prise par Dieu ; Dieu a pris la place de l’homme sans péché, la mort n’avait aucun droit sur lui. La ruse n’est pas du côté de Dieu : il s’est caché dans l’humilité."
   ]
  ],
- "lim": "L’image de l’hameçon est jugée choquante par certains (Grégoire de Nazianze la critique : Dieu ne trompe pas le diable). Le concours divin et la liberté humaine (thomisme, molinisme) sont débattus. Ne cite pas la réplique du film sans la vérifier.",
+ "lim": "L’image de l’hameçon est jugée choquante par certains (Grégoire de Nazianze la critique : Dieu ne trompe pas le diable). Le concours divin et la liberté humaine (thomisme, molinisme) sont débattus.",
  "refs": "Maxime le Confesseur, Ambigua 7 ; Grégoire de Nysse, Grande catéchèse 24 ; Grégoire de Nazianze, Discours 45, 22."
 },
 {
@@ -2319,9 +2278,73 @@
    "Pourquoi pas une autre religion ? Chaque tradition fait une offre différente, et il faut comparer ce que chacune affirme : un Dieu qui se fait homme, souffre et meurt volontairement par amour pour ceux qui le rejettent est une proposition rare. L’hindouisme connaît des « descentes » divines (avatars), mais ce ne sont pas des événements datés sous un gouverneur romain ni une mort réelle ; l’islam refuse tout Dieu incarné. Cela ne prouve rien, mais explique que le christianisme se juge sur des faits plus que sur des idées."
   ]
  ],
- "lim": "Aucun de ces arguments n’oblige à croire. Un dieu indifférent ou malveillant n’est pas réfuté : l’argument décisif pour lui est le mal (voir le thème « Mal et souffrance »), et la réponse chrétienne (Dieu souffre avec nous) est une affirmation de foi, pas une démonstration. Les historiens sont partagés sur la résurrection ; le trilemme de C. S. Lewis (« menteur, fou ou Seigneur ») est contesté, car il ignore l’hypothèse d’une légende qui a grandi. L’argument « les martyrs » a peu de poids, d’autres religions en ont aussi. Il y a enfin le « silence de Dieu » (Schellenberg) : pourquoi ne se manifeste-t-il pas plus clairement ? Un athée ou un agnostique honnête peut rester sur ces questions sans être déraisonnable.",
- "avis": "Mon avis (non dogmatique) : ne pas minimiser le mal comme argument en faveur d’un dieu indifférent ; c’est l’objection la plus sérieuse. Mieux vaut dire : « je ne peux pas te le prouver, voici pourquoi moi je fais confiance à ce Dieu-là », que prétendre à une preuve.",
+ "lim": "Aucun de ces arguments n’oblige à croire. Un dieu indifférent ou malveillant n’est pas réfuté : l’argument décisif pour lui est le mal (voir le thème « Mal et souffrance »), et la réponse chrétienne (Dieu souffre avec nous) est une affirmation de foi, pas une démonstration. Les historiens sont partagés sur la résurrection ; le trilemme de C. S. Lewis (« menteur, fou ou Seigneur ») est contesté, car il ignore l’hypothèse d’une légende qui a grandi. L’argument « les martyrs » a peu de poids, d’autres religions en ont aussi. Il y a enfin le « silence de Dieu » (Schellenberg) : pourquoi ne se manifeste-t-il pas plus clairement ? Un athée ou un agnostique honnête peut rester sur ces questions sans être déraisonnable. Mon avis : ne pas minimiser le mal comme argument en faveur d’un dieu indifférent ; c’est l’objection la plus sérieuse. Mieux vaut dire : « je ne peux pas te le prouver, voici pourquoi moi je fais confiance à ce Dieu-là », que prétendre à une preuve.",
+ "avis": true,
  "refs": "Pascal, Pensées ; Hume, Dialogues sur la religion naturelle ; Tacite, Annales XV, 44 ; Schellenberg, Divine Hiddenness and Human Reason ; Lossky, Essai sur la théologie mystique de l’Église d’Orient."
+},
+{
+ "id": "argument-le-plus-fort-de-chaque-camp",
+ "th": "Dieu et la raison",
+ "who": [
+  "cath",
+  "orient",
+  "prot",
+  "islam",
+  "juif"
+ ],
+ "avis": true,
+ "q": "Quel est l’argument le plus fort de chaque camp (orthodoxes, catholiques, coptes, protestants, musulmans, juifs), et sa faiblesse principale ?",
+ "pts": [
+  [
+   "Philosophique",
+   "Ce tableau est un exercice d’honnêteté : avant de débattre, savoir ce que l’autre a de plus solide, et ce que l’on a soi-même de plus fragile. Chaque case est une formulation courte d’un débat qui a des bibliothèques entières ; chaque camp contestera la manière dont sa « faiblesse » est dite."
+  ],
+  [
+   "Théologique",
+   "Ce qui s’approche le plus d’un argument décisif est la Résurrection du Christ : c’est une question historique, qui départage les chrétiens des autres croyants. Entre chrétiens, tout revient à la question de l’autorité : qui a le dernier mot quand on n’est pas d’accord (un concile, un évêque, l’Écriture seule) ? C’est pourquoi les débats interchrétiens tournent en rond quand on ne commence pas par là."
+  ]
+ ],
+ "table": {
+  "head": [
+   "Camp",
+   "Argument le plus fort",
+   "Faiblesse principale"
+  ],
+  "rows": [
+   [
+    "Orthodoxes",
+    "Continuité : même Credo, structure conciliaire, rien d’ajouté depuis 787",
+    "Aucun mécanisme pour trancher une crise en temps réel"
+   ],
+   [
+    "Catholiques",
+    "Principe visible d’unité, primauté romaine attestée (Sardique, Léon, Théodore Studite)",
+    "Juridiction universelle de 1870 difficile à retrouver au premier millénaire (Honorius, Vigile, Florence)"
+   ],
+   [
+    "Coptes",
+    "« Une seule nature incarnée du Verbe » est de Cyrille ; Chalcédoine a réhabilité Ibas et Théodoret",
+    "Chalcédoine reçu par quatre patriarcats sur cinq ; christologie très proche"
+   ],
+   [
+    "Protestants",
+    "L’Écriture comme norme ; critique d’abus réels (indulgences)",
+    "Le canon fixé par l’Église ; évêques, présence réelle, baptême des enfants"
+   ],
+   [
+    "Musulmans",
+    "Monothéisme simple ; texte à tradition stable",
+    "Négation de la crucifixion contre le consensus historique ; renvoi à des Écritures qui le contredisent"
+   ],
+   [
+    "Juifs",
+    "Alliance d’origine ; signes messianiques non réalisés",
+    "Daniel 9, Isaïe 53, Temple détruit peu après le Christ"
+   ]
+  ]
+ },
+ "lim": "Aucun de ces arguments ne contraint une personne honnête et informée. Le tableau simplifie : il existe des musulmans qui répondent à l’argument de la crucifixion, des juifs qui lisent Daniel 9 et Isaïe 53 autrement, des protestants qui expliquent le canon sans l’autorité d’une Église. C’est une orientation pour un orthodoxe, écrite d’un point de vue orthodoxe, pas un arbitrage.",
+ "refs": "Voir les fiches détaillées de chaque thème : Papauté et unité, Conciles et orientaux, Protestants, Islam, Judaïsme."
 }
   );
 })();

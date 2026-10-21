@@ -50,7 +50,7 @@
     ], refs: `Jean Cassien ; Maxime le Confesseur.` },
 
     { t: `Péché ancestral et culpabilité`, def: `Pour la tradition orientale, nous héritons de la mort et de la corruption d’Adam, et d’une inclination au péché, mais pas de sa culpabilité personnelle.`, pts: [
-      `Rm 5, 12 : la Vulgate latine traduit « en qui tous ont péché » (lecture d’Augustin) ; la plupart des Pères grecs lisent « parce que tous ont péché » (certains, comme Cyrille, suivent « en qui ») et soulignent la mort héritée plutôt que la faute héritée.`,
+      `Rm 5, 12 : la Vulgate latine traduit « en qui tous ont péché » (lecture d’Augustin) ; la plupart des Pères grecs lisent « parce que tous ont péché » et soulignent la mort héritée plutôt que la faute héritée.`,
       `Les enfants sont baptisés pour entrer dans la vie de l’Église et la victoire sur la mort, non pour effacer une culpabilité propre.`,
       `Nuance : certains théologiens orthodoxes, dont Mgr Kallistos Ware, disent que la différence avec Augustin est réelle, mais moins tranchée qu’on ne le dit parfois.`
     ], refs: `Jean Romanidès, Le Péché ancestral ; Kallistos Ware, L’Orthodoxie.` },
@@ -109,7 +109,7 @@
     { y: `1341-1351`, n: `Conciles palamites`, t: `Reconnaissent la distinction essence/énergies et condamnent Barlaam et Akindynos.` },
     { y: `1439`, n: `Ferrare-Florence`, t: `Union avec Rome acceptée par la plupart des Grecs puis rejetée, notamment sous l’influence de saint Marc d’Éphèse.` },
     { y: `1672`, n: `Jérusalem (Dosithée)`, t: `Confession de foi orthodoxe face au calvinisme.` },
-    { y: `2016`, n: `Concile de Crète`, t: `Concile panorthodoxe auquel quatre Églises (dont Antioche, Russie, Bulgarie, Géorgie) n’ont pas participé.` }
+    { y: `2016`, n: `Concile de Crète`, t: `Concile panorthodoxe auquel quatre Églises (Antioche, Russie, Bulgarie, Géorgie) n’ont pas participé.` }
   ];
 
   /* nom ; qui / quoi ; thèse ; réponse */

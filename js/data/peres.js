@@ -6,7 +6,7 @@
     { t: `Dieu s’est fait homme afin que l’homme devienne dieu.`, a: `Saint Athanase d’Alexandrie`, s: `Sur l’Incarnation du Verbe, 54` },
     { t: `La gloire de Dieu, c’est l’homme vivant ; et la vie de l’homme, c’est la vision de Dieu.`, a: `Saint Irénée de Lyon`, s: `Contre les hérésies, IV, 20, 7` },
     { t: `Ne pas faire partager aux pauvres ses propres biens, c’est les voler et leur ôter la vie : ce que nous possédons n’est pas à nous, mais à eux.`, a: `Saint Jean Chrysostome`, s: `Sur Lazare, homélie 2` },
-    { t: `Au affamé appartient le pain que tu gardes ; à celui qui est nu, le manteau que tu enfermes dans ton coffre ; à celui qui va pieds nus, la chaussure qui pourrit chez toi.`, a: `Saint Basile le Grand`, s: `Homélie « Je détruirai mes greniers »` },
+    { t: `À l’affamé appartient le pain que tu gardes ; à celui qui est nu, le manteau que tu enfermes dans ton coffre ; à celui qui va pieds nus, la chaussure qui pourrit chez toi.`, a: `Saint Basile le Grand`, s: `Homélie « Je détruirai mes greniers »` },
     { t: `Sois en paix avec ton âme, et le ciel et la terre seront en paix avec toi.`, a: `Saint Isaac le Syrien`, s: `Discours ascétiques, 2` },
     { t: `Cette vie t’a été donnée pour te repentir : ne la gaspille pas en vaines recherches.`, a: `Saint Isaac le Syrien`, s: `Discours ascétiques, 2` },
     { t: `Acquiers l’esprit de paix, et des milliers de personnes autour de toi trouveront le salut.`, a: `Saint Séraphin de Sarov`, s: `parole qui lui est attribuée` },

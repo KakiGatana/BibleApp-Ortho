@@ -25,7 +25,7 @@
     ['Р', 'р', 'рцы', 'rtsy', 'r', 100, 'R roulé. « Рцы » : « dis ! ».'],
     ['С', 'с', 'слово', 'slovo', 's', 200, 'Toujours « s » (jamais « z »). « Слово » : « parole ».'],
     ['Т', 'т', 'твердо', 'tvyordo', 't', 300, '« Твердо » : « fermement ».'],
-    ['У', 'у', 'укъ', 'ouk', 'ou', 400, 'Comme « ou » dans loup. Se trouve aussi sous la forme Ꙋ ꙋ.'],
+    ['У', 'у', 'укъ', 'ouk', 'ou', null, 'Comme « ou » dans loup. Se trouve aussi sous la forme Ꙋ ꙋ (ou оу).'],
     ['Ф', 'ф', 'фертъ', 'fert', 'f', 500, 'Comme « f ». Dans les mots d’origine grecque.'],
     ['Х', 'х', 'хѣръ', 'kher', 'kh', 600, 'Comme « j » espagnol ou « ch » allemand.'],
     ['Ѡ', 'ѡ', 'омега', 'omega', 'o', 800, 'Même son que О. Utilisé dans des mots grecs et à l’initiale de certaines prépositions.'],
@@ -43,7 +43,7 @@
     ['Ѯ', 'ѯ', 'кси', 'ksi', 'ks', 60, 'Lettre d’origine grecque : « ks ».'],
     ['Ѱ', 'ѱ', 'пси', 'psi', 'ps', 700, 'Lettre d’origine grecque : « ps ».'],
     ['Ѳ', 'ѳ', 'фита', 'fita', 'f', 9, 'Même son que Ф ; vient du grec thêta (θ) dans Ѳома (Thomas), Ѳеодоръ.'],
-    ['Ѵ', 'ѵ', 'ижица', 'ijitsa', 'i', null, 'Même son que И ; dans Мѵро (myrrhe), Сѵмеонъ (Syméon).']
+    ['Ѵ', 'ѵ', 'ижица', 'ijitsa', 'i', 400, 'Même son que И ; dans Мѵро (myrrhe), Сѵмеонъ (Syméon). Vaut 400.']
   ];
 
   /* Leçons. Blocs : h (sous-titre), p (paragraphe html), tip (encadré), table {head, rows}, ex [[cs, translit, fr], …] */
@@ -179,7 +179,7 @@
           ['Слава Тебѣ, Господи', 'Slava Tébé, Gospodi', 'Gloire à toi, Seigneur'],
           ['Премудрость, прости', 'Prémoudrost, prosti', 'La sagesse ! Debout !'],
           ['Христосъ посредѣ насъ', 'Khristos posredé nass', 'Le Christ est au milieu de nous'],
-          ['Аллилуіа', 'Alliloujia', 'Louez Dieu'],
+          ['Аллилуіа', 'Allilouïa', 'Louez Dieu'],
           ['Благословенъ Богъ нашъ', 'Blagoslovén Bog nach', 'Béni soit notre Dieu']
         ] }
       ]
@@ -300,7 +300,7 @@
     ['воскреснути', 'voskresnouti', 'ressusciter', 'verbe', 'Verbes'],
     ['родитися', 'roditissia', 'naître', 'verbe', 'Verbes'],
     ['жити', 'jiti', 'vivre', 'verbe', 'Verbes'],
-    ['грядати', 'griadati', 'venir', 'verbe', 'Verbes'],
+    ['грясти', 'griasti', 'venir (d’où грядый, celui qui vient)', 'verbe', 'Verbes'],
     ['вѣровати', 'vérovati', 'croire', 'verbe', 'Verbes'],
     ['уповати', 'oupovati', 'espérer', 'verbe', 'Verbes'],
     ['поклонитися', 'poklonitissia', 'se prosterner, adorer', 'verbe', 'Verbes'],
@@ -321,7 +321,7 @@
     ['малый', 'maly', 'petit', 'adj.', 'Qualités'],
     ['пресвятый', 'présviatyï', 'très saint', 'adj.', 'Qualités'],
     ['Аминь', 'Aminn', 'amen', 'interj.', 'Mots-outils'],
-    ['Аллилуіа', 'Alliloujia', 'alléluia (louez Dieu)', 'interj.', 'Mots-outils'],
+    ['Аллилуіа', 'Allilouïa', 'alléluia (louez Dieu)', 'interj.', 'Mots-outils'],
     ['Осанна', 'Ossanna', 'hosanna (sauve, de grâce)', 'interj.', 'Mots-outils'],
     ['яко', 'yako', 'car, comme, que', 'conj.', 'Mots-outils'],
     ['иже', 'iji', 'qui (relatif)', 'pron.', 'Mots-outils'],

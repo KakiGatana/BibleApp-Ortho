@@ -23,7 +23,7 @@
    "Contre-réponses : (1) on ne peut pas utiliser Ibn Ishaq quand il arrange et le rejeter quand il dérange ; (2) le témoin direct a plus de poids qu’une réinterprétation à distance ; (3) un retour obtenu sous menace de mort n’est pas un retour libre ; (4) la mémorisation parallèle est surtout un argument pour la période après la compilation d’Othman."
   ]
  ],
- "lim": "Argument à manier avec précision et sans hâte : ces sources sont contestées, et l’expression « forcé à revenir par la conquête » est une interprétation. Les sources disent qu’il fut ensuite gracié, puis qu’il devint gouverneur d’Égypte : un musulman le relèvera. Retiens-le comme un argument moyen, non décisif. Le terrain le plus solide face à l’islam reste la christologie (divinité du Christ, Trinité), pas les questions textuelles. Le texte d’origine citait Ibn Abi Dawud comme source ; le recueil de hadiths est en réalité Abou Daoud (Sunan) : à vérifier.",
+ "lim": "Argument à manier avec précision et sans hâte : ces sources sont contestées, et l’expression « forcé à revenir par la conquête » est une interprétation. Les sources disent qu’il fut ensuite gracié, puis qu’il devint gouverneur d’Égypte : un musulman le relèvera. Retiens-le comme un argument moyen, non décisif. Le terrain le plus solide face à l’islam reste la christologie (divinité du Christ, Trinité), pas les questions textuelles. Ne confonds pas Abou Daoud (auteur des Sunan) et son fils Ibn Abi Dawud (auteur du Kitab al-Masahif, sur les codex coraniques).",
  "refs": "À vérifier : Ibn Ishaq (Sira) ; Sunan Abi Dawud ; Tabari ; commentaires de Q 6, 93."
 },
 {
@@ -551,7 +551,7 @@
    "Les Pères voient les prophéties comme un faisceau, non une démonstration mathématique. Le christianisme se présente comme l’accomplissement du judaïsme biblique et non comme sa négation. L’épître aux Hébreux (9-10) lit le Temple et les sacrifices comme accomplis dans le Christ."
   ]
  ],
- "lim": "Ne dis pas que la probabilité « astronomiquement faible » prouve quoi que ce soit : les calculs populaires (Stoner et d’autres) multiplient des événements non indépendants et dont certains pouvaient être provoqués ou réécrits par les évangélistes. L’argument de Ps 22, 17 (« mains et pieds percés ») repose sur une leçon débattue (voir la fiche sur la Septante). Dire que le Psaume date de « mille ans avant la crucifixion » est vrai (David, vers 1000 av. J.-C.), mais crucifixion existait en Perse et à Carthage ; seule la lecture de l’image comme prophétie de ce mode précis est une interprétation. Respecte le fait que la tradition juive refuse cette lecture.",
+ "lim": "Ne dis pas que la probabilité « astronomiquement faible » prouve quoi que ce soit : les calculs populaires (Stoner et d’autres) multiplient des événements non indépendants et dont certains pouvaient être provoqués ou réécrits par les évangélistes. L’argument de Ps 22, 17 (« mains et pieds percés ») repose sur une leçon débattue (voir la fiche sur la Septante). Dire que le Psaume date de « mille ans avant la crucifixion » est vrai (David, vers 1000 av. J.-C.), mais la crucifixion existait déjà en Perse et à Carthage ; seule la lecture de l’image comme prophétie de ce mode précis est une interprétation. Respecte le fait que la tradition juive refuse cette lecture.",
  "refs": "Michée 5 ; Zacharie 9-14 ; Isaïe 53 ; Psaume 22 ; Hébreux 9-10."
 },
 {
@@ -605,7 +605,7 @@
    "Attitude : la vérité de Dieu est offerte, non imposée ; la possibilité de se tromper est le prix de la liberté. Se garder de conclure « donc j’ai raison contre tous » : l’orgueil spirituel guette (Lc 13, 30). On témoigne sans mépriser."
   ]
  ],
- "lim": "Le résumé des réponses est celui d’un adversaire : écoute-les dans la bouche de musulmans informés. La phrase « l’islam se trompe sur le point central » est un jugement de foi, non une démonstration. Le judaïsme n’est pas qu’un « refus obstiné » : Paul le dit lui-même, et la tradition juive est une fidélité vivante. L’analogie de la géométrie non euclidienne est une image, pas un argument. Ne prétends pas connaître le salut d’autrui.",
+ "lim": "Le résumé des réponses est celui d’un adversaire : écoute-les dans la bouche de musulmans informés. La phrase « l’islam se trompe sur le point central » est un jugement de foi, non une démonstration. Le judaïsme n’est pas qu’un « refus obstiné » : Paul le dit lui-même, et la tradition juive est une fidélité vivante. Ne prétends pas connaître le salut d’autrui.",
  "refs": "Coran 2, 23 ; 3, 55 ; 4, 157-158 ; Romains 9-11 ; Luc 12, 48."
 },
 {
@@ -623,7 +623,7 @@
   ],
   [
    "Patristique",
-   "Pour la tradition orientale, le consentement de Marie est réel et nécessaire à l’Incarnation, modèle de synergie entre la grâce et la liberté. Nicolas Cabasilas (Homélie sur l’Annonciation, de mémoire) insiste : l’Incarnation fut aussi l’œuvre de la volonté et de la foi de la Vierge."
+   "Pour la tradition orientale, le consentement de Marie est réel et nécessaire à l’Incarnation, modèle de synergie entre la grâce et la liberté. Nicolas Cabasilas (Homélie sur l’Annonciation) insiste : l’Incarnation fut aussi l’œuvre de la volonté et de la foi de la Vierge."
   ],
   [
    "Philosophique",
@@ -831,7 +831,7 @@
    "La formule « le Messie est à venir pour les uns, à revenir pour les autres » réduit la différence à un calendrier : le désaccord est sur l’identité (grand prophète ou Dieu fait homme). Ton : reconnaissance (racine commune, Rm 11) et fermeté sur un point."
   ]
  ],
- "lim": "Ne traite pas l’auteur en adversaire : sa lecture est respectueuse et classique dans le judaïsme moderne (Klausner, Buber, Ben-Chorin, Boyarin). Dire que les critiques disent que Marc 14, 62 est une construction de la communauté est faux dans l’autre sens aussi : le débat sur l’authenticité de la déclaration est sérieux. L’idée de Boyarin (que la divinité du Messie existait dans le judaïsme du Second Temple) est une thèse minoritaire mais intéressante. Ne dis jamais que « les juifs sont fermés » : ils sont fidèles à ce qu’ils tiennent pour la révélation.",
+ "lim": "Ne traite pas l’auteur en adversaire : sa lecture est respectueuse et classique dans le judaïsme moderne (Klausner, Buber, Ben-Chorin, Boyarin). Le débat sur l’authenticité de la déclaration de Mc 14, 62 est sérieux : ne dis ni qu’elle est certainement authentique, ni qu’elle est certainement une construction de la communauté. L’idée de Boyarin (que la divinité du Messie existait dans le judaïsme du Second Temple) est une thèse minoritaire mais intéressante. Ne dis jamais que « les juifs sont fermés » : ils sont fidèles à ce qu’ils tiennent pour la révélation.",
  "refs": "Marc 2 et 14 ; Philippiens 2 ; Isaïe 45, 23 ; Daniel Boyarin, The Jewish Gospels."
 },
 {
@@ -1090,7 +1090,7 @@
    "Ce n’est ni un dogme ni un enseignement sur l’infériorité de la femme : c’est une règle monastique locale. L’être le plus vénéré dans l’Orthodoxie est une femme, la Théotokos ; de nombreuses saintes, martyres et « égales aux apôtres » (Marie-Madeleine, Hélène, Nina)."
   ]
  ],
- "lim": "La règle est contestée, y compris par des orthodoxes (résolutions du Parlement européen), et les Athonites répondent par la liberté religieuse d’une communauté monastique. Beaucoup de fidèles jugent l’extension aux animaux excessive. La tradition mariale du lot de la Vierge est pieuse et tardive, non un fait historique établi. Le ton « symétrie » ne règle pas la question de l’égalité d’accès à un territoire public.",
+ "lim": "La règle est contestée (résolution du Parlement européen en 2003), y compris par certains orthodoxes, et les Athonites répondent par la liberté religieuse d’une communauté monastique. Beaucoup de fidèles jugent l’extension aux animaux excessive. La tradition mariale du lot de la Vierge est pieuse et tardive, non un fait historique établi. Le ton « symétrie » ne règle pas la question de l’égalité d’accès à un territoire public.",
  "refs": "Typikon d’Athos ; Constitution hellénique, art. 105 ; Kallistos Ware, L’Orthodoxie."
 },
 {
@@ -1284,7 +1284,7 @@
    "Le titre « égal aux apôtres » récompense l’œuvre historique, non la perfection de l’homme."
   ]
  ],
- "lim": "Les sources sont rares et monastiques ; la chronologie exacte (baptême à Kherson, 987 ou 988, rôle de Cherson) est discutée. Tout jugement sur la sincérité de ses motivations reste une hypothèse. Évite de traiter la sincérité comme une alternative à la politique : au Xᵉ siècle, elles allaient ensemble.",
+ "lim": "Les sources sont rares et monastiques ; la chronologie exacte (baptême à Kiev ou à Chersonèse, en 987 ou 988) est discutée. Tout jugement sur la sincérité de ses motivations reste une hypothèse. Évite de traiter la sincérité comme une alternative à la politique : au Xᵉ siècle, elles allaient ensemble.",
  "refs": "Chronique des temps passés ; Thietmar de Mersebourg, Chronique VII ; Dimitri Obolensky, Le Commonwealth byzantin."
 },
 {
@@ -1377,7 +1377,7 @@
    "Ce qui fait basculer est rarement un argument. Chez beaucoup de convertis occidentaux : la clarté du tawhid face à la complexité trinitaire, la structure concrète (prières, jeûne, aumône) face à un christianisme perçu comme désincarné, la fraternité communautaire, souvent une porte d’entrée soufie. Contexte américain des années 1970 : l’islam comme alternative à un christianisme identifié à un ordre social rejeté. Un universitaire occidental converti après avoir lu le Coran n’est pas quelqu’un qu’on convainc par ignorance."
   ]
  ],
- "lim": "Ne conclus pas que « donc l’islam est vrai » ni qu’il n’y a pas de bonnes raisons de discuter : l’argument de la symétrie montre seulement qu’on ne peut pas disqualifier un convertis par un jugement de sa capacité. La foi engage la volonté, l’histoire, la culture et le cœur, pas seulement l’intelligence (cf. Maïmonide). Respecte la sincérité des personnes.",
+ "lim": "Ne conclus pas que « donc l’islam est vrai » ni qu’il n’y a pas de bonnes raisons de discuter : l’argument de la symétrie montre seulement qu’on ne peut pas disqualifier un converti par un jugement de sa capacité. La foi engage la volonté, l’histoire, la culture et le cœur, pas seulement l’intelligence (cf. Maïmonide). Respecte la sincérité des personnes.",
  "refs": "Voir les fiches sur les rabbins et le Christ et sur les réponses musulmanes."
 },
 {
@@ -1440,7 +1440,7 @@
  "pts": [
   [
    "Philosophique",
-   "Inventeur du calcul infinitésimal (en même temps que Newton), du système binaire, d’une machine à calculer ; juriste, historien, linguiste. Principe de raison suffisante (« rien n’est sans raison ») et la question « pourquoi y a-t-il quelque chose plutôt que rien ? » (Principes de la nature et de la grâce). Sa version de l’argument de la contingence est plus élégante que celle des vidéos."
+   "Inventeur du calcul infinitésimal (en même temps que Newton), du système binaire, d’une machine à calculer ; juriste, historien, linguiste. Principe de raison suffisante (« rien n’est sans raison ») et la question « pourquoi y a-t-il quelque chose plutôt que rien ? » (Principes de la nature et de la grâce). Sa version de l’argument de la contingence est plus élégante que les versions simplifiées qui circulent."
   ],
   [
    "Théologique",
@@ -1492,7 +1492,7 @@
    "Problème de méthode : l’objection suppose que le Coran est une réécriture dépendante de la Bible, ce que l’islam nie (le Coran se dit révélation directe et se présente comme confirmant et corrigeant). « Ce n’est pas dans la Bible » ne pèse que pour qui accorde l’autorité de la Bible. L’argument qui mord vraiment est le dilemme islamique, contrainte interne au Coran."
   ]
  ],
- "lim": "Les divergences sont réelles et documentées (Geiger, Sidney Griffith, Gabriel Reynolds sur le Coran et la Bible) ; l’explication littéraire (traditions juives et chrétiennes orales circulant en Arabie) est celle de nombreux historiens, et elle n’est pas une preuve contre la révélation aux yeux d’un croyant. Les lectures d’al-Samiri varient (nom propre, titre). Évite les formules du type « envoyez à trois chrétiens ».",
+ "lim": "Les divergences sont réelles et documentées (Geiger, Sidney Griffith, Gabriel Reynolds sur le Coran et la Bible) ; l’explication littéraire (traditions juives et chrétiennes orales circulant en Arabie) est celle de nombreux historiens, et elle n’est pas une preuve contre la révélation aux yeux d’un croyant. Les lectures d’al-Samiri varient (nom propre, titre).",
  "refs": "Coran 2, 249 ; 11, 42-46 ; 20, 85-94 ; Genèse 6-9 ; Exode 32 ; Juges 7 ; Gabriel Said Reynolds, The Qur’an and the Bible."
 },
 {
@@ -1629,7 +1629,7 @@
    "Ce qui n’est pas établi : pas de nom ni d’ADN ; on établit que le lieu correspond (carrière, tombes du Iᵉʳ siècle, jardin, hors les murs), non que c’est ce tombeau précis. Formulation prudente : « le site est cohérent avec le récit et avec une tradition remontant au moins au IIᵉ siècle »."
   ]
  ],
- "lim": "La tradition ininterrompue avant Constantin est discutée : certains historiens contestent qu’elle soit attestée avant le IVᵉ siècle (Mélitos de Sardes, Eusèbe). Des sites rivaux (Tombeau du Jardin) ont leurs défenseurs. Évite « on a trouvé le tombeau ».",
+ "lim": "La tradition ininterrompue avant Constantin est discutée : certains historiens contestent qu’elle soit attestée avant le IVᵉ siècle (Méliton de Sardes, Eusèbe). Des sites rivaux (Tombeau du Jardin) ont leurs défenseurs. Évite « on a trouvé le tombeau ».",
  "refs": "Eusèbe, Vie de Constantin III ; Virgilio Corbo, Il Santo Sepolcro di Gerusalemme ; Jean 19, 41."
 },
 {
@@ -1723,7 +1723,7 @@
    "Précaution : les textes décrivent la pratique (joindre la prière au souffle, ramener l’attention dans le cœur, ne pas discuter avec les pensées) mais les Pères écrivent pour des gens qui ont un père spirituel et une vie sacramentelle ; ils mettent en garde contre la pratique intensive sans direction (plané) et sont réservés sur les techniques respiratoires (Théophane le Reclus les déconseillait aux laïcs). Accessible sans condition : dire « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur » dans la journée, sans chercher d’effet. Lecture : quelques pages à la fois, le matin, avec régularité."
   ]
  ],
- "lim": "Le travail de Leloup est contesté en milieu orthodoxe : traductions et interprétations jugées peu rigoureuses par des spécialistes, lecture psychologique et pérennialiste de la tradition (rapprochement avec bouddhisme, yoga, méditation transconfessionnelle). Jugement à nuancer : certains lecteurs y trouvent une introduction. La mention du volume complet vient de mémoire : vérifier l’édition. La Philocalie intégrale n’est pas faite pour une lecture suivie.",
+ "lim": "Le travail de Leloup est contesté en milieu orthodoxe : traductions et interprétations jugées peu rigoureuses par des spécialistes, lecture psychologique et pérennialiste de la tradition (rapprochement avec bouddhisme, yoga, méditation transconfessionnelle). Jugement à nuancer : certains lecteurs y trouvent une introduction. La traduction française complète (Jacques Touraille) existe en fascicules (Bellefontaine) et en deux gros volumes (Desclée de Brouwer). La Philocalie intégrale n’est pas faite pour une lecture suivie.",
  "refs": "Nicodème l’Hagiorite et Macaire de Corinthe, Philocalie, Venise 1782 ; Jean Gouillard, Petite Philocalie de la prière du cœur ; Récits d’un pèlerin russe."
 },
 {
@@ -1988,7 +1988,7 @@
    "Les résultats possibles : le plus fréquent est une relativisation du fossé entre chalcédoniens et non-chalcédoniens (Chambésy : même foi, vocabulaires différents, blessure historique) ou une confirmation transformée (on comprend d’où vient ce qu’on confesse). Condition : étudier pour comprendre, non pour gagner ; en restant dans la prière et la liturgie. Gradient : entre Églises apostoliques le désaccord est fin et porte sur la pondération de faits communs ; avec un protestant, un musulman, un athée, les faits disponibles sont plus tranchants ; mais partout on retrouve un critère en amont."
   ]
  ],
- "lim": "Cette suggestion est personnalisée au départ : adapte-la à ta propre curiosité. Les titres cités sont en anglais pour la plupart ; vérifie les traductions françaises disponibles. Une étude honnête ne présuppose pas son résultat. Ne décide pas de changer d’Église sur un coup de tête.",
+ "lim": "Ce parcours est une proposition parmi d’autres : adapte-le à ta propre curiosité. Les titres cités sont en anglais pour la plupart ; vérifie les traductions françaises disponibles. Une étude honnête ne présuppose pas son résultat. Ne décide pas de changer d’Église sur un coup de tête.",
  "refs": "John McGuckin, Saint Cyril of Alexandria ; Richard Price et Michael Gaddis, The Acts of the Council of Chalcedon ; V. C. Samuel ; Aloys Grillmeier."
 },
 {
@@ -2009,7 +2009,7 @@
    "Pratique : papier bible fin dans toute Bible complète ; mieux vaut des volumes séparés (Nouveau Testament, Psautier) à papier épais pour la lecture quotidienne. Nouveau Testament seul : Bible de Jérusalem (Cerf, notes utiles), TOB (notes plus abondantes), les Évangiles de Sœur Jeanne d’Arc (bilingue grec-français), pour l’étude le Nouveau Testament interlinéaire grec-français (Carrez). Psautier de la Septante : celui de la paroisse, dont la numérotation correspond à la liturgie. Entre la TOB du Livre de Poche (introductions et notes) et la traduction liturgique de Mame (belle à l’oreille, sans notes), la TOB sert mieux l’étude."
   ]
  ],
- "lim": "Je ne peux pas garantir l’épaisseur du papier de chaque édition ni les contenus exacts des éditions récentes de la TOB : feuillette en librairie. Demande à ton père spirituel quel psautier est utilisé dans ta paroisse. Un livre dont l’auteur est inconnu (« Joseph Emmanuel, une autre histoire ») doit être vérifié par la quatrième de couverture, la bibliographie et l’éditeur.",
+ "lim": "Je ne peux pas garantir l’épaisseur du papier de chaque édition ni les contenus exacts des éditions récentes de la TOB : feuillette en librairie. Demande à ton père spirituel quel psautier est utilisé dans ta paroisse. Pour un livre dont l’auteur t’est inconnu, vérifie l’éditeur, la bibliographie et les compétences de l’auteur avant de t’y fier.",
  "refs": "TOB (Cerf/Bibli) ; Bible de Jérusalem ; La Bible d’Alexandrie (Cerf) ; Giguet, La Sainte Bible selon la Septante."
 },
 {
@@ -2115,7 +2115,7 @@
    "Si le salut dépendait d’une heure d’étude quotidienne, il serait réservé aux instruits et aux disponibles : l’inverse de l’Évangile (1 Co 8, 1 : « la connaissance enfle, l’amour édifie »). L’étude est bonne et peut nourrir la prière mais elle n’est pas la condition du Royaume : prière, sacrements, charité, repentir. Silouane était un paysan presque sans instruction."
   ]
  ],
- "lim": "Il ne faut pas opposer étude et prière : les Pères ont beaucoup étudié (lectio divina). Cette fiche répond à une exigence particulière, non à tout prêtre qui encourage l’étude. Les polémiques sur l’élection d’un pape relèvent de la politique interne catholique et ne sont pas traitées ici.",
+ "lim": "Il ne faut pas opposer étude et prière : les Pères ont beaucoup étudié (lectio divina). Cette fiche répond à une exigence particulière, non à tout prêtre qui encourage l’étude.",
  "refs": "Matthieu 25, 1-13 ; Matthieu 26, 40 ; 1 Corinthiens 8, 1 ; Séraphim de Sarov, Entretien avec Motovilov."
 },
 {
@@ -2175,14 +2175,14 @@
  "pts": [
   [
    "Historique",
-   "Chaque Samedi saint orthodoxe, le patriarche entre seul dans l’édicule du Saint-Sépulcre et en ressort avec une flamme. Attesté depuis au moins le IXᵉ siècle. Le dossier contre l’origine miraculeuse est sérieux : des témoignages de clercs (dont des déclarations attribuées au patriarche Théophile en 2008) et, selon un article récent cité par un interlocuteur, des sacristains disent allumer les lampes avant l’entrée du patriarche. Je ne peux pas vérifier cet article ni la décision de justice évoquée. L’Église n’a jamais fait du Feu saint un dogme : un orthodoxe n’a rien à perdre à dire « je ne sais pas, et ma foi n’en dépend pas »."
+   "Chaque Samedi saint orthodoxe, le patriarche entre seul dans l’édicule du Saint-Sépulcre et en ressort avec une flamme. Attesté depuis au moins le IXᵉ siècle. Le dossier contre l’origine miraculeuse est sérieux : des propos attribués au patriarche Théophile III (2008), des témoignages de clercs et de sacristains rapportés par la presse, affirment que les lampes sont allumées avant l’entrée du patriarche ; le patriarcat ne l’a jamais reconnu officiellement. L’Église n’a jamais fait du Feu saint un dogme : un orthodoxe n’a rien à perdre à dire « je ne sais pas, et ma foi n’en dépend pas »."
   ],
   [
    "Théologique",
    "Le patriarche dit recevoir la lumière de la lampe qui brûle sur le tombeau et demande qu’elle soit sanctifiée : le rite honnête est une lumière bénie, non tombée du ciel. Le tort éventuel est d’avoir laissé circuler un récit qu’on savait faux (« tout le monde sait, personne ne le dit »). Critère : le contenu juge le signe (Dt 13, 1-3 ; Ga 1, 8)."
   ]
  ],
- "lim": "Il ne faut pas se fonder sur ma première réponse (qui disait que le phénomène n’avait jamais été expliqué). Les détails sont à vérifier : sources primaires (Orthodox Times, déclarations du patriarcat). Des pèlerins et des clercs affirment toujours le caractère miraculeux : n’en rions pas, mais ne fonde pas la foi dessus.",
+ "lim": "Ne dis pas que le phénomène « n’a jamais été expliqué » : vérifie les sources primaires (déclarations du patriarcat, presse grecque et arménienne). Des pèlerins et des clercs affirment toujours le caractère miraculeux : n’en rions pas, mais ne fonde pas la foi dessus.",
  "refs": "Bernard le Moine (vers 870) ; Deutéronome 13, 1-3 ; Galates 1, 8."
 },
 {
@@ -2223,7 +2223,7 @@
    "Face aux Églises non chalcédoniennes : Meyendorff, Le Christ dans la théologie byzantine ; McGuckin, Saint Cyril of Alexandria and the Christological Controversy ; Does Chalcedon Divide or Unite? (dialogue orthodoxe/orientaux) à lire avec V. C. Samuel. Conseil : chercher des livres qui expliquent la position orthodoxe à fond plutôt que des pamphlets ; si l’on n’en choisit que deux : Clément (catholicisme) puis Meyendorff (christologie), la Petite Philocalie restant la lecture quotidienne."
   ]
  ],
- "lim": "Titres cités de mémoire : vérifie les éditions et traductions disponibles. Cette liste est orientée orthodoxe ; lis aussi les meilleurs auteurs de l’autre bord. Les convictions et le choix d’une Église se nourrissent de la liturgie plus que des livres.",
+ "lim": "Vérifie les éditions et traductions disponibles avant d’acheter. Cette liste est orientée orthodoxe ; lis aussi les meilleurs auteurs de l’autre bord. Les convictions et le choix d’une Église se nourrissent de la liturgie plus que des livres.",
  "refs": "Olivier Clément, Rome autrement ; Siecienski, The Filioque ; Meyendorff, Le Christ dans la théologie byzantine."
 },
 {
@@ -2244,7 +2244,7 @@
    "Vérifier les prix et frais de port selon les vendeurs (livraison depuis les États-Unis : frais de port et d’import à ajouter) ; chercher en priorité un vendeur européen ou une librairie orthodoxe."
   ]
  ],
- "lim": "Les prix et délais cités dans la conversation sont variables et datés ; ne t’y fie pas. Les notes de l’OSB sont de tendance orthodoxe américaine et ne représentent pas toutes les juridictions. Elle ne remplace pas la lecture liturgique.",
+ "lim": "Les prix et délais varient beaucoup selon les vendeurs et les années. Les notes de l’OSB sont de tendance orthodoxe américaine et ne représentent pas toutes les juridictions. Elle ne remplace pas la lecture liturgique.",
  "refs": "The Orthodox Study Bible (St. Athanasius Academy) ; La Bible d’Alexandrie (Cerf)."
 },
 {
@@ -2409,7 +2409,7 @@
    "Kallistos Ware, essai sur la lecture orthodoxe de la Bible : avec obéissance (parole de Dieu qu’on reçoit), avec l’Église (dans la Tradition et avec les Pères), centrée sur le Christ, de manière personnelle (une lettre adressée à moi). Image de Tikhon de Zadonsk : si un roi vous écrivait une lettre, vous la liriez avec joie ; ici, c’est le Roi du ciel."
   ]
  ],
- "lim": "Plan indicatif ; ton père spirituel peut le préciser. La lecture suivie de l’Ancien Testament reste utile mais plus difficile. L’essai de Ware est cité de mémoire dans la conversation ; vérifie le titre et la source.",
+ "lim": "Plan indicatif ; ton père spirituel peut le préciser. La lecture suivie de l’Ancien Testament reste utile mais plus difficile. L’essai de Ware se trouve en introduction de l’Orthodox Study Bible.",
  "refs": "Kallistos Ware, How to Read the Bible (The Orthodox Study Bible, introduction) ; Tikhon de Zadonsk."
 },
 {
@@ -2472,7 +2472,7 @@
    "Les « frères du Seigneur » s’expliquent de deux façons : à l’Orient, enfants de Joseph d’un premier mariage (Protévangile de Jacques, Épiphane) : « Jacques, fils de Joseph, frère de Jésus » le dit exactement ; à l’Occident depuis Jérôme, des cousins. Dans les deux cas, adelphos avait un sens large (parenté proche). Une inscription contestée ne trancherait rien, et l’Orthodoxie n’aurait aucune raison de la craindre."
   ]
  ],
- "lim": "Je ne sais pas si un article récent s’appuie sur une étude nouvelle ou recycle l’histoire; on n’a pas de « premier lien physique avec la famille du Christ » établi. Les protestants lisent généralement les frères comme des fils de Marie et Joseph ; la virginité perpétuelle de Marie est tenue par l’Orient et par Rome, non par la plupart des protestants.",
+ "lim": "Un article qui présente l’ossuaire comme une découverte nouvelle recycle en général l’affaire de 2002 : il n’existe pas de « premier lien physique avec la famille du Christ » établi. Les protestants lisent généralement les frères comme des fils de Marie et Joseph ; la virginité perpétuelle de Marie est tenue par l’Orient et par Rome, non par la plupart des protestants.",
  "refs": "Marc 6, 3 ; Galates 1, 19 ; Protévangile de Jacques ; Jérôme, Contre Helvidius."
 },
 {
@@ -2608,7 +2608,7 @@
   ]
  ],
  "lim": "Les chiffres de la Semaine sanglante restent discutés. Dire que la Commune « confirme la dialectique » est une lecture marxiste a posteriori, non un fait. Les otages ne furent pas tous tués par décision d’une autorité unique.",
- "refs": "Marx, La guerre civile en France (1871) ; Jacques Rougerie, Paris libre 1871 ; Jean-Baptiste Duroselle (Église et socialisme au XIXe siècle)."
+ "refs": "Marx, La guerre civile en France (1871) ; Jacques Rougerie, Paris libre 1871 ; Jean-Baptiste Duroselle, Les débuts du catholicisme social en France."
 },
 {
  "id": "aristote-esclave-naturel-et-eglise",
@@ -2621,7 +2621,7 @@
  "pts": [
   [
    "Philosophique",
-   "L’expression grecque est phusei doulos (φύσει δοῦλος), l’« esclave par nature » (Politique I, 4-7, 1254a-1255b) : Aristote pense que certains êtres, privés de la faculté délibérative complète, sont faits pour être commandés. Il reconnaît pourtant que la thèse était contestée de son temps et que l’esclavage « selon la loi » (guerre) n’est pas toujours juste (1255a). Attention : le mot ΕΞΩΦΡΕΝΙΚΟΣ proposé dans la discussion d’origine (« hors de l’esprit ») est un mot de grec moderne sans rapport avec cette théorie."
+   "L’expression grecque est phusei doulos (φύσει δοῦλος), l’« esclave par nature » (Politique I, 4-7, 1254a-1255b) : Aristote pense que certains êtres, privés de la faculté délibérative complète, sont faits pour être commandés. Il reconnaît pourtant que la thèse était contestée de son temps et que l’esclavage « selon la loi » (guerre) n’est pas toujours juste (1255a)."
   ],
   [
    "Patristique",
@@ -2719,7 +2719,7 @@
    ]
   ]
  },
- "lim": "Résumé volontairement bref : l’économie n’est pas ma spécialité et ces écoles sont toujours débattues. L’Église ne se range dans aucune (Centesimus annus, 1991, reconnaît la valeur du marché tout en rappelant ses limites morales).",
+ "lim": "Résumé volontairement bref : ces écoles sont toujours débattues entre économistes. L’Église ne se range dans aucune (Centesimus annus, 1991, reconnaît la valeur du marché tout en rappelant ses limites morales).",
  "refs": "Menger, Principes d’économie politique ; Böhm-Bawerk, Karl Marx and the Close of His System ; Mises, Le calcul économique en régime socialiste ; Hayek, L’usage de la connaissance dans la société ; Jean-Paul II, Centesimus annus."
 },
 {
@@ -2908,7 +2908,7 @@
    "Arguments : (1) la Tradition ininterrompue (ni Jésus, ni les apôtres, ni un concile œcuménique n’ont ordonné de femmes) ; (2) le prêtre comme icône du Christ à l’autel : les catholiques insistent sur l’« in persona Christi » (Inter insigniores, 1976 ; Ordinatio sacerdotalis, 1994) ; (3) la complémentarité sans hiérarchie de valeur (Marie, plus honorée que les anges, n’est pas prêtre). Chez les orthodoxes, l’argument de la Tradition apostolique domine, mais ils parlent aussi du prêtre comme icône du Christ, notamment dans la célébration eucharistique : ce n’est pas une catégorie étrangère. L’ordination des femmes dans les Églises anglicane ou luthérienne vient de l’idée que le sacerdoce est une fonction, non une icône."
   ]
  ],
- "lim": "Il est incorrect de dire que l’Orthodoxie ne se réfère pas à l’icône du Christ. Il existe un débat orthodoxe interne sur le diaconat féminin (diaconesses antiques, Rm 16, 1) ; l’Église d’Alexandrie a rétabli des diaconesses en 2016, sans ordination sacerdotale. L’argument d’autorité ne convainc pas ceux qui contestent la Tradition elle-même.",
+ "lim": "L’Orthodoxie se réfère elle aussi à l’icône du Christ, sans en faire son argument principal. Il existe un débat orthodoxe interne sur le diaconat féminin (diaconesses antiques, Rm 16, 1) ; l’Église d’Alexandrie a rétabli des diaconesses en 2016, sans ordination sacerdotale. L’argument d’autorité ne convainc pas ceux qui contestent la Tradition elle-même.",
  "refs": "1 Timothée 2, 12 ; 3, 2 ; Romains 16, 1-7 ; Jean-Paul II, Ordinatio sacerdotalis ; Kallistos Ware, Les femmes et le sacerdoce."
 },
 {
@@ -3032,7 +3032,7 @@
    "Vengeance : « à moi la vengeance » (Rm 12, 19 ; Dt 32, 35) ; la justice institutionnelle n’est pas interdite (Rm 13) et chercher réparation n’est pas se venger. Chrysostome : dans les Homélies sur les Statues (I), il exhorte, à propos des blasphémateurs, à les reprendre avec fermeté, jusqu’à une réprimande physique dans des termes vifs : citation à vérifier dans le texte, et à replacer dans le contexte rhétorique du IVe siècle. Distinction classique : l’offense personnelle se pardonne ; l’offense envers Dieu ou les faibles appelle un zèle, jamais la haine. Les Pères ne sont pas infaillibles à titre individuel."
   ]
  ],
- "lim": "Je n’ai pas retrouvé le passage exact de Chrysostome (le texte cité d’après la discussion d’origine demande vérification). La citation selon laquelle garder de la haine revient à boire du poison est attribuée à tort à plusieurs auteurs : ne la prête pas à saint Silouane sans source.",
+ "lim": "Le passage exact de Chrysostome demande vérification : la citation qui circule en ligne est souvent tronquée. La citation selon laquelle garder de la haine revient à boire du poison est attribuée à tort à plusieurs auteurs : ne la prête pas à saint Silouane sans source.",
  "refs": "Matthieu 5, 38-42 ; Romains 12, 17-21 ; 13 ; Walter Wink, Engaging the Powers ; Jean Chrysostome, Homélies sur les Statues."
 },
 {
@@ -3070,7 +3070,7 @@
    "Réponses mormones : modèle de géographie limitée (les événements auraient eu lieu dans une zone restreinte d’Amérique centrale), mots employés dans un sens large (« cheval » pour le tapir ?), les peuples de Léhi dilués génétiquement dans une population plus vaste. Les critiques jugent ces réponses ad hoc, car le texte semble décrire de grandes nations. L’argument est de nature historique : il laisse la question de foi intacte pour ceux qui croient à une révélation, mais fragilise la prétention à décrire des faits."
   ]
  ],
- "lim": "Je n’ai pas vérifié chaque chiffre (« plus de 3 900 changements » vient de la discussion d’origine : le chiffre est souvent cité mais la plupart relèvent de la grammaire). Des chercheurs mormons répondent point par point : écoute leurs arguments avant de juger.",
+ "lim": "Le chiffre souvent cité de « plus de 3 900 changements » depuis 1830 est à manier avec précaution : la plupart relèvent de l’orthographe et de la grammaire. Des chercheurs mormons répondent point par point : écoute leurs arguments avant de juger.",
  "refs": "Livre de Mormon, Premier livre de Néphi 1 ; Mormon 6 ; Isaïe 40-55 ; Simon Southerton, Losing a Lost Tribe ; Terryl Givens, By the Hand of Mormon."
 },
 {
@@ -3085,7 +3085,7 @@
  "pts": [
   [
    "Philosophique",
-   "Cette thèse est un plaidoyer plus qu’un constat. Pour le christianisme : on ne peut pas dire que « la Bible n’a pas d’incohérences » (âge de Joaquin, 2 R 24, 8 : 18 ans, et 2 Ch 36, 9 : 8 ans dans le texte hébreu, erreur de copie probable ; généalogies ; chronologies des évangiles ; fin de Marc ; Comma johannique) ; la critique historique y décèle des couches rédactionnelles. L’argument chrétien est que ces difficultés ne touchent pas l’essentiel et que la foi ne dépend pas d’un texte parfait au sens musulman."
+   "Cette thèse est un plaidoyer plus qu’un constat. Pour le christianisme : on ne peut pas dire que « la Bible n’a pas d’incohérences » (âge de Joiakin, 2 R 24, 8 : 18 ans, et 2 Ch 36, 9 : 8 ans dans le texte hébreu, erreur de copie probable ; généalogies ; chronologies des évangiles ; fin de Marc ; Comma johannique) ; la critique historique y décèle des couches rédactionnelles. L’argument chrétien est que ces difficultés ne touchent pas l’essentiel et que la foi ne dépend pas d’un texte parfait au sens musulman."
   ],
   [
    "Philosophique",
@@ -3151,6 +3151,28 @@
  ],
  "lim": "C’est un avis fondé sur la tradition orthodoxe, tranché mais pas méprisant. Les anthroposophes se disent chrétiens (la Communauté des chrétiens, fondée en 1922 avec l’aide de Steiner) ; d’autres confessions peuvent juger autrement. Les critiques de la pédagogie Waldorf ou de la biodynamie sont débattues et varient selon les écoles et les pays. Ne juge pas les personnes.",
  "refs": "Steiner, L’Initiation ; 2 Corinthiens 11, 14 ; Ignace Briantchaninov, Sur la prélest ; Philocalie ; Irénée, Contre les hérésies."
+},
+{
+ "id": "affinites-peres-latins-grecs",
+ "th": "Histoire",
+ "who": [
+  "cath",
+  "orient"
+ ],
+ "avis": true,
+ "q": "Quels Pères et théologiens se répondent d’Orient en Occident (« duels » et affinités à travers les siècles) ?",
+ "pts": [
+  [
+   "Historique",
+   "Repère de lecture, non classement confessionnel : avant 1054, parler de Pères « catholiques » ou « orthodoxes » est anachronique, tous sont les Pères de l’Église indivise. Augustin ↔ Cassien ; Léon le Grand ↔ Basile ; Gélase ↔ Vincent de Lérins (« partout, toujours, par tous ») ; Optat ↔ Firmilien ; Hadrien Ier ↔ Photius ; Théodore Studite (Oriental très « catholique » défendant la pentarchie) ; Grégoire le Grand (refuse « évêque universel », source du purgatoire dans les Dialogues)."
+  ],
+  [
+   "Historique",
+   "Moyen Âge : Anselme ↔ Syméon le Nouveau Théologien ; Thomas ↔ Palamas ; Barlaam ↔ Palamas (Barlaam a fini évêque catholique) ; Bonaventure ↔ Cabasilas ; Bekkos ↔ Grégoire de Chypre ; Bessarion ↔ Marc d’Éphèse. Moderne : Moghila ↔ Païssius Velitchkovsky (Nicodème l’Hagiorite a adapté le Combat spirituel de Scupoli) ; François d’Assise ↔ Séraphim de Sarov ; Newman ↔ Khomiakov ; de Lubac ↔ Lossky ; Ratzinger ↔ Zizioulas."
+  ]
+ ],
+ "lim": "Ces paires sont des repères pédagogiques, pas des étiquettes : au XXᵉ siècle, les meilleurs théologiens des deux côtés (de Lubac et Lossky, Ratzinger et Zizioulas) se lisaient et se rapprochaient. Évite d’attribuer à un auteur ancien une position confessionnelle moderne. Barlaam a fini évêque catholique, mais il n’était pas « le catholique » du débat hésychaste : Rome n’a jamais pris position officiellement sur Palamas.",
+ "refs": "Jean Meyendorff, Introduction à l’étude de Grégoire Palamas ; Yves Congar, L’ecclésiologie du haut Moyen Âge ; Placide Deseille, La spiritualité orthodoxe et la Philocalie."
 }
   );
 })();
