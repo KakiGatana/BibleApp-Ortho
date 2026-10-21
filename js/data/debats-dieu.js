@@ -2288,6 +2288,40 @@
  ],
  "lim": "Ne dis pas « c’est la chute » à quelqu’un qui pleure un proche : la réponse de fond (voir la fiche sur le mal naturel) s’adresse à la question intellectuelle, pas au deuil. La réponse de Jésus à Siloé exclut la sanction individuelle, mais ne dit pas pourquoi le monde est ainsi.",
  "refs": "Luc 13, 1-5 ; Jean 9, 1-3 ; Livre de Job."
+},
+{
+ "id": "pourquoi-jesus-ou-dieu-indifferent",
+ "th": "Dieu et la raison",
+ "who": [
+  "athee",
+  "tous"
+ ],
+ "q": "« Si Dieu existe, pourquoi Jésus ? Pourquoi pas un autre dieu, ou une entité qui se fiche de nous (ou nous veut du mal) ? »",
+ "pts": [
+  [
+   "Philosophique",
+   "Ce sont deux questions distinctes. (1) Si une cause première existe, est-elle bonne, personnelle, attentive, ou indifférente, voire malveillante ? (2) À supposer que Dieu soit bon, pourquoi croire que c’est en Jésus qu’il se révèle ? Avant de répondre, reconnaître le point : la raison seule peut conduire à un principe premier (Aristote, Thomas d’Aquin) ; elle ne dit pas ce qu’il pense de nous. Hume (Dialogues sur la religion naturelle) et les gnostiques ont déjà soutenu un dieu indifférent ou mauvais, et ce n’est pas logiquement exclu."
+  ],
+  [
+   "Théologique",
+   "Réponse chrétienne à (1) : on ne le déduit pas, on le reçoit d’une révélation, et le test est ce que ce Dieu fait. Un Dieu indifférent ne vient pas ; un Dieu malveillant ne prend pas la mort sur lui. Le christianisme affirme que Dieu est entré dans la souffrance humaine, jusqu’à la Croix et à la mort (Ph 2, 6-8 ; He 4, 15). Ce n’est pas une preuve, c’est le contenu de l’affirmation : la bonté de Dieu y est montrée plutôt que démontrée. Pascal : le « Dieu des philosophes » n’est pas le « Dieu d’Abraham, d’Isaac et de Jacob »."
+  ],
+  [
+   "Historique",
+   "Réponse à (2) : pourquoi Jésus plutôt qu’un autre ? Quatre éléments, du plus solide au plus discuté. (a) Sa mort sous Ponce Pilate est quasi unanimement admise par les historiens (Tacite, Annales XV, 44 ; Flavius Josèphe). (b) Des juifs strictement monothéistes se mettent très vite à l’adorer comme Seigneur (1 Co 8, 6 ; Ph 2, 11), ce qui est difficile à expliquer sans quelque chose d’extraordinaire. (c) Les disciples annoncent une résurrection corporelle, et non une survie spirituelle. (d) Les historiens divergent sur ce qui s’est passé (apparitions vécues, hallucinations, légende) ; il faut l’admettre."
+  ],
+  [
+   "Théologique",
+   "Le choix de Jésus est aussi celui de la confiance, et pas seulement d’un calcul. Pierre : « Seigneur, à qui irions-nous ? Tu as les paroles de la vie éternelle » (Jn 6, 68). Pour l’Orthodoxie, la foi naît d’une rencontre dans la vie de l’Église (prière, sacrements, communion) plus que d’une chaîne de preuves ; Lossky parle d’une connaissance qui passe par l’expérience. Thomas ne conclut pas « donc il est vivant », il dit : « Mon Seigneur et mon Dieu » (Jn 20, 28)."
+  ],
+  [
+   "Philosophique",
+   "Pourquoi pas une autre religion ? Chaque tradition fait une offre différente, et il faut comparer ce que chacune affirme : un Dieu qui se fait homme, souffre et meurt volontairement par amour pour ceux qui le rejettent est une proposition rare. L’hindouisme connaît des « descentes » divines (avatars), mais ce ne sont pas des événements datés sous un gouverneur romain ni une mort réelle ; l’islam refuse tout Dieu incarné. Cela ne prouve rien, mais explique que le christianisme se juge sur des faits plus que sur des idées."
+  ]
+ ],
+ "lim": "Aucun de ces arguments n’oblige à croire. Un dieu indifférent ou malveillant n’est pas réfuté : l’argument décisif pour lui est le mal (voir le thème « Mal et souffrance »), et la réponse chrétienne (Dieu souffre avec nous) est une affirmation de foi, pas une démonstration. Les historiens sont partagés sur la résurrection ; le trilemme de C. S. Lewis (« menteur, fou ou Seigneur ») est contesté, car il ignore l’hypothèse d’une légende qui a grandi. L’argument « les martyrs » a peu de poids, d’autres religions en ont aussi. Il y a enfin le « silence de Dieu » (Schellenberg) : pourquoi ne se manifeste-t-il pas plus clairement ? Un athée ou un agnostique honnête peut rester sur ces questions sans être déraisonnable.",
+ "avis": "Mon avis (non dogmatique) : ne pas minimiser le mal comme argument en faveur d’un dieu indifférent ; c’est l’objection la plus sérieuse. Mieux vaut dire : « je ne peux pas te le prouver, voici pourquoi moi je fais confiance à ce Dieu-là », que prétendre à une preuve.",
+ "refs": "Pascal, Pensées ; Hume, Dialogues sur la religion naturelle ; Tacite, Annales XV, 44 ; Schellenberg, Divine Hiddenness and Human Reason ; Lossky, Essai sur la théologie mystique de l’Église d’Orient."
 }
   );
 })();
