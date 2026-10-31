@@ -154,6 +154,7 @@
     ['slavonic', 'Slavon', 'slav', '#/slavonic'],
     ['theology', 'Théologie', 'theo', '#/theology'],
     ['apolo', 'Objections et réponses', 'theo', '#/apolo'],
+    ['objections', 'Les 20 objections', 'theo', '#/objections'],
     ['psalter', 'Psautier', 'book', '#/psalter'],
     ['kids', 'Pour les enfants', 'saint', '#/kids'],
     ['liturgy', 'La Divine Liturgie', 'pray', '#/liturgy'],

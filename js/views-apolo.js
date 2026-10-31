@@ -25,6 +25,7 @@
     const kinds = O.APOLO_KINDS || [];
     const html = `<section class="page apolo">
       ${U.pageHead('Отвѣтъ', 'Objections et réponses', 'Les arguments classiques contre la foi chrétienne et contre l’Orthodoxie, avec des pistes de réponse : philosophiques, théologiques, historiques, archéologiques.')}
+      <a class="tile" href="#/objections"><span class="tile-ic"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg></span><div><b>Les 20 objections les plus fréquentes</b><span>La fiche-mémo : thème, degré de sérieux, réponse courte</span></div></a>
       <article class="card apo-intro"><p>Ce sont des <b>pistes</b>, pas des preuves imparables. Chaque réponse dit aussi ce que l’argument <b>ne prouve pas</b>. Pour discuter avec quelqu’un, écoute d’abord sa question avant de répondre. Et pour approfondir : le bouton « Demander à l’assistant ».</p></article>
       <div class="apo-tools">
         <input type="search" class="search-in" id="apoQ" placeholder="Chercher (ex. pape, icônes, mal, résurrection)" aria-label="Chercher une objection" autocomplete="off">
@@ -59,4 +60,31 @@
     return { html, title: 'Objections et réponses', nav: 'theology', after };
   }
   route('/apolo', view);
+
+  /* Les 20 objections les plus fréquentes : fiche-mémo classée par thème, avec le degré de sérieux */
+  function topView() {
+    const list = O.TOP_OBJ || [], L = O.TOP_OBJ_LEVELS || {};
+    const themes = [...new Set(list.map((e) => e.th))];
+    let n = 0;
+    const card = (e) => {
+      n++;
+      return `<details class="card apo top-obj">
+        <summary><span class="apo-q"><span class="top-n">${n}</span> ${esc(e.q)}</span><span class="apo-k"><i class="apo-b lvl-${e.lvl}">${esc(L[e.lvl] || '')}</i></span></summary>
+        <div class="apo-body">
+          <p>${esc(e.a)}</p>
+          ${e.lim ? `<div class="apo-lim"><b>Honnêtement</b><p>${esc(e.lim)}</p></div>` : ''}
+          <p class="center">${O.askBtn ? O.askBtn(e.q.replace(/[«»]/g, '').trim(), 'Objection : ' + e.q + '\nRéponse courte : ' + e.a) : ''}</p>
+        </div>
+      </details>`;
+    };
+    const html = `<section class="page apolo">
+      ${U.back('#/apolo', 'Objections et réponses')}
+      ${U.pageHead('Отвѣтъ', 'Les 20 objections les plus fréquentes', 'Classées par thème, avec leur degré de sérieux et une réponse courte à retenir.')}
+      <article class="card apo-intro"><p>${esc(O.TOP_OBJ_NOTE || '')}</p><p class="muted small">Pour le détail des arguments, voir <a href="#/apolo">Objections et réponses</a> et le <a href="#/debats">Cahier de débats</a>.</p></article>
+      ${themes.map((t) => `<h3 class="group-h">${esc(t)}</h3>${list.filter((e) => e.th === t).map(card).join('')}`).join('')}
+      <p class="muted xs center">Une réponse courte n’est pas une preuve : elle sert à savoir où se situe le débat. Écoute d’abord la question de ton interlocuteur.</p>
+    </section>`;
+    return { html, title: 'Les 20 objections', nav: 'theology' };
+  }
+  route('/objections', topView);
 })();

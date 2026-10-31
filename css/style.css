@@ -1057,3 +1057,10 @@ html[data-reading="1"] .main { max-width: 760px; }
 
 /* petits écrans : l’en-tête de l’accueil ne doit pas déborder (nom + trois boutons) */
 @media (max-width: 400px) { .brand-sm .brand-text small { display: none; } .brand-sm .brand-text b { letter-spacing: .08em; } .brand-sm { gap: .45rem; } }
+
+/* Les 20 objections : numéro et degré de sérieux */
+.top-obj .top-n { display: inline-grid; place-items: center; min-width: 1.6em; height: 1.6em; margin-right: .3rem; border-radius: 999px; background: var(--gold-soft); color: var(--gold); font-family: var(--f-label); font-size: .72em; }
+.apo-b.lvl-1, .apo-b.lvl-2 { background: var(--line); color: var(--ink3); }
+.apo-b.lvl-3 { background: var(--gold-soft); color: var(--gold); }
+.apo-b.lvl-4 { background: var(--lapis); color: var(--on-accent); }
+.apo-b.lvl-5 { background: var(--gold); color: var(--on-accent); }

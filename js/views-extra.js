@@ -30,6 +30,7 @@
     (O.DECOUVRIR || []).forEach((f, i) => add('Fiche', f.t, f.intro + ' ' + f.pts.join(' '), '#/learn/' + (i + 1), f.ret));
     (O.GLOSS || []).forEach(([w, d]) => add('Glossaire', w, d, '#/glossary'));
     (O.DISTINCTIONS || []).forEach((d) => add('Distinction', d.t, d.def, '#/distinctions', d.pts.join(' ') + ' ' + d.refs));
+    (O.TOP_OBJ || []).forEach((e) => add('Objection', e.q.replace(/[«»]/g, '').trim(), e.a, '#/objections', e.th + ' ' + (e.lim || '')));
     (O.APOLO || []).forEach((e) => add('Objection', e.q.replace(/[«»]/g, '').trim(), e.pts.map((x) => x[1]).join(' '), '#/apolo', e.lim + ' ' + (e.lire || '')));
     (O.DEBATS || []).forEach((e) => add('Débat', e.q.replace(/[«»]/g, '').trim(), e.pts.map((x) => x[1]).join(' '), '#/debats', e.lim + ' ' + (e.refs || '') + ' ' + (e.table ? e.table.rows.map((r) => r.join(' ')).join(' ') : '')));
     (O.PERES || []).forEach((x) => add('Parole des Pères', x.a, x.t, '#/peres', x.s));
