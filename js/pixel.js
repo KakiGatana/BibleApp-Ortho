@@ -9,7 +9,7 @@
   const PAL = {
     g: '#a87a1e', G: '#d6a33a', Y: '#f2cf6a', R: '#b23a26', r: '#e0704f', H: '#5a3a22', S: '#e3b48e', s: '#c48d66', K: '#2a1d14',
     B: '#2f5aa8', b: '#1f3f7c', L: '#5c8ad4', C: '#b5502e', c: '#8a3a22', M: '#7a3424', m: '#5a2418', U: '#2f5aa8',
-    w: '#efe6d2', v: '#c9a75a', k: '#7a4a2a', n: '#6b4a2e', h: '#7a4a2a', f: '#f2cf6a', o: '#fff3c4', W: '#ecd38a'
+    w: '#efe6d2', v: '#c9a75a', x: '#b8b2a6', N: '#3a3446', q: '#26222e', A: '#a9b2c4', a: '#6c7486', k: '#7a4a2a', n: '#6b4a2e', h: '#7a4a2a', f: '#f2cf6a', o: '#fff3c4', W: '#ecd38a'
   };
 
   const SPR = {
@@ -67,6 +67,118 @@
       'gGMMMMMMMMUUUUMMMMMMMMGg',
       'gGMmMMMMMMUUUUMMMMMMmMGg',
       'gMMmMMMMMMUUUUMMMMMMmMMg',
+      'gggggggggggggggggggggggg'
+    ],
+    /* Mère de Dieu Hodigitria : l’Enfant sur son bras, sa main qui le désigne */
+    hodegetria: [
+      'gggggggggggggggggggggggg',
+      'gGRGRGRRGGGGGGGGGGRGRGRg',
+      'gGRRRGRRYYYYYYGGGRRRGRGg',
+      'gGRGRGRYYYYYYYYYGGRGGRGg',
+      'gGGGGGYYMMMYMMMYYGGGGGGg',
+      'gGGGGYYMMUUUUMMMYYGGGGGg',
+      'gGGGGYYMUSSSSMMMYYGGGGGg',
+      'gGGGGYYMSKSKSMMMYYGGGGGg',
+      'gGGGGYMMSSsSSMMMMYGGGGGg',
+      'gGGGGYMMMSSSMMGYYYGGGGGg',
+      'gGGGMMMMMMMMMMYSSSYGGGGg',
+      'gGGMMMMMMSSMMMYKSKYGGGGg',
+      'gGGMMYMMMMMMMggggggMGGGg',
+      'gGMMMMMMMMMMMgYggYgMMGGg',
+      'gGMMMMMMMMMMMggggggMMGGg',
+      'gGMMMMMMMMMMMMSSSSMMMMGg',
+      'gGMMMMMMMUUUMMMMMMMMMMGg',
+      'gGMMMMMMMUUUMMMMMMMMMMGg',
+      'gGMMMMMMMUUUMMMMMMMMMMGg',
+      'gMMMMMMMMUUUMMMMMMMMMMMg',
+      'gMMMMMMmMUUUMMMMMmMMMMMg',
+      'gMMMMMMmMUUUMMMMMmMMMMMg',
+      'gMmMMMMMMUUUMMMMMMMMmMMg',
+      'gMmMMMMMMUUUMMMMMMMMmMMg',
+      'gggggggggggggggggggggggg'
+    ],
+    /* saint Nicolas : évêque, omophorion à croix, Évangile */
+    nicolas: [
+      'gggggggggggggggggggggggg',
+      'gGGGGGGGGGGGGGGGGGGGGGGg',
+      'gGGGGGGGGYYYYYYGGGGGGGGg',
+      'gGGGGGGYYYYYYYYYYGGGGGGg',
+      'gGGGGGYYYSSSSSSYYYGGGGGg',
+      'gGGGGYYYxSSSSSSxYYYGGGGg',
+      'gGGGGYYwwSSSSSSwwYYGGGGg',
+      'gGGGGYYwwSKSSKSwwYYGGGGg',
+      'gGGGGYYwwSSsSSSwwYYGGGGg',
+      'gGGGGYYwwwSssSwwwYYGGGGg',
+      'gGGSGGYwwwwwwwwwwYGGGGGg',
+      'gGSSSCCwwwwwwwwwwCCGGGGg',
+      'gGSSSCwwKwwwwwwKwwCCGGGg',
+      'gGGCCCwKKKwwwwKKKwCCCGGg',
+      'gGGCCCCwKwwwwwwKwggggGGg',
+      'gGGCCCCCwwwKwwwwwgYRgGGg',
+      'gGGcCCCCCwwKKKwwSgRYgGGg',
+      'gGGcCCCCCCwwKwwCSggggGGg',
+      'gGcCCCYCCCwwKwwCCCYCCCGg',
+      'gGcCCYYYCCwwKwwCCYYYCCGg',
+      'gcCCCCYCCCwwKwwCCCYCCCCg',
+      'gcCCCCCCCCwwwwwCCCCCCcCg',
+      'gcCCCCCCCCwwKwwCCCCCCcCg',
+      'gcCCCcCCCCwwKwwCCCCcCcCg',
+      'gggggggggggggggggggggggg'
+    ],
+    /* saint Séraphin de Sarov : moine, cheveux et barbe blancs, croix sur la poitrine */
+    seraphim: [
+      'gggggggggggggggggggggggg',
+      'gGGGGGGGGGGGGGGGGGGGGGGg',
+      'gGGGGGGGGYYYYYYGGGGGGGGg',
+      'gGGGGGGYYYYYYYYYYGGGGGGg',
+      'gGGGGGYYYwwwwwwYYYGGGGGg',
+      'gGGGGYYYwwwwwwwwYYYGGGGg',
+      'gGGGGYYwwSSSSSSwwYYGGGGg',
+      'gGGGGYYwwSKSSKSwwYYGGGGg',
+      'gGGGGYYwwSSsSSSwwYYGGGGg',
+      'gGGGGYYwwwSssSwwwYYGGGGg',
+      'gGGGGGYwwwwwwwwwwYGGGGGg',
+      'gGGNNNNwwwwwwwwwwNNNNGGg',
+      'gGNNNNNNwwwwwwwwNNNNNNGg',
+      'gGNNNNNNNwwwwwwNNNNNNNGg',
+      'gGNNNNNNNNwwwwNNNNNNNNGg',
+      'gGNNNNNNNNNYYNNNNNNNNNGg',
+      'gGNNNNNNNNYYYYNNNNNNNNGg',
+      'gGNNNNSSNNNYYNNNSSNNNNGg',
+      'gGNNNNSSNNNYYNNNSSNNNNGg',
+      'gNNNNNNNNNNYYNNNNNNNNNNg',
+      'gNqNNNNNNNNNNNNNNNNNqNNg',
+      'gNqNNNNNNNNNNNNNNNNNqNNg',
+      'gqNNNNNNNNNNNNNNNNNNNqNg',
+      'gqNNNNNNNNNNNNNNNNNNNqNg',
+      'gggggggggggggggggggggggg'
+    ],
+    /* saint Georges : soldat, manteau rouge, cuirasse, lance */
+    georges: [
+      'gggggggggggggggggggggggg',
+      'gGGGGGGGGGGGGGGGGGGGAGGg',
+      'gGGGGGGGGYYYYYYGGGGaAaGg',
+      'gGGGGGGYYYYYYYYYYGGGkGGg',
+      'gGGGGGYYYHHHHHHYYYGGkGGg',
+      'gGGGGYYYHHHHHHHHYYYGkGGg',
+      'gGGGGYYHHSSSSSSHHYYGkGGg',
+      'gGGGGYYHHSKSSKSHHYYGkGGg',
+      'gGGGGYYHHSSsSSSHHYYGkGGg',
+      'gGGGGYYYYHSSSSHYYYYGkGGg',
+      'gGGGGGYYYYSSSSYYYYGGkGGg',
+      'gGGCCCCCAAAAAAAACCCCkGGg',
+      'gGCCCCCAAaAAAAaAACCCkCGg',
+      'gGCCCCCAaAAYAAaAACCCkCGg',
+      'gCCCCCCAAaAAAAaAACCCkCCg',
+      'gCCCCCCAaAAAAAAaACCSSSCg',
+      'gCCCCCCAAAaaaaAAACCCkCCg',
+      'gCCCcCCAAAAAAAAAACCckCCg',
+      'gCCCcCCAAAAAAAAAACCckCCg',
+      'gCCCcCCAaAAAAAAaACCckCCg',
+      'gCCCcCCAaAAAAAAaACCckCCg',
+      'gCCCcCCAAAAAAAAAACCckCCg',
+      'gCCCcCCAaAAAAAAaACCckCCg',
+      'gCCCcCCAAAAAAAAAACCckCCg',
       'gggggggggggggggggggggggg'
     ],
     /* lampada suspendue, flamme animée */
@@ -170,12 +282,49 @@
 
   const on = () => S.settings.pixel !== false;
 
-  /* coin des icônes : la Mère de Dieu, le Christ, et la lampada allumée entre les deux */
+  /* décor : un mur de plâtre et un sol en carreaux, en pixels, pour que les dessins ressortent */
+  function tile(w, h, base, dots) {
+    let r = `<rect width="${w}" height="${h}" fill="${base}"/>`;
+    dots.forEach(([x, y, c]) => { r += `<rect x="${x}" y="${y}" width="1" height="1" fill="${c}"/>`; });
+    return 'url("data:image/svg+xml,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" shape-rendering="crispEdges">${r}</svg>`) + '")';
+  }
+  (function decor() {
+    let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+    const dots = []; for (let i = 0; i < 34; i++) dots.push([Math.floor(rnd() * 16), Math.floor(rnd() * 16), rnd() < .6 ? '#dccba6' : '#f3e8cf']);
+    const floor = [];
+    for (let x = 0; x < 8; x++) for (let y = 0; y < 4; y++) if ((x < 4) === (y < 2)) floor.push([x, y, '#8a6a4a']);
+    const r = document.documentElement.style;
+    r.setProperty('--px-wall', tile(16, 16, '#e8dabb', dots));
+    r.setProperty('--px-floor', tile(8, 4, '#6e5238', floor));
+  })();
+  const scene = (inner, cls) => `<div class="px-scene ${cls || ''}" aria-hidden="true"><div class="px-wall">${inner}</div><div class="px-floor"></div></div>`;
+  const lamp = () => `<div class="px-lamp">${svg('lampada')}<i class="px-glow"></i></div>`;
+
+  /* coin des icônes : la Mère de Dieu, la lampada allumée, le Christ */
   function iconCorner() {
     if (!on()) return '';
-    return `<div class="px-corner" aria-hidden="true">
-      <div class="px-shelf">${svg('theotokos', { cls: 'px-ic' })}<div class="px-lamp">${svg('lampada')}<i class="px-glow"></i></div>${svg('christ', { cls: 'px-ic' })}</div>
-    </div>`;
+    return scene(`<div class="px-shelf">${svg('hodegetria', { cls: 'px-ic' })}${lamp()}${svg('christ', { cls: 'px-ic' })}</div>`, 'px-corner');
+  }
+
+  /* rangée d’icônes, comme une petite iconostase : des saints, la Mère de Dieu et le Christ */
+  function iconRow(list) {
+    if (!on()) return '';
+    const L = list || ['nicolas', 'hodegetria', '*', 'christ', 'seraphim'];
+    return scene(`<div class="px-row">${L.map((n) => n === '*' ? lamp() : svg(n, { cls: 'px-ic' })).join('')}</div>`, 'px-iconrow');
+  }
+
+  /* icône du jour, quand la fête ou le saint a son dessin */
+  const DAY = [
+    [/Nicolas/, 'nicolas'], [/Séraphin de Sarov/, 'seraphim'], [/Georges le Victorieux|Georges, grand/, 'georges'],
+    [/Mère de Dieu|Théotokos|Dormition|Annonciation/, 'hodegetria'],
+    [/Seigneur|Transfiguration|Théophanie|Pâque|Nativité de notre|Exaltation/, 'christ']
+  ];
+  function dayIcons(names) {
+    if (!on()) return '';
+    const found = [];
+    (names || []).forEach((n) => { const m = DAY.find(([re]) => re.test(n)); if (m && !found.includes(m[1])) found.push(m[1]); });
+    if (!found.length) return '';
+    return scene(`<div class="px-row">${found.slice(0, 2).map((n) => svg(n, { cls: 'px-ic' })).join(lamp())}</div>`, 'px-day');
   }
 
   /* cierges (pour le score d’un quiz : plus de cierges allumés quand le score monte) */
@@ -210,6 +359,6 @@
   }
   background();
 
-  O.PIXEL = { svg, iconCorner, candles, decorate, on };
+  O.PIXEL = { svg, iconCorner, iconRow, dayIcons, candles, decorate, on };
   K.act['toggle-pixel'] = () => { S.settings.pixel = !on(); K.save(); background(); K.render(); };
 })();

@@ -48,6 +48,7 @@
     const j = S.jesus || {}, ps = S.psalter || {}, n = (j.rope || 33);
     const html = `<section class="page hub">
       ${U.pageHead('Молитва', 'Prier', 'Ta corde de prière, les prières du matin et du soir, les psaumes et la liturgie.')}
+      ${O.PIXEL ? O.PIXEL.iconRow() : ''}
       <a class="card pray-main" href="#/jesus"><span class="more-ic">${ic('beads')}</span><span><b>Prière de Jésus</b><span class="muted small">Ma corde de ${n} nœuds${j.cur ? ' · ' + j.cur + ' / ' + n : ''}</span></span>${ic('right', 'ic more-go')}</a>
       <div class="more-list">${[
         ['#/rule/morning', 'Prière du matin', 'sun', 'Pour commencer la journée devant Dieu'],

@@ -1073,14 +1073,19 @@ html[data-reading="1"] .main { max-width: 760px; }
 @keyframes pxGlow { 0%, 100% { opacity: .75; } 50% { opacity: 1; } }
 @media (prefers-reduced-motion: reduce) { .px-fl, .px-glow { animation: none; } }
 
-/* coin des icônes */
-.px-corner { display: flex; justify-content: center; margin: -.4rem 0 1.1rem; }
-.px-shelf { position: relative; display: flex; align-items: flex-start; gap: 12px; padding: 0 14px 10px; border-bottom: 7px solid #6b4a2e; box-shadow: 0 6px 0 -3px #4a321e; }
-.px-ic { width: 92px; height: auto; box-shadow: 0 0 0 3px #4a321e, 0 10px 18px -10px rgba(0, 0, 0, .6); }
-.px-lamp { position: relative; width: 36px; margin-top: 30px; }
-.px-lamp .px { width: 36px; height: auto; }
-.px-lamp .px-glow { top: 6px; }
-@media (max-width: 400px) { .px-ic { width: 76px; } .px-shelf { gap: 8px; padding: 0 8px 8px; } }
+/* décor : mur de plâtre et sol en carreaux */
+.px-scene { margin: -.3rem 0 1.2rem; border-radius: 14px; overflow: hidden; box-shadow: 0 0 0 3px #4a321e, 0 16px 30px -18px rgba(0, 0, 0, .7); }
+.px-wall { display: flex; justify-content: center; padding: 18px 10px 0; background: var(--px-wall) 0 0 / 64px 64px; image-rendering: pixelated; }
+.px-floor { height: 22px; background: var(--px-floor) 0 0 / 32px 16px; image-rendering: pixelated; border-top: 6px solid #4a321e; }
+.px-shelf, .px-row { position: relative; display: flex; align-items: flex-start; justify-content: center; flex-wrap: wrap; gap: 12px; padding: 0 12px 10px; border-bottom: 7px solid #7a5232; }
+.px-ic { width: 92px; height: auto; box-shadow: 0 0 0 3px #4a321e, 2px 4px 0 3px rgba(74, 50, 30, .35); }
+.px-row .px-ic { width: 64px; }
+.px-day .px-ic { width: 70px; }
+.px-lamp { position: relative; width: 36px; margin-top: 18px; }
+.px-row .px-lamp { width: 28px; }
+.px-lamp .px { width: 100%; height: auto; }
+.px-lamp .px-glow { top: 4px; }
+@media (max-width: 400px) { .px-ic { width: 78px; } .px-row .px-ic { width: 54px; } .px-shelf, .px-row { gap: 8px; padding: 0 6px 8px; } }
 
 /* cierges du quiz */
 .px-candles { display: flex; justify-content: center; gap: 18px; margin-bottom: .8rem; }
@@ -1094,12 +1099,12 @@ html[data-reading="1"] .main { max-width: 760px; }
 @media (max-width: 520px) { .ph-px { opacity: .35; right: 8px; } .ph-px .px { height: 52px; } }
 
 /* corde de prière en pixels */
-.px-rope .px-bd .bd-off { fill: #4a321e; }
-.px-rope .px-bd .bd-on { fill: #d6a33a; opacity: 0; }
+.px-rope .px-bd .bd-off { fill: #1a120c; stroke: #e8d6a8; stroke-width: 1.5; }
+.px-rope .px-bd .bd-on { fill: #f2cf6a; stroke: #fff3c4; stroke-width: 1.5; opacity: 0; }
 .px-rope .px-bd .bd-hi { fill: #f2cf6a; opacity: 0; }
 .px-rope .px-bd.lit .bd-on, .px-rope .px-bd.lit .bd-hi { opacity: 1; }
-.px-rope .px-bd.now .bd-off { fill: #8a6a3e; }
-.px-rope .cord { stroke-dasharray: 3 3; }
+.px-rope .px-bd.now .bd-off { fill: #8a3a22; }
+.px-rope .cord { stroke: #c9a75a; stroke-width: 4; stroke-dasharray: 4 4; opacity: .85; }
 
 /* fond : le Christ Pantocrator en pixels, très pâle */
-:root[data-pixel="1"] body::before { content: ''; position: fixed; inset: 0; z-index: -1; pointer-events: none; background: var(--px-bg) no-repeat 50% 60% / min(78vw, 520px) auto; image-rendering: pixelated; opacity: .07; }
+:root[data-pixel="1"] body::before { content: ''; position: fixed; inset: 0; z-index: -1; pointer-events: none; background: var(--px-bg) no-repeat 50% 60% / min(78vw, 520px) auto; image-rendering: pixelated; opacity: .2; }
