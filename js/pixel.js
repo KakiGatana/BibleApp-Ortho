@@ -9,7 +9,7 @@
   const PAL = {
     g: '#a87a1e', G: '#d6a33a', Y: '#f2cf6a', R: '#b23a26', r: '#e0704f', H: '#5a3a22', S: '#e3b48e', s: '#c48d66', K: '#2a1d14',
     B: '#2f5aa8', b: '#1f3f7c', L: '#5c8ad4', C: '#b5502e', c: '#8a3a22', M: '#7a3424', m: '#5a2418', U: '#2f5aa8',
-    w: '#efe6d2', v: '#c9a75a', x: '#b8b2a6', N: '#3a3446', q: '#26222e', A: '#a9b2c4', a: '#6c7486', k: '#7a4a2a', n: '#6b4a2e', h: '#7a4a2a', f: '#f2cf6a', o: '#fff3c4', W: '#ecd38a'
+    w: '#efe6d2', v: '#c9a75a', x: '#b8b2a6', N: '#3a3446', q: '#26222e', A: '#a9b2c4', a: '#6c7486', O: '#c99a3a', P: '#9c7428', k: '#7a4a2a', n: '#6b4a2e', h: '#7a4a2a', f: '#f2cf6a', o: '#fff3c4', W: '#ecd38a'
   };
 
   const SPR = {
@@ -81,8 +81,8 @@
       'gGGGGYYMSKSKSMMMYYGGGGGg',
       'gGGGGYMMSSsSSMMMMYGGGGGg',
       'gGGGGYMMMSSSMMGYYYGGGGGg',
-      'gGGGMMMMMMMMMMYSSSYGGGGg',
-      'gGGMMMMMMSSMMMYKSKYGGGGg',
+      'gGGGMMMMMMMMMMYSSSSYGGGg',
+      'gGGMMMMMMSSMMMYKSKSYGGGg',
       'gGGMMYMMMMMMMggggggMGGGg',
       'gGMMMMMMMMMMMgYggYgMMGGg',
       'gGMMMMMMMMMMMggggggMMGGg',
@@ -179,6 +179,90 @@
       'gCCCcCCAAAAAAAAAACCckCCg',
       'gCCCcCCAaAAAAAAaACCckCCg',
       'gCCCcCCAAAAAAAAAACCckCCg',
+      'gggggggggggggggggggggggg'
+    ],
+    /* saint Jean le Précurseur : vêtement en poil de chameau, rouleau */
+    jean: [
+      'gggggggggggggggggggggggg',
+      'gGGGGGGGGGGGGGGGGGGGGGGg',
+      'gGGGGGGGGYYYYYYGGGGGGGGg',
+      'gGGGGGGYYYYYYYYYYGGGGGGg',
+      'gGGGGGYYHHHHHHHHYYGGGGGg',
+      'gGGGGYYHHHHHHHHHHYYGGGGg',
+      'gGGGGYHHHSSSSSSHHHYGGGGg',
+      'gGGGGYHHHSKSSKSHHHYGGGGg',
+      'gGGGGYHHHSSsSSSHHHYGGGGg',
+      'gGGGGHHHHHSssSHHHHHGGGGg',
+      'gGGSGHHHHHHHHHHHHHHGGGGg',
+      'gGSSSkkkHHHHHHHHkkkkGGGg',
+      'gGSSSknkkHHHHHHkknkkkGGg',
+      'gGGkkkkknkkHHkkkkwwwwkGg',
+      'gGGkknkkkkkkkkkkSwKKwkGg',
+      'gGkkkkkkknkkkkkkSwwwwkGg',
+      'gGkknkkkkkkkknkkkwKKwkGg',
+      'gkkkkkkknkkkkkkkkwwwwkkg',
+      'gkknkkkkkkknkkkkkkknkkkg',
+      'gkkkkknkkkkkkkknkkkkkkkg',
+      'gkknkkkkkkknkkkkkkknkkkg',
+      'gkkkkknkkkkkkkknkkkkkkkg',
+      'gkknkkkkkkknkkkkkkknkkkg',
+      'gkkkkknkkkkkkkknkkkkkkkg',
+      'gggggggggggggggggggggggg'
+    ],
+    /* apôtre Pierre : cheveux et barbe gris et courts, clés */
+    pierre: [
+      'gggggggggggggggggggggggg',
+      'gGGGGGGGGGGGGGGGGGGGGGGg',
+      'gGGGGGGGGYYYYYYGGGGGGGGg',
+      'gGGGGGGYYYYYYYYYYGGGGGGg',
+      'gGGGGGYYYxxxxxxYYYGGGGGg',
+      'gGGGGYYYxxxxxxxxYYYGGGGg',
+      'gGGGGYYxxSSSSSSxxYYGGGGg',
+      'gGGGGYYxxSKSSKSxxYYGGGGg',
+      'gGGGGYYxxSSsSSSxxYYGGGGg',
+      'gGGGGYYxxxSssSxxxYYGGGGg',
+      'gGGGGGYxxxxxxxxxxYGGGGGg',
+      'gGGBBBBBxxxxxxOOOOOOGGGg',
+      'gGSSBBBBBBOOOOOOOOOOOGGg',
+      'gGSYBBBBBOOOOOPOOOOOOOGg',
+      'gGYYYBBBOOOOOPOOOOOOOOGg',
+      'gGGYBBBBOOOOPOOOOOOOOOGg',
+      'gGBBBBBOOOOPOOOOOOOOOOGg',
+      'gBBBBBOOOOPOOOOOOOOOOOOg',
+      'gBbBBBOOOPOOOOOOOOOOPOOg',
+      'gBBBBBOOOPOOOOOOOOOOPOOg',
+      'gBbBBBOOPOOOOOOOOOOOPOOg',
+      'gBBBBBOOPOOOOOOOOOOOOOOg',
+      'gBbBBBOPOOOOOOOOOOOOPOOg',
+      'gBBBBBOPOOOOOOOOOOOOPOOg',
+      'gggggggggggggggggggggggg'
+    ],
+    /* apôtre Paul : front dégarni, longue barbe sombre, livre des Épîtres */
+    paul: [
+      'gggggggggggggggggggggggg',
+      'gGGGGGGGGGGGGGGGGGGGGGGg',
+      'gGGGGGGGGYYYYYYGGGGGGGGg',
+      'gGGGGGGYYYYYYYYYYGGGGGGg',
+      'gGGGGGYYYSSSSSSYYYGGGGGg',
+      'gGGGGYYYHSSSSSSHYYYGGGGg',
+      'gGGGGYYHHSSSSSSHHYYGGGGg',
+      'gGGGGYYHHSKSSKSHHYYGGGGg',
+      'gGGGGYYHHSSsSSSHHYYGGGGg',
+      'gGGGGYYHHHSssSHHHYYGGGGg',
+      'gGGGGGYHHHHHHHHHHYGGGGGg',
+      'gGGBBBBBCCHHHHCCCCCCCGGg',
+      'gGSSBBBBCCCHHCCCCggggGGg',
+      'gGSSBBBBCCCCCCCCCgYRgGGg',
+      'gGGBBBBCCCCCCCCCSgRYgGGg',
+      'gGBBBBBCCCCcCCCCSggggGGg',
+      'gGBBBBCCCCcCCCCCCCCCCCGg',
+      'gBBBBBCCCCcCCCCCCCCCCCCg',
+      'gBbBBCCCCcCCCCCCCCcCCCCg',
+      'gBBBBBCCCCcCCCCCCCCCCCCg',
+      'gBbBBCCCCcCCCCCCCCcCCCCg',
+      'gBBBBBCCCcCCCCCCCCCCCCCg',
+      'gBbBBCCCcCCCCCCCCCcCCCCg',
+      'gBBBBBCCCcCCCCCCCCCCCCCg',
       'gggggggggggggggggggggggg'
     ],
     /* lampada suspendue, flamme animée */
@@ -309,20 +393,21 @@
   /* rangée d’icônes, comme une petite iconostase : des saints, la Mère de Dieu et le Christ */
   function iconRow(list) {
     if (!on()) return '';
-    const L = list || ['nicolas', 'hodegetria', '*', 'christ', 'seraphim'];
+    const L = list || ['jean', 'hodegetria', '*', 'christ', 'nicolas'];
     return scene(`<div class="px-row">${L.map((n) => n === '*' ? lamp() : svg(n, { cls: 'px-ic' })).join('')}</div>`, 'px-iconrow');
   }
 
   /* icône du jour, quand la fête ou le saint a son dessin */
   const DAY = [
     [/Nicolas/, 'nicolas'], [/Séraphin de Sarov/, 'seraphim'], [/Georges le Victorieux|Georges, grand/, 'georges'],
+    [/Pierre et Paul/, ['pierre', 'paul']], [/Précurseur|Jean-Baptiste/, 'jean'],
     [/Mère de Dieu|Théotokos|Dormition|Annonciation/, 'hodegetria'],
     [/Seigneur|Transfiguration|Théophanie|Pâque|Nativité de notre|Exaltation/, 'christ']
   ];
   function dayIcons(names) {
     if (!on()) return '';
     const found = [];
-    (names || []).forEach((n) => { const m = DAY.find(([re]) => re.test(n)); if (m && !found.includes(m[1])) found.push(m[1]); });
+    (names || []).forEach((n) => { const m = DAY.find(([re]) => re.test(n)); if (m) [].concat(m[1]).forEach((x) => { if (!found.includes(x)) found.push(x); }); });
     if (!found.length) return '';
     return scene(`<div class="px-row">${found.slice(0, 2).map((n) => svg(n, { cls: 'px-ic' })).join(lamp())}</div>`, 'px-day');
   }

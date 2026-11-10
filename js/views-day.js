@@ -383,7 +383,7 @@
     const nowM = C.today().getUTCMonth() + 1;
     const html = `<section class="page">
       ${U.pageHead('Ménologe', 'Saints de l’année', `Le calendrier des saints, <b>${S.settings.style === 'old' ? 'selon les dates du calendrier julien' : 'selon les dates du calendrier julien révisé'}</b>. Cherche un nom ou parcours un mois.`)}
-      ${O.PIXEL ? O.PIXEL.iconRow(['georges', 'nicolas', 'hodegetria', '*', 'christ', 'seraphim', 'theotokos']) : ''}
+      ${O.PIXEL ? O.PIXEL.iconRow(['georges', 'pierre', 'nicolas', 'jean', 'hodegetria', '*', 'christ', 'theotokos', 'seraphim', 'paul']) : ''}
       <div class="search"><span>${ic('search')}</span><input id="sq" type="search" placeholder="Rechercher un saint (ex. Nicolas, Marie, Séraphin…)" autocomplete="off"></div>
       <div class="chips-row" id="months">${C.MONTHS.map((m, i) => `<button class="chip-btn ${i + 1 === nowM ? 'on' : ''}" data-m="${i + 1}">${m.slice(0, 4)}${m.length > 4 ? '.' : ''}</button>`).join('')}</div>
       <div id="sres" class="saints-res">${saintsList('', nowM)}</div>
