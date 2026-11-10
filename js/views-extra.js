@@ -131,6 +131,7 @@
     const html = `<section class="page rule" data-kind="${kind}">
       ${U.back('#/prayers', 'Prières')}
       ${U.pageHead(esc(R.cs), esc(R.title), esc(R.sub) + ' Lis chaque prière puis coche-la.')}
+      ${O.PIXEL ? O.PIXEL.iconCorner() : ''}
       <div class="rule-bar"><b id="rprog">${done.size} / ${list.length}</b><div class="rule-track"><i id="rfill" style="width:${list.length ? (done.size / list.length) * 100 : 0}%"></i></div></div>
       ${U.seg([['fr', 'Français'], ['both', 'Parallèle'], ['cs', 'Слав.']], S.settings.lang, 'set-lang')}
       ${list.map((p, i) => `<article class="card rule-item ${done.has(p.id) ? 'done' : ''}" data-id="${p.id}">

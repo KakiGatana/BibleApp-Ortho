@@ -1064,3 +1064,42 @@ html[data-reading="1"] .main { max-width: 760px; }
 .apo-b.lvl-3 { background: var(--gold-soft); color: var(--gold); }
 .apo-b.lvl-4 { background: var(--lapis); color: var(--on-accent); }
 .apo-b.lvl-5 { background: var(--gold); color: var(--on-accent); }
+
+/* ---------- Pixel art ---------- */
+.px { display: block; image-rendering: pixelated; }
+.px-fl { animation: pxFlicker 1.2s steps(2, jump-none) infinite; transform-box: fill-box; transform-origin: 50% 100%; }
+@keyframes pxFlicker { 0% { opacity: 1; transform: scaleY(1); } 50% { opacity: .78; transform: scaleY(.86); } 100% { opacity: 1; transform: scaleY(1); } }
+.px-glow { position: absolute; left: 50%; width: 46px; height: 46px; margin-left: -23px; border-radius: 50%; background: radial-gradient(circle, rgba(242, 207, 106, .55), rgba(242, 207, 106, 0) 70%); pointer-events: none; animation: pxGlow 2.4s ease-in-out infinite; }
+@keyframes pxGlow { 0%, 100% { opacity: .75; } 50% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .px-fl, .px-glow { animation: none; } }
+
+/* coin des icônes */
+.px-corner { display: flex; justify-content: center; margin: -.4rem 0 1.1rem; }
+.px-shelf { position: relative; display: flex; align-items: flex-start; gap: 12px; padding: 0 14px 10px; border-bottom: 7px solid #6b4a2e; box-shadow: 0 6px 0 -3px #4a321e; }
+.px-ic { width: 92px; height: auto; box-shadow: 0 0 0 3px #4a321e, 0 10px 18px -10px rgba(0, 0, 0, .6); }
+.px-lamp { position: relative; width: 36px; margin-top: 30px; }
+.px-lamp .px { width: 36px; height: auto; }
+.px-lamp .px-glow { top: 6px; }
+@media (max-width: 400px) { .px-ic { width: 76px; } .px-shelf { gap: 8px; padding: 0 8px 8px; } }
+
+/* cierges du quiz */
+.px-candles { display: flex; justify-content: center; gap: 18px; margin-bottom: .8rem; }
+.px-candle { position: relative; display: block; }
+.px-candle .px { width: 25px; height: auto; }
+.px-candle .px-glow { top: -16px; }
+
+/* dessin dans l’en-tête de page */
+.ph-px { position: absolute; right: 14px; bottom: 12px; opacity: .9; z-index: -1; pointer-events: none; }
+.ph-px .px { height: 64px; width: auto; }
+@media (max-width: 520px) { .ph-px { opacity: .35; right: 8px; } .ph-px .px { height: 52px; } }
+
+/* corde de prière en pixels */
+.px-rope .px-bd .bd-off { fill: #4a321e; }
+.px-rope .px-bd .bd-on { fill: #d6a33a; opacity: 0; }
+.px-rope .px-bd .bd-hi { fill: #f2cf6a; opacity: 0; }
+.px-rope .px-bd.lit .bd-on, .px-rope .px-bd.lit .bd-hi { opacity: 1; }
+.px-rope .px-bd.now .bd-off { fill: #8a6a3e; }
+.px-rope .cord { stroke-dasharray: 3 3; }
+
+/* fond : le Christ Pantocrator en pixels, très pâle */
+:root[data-pixel="1"] body::before { content: ''; position: fixed; inset: 0; z-index: -1; pointer-events: none; background: var(--px-bg) no-repeat 50% 60% / min(78vw, 520px) auto; image-rendering: pixelated; opacity: .07; }

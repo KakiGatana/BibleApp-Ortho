@@ -19,12 +19,15 @@
     for (let i = 0; i < n; i++) {
       const a = (-90 + gap / 2 + (i * (360 - gap)) / (n - 1)) * (Math.PI / 180);
       const x = (C + R * Math.cos(a)).toFixed(1), y = (C + R * Math.sin(a)).toFixed(1);
-      beads += `<g class="bd ${i < cur ? 'lit' : ''} ${i === cur ? 'now' : ''}" data-i="${i}" transform="translate(${x} ${y})"><circle class="bd-off" r="${r}"/><circle class="bd-on" r="${r}" fill="url(#gBead)"/></g>`;
+      const px = O.PIXEL && O.PIXEL.on(), q = Math.round(r * 2);
+      beads += px
+        ? `<g class="bd px-bd ${i < cur ? 'lit' : ''} ${i === cur ? 'now' : ''}" data-i="${i}" transform="translate(${Math.round(x)} ${Math.round(y)})"><rect class="bd-off" x="${-q / 2}" y="${-q / 2}" width="${q}" height="${q}"/><rect class="bd-on" x="${-q / 2}" y="${-q / 2}" width="${q}" height="${q}"/><rect class="bd-hi" x="${-q / 2}" y="${-q / 2}" width="${Math.max(2, Math.round(q / 3))}" height="${Math.max(2, Math.round(q / 3))}"/></g>`
+        : `<g class="bd ${i < cur ? 'lit' : ''} ${i === cur ? 'now' : ''}" data-i="${i}" transform="translate(${x} ${y})"><circle class="bd-off" r="${r}"/><circle class="bd-on" r="${r}" fill="url(#gBead)"/></g>`;
     }
-    return `<svg class="rope-svg" viewBox="0 0 340 340" aria-hidden="true">
+    return `<svg class="rope-svg ${O.PIXEL && O.PIXEL.on() ? 'px-rope' : ''}" viewBox="0 0 340 340" aria-hidden="true">
       <defs><radialGradient id="gBead" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#fff3c4"/><stop offset=".45" stop-color="#f0cd7a"/><stop offset="1" stop-color="#a8741a"/></radialGradient></defs>
       <circle class="cord" cx="${C}" cy="${C}" r="${R}"/>
-      <g class="rope-cross" transform="translate(${C} ${C - R - 4})"><path d="M0-17v34M-9-9h18M-6 5l12-4"/></g>
+      ${O.PIXEL && O.PIXEL.on() ? `<g transform="translate(${C - 14} ${C - R - 26})">${O.PIXEL.svg('cross').replace('<svg ', '<svg width="28" height="44" ')}</g>` : `<g class="rope-cross" transform="translate(${C} ${C - R - 4})"><path d="M0-17v34M-9-9h18M-6 5l12-4"/></g>`}
       ${beads}
     </svg>`;
   }

@@ -271,7 +271,7 @@
       }
       K.save();
       const msg = quiz.score >= 9 ? 'Excellent ! Слава Богу.' : quiz.score >= 6 ? 'Très bien, continue !' : 'Courage, on apprend en recommençant.';
-      a.innerHTML = `<div class="card center done-card"><div class="score">${quiz.score}<small>/10</small></div><p>${msg}</p>${dailyNote}<div class="row center"><a class="btn" href="#/slavonic/quiz/${quiz.type}" data-act="quiz-again">${quiz.type === 'daily' ? 'Refaire (sans compter)' : 'Rejouer'}</a><a class="btn ghost" href="#/slavonic/quiz">Autres quiz</a></div></div>
+      a.innerHTML = `<div class="card center done-card">${O.PIXEL ? O.PIXEL.candles(quiz.score >= 9 ? 3 : quiz.score >= 6 ? 2 : 1) : ''}<div class="score">${quiz.score}<small>/10</small></div><p>${msg}</p>${dailyNote}<div class="row center"><a class="btn" href="#/slavonic/quiz/${quiz.type}" data-act="quiz-again">${quiz.type === 'daily' ? 'Refaire (sans compter)' : 'Rejouer'}</a><a class="btn ghost" href="#/slavonic/quiz">Autres quiz</a></div></div>
         ${quiz.wrong.length ? `<article class="card"><div class="card-k">À revoir (${quiz.wrong.length})</div><ul class="wrongs">${quiz.wrong.map((w) => `<li><b>${esc(w.p)}</b><span>Bonne réponse : ${esc(w.opts[w.c])}</span><span class="muted small">${esc(w.e)}</span></li>`).join('')}</ul></article>` : '<p class="center muted">Aucune erreur : sans faute !</p>'}`;
       return;
     }

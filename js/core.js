@@ -138,6 +138,7 @@
       document.title = (out.title ? out.title + ' · ' : '') + 'Blagovest';
       updateNav(out.nav);
       window.scrollTo(0, 0);
+      if (O.PIXEL) O.PIXEL.decorate(view);
       if (out.after) out.after(view);
       a11y(view);
       return;
