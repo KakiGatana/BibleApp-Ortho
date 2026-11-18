@@ -3173,6 +3173,74 @@
  ],
  "lim": "Ces paires sont des repères pédagogiques, pas des étiquettes : au XXᵉ siècle, les meilleurs théologiens des deux côtés (de Lubac et Lossky, Ratzinger et Zizioulas) se lisaient et se rapprochaient. Évite d’attribuer à un auteur ancien une position confessionnelle moderne. Barlaam a fini évêque catholique, mais il n’était pas « le catholique » du débat hésychaste : Rome n’a jamais pris position officiellement sur Palamas.",
  "refs": "Jean Meyendorff, Introduction à l’étude de Grégoire Palamas ; Yves Congar, L’ecclésiologie du haut Moyen Âge ; Placide Deseille, La spiritualité orthodoxe et la Philocalie."
+},
+{
+ "id": "rayon-orthodoxie-que-lire-ensuite",
+ "th": "Lectures",
+ "who": [
+  "tous"
+ ],
+ "q": "J’ai déjà L’Échelle sainte, Le Pèlerin russe, la Petite Philocalie et L’Orthodoxie d’Evdokimov : que lire ensuite dans un rayon « Orthodoxie » de librairie ?",
+ "pts": [
+  [
+   "Pédagogique",
+   "Par ordre de priorité : (1) Séraphim de Sarov, Entretien avec Motovilov (Cerf) : très court et dense, sur l’acquisition du Saint-Esprit, le but de la vie chrétienne ; la meilleure réponse à une foi qui reste « dans la tête ». (2) Archimandrite Sophrony, Saint Silouane, vie, doctrine, écrits (Cerf) : le patron de la paroisse ; épais, mais les écrits de Silouane se lisent par fragments, et ils parlent de la sécheresse et du sentiment d’abandon. (3) Tikhon Chevkounov, Père Raphaïl et autres saints de tous les jours : des histoires vraies de moines et de prêtres russes, souvent drôles et faciles à lire ; l’orthodoxie vécue."
+  ],
+  [
+   "Pédagogique",
+   "(4) Jean-Claude Larchet, La neptothérapie : court et concret sur le combat contre les passions (colère, gourmandise, luxure) ; la suite pratique de l’Échelle. (5) Alexandre Schmemann, L’Eucharistie, sacrement du Royaume (YMCA-Press / F.-X. de Guibert) : comprendre ce qui se passe à la liturgie ; un des grands livres orthodoxes du XXᵉ siècle. (6) Olivier Clément, L’autre soleil (DDB) : l’autobiographie d’un athée français devenu orthodoxe, un parcours de converti."
+  ],
+  [
+   "Pédagogique",
+   "Pour plus tard : Isaac le Syrien, Discours ascétiques (après avoir bien digéré l’Échelle) ; Hilarion Alfeyev, L’univers spirituel d’Isaac le Syrien (introduction) ; Dumitru Stăniloae, Théologie dogmatique orthodoxe (très lourd). Également possibles : Matta el-Maskine, L’expérience de Dieu dans la vie de prière ; Mgr Antoine Bloom, L’expérience de la foi ; Gogol, Méditations sur la divine liturgie ; Larchet, La prière de Jésus."
+  ],
+  [
+   "Pédagogique",
+   "Inutiles pour l’instant : Olivier Clément, L’Église orthodoxe (Que sais-je, doublon avec Evdokimov) ; Sviatoslav Chevtchouk, Ukraine : 365 jours de souffrance et d’espérance (l’auteur est le chef de l’Église gréco-catholique ukrainienne, ce n’est pas un livre orthodoxe)."
+  ]
+ ],
+ "table": {
+  "head": [
+   "Livre",
+   "Pourquoi",
+   "Difficulté"
+  ],
+  "rows": [
+   [
+    "Séraphim de Sarov, Entretien avec Motovilov",
+    "Le but de la vie chrétienne, en quelques pages",
+    "Facile"
+   ],
+   [
+    "Sophrony, Saint Silouane",
+    "Patron de la paroisse ; la sécheresse, l’humilité",
+    "Moyen (à lire par fragments)"
+   ],
+   [
+    "Chevkounov, Père Raphaïl…",
+    "L’orthodoxie vécue, des histoires vraies",
+    "Facile"
+   ],
+   [
+    "Larchet, La neptothérapie",
+    "Le combat contre les passions",
+    "Facile"
+   ],
+   [
+    "Schmemann, L’Eucharistie",
+    "Comprendre la liturgie",
+    "Moyen"
+   ],
+   [
+    "Clément, L’autre soleil",
+    "Un parcours de converti",
+    "Facile"
+   ]
+  ]
+ },
+ "lim": "Recommandations, pas un canon de lecture : demande aussi l’avis de ton père spirituel, qui sait où tu en es. Vérifie les éditions disponibles avant d’acheter. Un livre lu lentement vaut mieux que cinq survolés.",
+ "refs": "Rayon « Orthodoxie » d’une librairie (Cerf, Salvator, DDB, YMCA-Press, Bellefontaine).",
+ "avis": true
 }
   );
 })();

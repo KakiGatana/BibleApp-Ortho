@@ -1186,6 +1186,10 @@
     "Lettre latine d’Anastase ; Bulgarie ; 879-880 : réciprocité et non-addition au Credo"
    ],
    [
+    "« Quatre conciles = Vatican I » (Éphèse, Chalcédoine, Constantinople III, Nicée II)",
+    "Primauté forte et appels réels ; mais Honorius condamné, Vigile contourné, canon 28 et Trullo reçus malgré Rome, Hiéria jugée par la pentarchie"
+   ],
+   [
     "Florence (1439)",
     "Signée sous contrainte, jamais reçue, annulée en 1484"
    ],
@@ -1648,6 +1652,123 @@
  },
  "lim": "Les catholiques répondent que la présence de légats et la confirmation romaine des conciles sont des signes de la primauté, et que l’absence d’une source ne prouve pas l’absence d’une demande : l’argument du silence a ses limites. Vérifie chaque citation dans les textes originaux : relis Eusèbe, Gélase de Cyzique et les actes de Constantinople III avant de citer.",
  "refs": "Eusèbe de Césarée, Vie de Constantin III, 6-7 ; Lettre d’Eusèbe à son Église ; Gélase de Cyzique, Histoire ecclésiastique II ; Théodoret, Histoire ecclésiastique I, 7 ; Nicée, canon 6 ; Chalcédoine, canon 28."
+},
+{
+ "id": "vatican-i-quatre-conciles-defi",
+ "th": "Papauté et unité",
+ "who": [
+  "cath"
+ ],
+ "q": "« Éphèse, Chalcédoine, Constantinople III et Nicée II enseignent ce que Vatican I a défini : une juridiction universelle, ordinaire et immédiate. Citez-moi un seul concile qui dit “primauté d’honneur seulement”, un seul canon qui dit “premier parmi des égaux”, un seul concile reçu malgré le “non” définitif de Rome. Échec et mat. »",
+ "pts": [
+  [
+   "Historique",
+   "Éphèse (431) : la sentence contre Nestorius dit « contraints par les saints canons et par la lettre de Célestin ». Les canons d’abord, la lettre ensuite. Cyrille ouvre le concile le 22 juin sans attendre les légats (arrivés le 10 juillet), et le concile juge Nestorius en comparant ses écrits à Nicée et à la lettre de Cyrille. La phrase « Pierre vit et juge dans ses successeurs » est celle du légat Philippe, qui exprime la position de Rome ; le concile ne l’a pas reprise dans ses décisions. Que Vatican I cite cette phrase en 1870 montre d’où Vatican I la tire, pas que le concile l’a définie."
+  ],
+  [
+   "Historique",
+   "Chalcédoine (451) : la sentence de Paschasinus contre Dioscore (« avec Pierre, le rocher et le fondement de l’Église catholique ») est réelle. Mais la déposition est ensuite votée évêque par évêque, et pour une raison canonique (Dioscore refusait de comparaître), pas sur ordre de Rome. Le Tome de Léon n’a été reçu qu’après examen : les évêques d’Illyricum et de Palestine avaient des doutes, levés quand on l’a jugé conforme à Cyrille. Et le même concile, canons 9 et 17, fait de Constantinople une instance d’appel pour l’Orient : un concile œcuménique crée un tribunal d’appel qui n’est pas Rome."
+  ],
+  [
+   "Canonique",
+   "Sardique (343) et Trullo, canon 2 : Sardique est un synode occidental (les Orientaux s’étaient retirés à Philippopolis). Son canon nomme Jules personnellement et permet à Rome de faire rejuger l’affaire par les évêques voisins : c’est un droit d’appel, pas un gouvernement ordinaire de chaque diocèse. Surtout, invoquer Trullo se retourne contre lui : Rome a refusé Trullo (le pape Serge Ier n’a pas signé), et ce même concile renouvelle au canon 36 l’égalité de privilèges de Constantinople avec Rome (canon 28 de Chalcédoine)."
+  ],
+  [
+   "Historique",
+   "Jules (341) : « la coutume est qu’on nous écrive d’abord » concerne l’affaire de l’Église d’Alexandrie (Athanase, Apologie contre les ariens 35). Les destinataires, les évêques réunis à Antioche, ont rejeté cette prétention (Sozomène III, 8). C’est un pape qui revendique, et un Orient qui conteste : exactement ce qu’on attend d’une primauté réelle mais discutée."
+  ],
+  [
+   "Historique",
+   "Constantinople III (681) : « Pierre a parlé par Agathon » est une acclamation après examen de sa lettre. Le même concile anathématise le pape Honorius comme hérétique, avec l’accord des légats, et le pape Léon II confirme cette condamnation. Un concile qui juge et condamne un pape défunt pour sa doctrine n’enseigne pas que le pape est infaillible « par lui-même et non par le consentement de l’Église » (Vatican I)."
+  ],
+  [
+   "Historique",
+   "Vigile et Constantinople II (553) : oui, Vigile a été retenu et maltraité par Justinien. Mais pendant le concile, il publie un Constitutum qui refuse de condamner les personnes des Trois Chapitres. Le concile passe outre, condamne quand même, et approuve qu’on retire son nom des diptyques. Vigile ne cède qu’ensuite. Si la signature du pape était décisive, le concile aurait attendu. L’empereur voulait l’adhésion de Rome pour tenir l’Occident uni : c’est un poids politique et ecclésial réel, pas une preuve de juridiction. Justinien a aussi exilé des patriarches, et plus tard un empereur a fait mourir le pape Martin et saint Maxime : la contrainte ne prouve pas l’autorité juridique de celui qu’on contraint."
+  ],
+  [
+   "Historique",
+   "Hiéria (754) : Nicée II la rejette parce qu’elle n’avait pas le concours du pape de Rome, « comme le veut la règle des conciles », mais la phrase continue : ni l’accord des patriarches d’Alexandrie, d’Antioche et de Jérusalem. C’est le critère de la pentarchie, les cinq sièges ensemble, pas celui d’un seul."
+  ],
+  [
+   "Canonique",
+   "Les trois défis. (1) « Honneur seulement » : Constantinople I, canon 3, donne à Constantinople la « primauté d’honneur après l’évêque de Rome, parce qu’elle est la nouvelle Rome » ; Chalcédoine 28 fonde les privilèges de Rome sur le fait qu’elle était la ville impériale. Les conciles ne définissent pas par la négative ; mais aucun non plus ne définit avant 1054 une juridiction universelle, ordinaire et immédiate, alors que c’est Vatican I qui affirme que c’est la foi constante de l’Église : la charge de la preuve est de son côté. (2) « Premier parmi des égaux » est une expression moderne, il a raison sur ce point ; l’idée est dans Nicée, canon 6 (Rome citée comme modèle d’autorité régionale, à côté d’Alexandrie et d’Antioche) et le canon apostolique 34 (le premier de chaque région agit avec l’accord des autres). (3) Un concile reçu malgré le non de Rome : le canon 28 de Chalcédoine, refusé par Léon, est resté en vigueur dans toutes les collections orientales, et Rome ne l’a admis qu’au IVᵉ concile du Latran (1215) ; Trullo (692), refusé par Rome, reçu en Orient ; et Constantinople II, qui condamne malgré le Constitutum de Vigile."
+  ],
+  [
+   "Théologique",
+   "Les numéros du Catéchisme (424, 552, 553, 881) ne prouvent rien face à un orthodoxe : c’est la thèse catholique qui se cite elle-même. La question n’est pas ce que Rome enseigne aujourd’hui, mais si l’Église du premier millénaire le recevait."
+  ]
+ ],
+ "table": {
+  "head": [
+   "Pièce catholique",
+   "Ce qu’elle prouve",
+   "Ce qu’elle ne prouve pas"
+  ],
+  "rows": [
+   [
+    "Éphèse : « Pierre vit et juge »",
+    "Ce que Rome affirmait d’elle-même",
+    "Que le concile l’ait défini"
+   ],
+   [
+    "Chalcédoine : Paschasinus contre Dioscore",
+    "Le poids des légats romains",
+    "Une déposition par le seul pape"
+   ],
+   [
+    "Sardique et Trullo 2",
+    "Un droit d’appel à Rome",
+    "Une juridiction ordinaire ; Rome refuse Trullo"
+   ],
+   [
+    "Jules (341)",
+    "Une revendication romaine",
+    "Son acceptation (Antioche la rejette)"
+   ],
+   [
+    "Constantinople III : Agathon",
+    "Respect du premier siège",
+    "L’infaillibilité (Honorius condamné)"
+   ],
+   [
+    "Vigile emprisonné",
+    "L’importance politique de Rome",
+    "Que le concile dépendait de lui"
+   ],
+   [
+    "Nicée II contre Hiéria",
+    "Rome nécessaire à un concile",
+    "Rome seule suffisante (pentarchie)"
+   ]
+  ]
+ },
+ "lim": "Il n’y a pas d’échec et mat, dans aucun sens. Ses pièces sont réelles et montrent une primauté romaine forte, un droit d’appel et des papes qui revendiquaient plus : ne le nie pas. Ce qu’elles ne montrent pas, c’est que l’Orient recevait une juridiction universelle, ordinaire et immédiate, ni une infaillibilité indépendante du consentement de l’Église. Les catholiques répondent que Vigile a fini par confirmer, que Rome a fini par admettre le rang de Constantinople, et que la déférence orientale en temps de crise montre ce qu’on attendait de Rome. Chaque camp lit les mêmes actes avec son critère. Vérifie les citations dans les actes des conciles avant de les utiliser.",
+ "refs": "Actes d’Éphèse, sessions 1 et 3 ; Actes de Chalcédoine, sessions 3-4, canons 9, 17, 28 ; Sardique, canons 3-5 ; Trullo, canons 2 et 36 ; Athanase, Apologie contre les ariens 35 ; Sozomène, Histoire ecclésiastique III, 8 ; Constantinople III, session 13 et 18 ; Léon II, lettre de confirmation ; Constantinople II, session 7 ; Nicée II, session 6 ; Constantinople I, canon 3 ; Nicée, canon 6 ; Canons apostoliques 34 ; Vatican I, Pastor Aeternus, ch. 2 et 4."
+},
+{
+ "id": "meme-dieu-musulmans-palamas",
+ "th": "Islam",
+ "who": [
+  "islam",
+  "cath"
+ ],
+ "q": "« Les musulmans adorent-ils le même Dieu que les chrétiens ? Palamas, Jean Damascène et le synode de 1180 montrent que oui : un même Dieu, mal connu. »",
+ "pts": [
+  [
+   "Patristique",
+   "Le dossier cité est en grande partie exact. Grégoire Palamas, captif des Turcs (1354), discute avec des savants musulmans et part du Dieu qu’ils prient pour leur annoncer le Christ. Jean Damascène, très dur avec l’islam, appelle les musulmans « mutilateurs » (koptai) de Dieu, parce qu’ils retranchent de Dieu son Verbe et son Esprit. En 1180, l’empereur Manuel Comnène obtient, contre une forte résistance des évêques, qu’on retire de la formule d’abjuration l’anathème contre « le Dieu de Mahomet », remplacé par un anathème contre Mahomet et son enseignement."
+  ],
+  [
+   "Biblique",
+   "Ac 17, 23 : Paul à Athènes : « Ce que vous adorez sans le connaître, je vous l’annonce. » Il part de ce que ses auditeurs visent, puis le corrige. Mais Jn 5, 23 : « Qui n’honore pas le Fils n’honore pas le Père », et 1 Jn 2, 23 : « Quiconque nie le Fils n’a pas non plus le Père. »"
+  ],
+  [
+   "Théologique",
+   "La bonne distinction : qui l’on vise, et ce que l’on en dit. Les musulmans visent le Créateur unique d’Abraham : en ce sens, ce n’est pas un autre dieu, comme un dieu païen. Mais ils en nient la Trinité et l’Incarnation, donc ils le connaissent mal, et en partie le contredisent. L’Orthodoxie n’a jamais défini cette question en concile : les deux formules (« même Dieu mal connu » et « pas le même Dieu ») se trouvent chez des orthodoxes sérieux, souvent pour dire au fond la même chose."
+  ]
+ ],
+ "lim": "Ici, l’argument de la vidéo est plutôt solide, et ce n’est pas vraiment un débat catholique contre orthodoxe : c’est un débat entre deux positions présentes chez les orthodoxes. Ne prétends pas que la Tradition dit unanimement « pas le même Dieu ». Mais « même Dieu » ne veut pas dire « même foi » ni « voies équivalentes » : Palamas annonce le Christ comme juge, Damascène parle d’hérésie, et les évêques de 1180 ont résisté. Le « même Dieu » de Nostra Aetate va plus loin dans l’affirmation positive que la plupart des Pères (voir la fiche Nostra Aetate).",
+ "refs": "Grégoire Palamas, Lettre à son Église (captivité, 1354) et Dialogue avec les Chionai ; Jean Damascène, Des hérésies 100 ; Nicétas Choniatès, Histoire (synode de 1180) ; Jean Meyendorff, « Byzantine Views of Islam » (Dumbarton Oaks Papers 18, 1964) ; Actes 17, 23 ; Jean 5, 23 ; 1 Jean 2, 23."
 }
   );
 })();
