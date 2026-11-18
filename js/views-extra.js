@@ -77,11 +77,18 @@
           ? `<p class="muted small">${hits.length} résultat${hits.length > 1 ? 's' : ''}${hits.length > 40 ? ' — les 40 premiers' : ''}</p><ul class="favs">` +
             hits.slice(0, 40).map((r) => {
               const inner = `<span class="fav-type">${r.type}</span><b>${esc(r.title)}</b><span class="muted small clamp">${snippet(r.text, q)}</span>`;
-              return `<li>${r.href ? `<a href="${r.href}">${inner}</a>` : `<div class="plain">${inner}</div>`}</li>`;
+              return `<li>${r.href ? `<a href="${r.href}" data-hit="${INDEX.indexOf(r)}">${inner}</a>` : `<div class="plain">${inner}</div>`}</li>`;
             }).join('') + '</ul>'
           : '<p class="muted center">Aucun résultat.</p>';
       };
       inp.addEventListener('input', run);
+      box.addEventListener('click', (e) => {
+        const a = e.target.closest('a[data-hit]'); if (!a) return;
+        const r = INDEX[+a.dataset.hit]; if (!r) return;
+        // les pages d'un seul article n'en ont pas besoin ; les listes (glossaire, débats, objections, conciles…) oui
+        if (/^#\/(glossary|distinctions|objections|apolo|debats|peres|councils|slavonic\/vocab|day\/)/.test(r.href)) O.FOCUS = { t: r.title, x: r.text };
+        if (location.hash === r.href) { e.preventDefault(); K.render(); }
+      });
       run();
       setTimeout(() => inp.focus(), 50);
     };

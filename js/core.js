@@ -118,6 +118,32 @@
   }
   function go(h) { if (location.hash === h) render(); else location.hash = h; }
   /* accessibilité : donne un nom aux interrupteurs et aux champs qui n'en ont pas (lecteurs d'écran) */
+  /* aller à un élément précis d'une page (depuis la recherche) : on cherche son titre dans la page,
+     on filtre la liste si besoin (recherche interne de la page), puis on ouvre, on fait défiler et on surligne */
+  const fnorm = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[«»“”"’'(),.:;!?…\-]/g, ' ').replace(/\s+/g, ' ').trim();
+  function findTarget(root, f) {
+    const t = fnorm(f.t), x = fnorm(f.x).slice(0, 60);
+    const els = [...root.querySelectorAll('summary, dt, .card-k, .apo-q, h2, h3, b, blockquote, .pere-t, .v-cs, p')].filter((e) => !e.closest('.page-head') && e.offsetParent !== null);
+    const txt = (e) => fnorm(e.textContent);
+    const heads = els.filter((e) => e.matches('summary, dt, .card-k, .apo-q, h2, h3, b, .v-cs'));
+    return els.find((e) => t && txt(e) === t)
+      || heads.find((e) => { const v = txt(e); return v.length >= 4 && (t.startsWith(v) || v.includes(t)); })
+      || els.find((e) => t.length > 5 && txt(e).includes(t))
+      || (x.length > 10 && els.find((e) => txt(e).includes(x)));
+  }
+  function focusOn(root, f) {
+    let el = findTarget(root, f);
+    if (!el) {
+      const inp = root.querySelector('input[type="search"]');
+      if (inp && f.t) { inp.value = f.t; inp.dispatchEvent(new Event('input', { bubbles: true })); el = findTarget(root, f); }
+    }
+    if (!el) return;
+    const d = el.closest('details'); if (d) d.open = true;
+    const box = el.closest('details, .card, li, .gl-item, article') || el;
+    box.scrollIntoView({ block: 'center' });
+    box.classList.remove('found'); void box.offsetWidth; box.classList.add('found');
+  }
+
   function a11y(root) {
     root.querySelectorAll('.switch:not([aria-label])').forEach((b) => { const r = b.closest('.set-row'), t = r && r.querySelector('b'); if (t) b.setAttribute('aria-label', t.textContent.trim()); });
     root.querySelectorAll('input:not([type=hidden]):not([aria-label]), textarea:not([aria-label])').forEach((i) => {
@@ -141,6 +167,7 @@
       if (O.PIXEL) O.PIXEL.decorate(view);
       if (out.after) out.after(view);
       a11y(view);
+      if (O.FOCUS) { const f = O.FOCUS; O.FOCUS = null; setTimeout(() => focusOn(view, f), 80); }
       return;
     }
     go('#/today');

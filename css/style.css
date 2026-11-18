@@ -1108,3 +1108,7 @@ html[data-reading="1"] .main { max-width: 760px; }
 
 /* fond : le Christ Pantocrator en pixels, très pâle */
 :root[data-pixel="1"] body::before { content: ''; position: fixed; inset: 0; z-index: -1; pointer-events: none; background: var(--px-bg) no-repeat 50% 60% / min(78vw, 520px) auto; image-rendering: pixelated; opacity: .2; }
+
+/* élément trouvé par la recherche */
+.found { animation: foundFlash 2.2s ease-out; }
+@keyframes foundFlash { 0%, 35% { box-shadow: 0 0 0 3px var(--gold2), 0 0 24px rgba(240, 205, 122, .55); } 100% { box-shadow: none; } }
